@@ -1,0 +1,52 @@
+{
+ "note": "Manual callouts for photos the WCS path can't solve (Moon/planets \u2014 computeAtRuntime, no fixed RA/Dec). Keyed by photo `path`. Each callout pins a catalog object to a pixel position expressed as a percentage of the source image's natural width/height. Optional `rPctW` overrides the default ring radius (as a percentage of image width) \u2014 use when a body's visible disc is much larger than the default 21-px focus ring. `isCenter:true` marks the framed subject (yellow ring).",
+ "byPath": {
+  "photos/Moon_8.jpg": {
+   "callouts": [
+    {
+     "id": "Moon",
+     "xPct": 12.69,
+     "yPct": 35.39,
+     "rPctW": 12,
+     "isCenter": true
+    },
+    {
+     "id": "Venus",
+     "xPct": 96.9,
+     "yPct": 52.53
+    }
+   ]
+  },
+  "photos/Moon_7.jpg": {
+   "callouts": [
+    {
+     "id": "Moon",
+     "xPct": 10.87,
+     "yPct": 16.92,
+     "isCenter": true
+    },
+    {
+     "id": "Venus",
+     "xPct": 34.35,
+     "yPct": 21.9
+    },
+    {
+     "id": "Jupiter",
+     "xPct": 95.55,
+     "yPct": 65.2
+    }
+   ]
+  },
+  "photos/Pluto_1.jpg": {
+   "note": "Pluto is a 15th-magnitude dot in a dense Sagittarius field and there is no way to pick it out by eye. Position computed from Keplerian elements for the capture time (2026-08-26T04:45:37 UTC) and projected through the Seestar stack's own plate solve. It lands 1.7 arcmin from the frame centre, which independently agrees with the album app's ephemeris (1.6 arcmin) \u2014 the mount centres what it tracks. Good to a few arcmin: enough to say WHICH dot, not to measure one. The frame's own RA/DEC keywords are stale and sit 23 arcmin away; do not use them.",
+   "callouts": [
+    {
+     "id": "Pluto",
+     "xPct": 50.84,
+     "yPct": 50.54,
+     "isCenter": true
+    }
+   ]
+  }
+ }
+}

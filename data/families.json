@@ -1,0 +1,58 @@
+{
+ "note": "Family photos: one entry per set of objects that share a single deep photograph. A photo graduates to a family when it carries at least `rule.minIntegrationHours` of integration AND holds two or more bodies whose catalogue size is at least `rule.majorFrameFraction` of the frame's short edge. The gallery gives each family its own card, its own section, and makes it answer a search for any member. Hand-editable: `title` is never overwritten, a family with \"auto\": false is declared and never removed, and an explicit `photos` list is always honoured. `byPath` is derived — publish.py rewrites its keys onto the published photo names. Written by tools/build_families.py.",
+ "rule": {
+  "minIntegrationHours": 4.0,
+  "majorFrameFraction": 0.08,
+  "mergeSeparationDeg": 0.1
+ },
+ "families": {
+  "FAM-M16-M17": {
+   "members": [
+    "M16",
+    "M17"
+   ],
+   "title": "Eagle Nebula & Omega Nebula",
+   "auto": false,
+   "minIntegrationHours": 3.0,
+   "why": "Declared by hand when the frame held 3 h 02 m, under the 4 h floor, as the album's only photograph holding both nebulae. It now carries 7 h 28 m — 1,374 subs across four nights (2026-08-20, 09-06, 09-08, 09-09) gathered from two stash folders the Seestar named separately, 'NGC 6605_sub' and 'M 17_sub', which solve 0.13 deg apart. So it clears the floor on its own now and the declaration is no longer load-bearing; it is kept because auto:false is also what leaves M 16 and M 17 their own cards. M 16 fills 91% of the short edge and M 17 10%, each about 0.77 deg clear of the nearest edge, near opposite ends of the long axis. Filed under NGC 6605 only because that is the catalogue object nearest the centre, which is not what the picture is of."
+  },
+  "FAM-M31-M110": {
+   "members": [
+    "M31",
+    "M110"
+   ],
+   "title": "Andromeda Galaxy & M110",
+   "auto": false,
+   "minIntegrationHours": 1.5,
+   "why": "Declared by hand. The deep Andromeda is 1 h 48 m and its raw stack 2 h 11 m, both below the 4 h floor — but M 110 is the point of the frame, not a passenger in it. minIntegrationHours sits in the gap between those two and the album's thin Andromeda frames (48 m and 10 m), which stay on M 31's own card. Set at 1.5 rather than 2 because the pair straddles 2 h: the conditioned render's time comes from the Siril master's LIVETIME and the raw stack's from the sum of its subs, and a floor between them would take half a photograph."
+  },
+  "FAM-M8-M20": {
+   "members": [
+    "M8",
+    "M20"
+   ],
+   "title": "Lagoon Nebula & Trifid Nebula",
+   "auto": true,
+   "why": "9 h 26 m of integration; M8 at 38% of the frame, M20 at 23% of the frame"
+  },
+  "FAM-NGC6960-NGC6992": {
+   "members": [
+    "NGC6960",
+    "NGC6992"
+   ],
+   "title": "The Cygnus Loop",
+   "auto": false,
+   "minIntegrationHours": 1.0,
+   "why": "Declared by hand. The frame is 1 h 15 m across three nights (2026-06-30, 07-19, 09-09), under the 4 h floor, but the pairing is the whole point: it is the album's only photograph holding the Cygnus Loop end to end. NGC 6960 the Western Veil sits low in the frame with 52 Cygni in it, NGC 6992 the Eastern Veil at the top, and Pickering's Triangle between them. The two are 2.49 deg apart and only fit along the long axis, each about 0.6 deg clear of the nearest edge. Only the 2026-09-09 session caught both — the earlier nights were shot on one arc each, and register onto its framing rather than supplying their own, which is why siril/ngc6960/reference_frame.txt names a frame from that night. NGC 6992 has no photograph of its own, like M 110 in FAM-M31-M110."
+  }
+ },
+ "byPath": {
+  "photos/M31_3.jpg": "FAM-M31-M110",
+  "photos/M31_1.jpg": "FAM-M31-M110",
+  "photos/M8_2.jpg": "FAM-M8-M20",
+  "photos/M8_1.jpg": "FAM-M8-M20",
+  "photos/NGC6605_1.jpg": "FAM-M16-M17",
+  "photos/NGC6605_3.jpg": "FAM-M16-M17",
+  "photos/NGC6960_3.jpg": "FAM-NGC6960-NGC6992"
+ }
+}

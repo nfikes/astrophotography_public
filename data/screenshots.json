@@ -1,0 +1,34 @@
+{
+ "byObjId": {
+  "M16": [
+   {
+    "path": "photos/screenshots/Screenshot_M16.png"
+   }
+  ],
+  "M63": [
+   {
+    "path": "photos/screenshots/Screenshot_M63.png"
+   }
+  ],
+  "M81": [
+   {
+    "path": "photos/screenshots/Screenshot_M81.png"
+   }
+  ],
+  "NGC7023": [
+   {
+    "path": "photos/screenshots/Screenshot_NGC7023.png"
+   }
+  ],
+  "Saturn": [
+   {
+    "path": "photos/screenshots/Screenshot_Saturn.png"
+   }
+  ],
+  "Venus": [
+   {
+    "path": "photos/screenshots/Screenshot_Venus.png"
+   }
+  ]
+ }
+}

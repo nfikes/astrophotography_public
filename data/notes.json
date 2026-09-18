@@ -1,0 +1,65 @@
+{
+ "note": "Author notes keyed by objId. Rendered under an (n) icon next to the (i) info icon on the slide caption.",
+ "byObjId": {
+  "Arcturus": {
+   "en": "Yes, it is that bright."
+  },
+  "Jupiter": {
+   "en": "This image was taken in Purcellville at a soccer stadium. You can see Jupiter and several of its Galilean moons here — Io, Europa, Ganymede, and Callisto."
+  },
+  "M10": {
+   "en": "The M 56 and M 10 clusters were taken during the Canadian wildfires, making it extremely difficult to picture these bodies. The image processing pipeline was stress-tested under these conditions."
+  },
+  "M16": {
+   "en": "The famous Pillars of Creation live inside this nebula — you just have to look deep into the centre to spot them."
+  },
+  "M24": {
+   "en": "M 24 sits in the same crowded Sagittarius arm as the Milky Way's galactic centre — they're about 13° apart though, so the centre itself isn't in this frame, but you're aimed at one of the densest star fields in the sky. The black streaks aren't dust lanes — they're tree branches that got in the way of the shot."
+  },
+  "M51": {
+   "en": "This photo was taken at the ditch behind my house. A skunk was out there and approached me until I flashed it with a flashlight."
+  },
+  "M56": {
+   "en": "The M 56 and M 10 clusters were taken during the Canadian wildfires, making it extremely difficult to picture these bodies. The image processing pipeline was stress-tested under these conditions."
+  },
+  "M63": {
+   "en": "Zoom in on this galaxy and you can pick out the little yellow rings — layered dust lanes wrapping the spiral arms."
+  },
+  "M8": {
+   "en": "This image was taken in the front yard with street lights close by. A fox approached me as I was taking this photo, and a tree cut the exposure time short."
+  },
+  "MilkyWay": {
+   "en": "There was too much light pollution to get any sort of detail of the Milky Way in this picture. This was my best attempt in a Bortle 5 area."
+  },
+  "NGC4236": {
+   "en": "Clouds got in the way."
+  },
+  "NGC6503": {
+   "en": "Clouds got in the way."
+  },
+  "NGC6826": {
+   "en": "This planetary nebula only resolves as a little green star on my S30 — the shell is too small (~25 arcsec) to show detail at this focal length."
+  },
+  "NGC7000": {
+   "en": "One of my favorite photos and one of the first mosaic photos taken of the sky."
+  },
+  "NGC7023": {
+   "en": "The reason you can't see many stars around this nebula is that there's a lot of dark absorption nebulosity surrounding the central reflection nebula. A much longer exposure would bring out those dark structures."
+  },
+  "NGC884": {
+   "en": "Clouds got in the way."
+  },
+  "Saturn": {
+   "en": "The exposure on this planet was too long for any resolution on detail."
+  },
+  "ThetaDra": {
+   "en": "Clouds got in the way."
+  },
+  "Thuban": {
+   "en": "Thuban and Draco don't actually have galaxy-like features — this was one of my first photos using the S30 Pro, and I didn't quite have a steady surface or much knowledge yet, so there was some shaking."
+  },
+  "UMa": {
+   "en": "This image was taken on a slightly cloudy night. Notice all the streaks in the sky if you look closely — those are satellites reflecting the sun's light back at us."
+  }
+ }
+}

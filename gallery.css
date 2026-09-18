@@ -1,0 +1,3438 @@
+/*  Public astrophotography gallery — minimal styles.
+ *  Dark background, image-first, no personal data.
+ */
+:root {
+  --bg-0: #0a0d1a;
+  --bg-1: #12172a;
+  --bg-2: #1a2038;
+  --ink: rgba(255, 255, 255, 0.92);
+  --ink-dim: rgba(255, 255, 255, 0.65);
+  --ink-mute: rgba(255, 255, 255, 0.42);
+  --line: rgba(255, 255, 255, 0.10);
+  --accent: rgba(196, 181, 253, 0.90);
+
+  /* The four viewing modes. Each colour appears in exactly two places —
+     the wide button that selects the mode, and that mode's slice of the
+     split border on the target's grid card — so the card and the buttons
+     teach each other with no legend anywhere.
+
+     RAW is deliberately colourless: it is the photograph as the telescope
+     stacked it, and everything else is derived from it. */
+  --mode-raw:         rgba(255, 255, 255, 0.30);
+  --mode-showcase:    #5b9dff;
+  --mode-conditioned: #f2c14e;
+  --mode-compare:     #4ec97b;
+
+  /* Family photos. A colour of its own, deliberately outside the four mode
+     colours above: a family is not a fifth way of looking at one target,
+     it is a statement that the photograph has more than one. Warm rose so
+     it cannot be mistaken for conditioned gold at a glance. */
+  --family: #f0709a;
+  --family-dim: rgba(240, 112, 154, 0.30);
+
+  /* Side gutters. The page keeps a twentieth of the viewport clear down
+     each edge so the album is not pressed against the window, and the
+     content fades into that margin instead of ending on a hard line. */
+  --gutter: 5vw;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg-0);
+  color: var(--ink);
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Hero (M 8 splash) ─────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  height: 100vh;
+  /* Match the album's content column (main uses max-width: 1600px), so
+     the hero image aligns edge-to-edge with the slideshow and grid below
+     rather than bleeding out to the browser edges on wide screens. */
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* JS drives opacity as the user scrolls in from the top. */
+  will-change: opacity;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Slight zoom-in so the image fills without visible edges even when
+     the aspect ratio doesn't match. Combined with hero opacity fade,
+     also gives a subtle parallax feel. */
+  transform: scale(1.02);
+}
+/* A portrait source, shown landscape — the same quarter turn the slide
+   stage and the compare slider apply, for the same reason. Cover-fitting a
+   portrait frame into a full-height hero would crop it to a vertical strip
+   and throw away most of the field; turned, the long axis runs along the
+   long axis of the screen.
+
+   The box is the hero ON ITS SIDE: a quarter turn swaps the axes, so the
+   box's WIDTH becomes the on-screen height and its HEIGHT becomes the
+   on-screen width. `.hero` is exactly 100vh tall and as wide as the content
+   column, so those two are 100vh and min(100vw, 1600px) — written out
+   rather than left as percentages, which would resolve against the wrong
+   axis. */
+.hero-bg.is-turned {
+  inset: auto;
+  left: 50%;
+  top: 50%;
+  width: 100vh;                       /* becomes the on-screen HEIGHT */
+  height: min(100vw, 1600px);         /* becomes the on-screen WIDTH  */
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg) scale(1.02);
+}
+.hero-vignette {
+  /* Two overlays: a centred radial vignette that reads the title against
+     bright star fields, and a bottom-edge fade that hands off into the
+     page background (`--bg-0`) so the hero doesn't have a hard line
+     against the header below. */
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom,
+      transparent 0%,
+      transparent 82%,
+      var(--bg-0) 100%),
+    radial-gradient(ellipse at center,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.15) 60%,
+      rgba(0,0,0,0.35) 100%);
+}
+.hero-title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 0 24px;
+  font-feature-settings: "palt" 1;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.6);
+}
+.hero-title-ja {
+  font-size: clamp(28px, 6.5vw, 64px);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.hero-title-en {
+  font-size: clamp(14px, 2.6vw, 28px);
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+/* The title arrives rather than being already there. Both lines rise a
+   little and resolve out of a blur, the English a beat behind the
+   Japanese and the version number a beat behind that, so the eye is led
+   down the three of them in the order they should be read.
+
+   `both` matters: the fill holds the letters at opacity 0 from first
+   paint, so there is no frame where they flash in at full strength
+   before the animation starts. */
+@keyframes hero-letters-in {
+  from { opacity: 0; transform: translateY(16px); filter: blur(8px); }
+  to   { opacity: 1; transform: none;             filter: blur(0); }
+}
+/* Same motion, landing on this line's own resting opacity rather than 1. */
+@keyframes hero-letters-in-dim {
+  from { opacity: 0;   transform: translateY(16px); filter: blur(8px); }
+  to   { opacity: 0.9; transform: none;             filter: blur(0); }
+}
+.hero-title-ja {
+  animation: hero-letters-in 1500ms cubic-bezier(0.16, 0.8, 0.24, 1) both;
+}
+.hero-title-en {
+  animation: hero-letters-in-dim 1500ms cubic-bezier(0.16, 0.8, 0.24, 1) 320ms both;
+}
+.hero-version {
+  animation: hero-letters-in-dim 1200ms cubic-bezier(0.16, 0.8, 0.24, 1) 640ms both;
+}
+/* Reduced motion still fades — a fade is not vestibular motion — but
+   nothing travels and nothing defocuses. */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes hero-letters-in     { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes hero-letters-in-dim { from { opacity: 0; } to { opacity: 0.9; } }
+  .hero-title-ja,
+  .hero-title-en,
+  .hero-version { animation-duration: 900ms; }
+}
+/* Sparkle-の glyph used inline where possessive markers would sit
+   ('s in English, の in Japanese). Sized as a large em-relative token
+   so it stays proportional across the responsive title. */
+.no-glyph {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.14em;   /* nudge onto the visual baseline of CJK */
+  margin: 0 0.04em;
+  color: inherit;
+}
+.no-glyph svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hdr {
+  padding: 22px 28px 14px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.hdr-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.hdr-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hdr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--ink-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.hdr-btn:hover,
+.hdr-btn[aria-expanded="true"] {
+  color: var(--ink);
+  border-color: var(--ink-dim);
+  background: var(--bg-1);
+}
+.hdr-btn svg { flex: none; }
+
+/* ── Changelog panel ────────────────────────────────────────────────── */
+.changelog-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(460px, 100%);
+  max-width: 460px;
+  background: var(--bg-0);
+  border-left: 1px solid var(--line);
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.22s ease;
+}
+.changelog-panel:not([hidden]) {
+  transform: translateX(0);
+}
+.changelog-panel[hidden] {
+  display: block !important;   /* keep laid out for slide-out transition */
+  pointer-events: none;
+  transform: translateX(100%);
+}
+.changelog-panel-inner {
+  padding: 24px 24px 40px;
+}
+.changelog-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-right: 40px;   /* space for the close-affordance cue */
+}
+.changelog-panel-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+/* Album version, from data/version.json — the same number the hero shows,
+   restated here because this panel is the history behind it. */
+.changelog-version {
+  flex: none;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  /* No extra tracking: the dots in 3.22.27 read as separators, and letter
+     spacing pulls the number apart into three loose fragments. */
+  letter-spacing: 0;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 2px 7px;
+  opacity: 0.9;
+}
+.changelog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Changelog timeline ─────────────────────────────────────────────
+   One collapsible band per major version, each holding a dated track of
+   entries. Collapsed, the whole history is three lines; the newest band
+   opens on load. */
+.clog-era { list-style: none; }
+.clog-era-box {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-1);
+  overflow: hidden;
+}
+.clog-era-loose > .clog-track {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-1);
+  padding-top: 14px;
+}
+.clog-era-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;          /* hide the native disclosure triangle */
+  transition: background 0.15s ease;
+}
+.clog-era-head::-webkit-details-marker { display: none; }
+.clog-era-head:hover { background: var(--bg-2); }
+.clog-era-head:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.clog-era-chev {
+  flex: none;
+  display: flex;
+  color: var(--ink-mute);
+  transition: transform 0.18s ease;
+}
+.clog-era-box[open] > .clog-era-head .clog-era-chev { transform: rotate(90deg); }
+.clog-era-tag {
+  flex: none;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(196, 181, 253, 0.10);
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+.clog-era-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+.clog-era-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.clog-era-meta {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.03em;
+  color: var(--ink-mute);
+}
+.clog-era-now {
+  flex: none;
+  align-self: flex-start;
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  border-radius: 999px;
+  padding: 2px 7px;
+}
+/* The track: a hairline spine with a dot per entry. Left padding leaves
+   the spine its own column so nothing has to wrap around it. */
+.clog-track {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 4px 14px 14px 32px;
+}
+.clog-track::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 8px;
+  bottom: 16px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.14);
+}
+.clog-item {
+  position: relative;
+  padding-bottom: 14px;
+}
+.clog-item:last-child { padding-bottom: 2px; }
+.clog-item::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bg-1);
+  border: 1px solid var(--ink-mute);
+  /* Punch the spine out behind the dot so the line reads as segmented
+     between entries rather than running through them. */
+  box-shadow: 0 0 0 3px var(--bg-1);
+}
+.clog-item.website::before {
+  border-color: var(--accent);
+  background: rgba(196, 181, 253, 0.30);
+}
+.clog-item.photos::before { border-color: var(--ink-dim); }
+/* The clickable row: meta line above the title, chevron holding the right
+   edge across both. A grid rather than nested flexes so the chevron stays
+   vertically centred however many lines the title wraps to. */
+.clog-item-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "meta  chev"
+    "title chev";
+  align-items: center;
+  gap: 3px 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.clog-item-head::-webkit-details-marker { display: none; }
+.clog-item-head:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.clog-item-meta {
+  grid-area: meta;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  color: var(--ink-mute);
+  letter-spacing: 0.04em;
+}
+.clog-item-type {
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.clog-item-type.website { color: var(--accent); border-color: rgba(196, 181, 253, 0.35); }
+.clog-item-type.photos  { color: var(--ink-dim); border-color: var(--line); }
+.clog-item-title {
+  grid-area: title;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+.clog-item-head:hover .clog-item-title { color: var(--accent); }
+.clog-item-chev {
+  grid-area: chev;
+  display: flex;
+  color: var(--ink-mute);
+  transition: transform 0.18s ease;
+}
+.clog-item-box[open] > .clog-item-head .clog-item-chev { transform: rotate(90deg); }
+.clog-bullets {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.clog-bullets li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
+.clog-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 2px;
+  color: var(--ink-mute);
+}
+@media (prefers-reduced-motion: reduce) {
+  .clog-era-chev, .clog-era-head,
+  .clog-item-chev, .clog-item-title { transition: none; }
+}
+.changelog-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.changelog-scrim.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+main { padding: 20px 28px 40px; max-width: 1600px; margin: 0 auto; }
+
+/* ── Side gutters ────────────────────────────────────────────────────
+   A twentieth of the viewport is kept clear down each edge — a tenth of
+   the width in total — so nothing is jammed against the window frame.
+   The two overlay strips fade the page background inwards over that
+   margin, so content scrolling past the edge dissolves into it rather
+   than being cut off by one.
+
+   Fixed, not sticky, and click-through: they are a visual margin, and a
+   pair of bars that swallowed clicks along both edges would be a trap. */
+.hdr, main, .ftr, .notice { padding-left: max(28px, var(--gutter)); padding-right: max(28px, var(--gutter)); }
+.page-edge {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: var(--gutter);
+  z-index: 60;
+  pointer-events: none;
+}
+.page-edge.left {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-0) 15%, transparent 100%);
+}
+.page-edge.right {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-0) 15%, transparent 100%);
+}
+/* The dome takes the whole screen on purpose — a celestial sphere with
+   margins is a porthole. Its own chrome keeps clear of the edges. */
+body.dome-open .page-edge { display: none; }
+@media (max-width: 640px) {
+  :root { --gutter: 12px; }
+  .page-edge { display: none; }
+}
+
+/* ── Slideshow ────────────────────────────────────────────────────── */
+.slideshow {
+  margin-bottom: 40px;
+}
+.slide-frame {
+  position: relative;
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  min-height: 260px;
+}
+.slide-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  /* Stage is portrait pre-rotation, rotated 90° for landscape display. */
+  transform: translate(0, 0) rotate(90deg) scale(1);
+  will-change: transform;
+}
+.slide-stage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+/* The big picture fades out and back in when it changes. gallery.js owns
+   the timing — it drives opacity and overrides transition-duration for
+   each half, since going out wants to be quicker than coming in — so all
+   that is declared here is that opacity is a transition at all.
+
+   Reduced motion gets the swap with no fade: a cross-fade on a full-frame
+   photograph is a large area changing luminance, which is exactly what
+   that preference is asking not to have. */
+#slide-img {
+  transition: opacity 380ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  #slide-img { transition: none; }
+}
+/* Showcase cross-fade layer. Same box as #slide-img (it inherits
+   .slide-stage img), stacked above it by DOM order, and driven by inline
+   opacity from paintSlide. `hidden` must actually hide it — a rule with
+   higher specificity than the UA's [hidden] would otherwise leave the
+   deepest stack painted over every later slide. */
+#slide-sc-blend { pointer-events: none; }
+#slide-sc-blend[hidden] { display: none; }
+
+.slide-annotations {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.slide-annotations svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.slide-annotations svg circle,
+.slide-annotations svg ellipse {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.75));
+  vector-effect: non-scaling-stroke;
+}
+.annot-number {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(15, 18, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+.annot-number.center {
+  background: rgba(35, 28, 6, 0.92);
+  border-color: rgba(250, 204, 21, 0.95);
+  color: rgba(250, 204, 21, 1);
+}
+.slide-name {
+  margin: 12px 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.slide-name .id {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 13px;
+}
+.slide-name .sub {
+  color: var(--ink-dim);
+  font-size: 13px;
+  font-weight: 400;
+}
+.slide-stats {
+  margin: 0 0 8px;
+  color: var(--ink-dim);
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+}
+.slide-stats:empty {
+  display: none;
+}
+.slide-disclaimer {
+  margin: 0 0 4px;
+  color: var(--ink-dim);
+  font-size: 11px;
+  opacity: 0.7;
+  font-style: italic;
+}
+.slide-stats .sep {
+  opacity: 0.4;
+}
+.slide-stats .cam {
+  color: var(--ink-dim);
+  opacity: 0.75;
+}
+/* ── Mode buttons ────────────────────────────────────────────────────
+   The four ways to look at this target, wide and stacked under the image
+   so each has room for the target's name plus what it is. Each keeps its
+   mode's colour on the leading edge; the selected one fills with it. */
+/* One row under the picture: mode buttons on the left, the filmstrip on
+   the right. The buttons keep half the width, which is what they need for
+   "M 31 — INTEGRATION SHOWCASE" without wrapping; the thumbnails tile
+   whatever is left. When a target has ONE photograph the strip is hidden
+   and the buttons take the whole width, exactly as before. */
+.slide-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0 4px;
+}
+.slide-modes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 50%;
+  min-width: 0;                     /* let the long labels ellipsize, not push */
+}
+.slide-modes[hidden] { display: none; }
+.slide-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 14px;
+  text-align: left;
+  background: var(--bg-1);
+  color: var(--ink-dim);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--mode-colour);
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+.slide-mode:hover { color: var(--ink); border-color: var(--ink-dim); }
+.slide-mode.is-on {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--mode-colour) 18%, var(--bg-1));
+  border-color: var(--mode-colour);
+}
+.slide-mode-count {
+  flex: none;
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  font-size: 10.5px;
+  text-align: center;
+}
+
+/* ── Integration-showcase scrub ──────────────────────────────────────
+   Sits over the image and steps through the milestone stacks. Ticks are
+   spaced evenly by position, not by minutes: 1, 10, 30, 60 and 120 laid
+   out to scale would pile the first three onto the left edge, which is
+   the part of the sequence where the picture changes most. */
+/* Under the picture, not on it. This was `position: absolute; bottom: 0`
+   with a dark gradient behind it, so the showcase — the one view whose
+   whole point is how much faint signal is there — was read through a
+   control and a scrim. */
+.slide-sc-scrub {
+  margin: 10px 0 2px;
+  padding: 0 2px;
+}
+.slide-sc-scrub[hidden] { display: none; }
+.slide-sc-scrub input[type="range"] {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--mode-showcase);
+  cursor: pointer;
+}
+.sc-scrub-ticks { position: relative; height: 14px; margin-top: 2px; }
+.sc-scrub-tick {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+  white-space: nowrap;
+}
+.sc-scrub-tick.is-on { color: var(--mode-showcase); font-weight: 700; }
+.sc-scrub-read {
+  margin-top: 2px;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  color: var(--ink-dim);
+}
+.sc-scrub-read strong { color: var(--mode-showcase); }
+
+/* Within-mode stepper — only when a mode holds more than one frame. */
+.slide-frame-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  color: var(--ink-mute);
+}
+.slide-frame-step[hidden] { display: none; }
+.slide-frame-step button {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-dim);
+  cursor: pointer;
+  line-height: 1;
+}
+.slide-frame-step button:hover { background: var(--bg-1); color: var(--ink); }
+
+.slide-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.slide-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink);
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.slide-controls button:hover { background: var(--bg-1); }
+.slide-counter {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 13px;
+  color: var(--ink-dim);
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Target navigation, sitting on the picture instead of under the caption.
+   Only these two moved: the counter, the star and the play button are
+   about the show rather than about this photograph, so they stay in the
+   row below. Dimmed until wanted — at full strength two solid discs sit
+   on every photograph in the album — and brought up by hover OR keyboard
+   focus, so this is not a mouse-only affordance. */
+/* The row under the picture: ‹ arrow, name + stats, arrow ›. The arrows
+   were absolutely positioned over the photograph at its left and right
+   edges; they are ordinary flex children now and sit clear of it. */
+.slide-headline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 6px;
+}
+.slide-headline-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+/* The two blocks inside carry the row's spacing now. */
+.slide-headline .slide-name { margin: 0 0 2px; }
+.slide-headline .slide-stats { margin: 0; }
+.slide-nav {
+  flex: 0 0 auto;
+  z-index: 4;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(8, 12, 24, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 24px;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+/* Off the picture, so they are always legible rather than revealed by a
+   hover on the frame they no longer sit in. */
+.slide-nav { opacity: 0.85; }
+.slide-headline:hover .slide-nav { opacity: 1; }
+.slide-nav:hover,
+.slide-nav:focus-visible {
+  opacity: 1;
+  background: rgba(8, 12, 24, 0.82);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide-nav { transition: none; opacity: 0.85; }
+}
+
+/* ── Filmstrip: the other photographs of this target ───────────────── */
+/* The right half of .slide-actions, level with the mode buttons. It used
+   to be absolutely positioned across the TOP OF THE PREVIEW on a fading
+   gradient — which meant every target with more than one photograph (35%
+   of them) had a band of thumbnails sitting on the picture. Here it
+   covers nothing, and it WRAPS rather than scrolling sideways, so eight
+   frames of M 31 are eight things you can see instead of a row you have
+   to drag. */
+.slide-strip {
+  flex: 1 1 50%;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 6px;
+  max-height: 168px;                /* ~3 rows, then scroll rather than grow */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.slide-strip[hidden] { display: none; }
+.strip-thumb {
+  position: relative;
+  flex: 0 0 auto;
+  width: 58px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--bg-1);
+  cursor: pointer;
+  opacity: 0.62;
+  transition: opacity 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+.strip-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.strip-thumb:hover,
+.strip-thumb:focus-visible {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-1px);
+}
+/* The one currently in the preview, in the album's accent. */
+.strip-thumb.is-on {
+  opacity: 1;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+/* The stable view number, so a thumbnail can be named out loud and agrees
+   with the "#3 of 4" line under the picture. */
+.strip-n {
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  padding: 0 3px;
+  border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 9px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(6, 9, 18, 0.72);
+}
+
+/* ── Blow-up: one photograph at the preview's full size ────────────── */
+/* Bounded by the frame rather than the window: this is a closer look at
+   the picture already on screen, not a trip to a different place. */
+.slide-blowup {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 6, 14, 0.94);
+}
+.slide-blowup[hidden] { display: none; }
+.slide-blowup img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* A portrait source, shown landscape — the same quarter turn the slide stage
+   and the compare slider apply.
+
+   A quarter turn swaps the axes, so the image's layout box has to be the
+   FRAME on its side: as wide as the frame is tall, as tall as the frame is
+   wide. Percentages resolve against the parent's own axes, so those two are
+   written out from `.slide-frame`'s aspect-ratio of 16/9 — 9/16 = 56.25% and
+   16/9 = 177.78%. If that aspect-ratio ever changes, these change with it. */
+.slide-blowup.is-turned img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 56.25%;                      /* == the frame's height */
+  height: 177.78%;                    /* == the frame's width  */
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.slide-blowup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(8, 12, 24, 0.8);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.slide-blowup-close:hover,
+.slide-blowup-close:focus-visible {
+  border-color: #fff;
+  background: rgba(8, 12, 24, 0.95);
+}
+@media (max-width: 640px) {
+  .slide-strip { padding: 6px 58px; }
+  .strip-thumb { width: 50px; height: 36px; }
+}
+
+/* ── Gallery grid ─────────────────────────────────────────────────── */
+.gallery { }
+.gallery-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.gallery-head #search {
+  flex: 1;
+  min-width: 260px;
+  max-width: 480px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg-1);
+  color: var(--ink);
+  font-size: 14px;
+  outline: none;
+}
+.gallery-head #search:focus { border-color: var(--accent); }
+.gallery-count { color: var(--ink-mute); font-size: 12px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+}
+/* One card per target. The border is the card's index: it is split into
+   equal slices, one per mode the target carries, in that mode's colour.
+   Drawn as a gradient behind a padded inner panel, because a real border
+   cannot be given four different colours around its perimeter. */
+.tile {
+  display: block;
+  position: relative;
+  padding: 2px;
+  background: var(--tile-border, var(--line));
+  border-radius: 9px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+.tile:hover { transform: translateY(-1px); filter: brightness(1.25); }
+/* Cards lean in from the side they sit on as they scroll into view.
+
+   There is no keyframe and no transition here. --reveal-p is the card's
+   own position within the viewport, written by gallery.js on every scroll
+   frame, and everything below is a function of it: the animation IS the
+   scroll. Scrolling back up runs it backwards, scrolling down runs it
+   again, and that is what makes it replayable — there is no "already
+   played" state for a card to be stuck in.
+
+   `translate`, not `transform`, and that is load-bearing. .tile:hover
+   sets a transform of its own, and .tile transitions transform over
+   120ms; writing the reveal into transform would both fight that rule on
+   specificity and put 120ms of lag between the finger and the card.
+   `translate` is a separate property that composes with transform, sits
+   in nobody's transition list, and so tracks the scroll exactly while the
+   hover lift keeps its own easing.
+
+   Kept behind prefers-reduced-motion, so with motion turned down the
+   hidden state does not exist at all and no card can strand faint. */
+@media (prefers-reduced-motion: no-preference) {
+  .tile-reveal {
+    /* Defaults to ARRIVED, not to waiting. gallery.js writes the real
+       value for every card in the same task that adds this class, so
+       nothing is ever painted at the default — but if that ever failed,
+       this way the grid is merely unanimated rather than a page of cards
+       stuck faint and half off the side. */
+    --reveal-p: 1;
+    translate: calc(var(--reveal-dx, 0px) * (1 - var(--reveal-p))) 0;
+    opacity: calc(0.12 + 0.88 * var(--reveal-p));
+    /* Deliberately no will-change. Up to 240 cards can be on the page at
+       once, and promoting every one of them to its own compositor layer
+       costs far more than the hint saves. */
+  }
+}
+.tile-inner {
+  position: absolute;
+  inset: 2px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--bg-1);
+}
+.tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Cards holding more than one photograph cross-fade between them, so the
+   Moon's twelve are visible from the grid rather than only after a click.
+   Only .tile-cycle images carry this — a single-image card has no second
+   layer and no opacity rule at all.
+
+   Both layers sit at opacity 0 by default and `is-on` raises one. A card
+   whose JS never runs would then be blank, so the FIRST layer is given
+   `is-on` in the markup rather than relying on the timer to light it. */
+.tile img.tile-cycle { opacity: 0; }
+.tile img.tile-cycle.is-on { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .tile img.tile-cycle { transition: opacity 900ms ease-in-out; }
+}
+/* Same colours again as small dots in the corner. The split border reads
+   at a glance but not precisely — at card size a quarter-slice of a
+   4-colour ring is easy to miscount, and the dots are countable. */
+.tile-pips {
+  position: absolute;
+  top: 6px; right: 6px;
+  display: flex;
+  gap: 3px;
+  padding: 3px 4px;
+  border-radius: 999px;
+  background: rgba(10, 13, 26, 0.6);
+  backdrop-filter: blur(4px);
+}
+.tile-pip {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pip);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+.tile-label {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 8px 10px 6px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  font-size: 12px;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tile-label .id { color: var(--accent); font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px; }
+.tile-label .name { font-weight: 500; }
+/* Exposure chip — sits on its own line below the target name, muted
+   so it reads as metadata not primary content. Skipped on exposure-
+   pair tiles (their ribbon already carries the same info). */
+.tile-label .tile-exposure {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10.5px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  letter-spacing: 0.02em;
+}
+
+/* "4 ▣" — how many photographs stand behind this card.
+ *
+ * Sits at the right of the label row rather than the tile's top-right,
+ * which .tile-pips already owns. Kept to the count plus a glyph: the word
+ * "images" is in the title attribute, so the badge does not need
+ * translating and does not compete with the target's name for width. */
+.tile-label .tile-count {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(8, 12, 22, 0.66);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+.tile-label .tile-count-icon { font-size: 9px; opacity: 0.72; }
+
+/* "#3 of 4" under the big picture. Same monospace and muted ink as the
+   within-mode stepper it sits beside, because they are two readings of the
+   same idea and should not look like different features. */
+.slide-view {
+  margin-top: 8px;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+}
+.slide-view[hidden] { display: none; }
+
+.ftr {
+  padding: 20px 28px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-mute);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ── Responsive: tablet ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hdr { padding: 18px 20px 12px; }
+  main { padding: 18px 20px 34px; }
+  .slide-frame { min-height: 220px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+}
+
+/* ── Responsive: phone (≤ 640 px, iPhone 13/SE portrait) ────────────── */
+@media (max-width: 640px) {
+  .hdr {
+    padding: 14px 16px 10px;
+    gap: 10px;
+  }
+  .hdr-title { font-size: 18px; }
+  .lang-toggle {
+    padding: 8px 12px;
+    font-size: 12px;
+    /* WCAG 2.5.8 24 px minimum tap target — matches the phone thumb. */
+    min-height: 36px;
+  }
+  main { padding: 14px 14px 30px; }
+  .slideshow { margin-bottom: 28px; }
+  .slide-frame {
+    /* Portrait phones can't afford the 16:9 landscape aspect — the frame
+       collapses to a sliver. Use a taller ratio so the rotated image
+       actually gets rendering area. */
+    aspect-ratio: 4 / 3;
+    min-height: 240px;
+  }
+  .slide-name {
+    font-size: 15px;
+    gap: 8px;
+    margin: 10px 0 4px;
+  }
+  .slide-name .id,
+  .slide-name .sub { font-size: 12px; }
+  .slide-stats {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .slide-disclaimer { font-size: 10px; }
+  .slide-controls {
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .slide-controls button {
+    /* Bigger tap targets — 44 px matches Apple HIG. */
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+  /* Closer to the edge on a narrow frame, and always visible — there is
+     no hover on a phone to bring them up. */
+  .slide-nav { opacity: 0.85; font-size: 20px; width: 38px; height: 38px; }
+  .slide-headline { gap: 8px; }
+  .gallery-head {
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .gallery-head #search {
+    /* Force full-width instead of the 260-480 clamp — on a 340 px screen,
+       min-width 260 leaves the count chip nowhere to go and it wraps
+       below the input. */
+    min-width: 0;
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;    /* iOS Safari won't zoom-on-focus at ≥ 16 px. */
+  }
+  .grid {
+    /* Two columns on portrait phones — one column would waste horizontal
+       space, three squeezes tiles below thumb-friendly size. */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .tile-label { padding: 6px 8px 5px; }
+  .tile-label .id   { font-size: 10px; }
+  .tile-label .name { font-size: 11px; }
+  .ftr {
+    padding: 16px 16px;
+    font-size: 11px;
+  }
+  .hero-title-ja { letter-spacing: 0.04em; }
+  .hero-title-en { letter-spacing: 0.18em; }
+}
+
+/* ── Responsive: very narrow (≤ 360 px, iPhone SE-class) ────────────── */
+@media (max-width: 360px) {
+  .hdr-title { font-size: 16px; }
+  .lang-toggle { padding: 7px 10px; font-size: 11px; }
+  main { padding: 12px 12px 24px; }
+  .grid { gap: 6px; }
+}
+
+/* ── Compare slider (before/after conditioning pairs) ──────────────── */
+.changelog-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+.changelog-pair-caption {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: center;
+}
+.compare-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  user-select: none;
+  border-radius: 10px;
+  background: #000;
+  touch-action: none;               /* stop the browser eating pointer moves */
+  /* Where the FADE is centred. Allowed to run past 0% and 100% by the
+     fade width, so that at either end the soft edge clears the picture
+     entirely instead of leaving a half-masked band inside it. */
+  --divider-x: 50%;
+  /* Where the HANDLE is. Same value, clamped to the frame, so the disc
+     stays on the picture while the fade keeps going. */
+  --handle-x: 50%;
+  /* Half the width of the fade. Duplicated as CS_FADE_PX in gallery.js,
+     which needs the number to work out how far the divider must travel
+     to push the fade clear of the frame; keep the two in step. */
+  --fade-width: 8px;
+}
+.compare-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Contain-fit so nothing gets cropped. The slider's aspect-ratio is
+     set to match the source in JS after the first image loads, so the
+     letterbox is minimal (near-zero for on-aspect images, ≤ a few px
+     for slight mismatches). */
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+/* The box the two photographs live in. Unturned it is simply the frame.
+   Turned — which is every Seestar source, i.e. nearly the whole album — it
+   is the frame ON ITS SIDE: as wide as the frame is tall, as tall as the
+   frame is wide, centred and rotated a quarter turn clockwise. gallery.js
+   sets those two percentages from the source's aspect ratio. The same
+   quarter turn, in the same direction, that the ordinary slide's stage
+   applies, so a photograph looks the same in every tab. */
+.compare-slider .cs-turn {
+  position: absolute;
+  inset: 0;
+}
+.compare-slider.is-turned .cs-turn {
+  inset: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+/* The mask lives on a wrapper, NOT on the image, so that it is not carried
+   round by the turn — the divider has to stay a vertical line on screen
+   that moves horizontally, whichever way the picture is facing. */
+.compare-slider .cs-after-mask {
+  position: absolute;
+  inset: 0;
+  /* Soft fade AT the divider — this IS the visual boundary; no hard line. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent calc(var(--divider-x) - var(--fade-width)),
+    #000       calc(var(--divider-x) + var(--fade-width))
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent calc(var(--divider-x) - var(--fade-width)),
+    #000       calc(var(--divider-x) + var(--fade-width))
+  );
+}
+/* Inside the turned box the local axes are turned too: a quarter turn
+   clockwise sends local "up" to screen "right", so the gradient runs `to
+   top` to keep sweeping left-to-right on screen. Its stops are percentages
+   of the gradient line, which here is the box's height — and that height IS
+   the frame's on-screen width, so `--divider-x` keeps meaning exactly what
+   it means everywhere else. */
+.compare-slider.is-turned .cs-after-mask {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent calc(var(--divider-x) - var(--fade-width)),
+    #000       calc(var(--divider-x) + var(--fade-width))
+  );
+  mask-image: linear-gradient(
+    to top,
+    transparent calc(var(--divider-x) - var(--fade-width)),
+    #000       calc(var(--divider-x) + var(--fade-width))
+  );
+}
+.compare-slider .cs-handle {
+  position: absolute;
+  bottom: 20px;
+  top: auto;                          /* sits near image bottom */
+  left: var(--handle-x, var(--divider-x));
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
+  z-index: 3;
+  transition: opacity 0.18s ease;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-family: -apple-system, "SF Pro Text", "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  user-select: none;
+}
+.compare-slider .cs-handle-arrows {
+  pointer-events: none;
+  transform: translateY(-1px);       /* optical center for chevrons */
+}
+.compare-slider[data-dragging="true"] .cs-handle {
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .compare-slider .cs-handle { width: 50px; height: 50px; font-size: 24px; }
+  /* Half a phone is not enough width for either half, so they stack and
+     each gets the whole of it. */
+  .slide-actions { flex-direction: column; gap: 8px; }
+  .slide-modes, .slide-strip { flex: 1 1 auto; width: 100%; }
+  .slide-strip { max-height: 112px; }
+}
+
+/* ── Conditioned-photo tile: golden border + corner ribbon ─────────── */
+.tile-conditioned {
+  outline: 2px solid #f2c14e;         /* warm gold */
+  outline-offset: -2px;               /* sits INSIDE the corner-radius */
+  box-shadow: 0 0 0 1px rgba(242, 193, 78, 0.28);
+}
+.tile-conditioned:hover {
+  outline-color: #ffd66c;
+  box-shadow: 0 0 0 1px rgba(255, 214, 108, 0.55);
+}
+.tile-conditioned-ribbon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(135deg, #f2c14e, #d9a02a);
+  color: #1a1103;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  padding: 3px 8px 3px 7px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.tile { position: relative; }        /* so the ribbon anchors to it */
+
+/* ── Exposure-pair tile: cyan border + ⏱ ribbon ────────────────────── */
+/* Distinct from raw/conditioned (gold) so the two "there is a slider
+   here" categories don't blur together at a glance. Cyan = time-based,
+   gold = pipeline-based. */
+.tile-exposure-pair:not(.tile-conditioned) {
+  outline: 2px solid #22d3ee;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.28);
+}
+.tile-exposure-pair:not(.tile-conditioned):hover {
+  outline-color: #7dd3fc;
+  box-shadow: 0 0 0 1px rgba(125, 211, 252, 0.55);
+}
+/* When the same tile qualifies BOTH as conditioned AND exposure pair
+   (edge case — user has a raw+conditioned custom pipeline entry AND a
+   short/long Seestar entry that collapse into the same slot), keep
+   the gold border but change the ribbon color to cyan since the ribbon
+   text will reflect the exposure comparison. */
+.tile-exposure-pair .tile-conditioned-ribbon {
+  background: linear-gradient(135deg, #22d3ee, #0891b2);
+  color: #082f49;
+}
+
+/* Thin separator between the newest batch of photos and the rest of the
+   gallery. Spans the full grid width via `grid-column: 1 / -1` so it
+   never gets tiled as if it were a tile of its own. Suppressed while a
+   search is active — the grouping only makes sense on the default view.
+   Layout: a small pill label on the left, a hairline running to the
+   right edge. Muted grey so it reads as chrome, not another target. */
+.grid-separator {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 2px 4px;
+  margin-top: 4px;
+}
+.grid-separator-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 2px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+}
+.grid-separator-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+}
+
+/* ── Slideshow pair-frame — hosts compare slider when a pair is open ── */
+.slide-pair-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* `display: flex` above overrides the browser's default `[hidden] {
+   display: none }`. Without this explicit rule, clicking a non-pair
+   photo leaves the pair-frame visible on top of the stage, hiding
+   the image. */
+.slide-pair-frame[hidden] { display: none !important; }
+.slide-pair-frame .compare-slider {
+  /* JS sets aspect-ratio from the first loaded image; height fills the
+     slide-frame and width auto-adjusts. No letterbox because the frame
+     matches the source proportions. */
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;               /* fallback until JS updates it */
+  border-radius: 0;
+  background: #000;
+}
+
+/* ── Conditioned-photo info button (below slideshow image) ─────────── */
+.slide-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 10px auto 4px;
+  max-width: 720px;
+  padding: 0 12px;
+}
+.slide-info-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #f2c14e;
+  background: transparent;
+  color: #f2c14e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.slide-info-btn:hover,
+.slide-info-btn[aria-expanded="true"] {
+  background: #f2c14e;
+  color: #1a1103;
+}
+.slide-info-panel {
+  border: 1px solid rgba(242, 193, 78, 0.35);
+  background: rgba(242, 193, 78, 0.05);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: var(--fg-1);
+  line-height: 1.55;
+  width: 100%;
+}
+.slide-info-title {
+  font-weight: 600;
+  color: #f2c14e;
+  margin-bottom: 6px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+/* The conditioning chain, one stage per line. A numbered-feeling list without
+   the numbers: the order is the pipeline's order, so it reads top to bottom. */
+.slide-info-list {
+  margin: 6px 0 0;
+  padding: 0 0 0 18px;
+  list-style: none;
+  color: var(--ink-dim);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.slide-info-list li {
+  position: relative;
+  margin: 0 0 5px;
+}
+.slide-info-list li::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.75;
+}
+.slide-info-list li:last-child { margin-bottom: 0; }
+.slide-info-body {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Row that holds the (i) and (n) icons side-by-side. */
+.slide-info-icons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  /* Both download buttons carry words now ("Download raw" /
+     "Download conditioned"), so a pair slide puts two pills next to the
+     (i)/(n)/(s) circles. Wrap rather than overflow the slide on a phone. */
+  flex-wrap: wrap;
+  row-gap: 6px;
+}
+
+/* (s) screenshot button — matches (i)/(n) size, warm magenta accent
+   so it's distinguishable from the yellow (i) and cyan (n). Opens a
+   lightbox with the supporting close-up screenshots for this target. */
+.slide-ss-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #f0abfc;
+  background: transparent;
+  color: #f0abfc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.slide-ss-btn:hover {
+  background: #f0abfc;
+  color: #500a4c;
+}
+
+/* (s) panel — sibling of .slide-info-panel and .slide-note-panel.
+   Matches the same expand-below-the-icons pattern, magenta accent to
+   match the (s) button. Hosts the close-up image (and prev/next arrows
+   when the object has more than one screenshot). */
+.slide-ss-panel {
+  border: 1px solid rgba(240, 171, 252, 0.35);
+  background: rgba(240, 171, 252, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--fg-1);
+  width: 100%;
+  box-sizing: border-box;
+}
+.slide-ss-panel .ss-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f0abfc;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.slide-ss-panel .ss-nav-inline {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.slide-ss-panel .ss-nav-inline button {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(240, 171, 252, 0.5);
+  background: transparent;
+  color: #f0abfc;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+.slide-ss-panel .ss-nav-inline button:hover {
+  background: rgba(240, 171, 252, 0.15);
+  color: #fff;
+}
+.slide-ss-panel .ss-nav-inline .ss-counter {
+  color: rgba(240, 171, 252, 0.7);
+  font-size: 11px;
+  padding: 0 4px;
+}
+.slide-ss-panel .ss-img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #000;
+  display: block;
+}
+
+/* (n) note button — matches (i) but in a soft cyan so the two icons
+   are distinguishable at a glance. */
+.slide-note-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #7dd3fc;
+  background: transparent;
+  color: #7dd3fc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.slide-note-btn:hover,
+.slide-note-btn[aria-expanded="true"] {
+  background: #7dd3fc;
+  color: #082f49;
+}
+.slide-note-panel {
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: rgba(125, 211, 252, 0.05);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: var(--fg-1);
+  line-height: 1.55;
+  font-size: 13.5px;
+  font-style: italic;
+  width: 100%;
+}
+
+/* "In frame:" chip row — pill list of catalog bodies whose WCS-projected
+   position falls inside this image. Clicking a chip highlights the body
+   with a temporary circle overlay on #slide-annotations. */
+.slide-inframe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2px;
+}
+.slide-inframe-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.02em;
+  margin-right: 2px;
+}
+.slide-inframe-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+/* "Add Circles" — same family as the chips beside it, but it is the one
+   that acts on the whole frame, so it carries the highlight colour rather
+   than the neutral chip border. */
+.slide-inframe-all {
+  flex: 0 0 auto;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(250, 204, 21, 0.55);
+  background: rgba(250, 204, 21, 0.10);
+  color: rgba(250, 204, 21, 0.95);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+.slide-inframe-all:hover {
+  background: rgba(250, 204, 21, 0.20);
+  border-color: rgba(250, 204, 21, 0.85);
+}
+.slide-inframe-all[aria-pressed="true"] {
+  background: rgba(250, 204, 21, 0.92);
+  border-color: rgba(250, 204, 21, 1);
+  color: #1a1103;
+}
+.slide-inframe-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.12s, border-color 0.12s, color 0.12s;
+}
+.slide-inframe-chip:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.slide-inframe-chip[aria-pressed="true"] {
+  background: rgba(250, 204, 21, 0.15);
+  border-color: rgba(250, 204, 21, 0.85);
+  color: #fde68a;
+}
+/* The circle overlay animates in when a chip is clicked so the eye
+   catches the position transition instead of a static highlight
+   appearing out of nowhere. */
+.slide-highlight-circle {
+  animation: highlight-pulse 1.6s ease-out 1;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes highlight-pulse {
+  0%   { opacity: 0; stroke-width: 5; }
+  40%  { opacity: 1; stroke-width: 3; }
+  100% { opacity: 0.9; stroke-width: 2; }
+}
+/* Download button. Two variants:
+   – Solo slides show ONE pill button with the word "Download" so the
+     affordance is unambiguous (a bare ↓ is easy to miss).
+   – Pair slides show TWO circular icon buttons (↓ raw, ↓★ conditioned)
+     since space is tight and the pair context makes the two-icons
+     grouping self-explanatory. */
+.slide-download-btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.slide-download-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: #fff;
+}
+/* Solo variant — a labeled pill. Height matches the (i)/(n) circles so
+   they sit on the same baseline. */
+.slide-download-btn.solo {
+  height: 26px;
+  border-radius: 999px;
+  padding: 0 12px;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+@media (max-width: 560px) {
+  .slide-download-btn.solo { padding: 0 9px; font-size: 11px; }
+}
+/* "Goto Sky Dome" — same pill geometry as a solo download so it sits on
+   the (i)/(n) baseline, in the dome's own blue rather than a download
+   colour. It does not hand you a file, and the palette either side of it
+   is already spoken for: gray, gold and cyan each mean a variant you can
+   download, and a fourth pill in one of those would be read as a fourth
+   thing to save. */
+.slide-dome-btn {
+  height: 26px;
+  border-radius: 999px;
+  padding: 0 12px;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(90, 169, 255, 0.55);
+  background: transparent;
+  color: #bfe0ff;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.slide-dome-btn:hover {
+  background: rgba(90, 169, 255, 0.18);
+  color: #fff;
+  border-color: #5aa9ff;
+}
+@media (max-width: 560px) {
+  .slide-dome-btn { padding: 0 9px; font-size: 11px; }
+}
+/* Pair variant — circular icon, matches (i)/(n) size exactly. */
+.slide-download-btn.icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* Color-coded by the variant each button downloads — same palette the
+   tiles use so one glance tells you what you're getting:
+     dl-raw          → neutral gray  (raw stack, the base)
+     dl-conditioned  → gold          (matches .tile-conditioned border/ribbon)
+     dl-integration  → cyan          (matches .tile-exposure-pair — the
+                                       deepest / highest-integration stack)
+   Set on both the declared option-row buttons and the inferred
+   pair/exposure buttons via applyDownloadKind() in gallery.js. The
+   per-kind :hover rules carry an extra class so they beat the generic
+   .slide-download-btn:hover fill. */
+.slide-download-btn.dl-raw {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+}
+.slide-download-btn.dl-conditioned {
+  border-color: #f2c14e;                 /* warm gold — the conditioned accent */
+  color: #f2c14e;
+}
+.slide-download-btn.dl-conditioned:hover {
+  background: rgba(242, 193, 78, 0.18);
+  border-color: #f2c14e;
+  color: #ffdd8a;
+}
+.slide-download-btn.dl-integration {
+  border-color: #7dd3fc;                 /* cyan — the exposure/integration accent */
+  color: #7dd3fc;
+}
+.slide-download-btn.dl-integration:hover {
+  background: rgba(125, 211, 252, 0.18);
+  border-color: #7dd3fc;
+  color: #bde9ff;
+}
+
+/* Highlight label sits INSIDE the slide-stage, which is rotated 90° CW
+   for landscape display. Left un-rotated, the text renders sideways.
+   Counter-rotating by -90° puts the glyphs upright again (matches the
+   .annot-number pattern above). The JS caller positions the label with
+   left/top set to the circle center, then this transform centers the
+   label on that point and counter-rotates the glyphs.
+
+   A stage carrying an ALREADY-landscape source does not turn — sizeStage()
+   gives it .is-upright — and then there is nothing to counter, so the -90°
+   would be the thing putting the glyphs on their side. */
+.slide-highlight-label {
+  position: absolute;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(250, 204, 21, 0.92);
+  color: #1a1103;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+/* An upright stage turns nothing, so neither overlay needs counter-turning. */
+.slide-stage.is-upright .slide-highlight-label,
+.slide-stage.is-upright .annot-number {
+  transform: translate(-50%, -50%);
+}
+
+/* ── Sky dome ───────────────────────────────────────────────────────
+   Full-screen celestial sphere with every plate-solved photo pinned to
+   its real coordinates. Opened from the header button next to the
+   changelog. The canvas owns all pointer input; the chrome floats over
+   it and is click-through except for the close button. */
+.dome-overlay {
+  position: fixed;
+  inset: 0;
+  /* Above the changelog panel (100) and its scrim (99) — the dome takes
+     over the whole screen, so nothing may sit on top of it. */
+  z-index: 120;
+  background: var(--bg-0);
+}
+.dome-overlay[hidden] { display: none; }
+/* Lock the page behind the dome so a drag never scrolls the album. */
+body.dome-open { overflow: hidden; }
+
+.dome-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* The canvas handles its own gestures; without this, touch drags get
+     eaten by the browser's pan/zoom before pointermove ever fires. */
+  touch-action: none;
+}
+
+.dome-chrome {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 20px;
+  pointer-events: none;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+.dome-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.dome-stat {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--ink-dim);
+  background: rgba(10, 13, 26, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 14px;
+  backdrop-filter: blur(6px);
+}
+.dome-stat strong { color: var(--accent); font-weight: 700; }
+
+/* In-frame highlight inside the compare slider. Sits above both images
+   and the divider, and never eats a pointer event — dragging the divider
+   through a marked body has to keep working. */
+.cs-annotations {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+.cs-annot-dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 14px rgba(196, 181, 253, 0.5);
+}
+.cs-annot-dot span {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 4px);
+  transform: translateX(-50%);
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(10, 13, 26, 0.85);
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+/* Dome search — swings the view to a target's frame. */
+.dome-search-wrap {
+  position: relative;
+  pointer-events: auto;
+  flex: 0 1 260px;
+  margin-left: auto;
+}
+.dome-search {
+  width: 100%;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(10, 13, 26, 0.72);
+  backdrop-filter: blur(6px);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  outline: none;
+}
+.dome-search::placeholder { color: var(--ink-mute); }
+.dome-search:focus { border-color: var(--accent); }
+.dome-search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0; right: 0;
+  z-index: 2;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(10, 13, 26, 0.94);
+  backdrop-filter: blur(8px);
+}
+.dome-search-results[hidden] { display: none; }
+.dome-search-hit {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  color: var(--ink-dim);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 12px;
+  cursor: pointer;
+}
+.dome-search-hit:hover,
+.dome-search-hit.is-on { background: var(--bg-2); color: var(--ink); }
+
+.dome-close {
+  pointer-events: auto;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(10, 13, 26, 0.72);
+  color: var(--ink-dim);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.dome-close:hover { color: var(--ink); border-color: var(--ink-dim); }
+
+/* ── Custom capture ─────────────────────────────────────────────────
+   Draw a rectangle on the sky; every photograph inside it is composited
+   into one image. Blue throughout, because the dome's own palette is
+   warm accents on near-black and nothing else here is blue — the region
+   must never be mistaken for a frame. */
+.dome-cap-toggle {
+  pointer-events: auto;
+  flex: none;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(10, 13, 26, 0.72);
+  color: var(--ink-dim);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+.dome-cap-toggle:hover { color: var(--ink); border-color: var(--ink-dim); }
+.dome-cap-toggle.is-on {
+  color: #bfe0ff;
+  border-color: #5aa9ff;
+  background: rgba(90, 169, 255, 0.16);
+}
+
+/* The outline sits between the canvas and the chrome, and must not eat
+   pointer events — the drag that moves its handles is read by the canvas
+   underneath. */
+/* The frame you arrived from, outlined briefly when you jump here from an
+   image in the album. Yellow because nothing else on the dome is: the
+   graticule is grey, the capture outline blue, the markers their own hues,
+   so this cannot be mistaken for any of them. */
+.dome-hl-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+.dome-hl-svg.is-fading { opacity: 0; }
+.dome-hl-poly {
+  /* No fill, for the same reason the capture outline has none: a tint
+     lightens the sky inside the frame relative to outside it, and the sky
+     is the thing being looked at. */
+  fill: none;
+  stroke: #ffd23f;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  /* A soft dark halo, so a thin yellow line stays visible over a bright
+     star field as well as over empty sky. */
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.85));
+}
+@media (prefers-reduced-motion: reduce) {
+  .dome-hl-svg { transition: none; }
+}
+
+.dome-cap-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.dome-cap-poly {
+  /* No fill at all. Any tint at all, even a few percent, lightens the sky
+     inside the rectangle relative to the sky outside it — and judging what
+     is inside is the entire job of this outline. The dashed border carries
+     the meaning on its own. */
+  fill: none;
+  stroke: #5aa9ff;
+  stroke-width: 2;
+  stroke-dasharray: 7 5;
+}
+/* The composition guide reads UNDER the outline that contains it, never
+   with it. Same blue so it belongs to the same tool, but thinner, solid
+   where the border is dashed, and held at a third of the opacity — these
+   lines lie across the photograph being judged, and a guide that competes
+   with the sky it is drawn over is worse than no guide. */
+.dome-cap-guide polyline {
+  fill: none;
+  stroke: #5aa9ff;
+  stroke-width: 1;
+  opacity: 0.34;
+  vector-effect: non-scaling-stroke;
+}
+.dome-cap-handle {
+  fill: rgba(10, 13, 26, 0.85);
+  stroke: #5aa9ff;
+  stroke-width: 2.5;
+}
+/* The height handle does a different job from the two edge handles, so it
+   reads differently — filled rather than hollow. */
+.dome-cap-handle.is-h3 { fill: #5aa9ff; stroke: rgba(10, 13, 26, 0.85); }
+
+/* Hangs off the Capture button, top right. It has been in the middle of
+   the dome and under the rectangle; both put chrome over the sky being
+   framed, which is the one thing this tool must not do. */
+.dome-cap-wrap {
+  position: relative;
+  flex: none;
+  pointer-events: auto;
+}
+.dome-cap-panel {
+  pointer-events: auto;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  white-space: nowrap;
+  z-index: 3;
+}
+/* Nothing is said unless something is happening. */
+.dome-cap-status:empty { display: none; }
+.dome-cap-help-btn {
+  align-self: flex-end;
+  width: 28px;
+  padding: 0;
+  font-weight: 600;
+}
+/* The popover hangs under the button column like the buttons do, wide
+   enough for the clip to be legible without covering the sky being framed.
+   There was a SECOND .dome-cap-help rule further down, left behind when the
+   bottom-bar hint it styled was removed. Its max-width: 46ch won on source
+   order and squeezed this to about 250 px — a dead rule for a deleted
+   element, still shaping a live one. */
+.dome-cap-help {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(640px, 88vw);
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(90, 169, 255, 0.45);
+  background: rgba(8, 14, 28, 0.96);
+  z-index: 4;
+  pointer-events: auto;
+}
+/* Sits on the corner of the clip. The (?) toggles the popover, but the
+   button is above and behind it once it is open — the way out has to be on
+   the thing being closed. */
+.dome-cap-help-close {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(90, 169, 255, 0.55);
+  background: rgba(8, 14, 28, 0.96);
+  color: #bfe0ff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 1;
+}
+.dome-cap-help-close:hover { color: #fff; border-color: #fff; }
+
+.dome-cap-help-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #05070f;
+}
+.dome-cap-help-text {
+  margin: 8px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--ink-dim);
+}
+.dome-cap-panel .dome-cap-status {
+  max-width: 210px;
+  white-space: normal;
+  text-align: right;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(90, 169, 255, 0.35);
+  background: rgba(8, 14, 28, 0.92);
+}
+.dome-cap-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* The panel is a floating strip beside the rectangle now, so its title
+   would be a third line of chrome over the sky for no information. */
+.dome-cap-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #bfe0ff;
+}
+.dome-cap-size { font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.dome-cap-count { font-size: 12px; color: var(--ink-dim); }
+.dome-cap-btn {
+  background: rgba(10, 13, 26, 0.82);
+  height: 28px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  font-size: 12px;
+  cursor: pointer;
+}
+.dome-cap-btn:hover:not(:disabled) { color: var(--ink); border-color: var(--ink-dim); }
+.dome-cap-btn.is-primary { border-color: #5aa9ff; color: #bfe0ff; }
+.dome-cap-btn.is-primary:hover:not(:disabled) { background: rgba(90, 169, 255, 0.18); }
+.dome-cap-btn:disabled { opacity: 0.4; cursor: default; }
+/* A guide is on. Lit rather than primary — it is a state the button is
+   holding, not the action the panel wants you to take next, which is still
+   Snap shot. */
+.dome-cap-btn.is-on { border-color: #5aa9ff; color: #bfe0ff; }
+.dome-cap-status { font-size: 12px; color: #bfe0ff; min-height: 1em; }
+.dome-cap-status.is-bad { color: #ff9d9d; }
+
+.dome-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.dome-hover {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  min-height: 20px;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.dome-hover.is-on { opacity: 1; }
+.dome-readout {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+}
+/* "sharpening…" while a higher-resolution texture is on its way, so the
+   second a frame spends soft reads as loading and not as the limit. */
+.dome-detail {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  min-height: 14px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.dome-detail.is-on { opacity: 0.85; }
+.dome-hint {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--ink-mute);
+  opacity: 0.75;
+}
+
+/* ── Zoom bar ────────────────────────────────────────────────────────
+   Vertical, logarithmic in field of view, bottom = the whole sky. Tick
+   labels hang off the left of the rail; the marker triangle points back
+   at it from the right, so the two can never collide however far the
+   view zooms. The wrapper is the grab target — the rail itself is 2px —
+   and its left padding is the gutter the labels sit in, which keeps the
+   labels clickable rather than dead space beside a live bar. */
+/* The left rail stacks zoom and brightness. The absolute positioning that
+   used to live on .dome-zoom moved here, so the two stay together and the
+   pair stays vertically centred as a unit.
+
+   pointer-events is none on the rail and auto on each control: the rail is a
+   tall invisible box, and left as a target it would swallow drags meant for
+   the sky between and beside its children. */
+.dome-left-rail {
+  position: absolute;
+  /* The tick labels hang off the LEFT of the track (right: 100%), so the
+     room they have is this offset plus .dome-zoom's left padding. At 10px the
+     widest of them — the "full detail" caption — ran off the side of the
+     window and lost its first characters. */
+  left: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  pointer-events: none;
+}
+.dome-zoom {
+  position: relative;
+  display: flex;
+  /* Column so the caption sits above the track. The track keeps its 46px
+     left inset, which is the room the tick labels hang into. */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 12px 12px 16px 46px;
+  pointer-events: auto;
+  cursor: ns-resize;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  color: var(--ink-mute);
+}
+/* display:flex above would otherwise beat the UA stylesheet's [hidden]. */
+.dome-zoom[hidden] { display: none; }
+.dome-zoom-track {
+  position: relative;
+  width: 2px;
+  height: 44vh;
+  min-height: 170px;
+  max-height: 360px;
+  border-radius: 2px;
+  background: var(--line);
+  outline: none;
+}
+.dome-zoom-track:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18);
+}
+/* Filled from the bottom to the marker — the "how far in am I" read that
+   works before you have parsed any of the numbers. */
+.dome-zoom-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0.55;
+}
+/* The stretch of the bar past the point where the sharpest texture is 1:1
+   with the screen. Zoom still works there — it is just magnification, not
+   new detail — so it is marked rather than blocked off. */
+.dome-zoom-beyond {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--ink-mute) 0 2px,
+    transparent 2px 5px);
+  opacity: 0.5;
+}
+.dome-zoom-tick {
+  position: absolute;
+  right: 100%;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-style: normal;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.dome-zoom-tick::after {
+  content: "";
+  width: 7px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.dome-zoom-tick b {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+}
+/* The end stop is not a round number — it is wherever the sharpest
+   texture the album ships stops adding detail. Marked as its own thing so
+   it does not read as just another tick. */
+.dome-zoom-tick.is-end { color: var(--ink-dim); }
+.dome-zoom-tick.is-end b { opacity: 1; }
+/* Where the imagery stops adding detail. Its own label so it does not read
+   as one more round number on the scale. */
+.dome-zoom-tick.is-sharp { color: var(--accent); }
+.dome-zoom-tick.is-sharp b { opacity: 0.95; }
+/* "FULL DETAIL" is several times the width of an arcminute label. Inline
+   it made this one tick's row far wider than every other and pushed it off
+   the edge of the window; lifted out of the flow and sat above the number,
+   it costs the row no width at all and still reads as belonging to this
+   tick. Right-aligned to the track, like the numbers are. */
+.dome-zoom-tick.is-sharp::before {
+  content: "full detail";
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 2px);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.dome-zoom-marker {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  color: var(--accent);
+}
+.dome-zoom-caret { font-size: 10px; line-height: 1; }
+.dome-zoom-value {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.dome-zoom.is-grabbed .dome-zoom-track { background: var(--ink-dim); }
+
+@media (max-width: 640px) {
+  .dome-chrome { padding: 12px 12px 18px; }
+  .dome-stat { font-size: 11px; padding: 6px 11px; }
+  .dome-hint { display: none; }
+  /* Tighter gutter and no tick labels — pinch is the primary gesture on
+     a phone, and the bar is there as a readout and a fallback. */
+  .dome-left-rail { left: 2px; gap: 8px; }
+  .dome-zoom { padding: 14px 10px 14px 16px; }
+  .dome-zoom-track { height: 38vh; min-height: 130px; }
+  .dome-zoom-tick b { display: none; }
+  /* The numbers are already gone at this width; the caption that labels
+     one of them has nowhere to go either, and the accent colour on the
+     tick still marks where full detail stops. */
+  .dome-zoom-tick.is-sharp::before { display: none; }
+  .dome-gain { padding: 8px 10px 8px 16px; }
+  .dome-gain-track { height: 13vh; min-height: 70px; }
+  .dome-gain-tick b { display: none; }
+}
+
+/* ── (t) integration-time showcase ──────────────────────────────────
+   Same expand-below-the-icons pattern as (i)/(n)/(s), amber accent so it
+   reads as its own affordance. Only rendered for targets past the
+   promotion bar (over an hour of total exposure). */
+.slide-sc-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #fbbf24;
+  background: transparent;
+  color: #fbbf24;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.slide-sc-btn:hover,
+.slide-sc-btn[aria-expanded="true"] {
+  background: #fbbf24;
+  color: #422006;
+}
+
+.slide-sc-panel {
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  background: rgba(251, 191, 36, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--fg-1);
+  width: 100%;
+  box-sizing: border-box;
+}
+.slide-sc-panel .sc-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fbbf24;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+.slide-sc-panel .sc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.slide-sc-panel .sc-chip {
+  border: 1px solid rgba(251, 191, 36, 0.4);
+  background: transparent;
+  color: var(--ink-dim);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.slide-sc-panel .sc-chip:hover { color: var(--ink); border-color: #fbbf24; }
+.slide-sc-panel .sc-chip.is-on {
+  background: #fbbf24;
+  border-color: #fbbf24;
+  color: #422006;
+}
+.slide-sc-panel .sc-img {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #000;
+}
+.slide-sc-panel .sc-caption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--ink-dim);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+.slide-sc-panel .sc-caption strong { color: #fbbf24; }
+.slide-sc-panel .sc-note {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--ink-mute);
+}
+
+/* ── Standing notice ────────────────────────────────────────────────
+   Work-in-progress note about the deep-sky conditioning pipelines. Sits
+   above the slideshow: visible on arrival without competing with the
+   images, and quiet enough not to read as an error. */
+.notice {
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  border: 1px solid rgba(251, 191, 36, 0.30);
+  border-left: 3px solid rgba(251, 191, 36, 0.75);
+  border-radius: 8px;
+  background: rgba(251, 191, 36, 0.06);
+  color: var(--ink-dim);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+.notice:empty { display: none; }
+
+/* Album version, under the English hero title. Bold and letter-spaced to
+   sit with the title rather than under it as an afterthought, but small
+   and dimmed so it never competes with the album name. */
+.hero-version {
+  margin-top: 10px;
+  font-size: clamp(11px, 1.5vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+}
+.hero-version:empty { display: none; }
+
+
+/* ── Your captures ───────────────────────────────────────────────────
+   Photographs the viewer framed themselves in the sky dome. Blue-edged,
+   matching the region outline they drew, so the connection between the
+   two screens is visible rather than remembered. */
+.captures {
+  margin: 0 auto 26px;
+  padding: 0 16px;
+  max-width: 1200px;
+}
+.captures-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.captures-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #bfe0ff;
+}
+.captures-note { font-size: 11px; color: var(--ink-dim); }
+.captures-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.capture-card {
+  margin: 0;
+  border: 1px solid rgba(90, 169, 255, 0.45);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(8, 14, 28, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+.capture-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #05070f;
+}
+.capture-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  padding: 9px 12px 0;
+  font-size: 11px;
+  color: var(--ink-dim);
+}
+.capture-deg { color: var(--ink); font-variant-numeric: tabular-nums; }
+.capture-px { font-variant-numeric: tabular-nums; }
+.capture-from { flex-basis: 100%; line-height: 1.45; }
+.capture-warn { flex-basis: 100%; color: #f2c14e; }
+.capture-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px 12px;
+  margin-top: auto;
+}
+.capture-dl { pointer-events: auto; }
+.capture-remove {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: var(--ink-dim);
+  font-size: 11px;
+  cursor: pointer;
+  padding: 4px 2px;
+}
+.capture-remove:hover { color: #ff9d9d; }
+
+
+/* A capture shown in the big frame at the top. Uses the unrotated pair
+   frame, so it needs its own fit rule — the stage's rules do not apply. */
+.capture-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #05070f;
+}
+
+
+/* ── Reference ring labels ───────────────────────────────────────────
+   Sit just under each ring. Never take pointer events — the sky under
+   them still has to be draggable and clickable. */
+.dome-markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.dome-marker-label {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(5, 7, 15, 0.62);
+  pointer-events: none;
+}
+.dome-marker-label.is-galaxy { color: #7ff2a0; }
+.dome-marker-label.is-grid   { color: #9bb8ff; }
+.dome-marker-label.is-target { color: #ffc76b; }
+.dome-marker-label.is-odd    { color: #f2a0f2; }
+.dome-markers-toggle { margin-right: 2px; }
+
+/* Object-circle names. Same geometry as the marker labels, dimmer: there are
+   many more of them and they annotate rather than announce. */
+.dome-obj-labels {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.dome-obj-label {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  /* 9.5px was unreadable until full zoom — the names were there and could
+     not be used. This matches the marker labels, which have never been
+     reported as too small. */
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: #e6edf8;
+  background: rgba(5, 7, 15, 0.72);
+  /* A name has to stay readable over a bright star field as well as over
+     empty sky, and the panel behind it cannot be opaque enough to hide the
+     picture. */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+
+
+
+/* ── Dome tool menu ──────────────────────────────────────────────────
+   One control in the corner; the rest expand out of it. The row it
+   replaced held the search, the marker toggle and the capture button
+   at once, and the capture panel opened underneath all three. */
+.dome-corner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex: none;
+  pointer-events: auto;
+}
+.dome-menu { position: relative; pointer-events: auto; }
+.dome-menu-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(10, 13, 26, 0.72);
+  color: var(--ink-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+.dome-menu-btn:hover { color: var(--ink); border-color: var(--ink-dim); }
+.dome-menu-btn.is-on {
+  color: #bfe0ff;
+  border-color: #5aa9ff;
+  background: rgba(90, 169, 255, 0.16);
+}
+/* Three bars, drawn rather than typed: the glyph characters for this vary
+   by platform and one of them renders as tofu. */
+.dome-menu-bars,
+.dome-menu-bars::before,
+.dome-menu-bars::after {
+  display: block;
+  width: 14px;
+  height: 1.5px;
+  border-radius: 1px;
+  background: currentColor;
+}
+.dome-menu-bars { position: relative; }
+.dome-menu-bars::before,
+.dome-menu-bars::after { content: ""; position: absolute; left: 0; }
+.dome-menu-bars::before { top: -5px; }
+.dome-menu-bars::after  { top:  5px; }
+
+.dome-menu-items {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 5;
+}
+.dome-menu-items[hidden] { display: none; }
+/* Each item rises into place, one after the next, so it reads as the
+   controls coming out of the button rather than a panel appearing. */
+.dome-menu-items > * {
+  animation: dome-menu-in 0.18s ease both;
+}
+.dome-menu-items > *:nth-child(2) { animation-delay: 0.04s; }
+.dome-menu-items > *:nth-child(3) { animation-delay: 0.08s; }
+@keyframes dome-menu-in {
+  from { opacity: 0; transform: translateY(-6px) scale(0.96); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dome-menu-items > * { animation: none; }
+}
+/* The search box was sized for a wide ROW: `flex: 0 1 260px` and an auto
+   left margin. In a column that basis is a HEIGHT, so it reserved 260 px of
+   empty space above the rest of the menu, and the auto margin does nothing
+   useful. Both are reset here rather than changed at the source, because the
+   original values are still right for any row layout. */
+.dome-menu-items .dome-search-wrap {
+  width: 240px;
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+.dome-menu-items .dome-search { width: 100%; }
+
+/* ── Section headers ───────────────────────────────────────────────
+ * Spans the whole grid row, reusing the separator's geometry so the "new
+ * this week" bar and a section heading read as the same kind of thing. The
+ * entire row is the button: a chevron on its own is a poor target on a
+ * phone, and there is nothing else in the row to hit by accident. */
+.grid-section {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 2px 6px;
+  margin-top: 6px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.grid-section:hover .grid-section-name { color: #fff; }
+.grid-section-chevron {
+  width: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+}
+.grid-section-name {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color 120ms ease;
+}
+.grid-section-count {
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1px 7px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+}
+.grid-section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,0.16), transparent);
+}
+.grid-section.is-collapsed .grid-section-name { color: rgba(255,255,255,0.5); }
+
+/* "Show all 42" — the cap is never silent. */
+.grid-more {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin: 6px 0 2px;
+  padding: 7px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink-mute);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.grid-more:hover { color: var(--ink); border-color: rgba(255,255,255,0.34); }
+
+/* ── Filter row ────────────────────────────────────────────────────
+ * Compact, exact, and every control says its current value. */
+.gallery-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: -6px 0 16px;
+}
+.filter-select {
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink-mute);
+  font-size: 11.5px;
+  cursor: pointer;
+  max-width: 200px;
+}
+.filter-chip {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink-mute);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.filter-chip:hover { color: var(--ink); border-color: rgba(255,255,255,0.34); }
+.filter-chip.is-on {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.6);
+  color: #e0f2fe;
+}
+.filter-clear {
+  padding: 5px 10px;
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.filter-clear:hover { color: var(--ink); }
+.filter-clear[hidden] { display: none; }
+
+/* ── Star + play, beside the target arrows ─────────────────────────
+ * Smaller than the arrows on purpose: they are secondary to moving through
+ * the album, and equal weight would make the row read as four navigators. */
+.slide-controls .slide-aux {
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+  color: var(--ink-mute);
+}
+.slide-controls .slide-aux:hover { color: var(--ink); }
+.slide-controls .slide-aux.is-on {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.55);
+}
+.slide-controls .slide-aux[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .grid-more, .filter-chip, .grid-section-name { transition: none; }
+}
+
+/* ── Sky dome brightness ──────────────────────────────────────────────
+   A viewing gain on the resolved photographs, under the zoom bar in the left
+   rail — and deliberately built from the same parts: a 2px track, a fill from
+   the bottom, a caret marker carrying the value, ticks hanging off the left.
+   Shorter than the zoom bar because it has less range to express, and so the
+   pair fits one column on a short viewport. */
+.dome-gain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 6px 12px 10px 46px;    /* 46 aligns its track with the zoom track */
+  pointer-events: auto;
+  cursor: ns-resize;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  color: var(--ink-mute);
+}
+.dome-gain-track {
+  position: relative;
+  width: 2px;
+  height: 15vh;
+  min-height: 84px;
+  max-height: 150px;
+  border-radius: 2px;
+  background: var(--line);
+  outline: none;
+}
+.dome-gain-track:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.dome-gain-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0.55;
+}
+.dome-gain-marker {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  color: var(--accent);
+}
+.dome-gain-caret { font-size: 10px; line-height: 1; }
+.dome-gain-value {
+  /* Tabular figures so the readout does not twitch while being dragged. */
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.dome-gain-tick {
+  position: absolute;
+  right: 100%;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--ink-mute);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.dome-gain-tick::after {
+  content: "";
+  width: 5px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.dome-gain-tick b { font-weight: 500; opacity: 0.8; }
+.dome-gain.is-grabbed .dome-gain-track { background: var(--ink-dim); }
+
+/* ── Rail captions ───────────────────────────────────────────────────
+   Both rail controls are thin vertical tracks with numeric ticks, which
+   reads as instrumentation but does not say WHICH instrument. Naming them
+   costs one line each and removes the guess. aria-hidden because each
+   track already carries its own aria-label — a screen reader would
+   otherwise hear the name twice. */
+.dome-rail-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  white-space: nowrap;
+  pointer-events: none;
+  /* Pulled left so the caption starts nearer the rail edge than the track,
+     using the room the tick labels occupy further down. */
+  margin-left: -34px;
+}
+@media (max-width: 640px) {
+  .dome-rail-label { margin-left: -10px; font-size: 9px; }
+}
+
+
+/* ── Vote control ────────────────────────────────────────────────────────
+   Sits in .slide-headline between the two arrows, so it reads as belonging
+   to the name rather than to the picture. Sized well under the 44 px arrows:
+   it is a secondary action and should not compete with navigation. */
+.slide-vote {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center; gap: 4px;
+  height: 28px; padding: 0 9px;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-dim);
+  font-size: 12px; line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.slide-vote:hover { color: var(--ink); border-color: var(--ink-dim); }
+.slide-vote:focus-visible { outline: 2px solid #ffd23f; outline-offset: 2px; }
+.slide-vote[aria-pressed="true"] {
+  color: #ffd23f;
+  border-color: rgba(255, 210, 63, 0.55);
+  background: rgba(255, 210, 63, 0.10);
+}
+.slide-vote[disabled] { opacity: 0.55; cursor: default; }
+.slide-vote-mark { font-size: 10px; }
+.slide-vote-n { font-variant-numeric: tabular-nums; min-width: 1ch; }
+
+
+/* ── Family photos ───────────────────────────────────────────────────────
+   One photograph that is a photograph of more than one target: the ten-hour
+   Lagoon frame that is equally a photograph of the Trifid. These carry the
+   album's longest integrations, so they lead the grid and they say what
+   they are — the section heading alone would not, since "Family Photos" is
+   the only heading here that does not name a kind of object.
+
+   Rose (--family) throughout, and nowhere else in the stylesheet, so the
+   ribbon on a card, the ribbon on the slide and the links between a family
+   and its members all read as one thing. Deliberately not the conditioned
+   gold: those two would otherwise blur into "this tile has a badge". */
+
+/* The sentence under the FAMILY PHOTOS heading. Full grid width, like the
+   heading it explains, and set at the same size as the section counts so it
+   reads as chrome — it is an explanation, not a caption on a photograph. */
+.grid-section-note {
+  grid-column: 1 / -1;
+  margin: -2px 0 10px;
+  padding: 0 2px 0 22px;      /* clears the heading's chevron column */
+  max-width: 78ch;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--ink-mute);
+}
+
+/* A family card, ringed in rose.
+
+   The ring sits just OUTSIDE the card rather than inset over it. .tile
+   paints the four mode colours as a 2 px gradient border, and an inset
+   outline covers exactly that — the card would gain "this is a family" by
+   losing "here is what you can do with it". At +1 px both are legible and
+   they read as two facts about one card, which is what they are. There is
+   10 px of grid gap, so the ring has room and no neighbour moves. */
+.tile-family {
+  outline: 2px solid var(--family);
+  outline-offset: 1px;
+}
+.tile-family:hover { outline-color: #ff92b4; }
+.tile-family-ribbon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #f0709a, #c84a72);
+  color: #26060f;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+/* Who is in the family, on the card itself. A family card has no catalogue
+   id to print — "FAM-M8-M20" is machinery — so this row takes the place of
+   the id chip every other card carries, and answers the question that
+   brought the reader here: is MY object one of these? */
+.tile-family-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+  margin-top: 3px;
+}
+.tile-family-members span {
+  padding: 1px 6px;
+  border: 1px solid var(--family-dim);
+  border-radius: 999px;
+  background: rgba(240, 112, 154, 0.10);
+  color: rgba(255, 214, 228, 0.92);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* "◈ Lagoon & Trifid · 9.8 h", on the card of a member whose deepest frame
+   graduated. The LAST line of the card's label, not a sibling below the
+   card: .tile is a fixed square and anything after .tile-inner would hang
+   out of it and over the next grid row.
+
+   The right padding clears .tile-label .tile-count, which is absolutely
+   positioned into this corner — without it the "4 ▣" chip lands on top of
+   the family's name. One line, ellipsised: at 190 px the name is the part
+   worth keeping and the full sentence is in the title attribute. */
+.tile-label .tile-family-also {
+  display: block;
+  margin-top: 4px;
+  padding-right: 44px;
+  min-width: 0;
+}
+.tile-label .tile-family-also .tile-family-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.tile-family-link i {
+  margin-right: 4px;
+  font-style: normal;
+  color: var(--family);
+}
+.tile-family-link,
+.slide-family-link {
+  padding: 2px 8px;
+  border: 1px solid var(--family-dim);
+  border-radius: 999px;
+  background: rgba(240, 112, 154, 0.08);
+  color: rgba(255, 205, 222, 0.95);
+  font: inherit;
+  font-size: 10.5px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: color 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+.tile-family-link:hover,
+.slide-family-link:hover {
+  color: #fff;
+  border-color: var(--family);
+  background: rgba(240, 112, 154, 0.20);
+}
+.tile-family-link:focus-visible,
+.slide-family-link:focus-visible {
+  outline: 2px solid var(--family);
+  outline-offset: 2px;
+}
+
+/* The slide's family row: members on a family photo, the family on a
+   member. Under the name and the stats, where the eye already is after
+   reading what it is looking at. */
+.slide-family {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin-top: 6px;
+}
+.slide-family-label {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+}
+.slide-family-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.slide-family-link { font-size: 11.5px; }
+
+/* Takes the place of the purple id chip in the slide headline, so a family
+   is announced exactly where a catalogue designation would have been. */
+.slide-family-ribbon {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #f0709a, #c84a72);
+  color: #26060f;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile-family-link, .slide-family-link { transition: none; }
+}
+
+/* ── Hold a picture to fill the screen ───────────────────────────────
+ * The viewer gallery.js opens on a 500 ms hold. Black, edge to edge, the
+ * picture centred at its own aspect; one close control for the case where
+ * the Fullscreen API was refused and there is no browser chrome to exit by.
+ */
+#fs-view {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+#fs-view[hidden] { display: none; }   /* display:flex would override hidden */
+
+#fs-view img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+#fs-view .fs-close {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top, 12px));
+  right: max(12px, env(safe-area-inset-right, 12px));
+  width: 44px;                      /* a real touch target */
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+#fs-view .fs-close:hover { background: rgba(0, 0, 0, 0.8); }
+#fs-view .fs-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* The page must not scroll behind the viewer. */
+html.fs-open, html.fs-open body { overflow: hidden; }
+
+/* A held picture opens the viewer; it should not also raise the OS image
+ * menu on a phone. Ordinary right-click is untouched. */
+.tile-inner img, .strip-thumb img, .cs-before, .cs-after,
+.sc-img, .ss-img, .capture-img { -webkit-touch-callout: none; }
