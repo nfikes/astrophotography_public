@@ -1,0 +1,1634 @@
+{
+ "note": "Measured clarity per published photograph — star density, extended structure and cleanliness, combined into one 0-100 score. The public gallery's slideshow opens with the highest-scoring targets so a first-time visitor meets the album's strongest work first. Written by tools/score_clarity.py; do not hand-edit (a re-run overwrites it). The score decides presentation order and nothing else.",
+ "weights": {
+  "stars": 0.4,
+  "structure": 0.4,
+  "cleanliness": 0.2
+ },
+ "byObject": {
+  "28Aquilae": {
+   "score": 48.3,
+   "best": "photos/28Aquilae_1.jpg"
+  },
+  "68Herculis": {
+   "score": 51.6,
+   "best": "photos/68Herculis_1.jpg"
+  },
+  "Arcturus": {
+   "score": 56.8,
+   "best": "photos/Arcturus_1.jpg"
+  },
+  "FLD0302N895": {
+   "score": 53.0,
+   "best": "photos/FLD0302N895_1.jpg"
+  },
+  "FLD1732N311": {
+   "score": 41.1,
+   "best": "photos/FLD1732N311_1.jpg"
+  },
+  "FLD1739S032": {
+   "score": 48.8,
+   "best": "photos/FLD1739S032_1.jpg"
+  },
+  "FLD1756S181": {
+   "score": 40.0,
+   "best": "photos/FLD1756S181_1.jpg"
+  },
+  "FLD1801S270": {
+   "score": 40.0,
+   "best": "photos/FLD1801S270_1.jpg"
+  },
+  "FLD1826S077": {
+   "score": 46.3,
+   "best": "photos/FLD1826S077_1.jpg"
+  },
+  "FLD1828S174": {
+   "score": 41.2,
+   "best": "photos/FLD1828S174_1.jpg"
+  },
+  "FLD1834S133": {
+   "score": 43.7,
+   "best": "photos/FLD1834S133_1.jpg"
+  },
+  "FLD1841S144": {
+   "score": 43.3,
+   "best": "photos/FLD1841S144_2.jpg"
+  },
+  "FLD1859N011": {
+   "score": 41.8,
+   "best": "photos/FLD1859N011_1.jpg"
+  },
+  "FLD1913N092": {
+   "score": 40.0,
+   "best": "photos/FLD1913N092_1.jpg"
+  },
+  "FLD2326N617": {
+   "score": 45.7,
+   "best": "photos/FLD2326N617_1.jpg"
+  },
+  "GammaCrA": {
+   "score": 49.9,
+   "best": "photos/GammaCrA_2.jpg"
+  },
+  "GammaSct": {
+   "score": 46.1,
+   "best": "photos/GammaSct_1.jpg"
+  },
+  "HIP106890": {
+   "score": 49.2,
+   "best": "photos/HIP106890_1.jpg"
+  },
+  "HIP88060": {
+   "score": 51.1,
+   "best": "photos/HIP88060_1.jpg"
+  },
+  "IC10": {
+   "score": 56.6,
+   "best": "photos/IC10_2.jpg"
+  },
+  "IC1171": {
+   "score": 52.8,
+   "best": "photos/IC1171_1.jpg"
+  },
+  "IC1287": {
+   "score": 51.7,
+   "best": "photos/IC1287_3.jpg"
+  },
+  "IC1318": {
+   "score": 71.7,
+   "best": "photos/IC1318_1.jpg"
+  },
+  "IC166": {
+   "score": 46.8,
+   "best": "photos/IC166_2.jpg"
+  },
+  "IC1805": {
+   "score": 42.2,
+   "best": "photos/IC1805_2.jpg"
+  },
+  "IC1848": {
+   "score": 46.8,
+   "best": "photos/IC1848_1.jpg"
+  },
+  "IC4592": {
+   "score": 54.3,
+   "best": "photos/IC4592_2.jpg"
+  },
+  "IC4604": {
+   "score": 51.4,
+   "best": "photos/IC4604_1.jpg"
+  },
+  "IC4605": {
+   "score": 64.3,
+   "best": "photos/IC4605_2.jpg"
+  },
+  "IC4665": {
+   "score": 53.3,
+   "best": "photos/IC4665_1.jpg"
+  },
+  "IC4756": {
+   "score": 47.6,
+   "best": "photos/IC4756_3.jpg"
+  },
+  "IC5146": {
+   "score": 40.0,
+   "best": "photos/IC5146_1.jpg"
+  },
+  "Jupiter": {
+   "score": 56.8,
+   "best": "photos/Jupiter_1.jpg"
+  },
+  "KausBorealis": {
+   "score": 48.0,
+   "best": "photos/KausBorealis_1.jpg"
+  },
+  "Kornephoros": {
+   "score": 53.5,
+   "best": "photos/Kornephoros_1.jpg"
+  },
+  "M10": {
+   "score": 41.4,
+   "best": "photos/M10_2.jpg"
+  },
+  "M100": {
+   "score": 51.0,
+   "best": "photos/M100_1.jpg"
+  },
+  "M101": {
+   "score": 51.3,
+   "best": "photos/M101_1.jpg"
+  },
+  "M102": {
+   "score": 48.1,
+   "best": "photos/M102_1.jpg"
+  },
+  "M11": {
+   "score": 51.7,
+   "best": "photos/M11_2.jpg"
+  },
+  "M12": {
+   "score": 48.5,
+   "best": "photos/M12_1.jpg"
+  },
+  "M13": {
+   "score": 55.7,
+   "best": "photos/M13_1.jpg"
+  },
+  "M14": {
+   "score": 49.2,
+   "best": "photos/M14_1.jpg"
+  },
+  "M15": {
+   "score": 53.5,
+   "best": "photos/M15_1.jpg"
+  },
+  "M16": {
+   "score": 45.2,
+   "best": "photos/M16_1.jpg"
+  },
+  "M17": {
+   "score": 55.6,
+   "best": "photos/M17_1.jpg"
+  },
+  "M2": {
+   "score": 52.1,
+   "best": "photos/M2_1.jpg"
+  },
+  "M20": {
+   "score": 55.1,
+   "best": "photos/M20_1.jpg"
+  },
+  "M22": {
+   "score": 53.9,
+   "best": "photos/M22_3.jpg"
+  },
+  "M23": {
+   "score": 48.4,
+   "best": "photos/M23_2.jpg"
+  },
+  "M24": {
+   "score": 37.8,
+   "best": "photos/M24_2.jpg"
+  },
+  "M25": {
+   "score": 46.4,
+   "best": "photos/M25_3.jpg"
+  },
+  "M26": {
+   "score": 42.1,
+   "best": "photos/M26_1.jpg"
+  },
+  "M27": {
+   "score": 51.9,
+   "best": "photos/M27_1.jpg"
+  },
+  "M29": {
+   "score": 48.2,
+   "best": "photos/M29_1.jpg"
+  },
+  "M3": {
+   "score": 54.6,
+   "best": "photos/M3_1.jpg"
+  },
+  "M31": {
+   "score": 68.6,
+   "best": "photos/M31_1.jpg"
+  },
+  "M39": {
+   "score": 48.1,
+   "best": "photos/M39_2.jpg"
+  },
+  "M5": {
+   "score": 54.1,
+   "best": "photos/M5_1.jpg"
+  },
+  "M51": {
+   "score": 50.7,
+   "best": "photos/M51_1.jpg"
+  },
+  "M52": {
+   "score": 45.1,
+   "best": "photos/M52_1.jpg"
+  },
+  "M56": {
+   "score": 51.3,
+   "best": "photos/M56_1.jpg"
+  },
+  "M57": {
+   "score": 53.0,
+   "best": "photos/M57_1.jpg"
+  },
+  "M62": {
+   "score": 53.6,
+   "best": "photos/M62_2.jpg"
+  },
+  "M63": {
+   "score": 54.4,
+   "best": "photos/M63_1.jpg"
+  },
+  "M71": {
+   "score": 42.4,
+   "best": "photos/M71_1.jpg"
+  },
+  "M75": {
+   "score": 25.7,
+   "best": "photos/M75_1.jpg"
+  },
+  "M8": {
+   "score": 71.1,
+   "best": "photos/M8_1.jpg"
+  },
+  "M81": {
+   "score": 56.0,
+   "best": "photos/M81_1.jpg"
+  },
+  "M92": {
+   "score": 49.3,
+   "best": "photos/M92_1.jpg"
+  },
+  "M97": {
+   "score": 33.3,
+   "best": "photos/M97_1.jpg"
+  },
+  "MilkyWay": {
+   "score": 85.3,
+   "best": "photos/MilkyWay_2.jpg"
+  },
+  "Moon": {
+   "score": 74.0,
+   "best": "photos/Moon_5.jpg"
+  },
+  "NGC129": {
+   "score": 52.2,
+   "best": "photos/NGC129_2.jpg"
+  },
+  "NGC185": {
+   "score": 53.6,
+   "best": "photos/NGC185_2.jpg"
+  },
+  "NGC188": {
+   "score": 55.2,
+   "best": "photos/NGC188_1.jpg"
+  },
+  "NGC281": {
+   "score": 55.9,
+   "best": "photos/NGC281_3.jpg"
+  },
+  "NGC4236": {
+   "score": 53.7,
+   "best": "photos/NGC4236_2.jpg"
+  },
+  "NGC457": {
+   "score": 51.9,
+   "best": "photos/NGC457_2.jpg"
+  },
+  "NGC5907": {
+   "score": 40.0,
+   "best": "photos/NGC5907_1.jpg"
+  },
+  "NGC5965": {
+   "score": 45.0,
+   "best": "photos/NGC5965_1.jpg"
+  },
+  "NGC6229": {
+   "score": 50.4,
+   "best": "photos/NGC6229_1.jpg"
+  },
+  "NGC6383": {
+   "score": 52.6,
+   "best": "photos/NGC6383_2.jpg"
+  },
+  "NGC6401": {
+   "score": 35.5,
+   "best": "photos/NGC6401_1.jpg"
+  },
+  "NGC6440": {
+   "score": 49.3,
+   "best": "photos/NGC6440_2.jpg"
+  },
+  "NGC6469": {
+   "score": 47.5,
+   "best": "photos/NGC6469_1.jpg"
+  },
+  "NGC6503": {
+   "score": 40.0,
+   "best": "photos/NGC6503_2.jpg"
+  },
+  "NGC6535": {
+   "score": 43.7,
+   "best": "photos/NGC6535_3.jpg"
+  },
+  "NGC6539": {
+   "score": 53.8,
+   "best": "photos/NGC6539_2.jpg"
+  },
+  "NGC654": {
+   "score": 41.5,
+   "best": "photos/NGC654_2.jpg"
+  },
+  "NGC6543": {
+   "score": 43.7,
+   "best": "photos/NGC6543_1.jpg"
+  },
+  "NGC6568": {
+   "score": 46.0,
+   "best": "photos/NGC6568_1.jpg"
+  },
+  "NGC6604": {
+   "score": 51.5,
+   "best": "photos/NGC6604_2.jpg"
+  },
+  "NGC6605": {
+   "score": 73.1,
+   "best": "photos/NGC6605_3.jpg"
+  },
+  "NGC6624": {
+   "score": 56.5,
+   "best": "photos/NGC6624_1.jpg"
+  },
+  "NGC6625": {
+   "score": 47.7,
+   "best": "photos/NGC6625_2.jpg"
+  },
+  "NGC6629": {
+   "score": 40.0,
+   "best": "photos/NGC6629_1.jpg"
+  },
+  "NGC663": {
+   "score": 47.7,
+   "best": "photos/NGC663_1.jpg"
+  },
+  "NGC6633": {
+   "score": 46.7,
+   "best": "photos/NGC6633_1.jpg"
+  },
+  "NGC6642": {
+   "score": 40.0,
+   "best": "photos/NGC6642_3.jpg"
+  },
+  "NGC6645": {
+   "score": 45.8,
+   "best": "photos/NGC6645_1.jpg"
+  },
+  "NGC6664": {
+   "score": 54.1,
+   "best": "photos/NGC6664_2.jpg"
+  },
+  "NGC6683": {
+   "score": 46.2,
+   "best": "photos/NGC6683_1.jpg"
+  },
+  "NGC6704": {
+   "score": 51.1,
+   "best": "photos/NGC6704_2.jpg"
+  },
+  "NGC6709": {
+   "score": 40.0,
+   "best": "photos/NGC6709_1.jpg"
+  },
+  "NGC6712": {
+   "score": 42.4,
+   "best": "photos/NGC6712_2.jpg"
+  },
+  "NGC6716": {
+   "score": 51.8,
+   "best": "photos/NGC6716_2.jpg"
+  },
+  "NGC6738": {
+   "score": 48.5,
+   "best": "photos/NGC6738_2.jpg"
+  },
+  "NGC6742": {
+   "score": 52.0,
+   "best": "photos/NGC6742_1.jpg"
+  },
+  "NGC6743": {
+   "score": 46.2,
+   "best": "photos/NGC6743_2.jpg"
+  },
+  "NGC6755": {
+   "score": 50.5,
+   "best": "photos/NGC6755_1.jpg"
+  },
+  "NGC6760": {
+   "score": 46.4,
+   "best": "photos/NGC6760_2.jpg"
+  },
+  "NGC6781": {
+   "score": 48.3,
+   "best": "photos/NGC6781_1.jpg"
+  },
+  "NGC6791": {
+   "score": 53.1,
+   "best": "photos/NGC6791_1.jpg"
+  },
+  "NGC6802": {
+   "score": 52.0,
+   "best": "photos/NGC6802_2.jpg"
+  },
+  "NGC6811": {
+   "score": 48.5,
+   "best": "photos/NGC6811_3.jpg"
+  },
+  "NGC6819": {
+   "score": 44.4,
+   "best": "photos/NGC6819_2.jpg"
+  },
+  "NGC6822": {
+   "score": 53.6,
+   "best": "photos/NGC6822_1.jpg"
+  },
+  "NGC6823": {
+   "score": 46.0,
+   "best": "photos/NGC6823_2.jpg"
+  },
+  "NGC6826": {
+   "score": 48.1,
+   "best": "photos/NGC6826_1.jpg"
+  },
+  "NGC6834": {
+   "score": 51.0,
+   "best": "photos/NGC6834_2.jpg"
+  },
+  "NGC6866": {
+   "score": 42.3,
+   "best": "photos/NGC6866_1.jpg"
+  },
+  "NGC6871": {
+   "score": 40.2,
+   "best": "photos/NGC6871_1.jpg"
+  },
+  "NGC6888": {
+   "score": 45.6,
+   "best": "photos/NGC6888_1.jpg"
+  },
+  "NGC6939": {
+   "score": 42.5,
+   "best": "photos/NGC6939_1.jpg"
+  },
+  "NGC6940": {
+   "score": 52.5,
+   "best": "photos/NGC6940_1.jpg"
+  },
+  "NGC6946": {
+   "score": 56.8,
+   "best": "photos/NGC6946_1.jpg"
+  },
+  "NGC6960": {
+   "score": 50.2,
+   "best": "photos/NGC6960_3.jpg"
+  },
+  "NGC6992": {
+   "score": 41.1,
+   "best": "photos/NGC6992_1.jpg"
+  },
+  "NGC7000": {
+   "score": 54.7,
+   "best": "photos/NGC7000_1.jpg"
+  },
+  "NGC7023": {
+   "score": 55.1,
+   "best": "photos/NGC7023_1.jpg"
+  },
+  "NGC7039": {
+   "score": 42.9,
+   "best": "photos/NGC7039_2.jpg"
+  },
+  "NGC7063": {
+   "score": 46.8,
+   "best": "photos/NGC7063_1.jpg"
+  },
+  "NGC7082": {
+   "score": 49.0,
+   "best": "photos/NGC7082_2.jpg"
+  },
+  "NGC7142": {
+   "score": 46.2,
+   "best": "photos/NGC7142_1.jpg"
+  },
+  "NGC7160": {
+   "score": 49.8,
+   "best": "photos/NGC7160_3.jpg"
+  },
+  "NGC7209": {
+   "score": 41.8,
+   "best": "photos/NGC7209_1.jpg"
+  },
+  "NGC7243": {
+   "score": 46.3,
+   "best": "photos/NGC7243_1.jpg"
+  },
+  "NGC7261": {
+   "score": 71.8,
+   "best": "photos/NGC7261_3.jpg"
+  },
+  "NGC7331": {
+   "score": 52.4,
+   "best": "photos/NGC7331_1.jpg"
+  },
+  "NGC7380": {
+   "score": 49.9,
+   "best": "photos/NGC7380_1.jpg"
+  },
+  "NGC7635": {
+   "score": 50.9,
+   "best": "photos/NGC7635_1.jpg"
+  },
+  "NGC7686": {
+   "score": 49.8,
+   "best": "photos/NGC7686_2.jpg"
+  },
+  "NGC7789": {
+   "score": 50.2,
+   "best": "photos/NGC7789_2.jpg"
+  },
+  "NGC869": {
+   "score": 52.8,
+   "best": "photos/NGC869_2.jpg"
+  },
+  "NGC884": {
+   "score": 71.3,
+   "best": "photos/NGC884_1.jpg"
+  },
+  "NGC891": {
+   "score": 53.2,
+   "best": "photos/NGC891_2.jpg"
+  },
+  "Neptune": {
+   "score": 28.0,
+   "best": "photos/Neptune_1.jpg"
+  },
+  "OCl1039": {
+   "score": 53.3,
+   "best": "photos/OCl1039_3.jpg"
+  },
+  "OmicronCas": {
+   "score": 52.8,
+   "best": "photos/OmicronCas_1.jpg"
+  },
+  "Pluto": {
+   "score": 48.5,
+   "best": "photos/Pluto_1.jpg"
+  },
+  "Polaris": {
+   "score": 53.1,
+   "best": "photos/Polaris_1.jpg"
+  },
+  "Saturn": {
+   "score": 53.9,
+   "best": "photos/Saturn_2.jpg"
+  },
+  "Seginus": {
+   "score": 48.9,
+   "best": "photos/Seginus_1.jpg"
+  },
+  "Sun": {
+   "score": 34.9,
+   "best": "photos/Sun_1.jpg"
+  },
+  "TR34": {
+   "score": 49.3,
+   "best": "photos/TR34_2.jpg"
+  },
+  "ThetaDra": {
+   "score": 47.6,
+   "best": "photos/ThetaDra_1.jpg"
+  },
+  "Thuban": {
+   "score": 56.0,
+   "best": "photos/Thuban_1.jpg"
+  },
+  "UMa": {
+   "score": 56.3,
+   "best": "photos/UMa_1.jpg"
+  },
+  "V1331AQL": {
+   "score": 47.5,
+   "best": "photos/V1331AQL_1.jpg"
+  },
+  "V379Vul": {
+   "score": 40.0,
+   "best": "photos/V379Vul_1.jpg"
+  },
+  "V3879Sgr": {
+   "score": 40.0,
+   "best": "photos/V3879Sgr_1.jpg"
+  },
+  "V430SCT": {
+   "score": 51.3,
+   "best": "photos/V430SCT_2.jpg"
+  },
+  "V4381Sgr": {
+   "score": 50.7,
+   "best": "photos/V4381Sgr_1.jpg"
+  },
+  "Vega": {
+   "score": 55.7,
+   "best": "photos/Vega_1.jpg"
+  },
+  "Venus": {
+   "score": 50.7,
+   "best": "photos/Venus_1.jpg"
+  },
+  "gHer": {
+   "score": 47.2,
+   "best": "photos/gHer_1.jpg"
+  }
+ },
+ "byPath": {
+  "photos/UMa_1.jpg": {
+   "score": 56.3
+  },
+  "photos/28Aquilae_1.jpg": {
+   "score": 48.3
+  },
+  "photos/68Herculis_1.jpg": {
+   "score": 51.6
+  },
+  "photos/NGC6992_1.jpg": {
+   "score": 41.1
+  },
+  "photos/NGC281_2.jpg": {
+   "score": 52.1
+  },
+  "photos/NGC6940_2.jpg": {
+   "score": 41.7
+  },
+  "photos/M52_1.jpg": {
+   "score": 45.1
+  },
+  "photos/IC1805_2.jpg": {
+   "score": 42.2
+  },
+  "photos/NGC6633_2.jpg": {
+   "score": 40.0
+  },
+  "photos/FLD0302N895_1.jpg": {
+   "score": 53.0
+  },
+  "photos/FLD1732N311_1.jpg": {
+   "score": 41.1
+  },
+  "photos/FLD1739S032_1.jpg": {
+   "score": 48.8
+  },
+  "photos/FLD1756S181_1.jpg": {
+   "score": 40.0
+  },
+  "photos/FLD1801S270_1.jpg": {
+   "score": 40.0
+  },
+  "photos/FLD1826S077_1.jpg": {
+   "score": 46.3
+  },
+  "photos/FLD1828S174_1.jpg": {
+   "score": 41.2
+  },
+  "photos/FLD1834S133_1.jpg": {
+   "score": 43.7
+  },
+  "photos/FLD1841S144_2.jpg": {
+   "score": 43.3
+  },
+  "photos/FLD1841S144_1.jpg": {
+   "score": 40.0
+  },
+  "photos/FLD1859N011_1.jpg": {
+   "score": 41.8
+  },
+  "photos/FLD1913N092_1.jpg": {
+   "score": 40.0
+  },
+  "photos/FLD2326N617_1.jpg": {
+   "score": 45.7
+  },
+  "photos/GammaCrA_2.jpg": {
+   "score": 49.9
+  },
+  "photos/GammaCrA_1.jpg": {
+   "score": 48.1
+  },
+  "photos/GammaSct_1.jpg": {
+   "score": 46.1
+  },
+  "photos/HIP88060_1.jpg": {
+   "score": 51.1
+  },
+  "photos/HIP106890_1.jpg": {
+   "score": 49.2
+  },
+  "photos/IC10_2.jpg": {
+   "score": 56.6
+  },
+  "photos/IC1287_3.jpg": {
+   "score": 51.7
+  },
+  "photos/IC1287_4.jpg": {
+   "score": 50.7
+  },
+  "photos/IC1318_2.jpg": {
+   "score": 56.5
+  },
+  "photos/IC1318_4.jpg": {
+   "score": 55.5
+  },
+  "photos/IC166_2.jpg": {
+   "score": 46.8
+  },
+  "photos/IC1805_1.jpg": {
+   "score": 40.1
+  },
+  "photos/IC1848_2.jpg": {
+   "score": 40.0
+  },
+  "photos/IC1848_1.jpg": {
+   "score": 46.8
+  },
+  "photos/IC4592_2.jpg": {
+   "score": 54.3
+  },
+  "photos/IC4604_1.jpg": {
+   "score": 51.4
+  },
+  "photos/IC4604_2.jpg": {
+   "score": 48.2
+  },
+  "photos/IC4605_2.jpg": {
+   "score": 64.3
+  },
+  "photos/IC4605_1.jpg": {
+   "score": 57.4
+  },
+  "photos/M25_1.jpg": {
+   "score": 44.2
+  },
+  "photos/IC4756_2.jpg": {
+   "score": 40.0
+  },
+  "photos/IC4756_3.jpg": {
+   "score": 47.6
+  },
+  "photos/Jupiter_1.jpg": {
+   "score": 56.8
+  },
+  "photos/KausBorealis_1.jpg": {
+   "score": 48.0
+  },
+  "photos/Kornephoros_1.jpg": {
+   "score": 53.5
+  },
+  "photos/M10_2.jpg": {
+   "score": 41.4
+  },
+  "photos/M10_1.jpg": {
+   "score": 26.1
+  },
+  "photos/M11_1.jpg": {
+   "score": 50.2
+  },
+  "photos/M11_2.jpg": {
+   "score": 51.7
+  },
+  "photos/M17_2.jpg": {
+   "score": 52.8
+  },
+  "photos/M17_1.jpg": {
+   "score": 55.6
+  },
+  "photos/M20_1.jpg": {
+   "score": 55.1
+  },
+  "photos/M20_2.jpg": {
+   "score": 52.2
+  },
+  "photos/M22_1.jpg": {
+   "score": 49.0
+  },
+  "photos/M22_2.jpg": {
+   "score": 53.7
+  },
+  "photos/M22_3.jpg": {
+   "score": 53.9
+  },
+  "photos/M24_1.jpg": {
+   "score": 10.7
+  },
+  "photos/M25_2.jpg": {
+   "score": 41.1
+  },
+  "photos/M25_3.jpg": {
+   "score": 46.4
+  },
+  "photos/M31_3.jpg": {
+   "score": 64.8
+  },
+  "photos/M31_1.jpg": {
+   "score": 68.6
+  },
+  "photos/M39_2.jpg": {
+   "score": 48.1
+  },
+  "photos/M56_2.jpg": {
+   "score": 48.6
+  },
+  "photos/M56_1.jpg": {
+   "score": 51.3
+  },
+  "photos/M62_2.jpg": {
+   "score": 53.6
+  },
+  "photos/M62_1.jpg": {
+   "score": 51.8
+  },
+  "photos/M63_1.jpg": {
+   "score": 54.4
+  },
+  "photos/M75_1.jpg": {
+   "score": 25.7
+  },
+  "photos/M81_3.jpg": {
+   "score": 55.3
+  },
+  "photos/M81_1.jpg": {
+   "score": 56.0
+  },
+  "photos/M8_2.jpg": {
+   "score": 67.2
+  },
+  "photos/M8_1.jpg": {
+   "score": 71.1
+  },
+  "photos/M8_3.jpg": {
+   "score": 66.4
+  },
+  "photos/M8_4.jpg": {
+   "score": 66.9
+  },
+  "photos/M8_5.jpg": {
+   "score": 67.1
+  },
+  "photos/M8_6.jpg": {
+   "score": 67.1
+  },
+  "photos/MilkyWay_2.jpg": {
+   "score": 85.3
+  },
+  "photos/MilkyWay_1.jpg": {
+   "score": 54.8
+  },
+  "photos/MilkyWay_3.jpg": {
+   "score": 55.0
+  },
+  "photos/MilkyWay_4.jpg": {
+   "score": 57.8
+  },
+  "photos/Moon_1.jpg": {
+   "score": 59.5
+  },
+  "photos/Moon_9.jpg": {
+   "score": 66.6
+  },
+  "photos/Moon_8.jpg": {
+   "score": 54.9
+  },
+  "photos/Moon_7.jpg": {
+   "score": 73.1
+  },
+  "photos/Moon_6.jpg": {
+   "score": 63.9
+  },
+  "photos/Moon_14.jpg": {
+   "score": 67.3
+  },
+  "photos/Moon_5.jpg": {
+   "score": 74.0
+  },
+  "photos/Moon_4.jpg": {
+   "score": 61.5
+  },
+  "photos/Moon_3.jpg": {
+   "score": 72.9
+  },
+  "photos/Moon_2.jpg": {
+   "score": 45.4
+  },
+  "photos/Moon_10.jpg": {
+   "score": 64.5
+  },
+  "photos/Moon_12.jpg": {
+   "score": 54.6
+  },
+  "photos/Moon_11.jpg": {
+   "score": 68.9
+  },
+  "photos/Moon_13.jpg": {
+   "score": 69.2
+  },
+  "photos/NGC129_2.jpg": {
+   "score": 52.2
+  },
+  "photos/NGC129_1.jpg": {
+   "score": 46.9
+  },
+  "photos/NGC185_1.jpg": {
+   "score": 49.8
+  },
+  "photos/NGC185_2.jpg": {
+   "score": 53.6
+  },
+  "photos/NGC188_4.jpg": {
+   "score": 51.4
+  },
+  "photos/NGC188_3.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC188_2.jpg": {
+   "score": 50.3
+  },
+  "photos/NGC188_1.jpg": {
+   "score": 55.2
+  },
+  "photos/NGC281_1.jpg": {
+   "score": 52.6
+  },
+  "photos/NGC281_3.jpg": {
+   "score": 55.9
+  },
+  "photos/NGC4236_2.jpg": {
+   "score": 53.7
+  },
+  "photos/NGC457_1.jpg": {
+   "score": 46.5
+  },
+  "photos/NGC457_2.jpg": {
+   "score": 51.9
+  },
+  "photos/NGC6229_2.jpg": {
+   "score": 45.2
+  },
+  "photos/NGC6229_1.jpg": {
+   "score": 50.4
+  },
+  "photos/NGC6383_1.jpg": {
+   "score": 50.9
+  },
+  "photos/NGC6383_2.jpg": {
+   "score": 52.6
+  },
+  "photos/NGC6383_3.jpg": {
+   "score": 46.7
+  },
+  "photos/NGC6401_1.jpg": {
+   "score": 35.5
+  },
+  "photos/NGC6440_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6440_2.jpg": {
+   "score": 49.3
+  },
+  "photos/NGC6440_3.jpg": {
+   "score": 45.5
+  },
+  "photos/NGC6469_1.jpg": {
+   "score": 47.5
+  },
+  "photos/M23_2.jpg": {
+   "score": 48.4
+  },
+  "photos/M23_1.jpg": {
+   "score": 46.4
+  },
+  "photos/NGC6503_2.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6535_2.jpg": {
+   "score": 37.9
+  },
+  "photos/NGC6535_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6535_3.jpg": {
+   "score": 43.7
+  },
+  "photos/NGC6543_2.jpg": {
+   "score": 29.3
+  },
+  "photos/NGC6543_1.jpg": {
+   "score": 43.7
+  },
+  "photos/NGC654_2.jpg": {
+   "score": 41.5
+  },
+  "photos/NGC654_1.jpg": {
+   "score": 39.0
+  },
+  "photos/NGC6568_1.jpg": {
+   "score": 46.0
+  },
+  "photos/NGC6604_2.jpg": {
+   "score": 51.5
+  },
+  "photos/NGC6604_1.jpg": {
+   "score": 45.8
+  },
+  "photos/NGC6604_4.jpg": {
+   "score": 46.9
+  },
+  "photos/NGC6604_3.jpg": {
+   "score": 40.6
+  },
+  "photos/NGC6604_5.jpg": {
+   "score": 44.0
+  },
+  "photos/NGC6605_2.jpg": {
+   "score": 49.3
+  },
+  "photos/NGC6605_1.jpg": {
+   "score": 50.6
+  },
+  "photos/NGC6605_3.jpg": {
+   "score": 73.1
+  },
+  "photos/NGC6624_2.jpg": {
+   "score": 51.2
+  },
+  "photos/NGC6625_1.jpg": {
+   "score": 42.2
+  },
+  "photos/NGC6625_2.jpg": {
+   "score": 47.7
+  },
+  "photos/NGC6629_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6633_1.jpg": {
+   "score": 46.7
+  },
+  "photos/NGC6633_3.jpg": {
+   "score": 43.5
+  },
+  "photos/NGC663_1.jpg": {
+   "score": 47.7
+  },
+  "photos/NGC663_2.jpg": {
+   "score": 46.3
+  },
+  "photos/NGC6642_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6642_2.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6642_3.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6645_2.jpg": {
+   "score": 43.4
+  },
+  "photos/NGC6664_3.jpg": {
+   "score": 50.3
+  },
+  "photos/NGC6664_2.jpg": {
+   "score": 54.1
+  },
+  "photos/NGC6664_1.jpg": {
+   "score": 50.5
+  },
+  "photos/NGC6683_1.jpg": {
+   "score": 46.2
+  },
+  "photos/NGC6683_2.jpg": {
+   "score": 42.4
+  },
+  "photos/M26_1.jpg": {
+   "score": 42.1
+  },
+  "photos/NGC6704_1.jpg": {
+   "score": 49.9
+  },
+  "photos/NGC6704_2.jpg": {
+   "score": 51.1
+  },
+  "photos/NGC6712_3.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6712_2.jpg": {
+   "score": 42.4
+  },
+  "photos/NGC6712_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6716_1.jpg": {
+   "score": 50.9
+  },
+  "photos/NGC6716_2.jpg": {
+   "score": 51.8
+  },
+  "photos/NGC6738_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6738_2.jpg": {
+   "score": 48.5
+  },
+  "photos/NGC6738_3.jpg": {
+   "score": 44.4
+  },
+  "photos/NGC6742_2.jpg": {
+   "score": 46.6
+  },
+  "photos/NGC6742_1.jpg": {
+   "score": 52.0
+  },
+  "photos/NGC6743_2.jpg": {
+   "score": 46.2
+  },
+  "photos/NGC6755_1.jpg": {
+   "score": 50.5
+  },
+  "photos/NGC6760_1.jpg": {
+   "score": 42.3
+  },
+  "photos/NGC6760_2.jpg": {
+   "score": 46.4
+  },
+  "photos/NGC6781_2.jpg": {
+   "score": 44.1
+  },
+  "photos/NGC6781_1.jpg": {
+   "score": 48.3
+  },
+  "photos/NGC6791_4.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6791_3.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6791_2.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6791_1.jpg": {
+   "score": 53.1
+  },
+  "photos/NGC6791_5.jpg": {
+   "score": 50.9
+  },
+  "photos/NGC6802_3.jpg": {
+   "score": 51.2
+  },
+  "photos/NGC6802_2.jpg": {
+   "score": 52.0
+  },
+  "photos/NGC6811_3.jpg": {
+   "score": 48.5
+  },
+  "photos/NGC6819_2.jpg": {
+   "score": 44.4
+  },
+  "photos/NGC6822_3.jpg": {
+   "score": 48.2
+  },
+  "photos/NGC6822_2.jpg": {
+   "score": 52.3
+  },
+  "photos/NGC6822_1.jpg": {
+   "score": 53.6
+  },
+  "photos/NGC6823_2.jpg": {
+   "score": 46.0
+  },
+  "photos/NGC6834_1.jpg": {
+   "score": 41.1
+  },
+  "photos/NGC6866_3.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6866_2.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6866_1.jpg": {
+   "score": 42.3
+  },
+  "photos/NGC6940_1.jpg": {
+   "score": 52.5
+  },
+  "photos/NGC6940_3.jpg": {
+   "score": 45.0
+  },
+  "photos/NGC6946_2.jpg": {
+   "score": 55.5
+  },
+  "photos/NGC6946_1.jpg": {
+   "score": 56.8
+  },
+  "photos/NGC6960_3.jpg": {
+   "score": 50.2
+  },
+  "photos/NGC7023_1.jpg": {
+   "score": 55.1
+  },
+  "photos/NGC7039_2.jpg": {
+   "score": 42.9
+  },
+  "photos/NGC7063_1.jpg": {
+   "score": 46.8
+  },
+  "photos/M15_1.jpg": {
+   "score": 53.5
+  },
+  "photos/NGC7082_2.jpg": {
+   "score": 49.0
+  },
+  "photos/M2_1.jpg": {
+   "score": 52.1
+  },
+  "photos/NGC7142_2.jpg": {
+   "score": 34.9
+  },
+  "photos/NGC7142_1.jpg": {
+   "score": 46.2
+  },
+  "photos/NGC7160_3.jpg": {
+   "score": 49.8
+  },
+  "photos/NGC7209_1.jpg": {
+   "score": 41.8
+  },
+  "photos/NGC7261_4.jpg": {
+   "score": 53.6
+  },
+  "photos/NGC7261_3.jpg": {
+   "score": 71.8
+  },
+  "photos/NGC7261_2.jpg": {
+   "score": 51.4
+  },
+  "photos/NGC7261_1.jpg": {
+   "score": 54.1
+  },
+  "photos/NGC7331_2.jpg": {
+   "score": 51.3
+  },
+  "photos/NGC7686_1.jpg": {
+   "score": 41.9
+  },
+  "photos/NGC7686_2.jpg": {
+   "score": 49.8
+  },
+  "photos/NGC7789_2.jpg": {
+   "score": 50.2
+  },
+  "photos/NGC869_1.jpg": {
+   "score": 50.4
+  },
+  "photos/NGC869_2.jpg": {
+   "score": 52.8
+  },
+  "photos/NGC891_2.jpg": {
+   "score": 53.2
+  },
+  "photos/NGC891_1.jpg": {
+   "score": 52.2
+  },
+  "photos/NGC6539_1.jpg": {
+   "score": 50.2
+  },
+  "photos/NGC6539_2.jpg": {
+   "score": 53.8
+  },
+  "photos/OCl1039_3.jpg": {
+   "score": 53.3
+  },
+  "photos/OCl1039_2.jpg": {
+   "score": 47.9
+  },
+  "photos/OCl1039_4.jpg": {
+   "score": 52.6
+  },
+  "photos/OmicronCas_2.jpg": {
+   "score": 51.5
+  },
+  "photos/OmicronCas_1.jpg": {
+   "score": 52.8
+  },
+  "photos/Pluto_1.jpg": {
+   "score": 48.5
+  },
+  "photos/IC1318_1.jpg": {
+   "score": 71.7
+  },
+  "photos/Saturn_1.jpg": {
+   "score": 26.1
+  },
+  "photos/Seginus_1.jpg": {
+   "score": 48.9
+  },
+  "photos/IC1287_2.jpg": {
+   "score": 48.0
+  },
+  "photos/NGC6960_4.jpg": {
+   "score": 48.6
+  },
+  "photos/NGC6992_2.jpg": {
+   "score": 40.0
+  },
+  "photos/M101_1.jpg": {
+   "score": 51.3
+  },
+  "photos/M81_2.jpg": {
+   "score": 53.4
+  },
+  "photos/NGC6743_1.jpg": {
+   "score": 44.1
+  },
+  "photos/NGC6755_2.jpg": {
+   "score": 45.6
+  },
+  "photos/NGC6811_2.jpg": {
+   "score": 45.2
+  },
+  "photos/NGC6811_1.jpg": {
+   "score": 45.5
+  },
+  "photos/NGC6819_1.jpg": {
+   "score": 42.0
+  },
+  "photos/NGC6823_1.jpg": {
+   "score": 40.0
+  },
+  "photos/M29_1.jpg": {
+   "score": 48.2
+  },
+  "photos/NGC7063_2.jpg": {
+   "score": 43.8
+  },
+  "photos/NGC7160_2.jpg": {
+   "score": 48.4
+  },
+  "photos/NGC7160_1.jpg": {
+   "score": 48.5
+  },
+  "photos/NGC7209_2.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC7789_1.jpg": {
+   "score": 49.6
+  },
+  "photos/NGC884_1.jpg": {
+   "score": 71.3
+  },
+  "photos/M97_1.jpg": {
+   "score": 33.3
+  },
+  "photos/NGC6645_1.jpg": {
+   "score": 45.8
+  },
+  "photos/M57_1.jpg": {
+   "score": 53.0
+  },
+  "photos/gHer_1.jpg": {
+   "score": 47.2
+  },
+  "photos/M13_1.jpg": {
+   "score": 55.7
+  },
+  "photos/M51_1.jpg": {
+   "score": 50.7
+  },
+  "photos/NGC7000_1.jpg": {
+   "score": 54.7
+  },
+  "photos/IC4592_1.jpg": {
+   "score": 52.9
+  },
+  "photos/M16_1.jpg": {
+   "score": 45.2
+  },
+  "photos/M14_1.jpg": {
+   "score": 49.2
+  },
+  "photos/M31_2.jpg": {
+   "score": 66.9
+  },
+  "photos/Venus_1.jpg": {
+   "score": 50.7
+  },
+  "photos/IC10_1.jpg": {
+   "score": 54.1
+  },
+  "photos/M102_1.jpg": {
+   "score": 48.1
+  },
+  "photos/M5_1.jpg": {
+   "score": 54.1
+  },
+  "photos/NGC4236_1.jpg": {
+   "score": 50.8
+  },
+  "photos/M3_1.jpg": {
+   "score": 54.6
+  },
+  "photos/NGC5907_1.jpg": {
+   "score": 40.0
+  },
+  "photos/M12_1.jpg": {
+   "score": 48.5
+  },
+  "photos/NGC6802_1.jpg": {
+   "score": 49.3
+  },
+  "photos/NGC6834_2.jpg": {
+   "score": 51.0
+  },
+  "photos/NGC6939_1.jpg": {
+   "score": 42.5
+  },
+  "photos/NGC7331_1.jpg": {
+   "score": 52.4
+  },
+  "photos/IC166_1.jpg": {
+   "score": 43.6
+  },
+  "photos/M92_1.jpg": {
+   "score": 49.3
+  },
+  "photos/NGC6871_1.jpg": {
+   "score": 40.2
+  },
+  "photos/V379Vul_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC6503_1.jpg": {
+   "score": 37.2
+  },
+  "photos/Neptune_1.jpg": {
+   "score": 28.0
+  },
+  "photos/Vega_1.jpg": {
+   "score": 55.7
+  },
+  "photos/Arcturus_1.jpg": {
+   "score": 56.8
+  },
+  "photos/IC1171_1.jpg": {
+   "score": 52.8
+  },
+  "photos/IC5146_1.jpg": {
+   "score": 40.0
+  },
+  "photos/M100_1.jpg": {
+   "score": 51.0
+  },
+  "photos/M27_1.jpg": {
+   "score": 51.9
+  },
+  "photos/M31_4.jpg": {
+   "score": 54.7
+  },
+  "photos/NGC5965_1.jpg": {
+   "score": 45.0
+  },
+  "photos/NGC7635_1.jpg": {
+   "score": 50.9
+  },
+  "photos/IC4665_1.jpg": {
+   "score": 53.3
+  },
+  "photos/IC4756_1.jpg": {
+   "score": 41.3
+  },
+  "photos/M39_1.jpg": {
+   "score": 41.4
+  },
+  "photos/M71_1.jpg": {
+   "score": 42.4
+  },
+  "photos/NGC6709_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC7039_1.jpg": {
+   "score": 40.0
+  },
+  "photos/NGC7082_1.jpg": {
+   "score": 42.2
+  },
+  "photos/NGC7243_1.jpg": {
+   "score": 46.3
+  },
+  "photos/Polaris_1.jpg": {
+   "score": 53.1
+  },
+  "photos/Saturn_2.jpg": {
+   "score": 53.9
+  },
+  "photos/NGC6624_1.jpg": {
+   "score": 56.5
+  },
+  "photos/IC1318_3.jpg": {
+   "score": 44.4
+  },
+  "photos/M63_2.jpg": {
+   "score": 44.5
+  },
+  "photos/M81_4.jpg": {
+   "score": 45.6
+  },
+  "photos/NGC6888_1.jpg": {
+   "score": 45.6
+  },
+  "photos/NGC6960_2.jpg": {
+   "score": 48.4
+  },
+  "photos/NGC7023_2.jpg": {
+   "score": 51.3
+  },
+  "photos/NGC7380_1.jpg": {
+   "score": 49.9
+  },
+  "photos/Thuban_1.jpg": {
+   "score": 56.0
+  },
+  "photos/IC1287_1.jpg": {
+   "score": 45.8
+  },
+  "photos/M24_2.jpg": {
+   "score": 37.8
+  },
+  "photos/NGC6826_1.jpg": {
+   "score": 48.1
+  },
+  "photos/Sun_1.jpg": {
+   "score": 34.9
+  },
+  "photos/TR34_1.jpg": {
+   "score": 46.7
+  },
+  "photos/TR34_2.jpg": {
+   "score": 49.3
+  },
+  "photos/ThetaDra_1.jpg": {
+   "score": 47.6
+  },
+  "photos/V1331AQL_1.jpg": {
+   "score": 47.5
+  },
+  "photos/V3879Sgr_1.jpg": {
+   "score": 40.0
+  },
+  "photos/V430SCT_2.jpg": {
+   "score": 51.3
+  },
+  "photos/V430SCT_1.jpg": {
+   "score": 46.9
+  },
+  "photos/V4381Sgr_1.jpg": {
+   "score": 50.7
+  },
+  "photos/Venus_3.jpg": {
+   "score": 26.1
+  },
+  "photos/Venus_4.jpg": {
+   "score": 26.1
+  }
+ }
+}

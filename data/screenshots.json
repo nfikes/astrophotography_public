@@ -1,0 +1,470 @@
+{
+ "byObjId": {
+  "M16": [
+   {
+    "path": "photos/screenshots/Screenshot_M16.png"
+   }
+  ],
+  "M63": [
+   {
+    "path": "photos/screenshots/Screenshot_M63.png"
+   }
+  ],
+  "M81": [
+   {
+    "path": "photos/screenshots/Screenshot_M81.png"
+   }
+  ],
+  "NGC7023": [
+   {
+    "path": "photos/screenshots/Screenshot_NGC7023.png"
+   },
+   {
+    "path": "photos/closeups/Closeup_NGC7023.jpg",
+    "generated": true
+   }
+  ],
+  "Saturn": [
+   {
+    "path": "photos/screenshots/Screenshot_Saturn.png"
+   }
+  ],
+  "Venus": [
+   {
+    "path": "photos/screenshots/Screenshot_Venus.png"
+   }
+  ],
+  "IC10": [
+   {
+    "path": "photos/closeups/Closeup_IC10.jpg",
+    "generated": true
+   }
+  ],
+  "IC1287": [
+   {
+    "path": "photos/closeups/Closeup_IC1287.jpg",
+    "generated": true
+   }
+  ],
+  "IC166": [
+   {
+    "path": "photos/closeups/Closeup_IC166.jpg",
+    "generated": true
+   }
+  ],
+  "IC4605": [
+   {
+    "path": "photos/closeups/Closeup_IC4605.jpg",
+    "generated": true
+   }
+  ],
+  "IC4665": [
+   {
+    "path": "photos/closeups/Closeup_IC4665.jpg",
+    "generated": true
+   }
+  ],
+  "IC4756": [
+   {
+    "path": "photos/closeups/Closeup_IC4756.jpg",
+    "generated": true
+   }
+  ],
+  "IC5146": [
+   {
+    "path": "photos/closeups/Closeup_IC5146.jpg",
+    "generated": true
+   }
+  ],
+  "NGC129": [
+   {
+    "path": "photos/closeups/Closeup_NGC129.jpg",
+    "generated": true
+   }
+  ],
+  "NGC185": [
+   {
+    "path": "photos/closeups/Closeup_NGC185.jpg",
+    "generated": true
+   }
+  ],
+  "NGC188": [
+   {
+    "path": "photos/closeups/Closeup_NGC188.jpg",
+    "generated": true
+   }
+  ],
+  "NGC4236": [
+   {
+    "path": "photos/closeups/Closeup_NGC4236.jpg",
+    "generated": true
+   }
+  ],
+  "NGC457": [
+   {
+    "path": "photos/closeups/Closeup_NGC457.jpg",
+    "generated": true
+   }
+  ],
+  "NGC5907": [
+   {
+    "path": "photos/closeups/Closeup_NGC5907.jpg",
+    "generated": true
+   }
+  ],
+  "NGC5965": [
+   {
+    "path": "photos/closeups/Closeup_NGC5965.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6229": [
+   {
+    "path": "photos/closeups/Closeup_NGC6229.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6401": [
+   {
+    "path": "photos/closeups/Closeup_NGC6401.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6440": [
+   {
+    "path": "photos/closeups/Closeup_NGC6440.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6469": [
+   {
+    "path": "photos/closeups/Closeup_NGC6469.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6503": [
+   {
+    "path": "photos/closeups/Closeup_NGC6503.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6535": [
+   {
+    "path": "photos/closeups/Closeup_NGC6535.jpg",
+    "generated": true
+   }
+  ],
+  "NGC654": [
+   {
+    "path": "photos/closeups/Closeup_NGC654.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6543": [
+   {
+    "path": "photos/closeups/Closeup_NGC6543.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6568": [
+   {
+    "path": "photos/closeups/Closeup_NGC6568.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6604": [
+   {
+    "path": "photos/closeups/Closeup_NGC6604.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6605": [
+   {
+    "path": "photos/closeups/Closeup_NGC6605.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6625": [
+   {
+    "path": "photos/closeups/Closeup_NGC6625.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6629": [
+   {
+    "path": "photos/closeups/Closeup_NGC6629.jpg",
+    "generated": true
+   }
+  ],
+  "NGC663": [
+   {
+    "path": "photos/closeups/Closeup_NGC663.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6633": [
+   {
+    "path": "photos/closeups/Closeup_NGC6633.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6645": [
+   {
+    "path": "photos/closeups/Closeup_NGC6645.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6664": [
+   {
+    "path": "photos/closeups/Closeup_NGC6664.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6683": [
+   {
+    "path": "photos/closeups/Closeup_NGC6683.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6704": [
+   {
+    "path": "photos/closeups/Closeup_NGC6704.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6709": [
+   {
+    "path": "photos/closeups/Closeup_NGC6709.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6712": [
+   {
+    "path": "photos/closeups/Closeup_NGC6712.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6716": [
+   {
+    "path": "photos/closeups/Closeup_NGC6716.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6738": [
+   {
+    "path": "photos/closeups/Closeup_NGC6738.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6742": [
+   {
+    "path": "photos/closeups/Closeup_NGC6742.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6743": [
+   {
+    "path": "photos/closeups/Closeup_NGC6743.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6755": [
+   {
+    "path": "photos/closeups/Closeup_NGC6755.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6760": [
+   {
+    "path": "photos/closeups/Closeup_NGC6760.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6781": [
+   {
+    "path": "photos/closeups/Closeup_NGC6781.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6791": [
+   {
+    "path": "photos/closeups/Closeup_NGC6791.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6802": [
+   {
+    "path": "photos/closeups/Closeup_NGC6802.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6811": [
+   {
+    "path": "photos/closeups/Closeup_NGC6811.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6819": [
+   {
+    "path": "photos/closeups/Closeup_NGC6819.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6822": [
+   {
+    "path": "photos/closeups/Closeup_NGC6822.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6823": [
+   {
+    "path": "photos/closeups/Closeup_NGC6823.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6826": [
+   {
+    "path": "photos/closeups/Closeup_NGC6826.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6834": [
+   {
+    "path": "photos/closeups/Closeup_NGC6834.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6866": [
+   {
+    "path": "photos/closeups/Closeup_NGC6866.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6871": [
+   {
+    "path": "photos/closeups/Closeup_NGC6871.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6888": [
+   {
+    "path": "photos/closeups/Closeup_NGC6888.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6939": [
+   {
+    "path": "photos/closeups/Closeup_NGC6939.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6940": [
+   {
+    "path": "photos/closeups/Closeup_NGC6940.jpg",
+    "generated": true
+   }
+  ],
+  "NGC6946": [
+   {
+    "path": "photos/closeups/Closeup_NGC6946.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7039": [
+   {
+    "path": "photos/closeups/Closeup_NGC7039.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7063": [
+   {
+    "path": "photos/closeups/Closeup_NGC7063.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7082": [
+   {
+    "path": "photos/closeups/Closeup_NGC7082.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7142": [
+   {
+    "path": "photos/closeups/Closeup_NGC7142.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7160": [
+   {
+    "path": "photos/closeups/Closeup_NGC7160.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7209": [
+   {
+    "path": "photos/closeups/Closeup_NGC7209.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7243": [
+   {
+    "path": "photos/closeups/Closeup_NGC7243.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7261": [
+   {
+    "path": "photos/closeups/Closeup_NGC7261.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7331": [
+   {
+    "path": "photos/closeups/Closeup_NGC7331.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7380": [
+   {
+    "path": "photos/closeups/Closeup_NGC7380.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7635": [
+   {
+    "path": "photos/closeups/Closeup_NGC7635.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7686": [
+   {
+    "path": "photos/closeups/Closeup_NGC7686.jpg",
+    "generated": true
+   }
+  ],
+  "NGC7789": [
+   {
+    "path": "photos/closeups/Closeup_NGC7789.jpg",
+    "generated": true
+   }
+  ],
+  "NGC869": [
+   {
+    "path": "photos/closeups/Closeup_NGC869.jpg",
+    "generated": true
+   }
+  ],
+  "NGC884": [
+   {
+    "path": "photos/closeups/Closeup_NGC884.jpg",
+    "generated": true
+   }
+  ],
+  "NGC891": [
+   {
+    "path": "photos/closeups/Closeup_NGC891.jpg",
+    "generated": true
+   }
+  ]
+ }
+}

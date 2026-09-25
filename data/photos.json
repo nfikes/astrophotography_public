@@ -1,0 +1,4548 @@
+{
+ "byObject": {
+  "UMa": [
+   {
+    "path": "photos/UMa_1.jpg",
+    "filename": "UMa_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "28Aquilae": [
+   {
+    "path": "photos/28Aquilae_1.jpg",
+    "filename": "28Aquilae_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2020.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "68Herculis": [
+   {
+    "path": "photos/68Herculis_1.jpg",
+    "filename": "68Herculis_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 910.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6992": [
+   {
+    "path": "photos/NGC6992_2.jpg",
+    "filename": "NGC6992_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 1230.0
+    },
+    "view": 2,
+    "master": true
+   },
+   {
+    "path": "photos/NGC6992_1.jpg",
+    "filename": "NGC6992_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "exposure_s": 1230.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC281": [
+   {
+    "path": "photos/NGC281_3.jpg",
+    "filename": "NGC281_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 120.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC281_1.jpg",
+     "condPath": "photos/NGC281_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC281_1.jpg",
+    "filename": "NGC281_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 140.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC281_2.jpg",
+    "filename": "NGC281_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 140,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2,
+    "pair": {
+     "rawPath": "photos/NGC281_1.jpg",
+     "condPath": "photos/NGC281_2.jpg"
+    }
+   }
+  ],
+  "NGC6940": [
+   {
+    "path": "photos/NGC6940_3.jpg",
+    "filename": "NGC6940_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 180.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6940_1.jpg",
+     "condPath": "photos/NGC6940_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6940_1.jpg",
+    "filename": "NGC6940_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 180.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6940_2.jpg",
+    "filename": "NGC6940_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 180,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2,
+    "pair": {
+     "rawPath": "photos/NGC6940_1.jpg",
+     "condPath": "photos/NGC6940_2.jpg"
+    }
+   }
+  ],
+  "M52": [
+   {
+    "path": "photos/M52_1.jpg",
+    "filename": "M52_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "IC1805": [
+   {
+    "path": "photos/IC1805_1.jpg",
+    "filename": "IC1805_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 900.0
+    },
+    "view": 1,
+    "master": true
+   },
+   {
+    "path": "photos/IC1805_2.jpg",
+    "filename": "IC1805_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "exposure_s": 900.0
+    },
+    "view": 2,
+    "pair": {
+     "rawPath": "photos/IC1805_1.jpg",
+     "condPath": "photos/IC1805_2.jpg"
+    }
+   }
+  ],
+  "NGC6633": [
+   {
+    "path": "photos/NGC6633_3.jpg",
+    "filename": "NGC6633_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 80.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6633_1.jpg",
+     "condPath": "photos/NGC6633_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6633_1.jpg",
+    "filename": "NGC6633_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6633_2.jpg",
+    "filename": "NGC6633_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 200,
+     "exposure_s": 90,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2,
+    "pair": {
+     "rawPath": "photos/NGC6633_1.jpg",
+     "condPath": "photos/NGC6633_2.jpg"
+    }
+   }
+  ],
+  "FLD0302N895": [
+   {
+    "path": "photos/FLD0302N895_1.jpg",
+    "filename": "FLD0302N895_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1732N311": [
+   {
+    "path": "photos/FLD1732N311_1.jpg",
+    "filename": "FLD1732N311_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2080.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1739S032": [
+   {
+    "path": "photos/FLD1739S032_1.jpg",
+    "filename": "FLD1739S032_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 210.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1756S181": [
+   {
+    "path": "photos/FLD1756S181_1.jpg",
+    "filename": "FLD1756S181_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1580.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1801S270": [
+   {
+    "path": "photos/FLD1801S270_1.jpg",
+    "filename": "FLD1801S270_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2340
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1826S077": [
+   {
+    "path": "photos/FLD1826S077_1.jpg",
+    "filename": "FLD1826S077_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2120.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1828S174": [
+   {
+    "path": "photos/FLD1828S174_1.jpg",
+    "filename": "FLD1828S174_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1834S133": [
+   {
+    "path": "photos/FLD1834S133_1.jpg",
+    "filename": "FLD1834S133_1.jpg",
+    "tags": [],
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1841S144": [
+   {
+    "path": "photos/FLD1841S144_1.jpg",
+    "filename": "FLD1841S144_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1620.0
+    },
+    "view": 1,
+    "master": true
+   },
+   {
+    "path": "photos/FLD1841S144_2.jpg",
+    "filename": "FLD1841S144_2.jpg",
+    "tags": [],
+    "device": "232319",
+    "view": 2
+   }
+  ],
+  "FLD1859N011": [
+   {
+    "path": "photos/FLD1859N011_1.jpg",
+    "filename": "FLD1859N011_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1210.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD1913N092": [
+   {
+    "path": "photos/FLD1913N092_1.jpg",
+    "filename": "FLD1913N092_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2040.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "FLD2326N617": [
+   {
+    "path": "photos/FLD2326N617_1.jpg",
+    "filename": "FLD2326N617_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "GammaCrA": [
+   {
+    "path": "photos/GammaCrA_1.jpg",
+    "filename": "GammaCrA_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 370.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/GammaCrA_2.jpg",
+     "condPath": "photos/GammaCrA_1.jpg"
+    }
+   },
+   {
+    "path": "photos/GammaCrA_2.jpg",
+    "filename": "GammaCrA_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 370.0
+    },
+    "view": 2
+   }
+  ],
+  "GammaSct": [
+   {
+    "path": "photos/GammaSct_1.jpg",
+    "filename": "GammaSct_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "HIP88060": [
+   {
+    "path": "photos/HIP88060_1.jpg",
+    "filename": "HIP88060_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 220.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "HIP106890": [
+   {
+    "path": "photos/HIP106890_1.jpg",
+    "filename": "HIP106890_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 40.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "IC10": [
+   {
+    "path": "photos/IC10_2.jpg",
+    "filename": "IC10_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC10_1.jpg",
+     "condPath": "photos/IC10_2.jpg"
+    }
+   },
+   {
+    "path": "photos/IC10_1.jpg",
+    "filename": "IC10_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1
+   }
+  ],
+  "IC1287": [
+   {
+    "path": "photos/IC1287_4.jpg",
+    "filename": "IC1287_4.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 3630.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/IC1287_3.jpg",
+    "filename": "IC1287_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 3630.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC1287_4.jpg",
+     "condPath": "photos/IC1287_3.jpg"
+    }
+   },
+   {
+    "path": "photos/IC1287_2.jpg",
+    "filename": "IC1287_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 2140.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/IC1287_1.jpg",
+    "filename": "IC1287_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 90,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "IC1318": [
+   {
+    "path": "photos/IC1318_1.jpg",
+    "filename": "IC1318_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 40.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/IC1318_4.jpg",
+    "filename": "IC1318_4.jpg",
+    "tags": [
+     "sub:IC1318B"
+    ],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 560.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/IC1318_2.jpg",
+    "filename": "IC1318_2.jpg",
+    "tags": [
+     "sub:IC1318B"
+    ],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 560.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC1318_4.jpg",
+     "condPath": "photos/IC1318_2.jpg"
+    }
+   },
+   {
+    "path": "photos/IC1318_3.jpg",
+    "filename": "IC1318_3.jpg",
+    "tags": [
+     "sub:IC1318A"
+    ],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 3
+   }
+  ],
+  "IC166": [
+   {
+    "path": "photos/IC166_2.jpg",
+    "filename": "IC166_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 310.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC166_1.jpg",
+     "condPath": "photos/IC166_2.jpg"
+    }
+   },
+   {
+    "path": "photos/IC166_1.jpg",
+    "filename": "IC166_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 310.0
+    },
+    "view": 1
+   }
+  ],
+  "IC1848": [
+   {
+    "path": "photos/IC1848_1.jpg",
+    "filename": "IC1848_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 880.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC1848_2.jpg",
+     "condPath": "photos/IC1848_1.jpg"
+    }
+   },
+   {
+    "path": "photos/IC1848_2.jpg",
+    "filename": "IC1848_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 900.0
+    },
+    "view": 2
+   }
+  ],
+  "IC4592": [
+   {
+    "path": "photos/IC4592_2.jpg",
+    "filename": "IC4592_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 70.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC4592_1.jpg",
+     "condPath": "photos/IC4592_2.jpg"
+    }
+   },
+   {
+    "path": "photos/IC4592_1.jpg",
+    "filename": "IC4592_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 180,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "IC4604": [
+   {
+    "path": "photos/IC4604_2.jpg",
+    "filename": "IC4604_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 580.0
+    },
+    "view": 2,
+    "master": true
+   },
+   {
+    "path": "photos/IC4604_1.jpg",
+    "filename": "IC4604_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 180.0
+    },
+    "view": 1
+   }
+  ],
+  "IC4605": [
+   {
+    "path": "photos/IC4605_1.jpg",
+    "filename": "IC4605_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 290.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC4605_2.jpg",
+     "condPath": "photos/IC4605_1.jpg"
+    }
+   },
+   {
+    "path": "photos/IC4605_2.jpg",
+    "filename": "IC4605_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "M25": [
+   {
+    "path": "photos/M25_3.jpg",
+    "filename": "M25_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 40.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M25_2.jpg",
+     "condPath": "photos/M25_3.jpg"
+    }
+   },
+   {
+    "path": "photos/M25_2.jpg",
+    "filename": "M25_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 40.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/M25_1.jpg",
+    "filename": "M25_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 140.0
+    },
+    "view": 1
+   }
+  ],
+  "IC4756": [
+   {
+    "path": "photos/IC4756_3.jpg",
+    "filename": "IC4756_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/IC4756_2.jpg",
+     "condPath": "photos/IC4756_3.jpg"
+    }
+   },
+   {
+    "path": "photos/IC4756_2.jpg",
+    "filename": "IC4756_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/IC4756_1.jpg",
+    "filename": "IC4756_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 120,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "Jupiter": [
+   {
+    "path": "photos/Jupiter_1.jpg",
+    "filename": "Jupiter_1.jpg",
+    "tags": [],
+    "exif": {},
+    "view": 1,
+    "master": true
+   }
+  ],
+  "KausBorealis": [
+   {
+    "path": "photos/KausBorealis_1.jpg",
+    "filename": "KausBorealis_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Kornephoros": [
+   {
+    "path": "photos/Kornephoros_1.jpg",
+    "filename": "Kornephoros_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M10": [
+   {
+    "path": "photos/M10_1.jpg",
+    "filename": "M10_1.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 260.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/M10_2.jpg",
+    "filename": "M10_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 260.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M10_1.jpg",
+     "condPath": "photos/M10_2.jpg"
+    }
+   }
+  ],
+  "M11": [
+   {
+    "path": "photos/M11_2.jpg",
+    "filename": "M11_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M11_1.jpg",
+     "condPath": "photos/M11_2.jpg"
+    }
+   },
+   {
+    "path": "photos/M11_1.jpg",
+    "filename": "M11_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1
+   }
+  ],
+  "M17": [
+   {
+    "path": "photos/M17_1.jpg",
+    "filename": "M17_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 330.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M17_2.jpg",
+     "condPath": "photos/M17_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M17_2.jpg",
+    "filename": "M17_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 330.0
+    },
+    "view": 2
+   }
+  ],
+  "M20": [
+   {
+    "path": "photos/M20_2.jpg",
+    "filename": "M20_2.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 700.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/M20_1.jpg",
+    "filename": "M20_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 700.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M20_2.jpg",
+     "condPath": "photos/M20_1.jpg"
+    }
+   }
+  ],
+  "M22": [
+   {
+    "path": "photos/M22_3.jpg",
+    "filename": "M22_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/M22_2.jpg",
+    "filename": "M22_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M22_3.jpg",
+     "condPath": "photos/M22_2.jpg"
+    }
+   },
+   {
+    "path": "photos/M22_1.jpg",
+    "filename": "M22_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "M24": [
+   {
+    "path": "photos/M24_1.jpg",
+    "filename": "M24_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 80.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/M24_2.jpg",
+    "filename": "M24_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 90,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2,
+    "master": true
+   }
+  ],
+  "M31": [
+   {
+    "path": "photos/M31_1.jpg",
+    "filename": "M31_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 4705.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M31_2.jpg",
+     "condPath": "photos/M31_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M31_2.jpg",
+    "filename": "M31_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 2860,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/M31_3.jpg",
+    "filename": "M31_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 4705.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/M31_4.jpg",
+    "filename": "M31_4.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 4
+   }
+  ],
+  "M39": [
+   {
+    "path": "photos/M39_2.jpg",
+    "filename": "M39_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M39_1.jpg",
+     "condPath": "photos/M39_2.jpg"
+    }
+   },
+   {
+    "path": "photos/M39_1.jpg",
+    "filename": "M39_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "M56": [
+   {
+    "path": "photos/M56_1.jpg",
+    "filename": "M56_1.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 820.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/M56_2.jpg",
+    "filename": "M56_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 820.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M56_1.jpg",
+     "condPath": "photos/M56_2.jpg"
+    }
+   }
+  ],
+  "M62": [
+   {
+    "path": "photos/M62_1.jpg",
+    "filename": "M62_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 290.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M62_2.jpg",
+     "condPath": "photos/M62_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M62_2.jpg",
+    "filename": "M62_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "M63": [
+   {
+    "path": "photos/M63_1.jpg",
+    "filename": "M63_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 830.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M63_2.jpg",
+     "condPath": "photos/M63_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M63_2.jpg",
+    "filename": "M63_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   }
+  ],
+  "M75": [
+   {
+    "path": "photos/M75_1.jpg",
+    "filename": "M75_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 70.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M81": [
+   {
+    "path": "photos/M81_1.jpg",
+    "filename": "M81_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 1400.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M81_3.jpg",
+     "condPath": "photos/M81_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M81_2.jpg",
+    "filename": "M81_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1550,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2,
+    "exposurePair": {
+     "shortPath": "photos/M81_4.jpg",
+     "longPath": "photos/M81_2.jpg",
+     "shortExpS": 900,
+     "longExpS": 1550
+    }
+   },
+   {
+    "path": "photos/M81_3.jpg",
+    "filename": "M81_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1550,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/M81_4.jpg",
+    "filename": "M81_4.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 4
+   }
+  ],
+  "M8": [
+   {
+    "path": "photos/M8_6.jpg",
+    "filename": "M8_6.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 8920.0
+    },
+    "view": 6
+   },
+   {
+    "path": "photos/M8_5.jpg",
+    "filename": "M8_5.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 7840.0
+    },
+    "view": 5
+   },
+   {
+    "path": "photos/M8_4.jpg",
+    "filename": "M8_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 7220.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/M8_3.jpg",
+    "filename": "M8_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 8980
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/M8_1.jpg",
+    "filename": "M8_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 33950
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/M8_2.jpg",
+     "condPath": "photos/M8_1.jpg"
+    }
+   },
+   {
+    "path": "photos/M8_2.jpg",
+    "filename": "M8_2.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 33950
+    },
+    "view": 2
+   }
+  ],
+  "MilkyWay": [
+   {
+    "path": "photos/MilkyWay_4.jpg",
+    "filename": "MilkyWay_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 3010.0
+    },
+    "view": 4,
+    "master": true
+   },
+   {
+    "path": "photos/MilkyWay_3.jpg",
+    "filename": "MilkyWay_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 70
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/MilkyWay_1.jpg",
+    "filename": "MilkyWay_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/MilkyWay_2.jpg",
+    "filename": "MilkyWay_2.jpg",
+    "tags": [],
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "f_number": 5,
+     "focal_mm": 160,
+     "exposure_s": 1860
+    },
+    "view": 2
+   }
+  ],
+  "Moon": [
+   {
+    "path": "photos/Moon_14.jpg",
+    "filename": "Moon_14.jpg",
+    "tags": [
+     "crescent"
+    ],
+    "device": "205000",
+    "view": 14
+   },
+   {
+    "path": "photos/Moon_13.jpg",
+    "filename": "Moon_13.jpg",
+    "tags": [
+     "gibbous"
+    ],
+    "device": "004914",
+    "view": 13,
+    "master": true
+   },
+   {
+    "path": "photos/Moon_11.jpg",
+    "filename": "Moon_11.jpg",
+    "tags": [
+     "gibbous"
+    ],
+    "device": "001351",
+    "view": 11
+   },
+   {
+    "path": "photos/Moon_12.jpg",
+    "filename": "Moon_12.jpg",
+    "tags": [
+     "gibbous"
+    ],
+    "device": "000542",
+    "view": 12
+   },
+   {
+    "path": "photos/Moon_1.jpg",
+    "filename": "Moon_1.jpg",
+    "tags": [],
+    "view": 1
+   },
+   {
+    "path": "photos/Moon_2.jpg",
+    "filename": "Moon_2.jpg",
+    "tags": [
+     "full"
+    ],
+    "device": "012736",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 0.009456,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/Moon_3.jpg",
+    "filename": "Moon_3.jpg",
+    "tags": [
+     "first-quarter"
+    ],
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 10,
+     "exposure_s": 0.0199959999836734,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/Moon_4.jpg",
+    "filename": "Moon_4.jpg",
+    "tags": [
+     "day"
+    ],
+    "device": "135206",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 0.001386,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/Moon_5.jpg",
+    "filename": "Moon_5.jpg",
+    "tags": [
+     "day"
+    ],
+    "device": "135103",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 0.002239000001656065,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 5
+   },
+   {
+    "path": "photos/Moon_6.jpg",
+    "filename": "Moon_6.jpg",
+    "tags": [
+     "crescent"
+    ],
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 112,
+     "exposure_s": 0.03,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 6
+   },
+   {
+    "path": "photos/Moon_7.jpg",
+    "filename": "Moon_7.jpg",
+    "tags": [
+     "crescent"
+    ],
+    "device": "venus-jupiter-1x",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 294,
+     "exposure_s": 0.05,
+     "f_number": 5,
+     "focal_mm": 5.96
+    },
+    "view": 7
+   },
+   {
+    "path": "photos/Moon_8.jpg",
+    "filename": "Moon_8.jpg",
+    "tags": [
+     "crescent"
+    ],
+    "device": "venus-2x",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 211,
+     "exposure_s": 0.039992,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 8
+   },
+   {
+    "path": "photos/Moon_9.jpg",
+    "filename": "Moon_9.jpg",
+    "tags": [
+     "crescent"
+    ],
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 52,
+     "exposure_s": 0.03,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 9
+   },
+   {
+    "path": "photos/Moon_10.jpg",
+    "filename": "Moon_10.jpg",
+    "tags": [
+     "full"
+    ],
+    "device": "iPhone",
+    "exif": {
+     "make": "Apple",
+     "model": "iPhone 17",
+     "iso": 32,
+     "exposure_s": 0.0008952551477170994,
+     "f_number": 1.6,
+     "focal_mm": 5.960000038146973
+    },
+    "view": 10
+   }
+  ],
+  "NGC129": [
+   {
+    "path": "photos/NGC129_1.jpg",
+    "filename": "NGC129_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 140.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC129_2.jpg",
+     "condPath": "photos/NGC129_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC129_2.jpg",
+    "filename": "NGC129_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC185": [
+   {
+    "path": "photos/NGC185_2.jpg",
+    "filename": "NGC185_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC185_1.jpg",
+     "condPath": "photos/NGC185_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC185_1.jpg",
+    "filename": "NGC185_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC188": [
+   {
+    "path": "photos/NGC188_1.jpg",
+    "filename": "NGC188_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC188_2.jpg",
+     "condPath": "photos/NGC188_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC188_2.jpg",
+    "filename": "NGC188_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC188_3.jpg",
+    "filename": "NGC188_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 3,
+    "pair": {
+     "rawPath": "photos/NGC188_4.jpg",
+     "condPath": "photos/NGC188_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC188_4.jpg",
+    "filename": "NGC188_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 4
+   }
+  ],
+  "NGC4236": [
+   {
+    "path": "photos/NGC4236_2.jpg",
+    "filename": "NGC4236_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC4236_1.jpg",
+     "condPath": "photos/NGC4236_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC4236_1.jpg",
+    "filename": "NGC4236_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC457": [
+   {
+    "path": "photos/NGC457_2.jpg",
+    "filename": "NGC457_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC457_1.jpg",
+     "condPath": "photos/NGC457_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC457_1.jpg",
+    "filename": "NGC457_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6229": [
+   {
+    "path": "photos/NGC6229_1.jpg",
+    "filename": "NGC6229_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6229_2.jpg",
+     "condPath": "photos/NGC6229_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6229_2.jpg",
+    "filename": "NGC6229_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6383": [
+   {
+    "path": "photos/NGC6383_3.jpg",
+    "filename": "NGC6383_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6383_2.jpg",
+     "condPath": "photos/NGC6383_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6383_2.jpg",
+    "filename": "NGC6383_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC6383_1.jpg",
+    "filename": "NGC6383_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6401": [
+   {
+    "path": "photos/NGC6401_1.jpg",
+    "filename": "NGC6401_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6440": [
+   {
+    "path": "photos/NGC6440_3.jpg",
+    "filename": "NGC6440_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6440_2.jpg",
+    "filename": "NGC6440_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6440_3.jpg",
+     "condPath": "photos/NGC6440_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6440_1.jpg",
+    "filename": "NGC6440_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6469": [
+   {
+    "path": "photos/NGC6469_1.jpg",
+    "filename": "NGC6469_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M23": [
+   {
+    "path": "photos/M23_1.jpg",
+    "filename": "M23_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/M23_2.jpg",
+    "filename": "M23_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2,
+    "master": true
+   }
+  ],
+  "NGC6503": [
+   {
+    "path": "photos/NGC6503_2.jpg",
+    "filename": "NGC6503_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 50.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6503_1.jpg",
+     "condPath": "photos/NGC6503_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6503_1.jpg",
+    "filename": "NGC6503_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 50.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6535": [
+   {
+    "path": "photos/NGC6535_3.jpg",
+    "filename": "NGC6535_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6535_1.jpg",
+     "condPath": "photos/NGC6535_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6535_1.jpg",
+    "filename": "NGC6535_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6535_2.jpg",
+    "filename": "NGC6535_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 30.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6543": [
+   {
+    "path": "photos/NGC6543_1.jpg",
+    "filename": "NGC6543_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6543_2.jpg",
+     "condPath": "photos/NGC6543_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6543_2.jpg",
+    "filename": "NGC6543_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC654": [
+   {
+    "path": "photos/NGC654_1.jpg",
+    "filename": "NGC654_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC654_2.jpg",
+     "condPath": "photos/NGC654_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC654_2.jpg",
+    "filename": "NGC654_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6568": [
+   {
+    "path": "photos/NGC6568_1.jpg",
+    "filename": "NGC6568_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1020.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6604": [
+   {
+    "path": "photos/NGC6604_5.jpg",
+    "filename": "NGC6604_5.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1740.0
+    },
+    "view": 5
+   },
+   {
+    "path": "photos/NGC6604_3.jpg",
+    "filename": "NGC6604_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 680.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6604_4.jpg",
+    "filename": "NGC6604_4.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 5140.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/NGC6604_1.jpg",
+    "filename": "NGC6604_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 5140.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6604_4.jpg",
+     "condPath": "photos/NGC6604_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6604_2.jpg",
+    "filename": "NGC6604_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6605": [
+   {
+    "path": "photos/NGC6605_3.jpg",
+    "filename": "NGC6605_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 10920.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6605_1.jpg",
+    "filename": "NGC6605_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 30980.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6605_3.jpg",
+     "condPath": "photos/NGC6605_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6605_2.jpg",
+    "filename": "NGC6605_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6624": [
+   {
+    "path": "photos/NGC6624_2.jpg",
+    "filename": "NGC6624_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 1400.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6624_1.jpg",
+     "condPath": "photos/NGC6624_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6624_1.jpg",
+    "filename": "NGC6624_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 1640.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6625": [
+   {
+    "path": "photos/NGC6625_2.jpg",
+    "filename": "NGC6625_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6625_1.jpg",
+     "condPath": "photos/NGC6625_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6625_1.jpg",
+    "filename": "NGC6625_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6629": [
+   {
+    "path": "photos/NGC6629_1.jpg",
+    "filename": "NGC6629_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 2260.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC663": [
+   {
+    "path": "photos/NGC663_2.jpg",
+    "filename": "NGC663_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC663_1.jpg",
+     "condPath": "photos/NGC663_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC663_1.jpg",
+    "filename": "NGC663_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6642": [
+   {
+    "path": "photos/NGC6642_3.jpg",
+    "filename": "NGC6642_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6642_2.jpg",
+    "filename": "NGC6642_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6642_3.jpg",
+     "condPath": "photos/NGC6642_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6642_1.jpg",
+    "filename": "NGC6642_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6645": [
+   {
+    "path": "photos/NGC6645_2.jpg",
+    "filename": "NGC6645_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 160.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6645_1.jpg",
+     "condPath": "photos/NGC6645_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6645_1.jpg",
+    "filename": "NGC6645_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 160,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC6664": [
+   {
+    "path": "photos/NGC6664_1.jpg",
+    "filename": "NGC6664_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6664_2.jpg",
+    "filename": "NGC6664_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6664_3.jpg",
+     "condPath": "photos/NGC6664_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6664_3.jpg",
+    "filename": "NGC6664_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 3
+   }
+  ],
+  "NGC6683": [
+   {
+    "path": "photos/NGC6683_2.jpg",
+    "filename": "NGC6683_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 120.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6683_1.jpg",
+     "condPath": "photos/NGC6683_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6683_1.jpg",
+    "filename": "NGC6683_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "M26": [
+   {
+    "path": "photos/M26_1.jpg",
+    "filename": "M26_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6704": [
+   {
+    "path": "photos/NGC6704_2.jpg",
+    "filename": "NGC6704_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6704_1.jpg",
+     "condPath": "photos/NGC6704_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6704_1.jpg",
+    "filename": "NGC6704_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6712": [
+   {
+    "path": "photos/NGC6712_1.jpg",
+    "filename": "NGC6712_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6712_2.jpg",
+    "filename": "NGC6712_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6712_3.jpg",
+     "condPath": "photos/NGC6712_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6712_3.jpg",
+    "filename": "NGC6712_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 3
+   }
+  ],
+  "NGC6716": [
+   {
+    "path": "photos/NGC6716_2.jpg",
+    "filename": "NGC6716_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6716_1.jpg",
+     "condPath": "photos/NGC6716_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6716_1.jpg",
+    "filename": "NGC6716_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6738": [
+   {
+    "path": "photos/NGC6738_3.jpg",
+    "filename": "NGC6738_3.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6738_2.jpg",
+    "filename": "NGC6738_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6738_3.jpg",
+     "condPath": "photos/NGC6738_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6738_1.jpg",
+    "filename": "NGC6738_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6742": [
+   {
+    "path": "photos/NGC6742_1.jpg",
+    "filename": "NGC6742_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6742_2.jpg",
+     "condPath": "photos/NGC6742_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6742_2.jpg",
+    "filename": "NGC6742_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6743": [
+   {
+    "path": "photos/NGC6743_2.jpg",
+    "filename": "NGC6743_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6743_1.jpg",
+     "condPath": "photos/NGC6743_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6743_1.jpg",
+    "filename": "NGC6743_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC6755": [
+   {
+    "path": "photos/NGC6755_1.jpg",
+    "filename": "NGC6755_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 290.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6755_2.jpg",
+     "condPath": "photos/NGC6755_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6755_2.jpg",
+    "filename": "NGC6755_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6760": [
+   {
+    "path": "photos/NGC6760_2.jpg",
+    "filename": "NGC6760_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6760_1.jpg",
+     "condPath": "photos/NGC6760_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6760_1.jpg",
+    "filename": "NGC6760_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6781": [
+   {
+    "path": "photos/NGC6781_1.jpg",
+    "filename": "NGC6781_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 580.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6781_2.jpg",
+     "condPath": "photos/NGC6781_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6781_2.jpg",
+    "filename": "NGC6781_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 610.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6791": [
+   {
+    "path": "photos/NGC6791_5.jpg",
+    "filename": "NGC6791_5.jpg",
+    "tags": [],
+    "device": "raw",
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 5
+   },
+   {
+    "path": "photos/NGC6791_1.jpg",
+    "filename": "NGC6791_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6791_5.jpg",
+     "condPath": "photos/NGC6791_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6791_2.jpg",
+    "filename": "NGC6791_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC6791_3.jpg",
+    "filename": "NGC6791_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 3,
+    "pair": {
+     "rawPath": "photos/NGC6791_2.jpg",
+     "condPath": "photos/NGC6791_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6791_4.jpg",
+    "filename": "NGC6791_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 30.0
+    },
+    "view": 4
+   }
+  ],
+  "NGC6802": [
+   {
+    "path": "photos/NGC6802_2.jpg",
+    "filename": "NGC6802_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 440.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6802_3.jpg",
+     "condPath": "photos/NGC6802_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6802_3.jpg",
+    "filename": "NGC6802_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 440.0
+    },
+    "view": 3
+   },
+   {
+    "path": "photos/NGC6802_1.jpg",
+    "filename": "NGC6802_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC6811": [
+   {
+    "path": "photos/NGC6811_3.jpg",
+    "filename": "NGC6811_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6811_1.jpg",
+     "condPath": "photos/NGC6811_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6811_1.jpg",
+    "filename": "NGC6811_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC6811_2.jpg",
+    "filename": "NGC6811_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   }
+  ],
+  "NGC6819": [
+   {
+    "path": "photos/NGC6819_2.jpg",
+    "filename": "NGC6819_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6819_1.jpg",
+     "condPath": "photos/NGC6819_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6819_1.jpg",
+    "filename": "NGC6819_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC6822": [
+   {
+    "path": "photos/NGC6822_1.jpg",
+    "filename": "NGC6822_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 520.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6822_2.jpg",
+     "condPath": "photos/NGC6822_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6822_2.jpg",
+    "filename": "NGC6822_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 520.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC6822_3.jpg",
+    "filename": "NGC6822_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 100.0
+    },
+    "view": 3
+   }
+  ],
+  "NGC6823": [
+   {
+    "path": "photos/NGC6823_2.jpg",
+    "filename": "NGC6823_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 140.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6823_1.jpg",
+     "condPath": "photos/NGC6823_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6823_1.jpg",
+    "filename": "NGC6823_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC6834": [
+   {
+    "path": "photos/NGC6834_1.jpg",
+    "filename": "NGC6834_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 420.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6834_2.jpg",
+     "condPath": "photos/NGC6834_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6834_2.jpg",
+    "filename": "NGC6834_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6866": [
+   {
+    "path": "photos/NGC6866_1.jpg",
+    "filename": "NGC6866_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6866_2.jpg",
+     "condPath": "photos/NGC6866_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6866_2.jpg",
+    "filename": "NGC6866_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC6866_3.jpg",
+    "filename": "NGC6866_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 200.0
+    },
+    "view": 3
+   }
+  ],
+  "NGC6946": [
+   {
+    "path": "photos/NGC6946_1.jpg",
+    "filename": "NGC6946_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 870.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6946_2.jpg",
+     "condPath": "photos/NGC6946_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6946_2.jpg",
+    "filename": "NGC6946_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 900.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6960": [
+   {
+    "path": "photos/NGC6960_4.jpg",
+    "filename": "NGC6960_4.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 2360.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/NGC6960_3.jpg",
+    "filename": "NGC6960_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNew": true,
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 30300.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6960_4.jpg",
+     "condPath": "photos/NGC6960_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6960_2.jpg",
+    "filename": "NGC6960_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   }
+  ],
+  "NGC7023": [
+   {
+    "path": "photos/NGC7023_1.jpg",
+    "filename": "NGC7023_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 1410
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7023_2.jpg",
+     "condPath": "photos/NGC7023_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7023_2.jpg",
+    "filename": "NGC7023_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   }
+  ],
+  "NGC7039": [
+   {
+    "path": "photos/NGC7039_2.jpg",
+    "filename": "NGC7039_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7039_1.jpg",
+     "condPath": "photos/NGC7039_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7039_1.jpg",
+    "filename": "NGC7039_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC7063": [
+   {
+    "path": "photos/NGC7063_1.jpg",
+    "filename": "NGC7063_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 290.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7063_2.jpg",
+     "condPath": "photos/NGC7063_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7063_2.jpg",
+    "filename": "NGC7063_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "M15": [
+   {
+    "path": "photos/M15_1.jpg",
+    "filename": "M15_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7082": [
+   {
+    "path": "photos/NGC7082_2.jpg",
+    "filename": "NGC7082_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7082_1.jpg",
+     "condPath": "photos/NGC7082_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7082_1.jpg",
+    "filename": "NGC7082_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "M2": [
+   {
+    "path": "photos/M2_1.jpg",
+    "filename": "M2_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7142": [
+   {
+    "path": "photos/NGC7142_1.jpg",
+    "filename": "NGC7142_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7142_2.jpg",
+     "condPath": "photos/NGC7142_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7142_2.jpg",
+    "filename": "NGC7142_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC7160": [
+   {
+    "path": "photos/NGC7160_3.jpg",
+    "filename": "NGC7160_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 3,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7160_1.jpg",
+     "condPath": "photos/NGC7160_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7160_1.jpg",
+    "filename": "NGC7160_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/NGC7160_2.jpg",
+    "filename": "NGC7160_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 2
+   }
+  ],
+  "NGC7209": [
+   {
+    "path": "photos/NGC7209_1.jpg",
+    "filename": "NGC7209_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7209_2.jpg",
+     "condPath": "photos/NGC7209_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7209_2.jpg",
+    "filename": "NGC7209_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC7261": [
+   {
+    "path": "photos/NGC7261_1.jpg",
+    "filename": "NGC7261_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 250.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7261_2.jpg",
+     "condPath": "photos/NGC7261_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7261_2.jpg",
+    "filename": "NGC7261_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 250.0
+    },
+    "view": 2
+   },
+   {
+    "path": "photos/NGC7261_3.jpg",
+    "filename": "NGC7261_3.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 250.0
+    },
+    "view": 3,
+    "pair": {
+     "rawPath": "photos/NGC7261_4.jpg",
+     "condPath": "photos/NGC7261_3.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7261_4.jpg",
+    "filename": "NGC7261_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 4
+   }
+  ],
+  "NGC7331": [
+   {
+    "path": "photos/NGC7331_2.jpg",
+    "filename": "NGC7331_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7331_1.jpg",
+     "condPath": "photos/NGC7331_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7331_1.jpg",
+    "filename": "NGC7331_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 300.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC7686": [
+   {
+    "path": "photos/NGC7686_2.jpg",
+    "filename": "NGC7686_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7686_1.jpg",
+     "condPath": "photos/NGC7686_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7686_1.jpg",
+    "filename": "NGC7686_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC7789": [
+   {
+    "path": "photos/NGC7789_2.jpg",
+    "filename": "NGC7789_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC7789_1.jpg",
+     "condPath": "photos/NGC7789_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC7789_1.jpg",
+    "filename": "NGC7789_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "NGC869": [
+   {
+    "path": "photos/NGC869_2.jpg",
+    "filename": "NGC869_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC869_1.jpg",
+     "condPath": "photos/NGC869_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC869_1.jpg",
+    "filename": "NGC869_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 90.0
+    },
+    "view": 1
+   }
+  ],
+  "NGC891": [
+   {
+    "path": "photos/NGC891_1.jpg",
+    "filename": "NGC891_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 710.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC891_2.jpg",
+     "condPath": "photos/NGC891_1.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC891_2.jpg",
+    "filename": "NGC891_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 800.0
+    },
+    "view": 2
+   }
+  ],
+  "NGC6539": [
+   {
+    "path": "photos/NGC6539_2.jpg",
+    "filename": "NGC6539_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 110.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/NGC6539_1.jpg",
+     "condPath": "photos/NGC6539_2.jpg"
+    }
+   },
+   {
+    "path": "photos/NGC6539_1.jpg",
+    "filename": "NGC6539_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 120.0
+    },
+    "view": 1
+   }
+  ],
+  "OCl1039": [
+   {
+    "path": "photos/OCl1039_4.jpg",
+    "filename": "OCl1039_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 380.0
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/OCl1039_2.jpg",
+    "filename": "OCl1039_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "exif": {
+     "exposure_s": 750.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/OCl1039_3.jpg",
+     "condPath": "photos/OCl1039_2.jpg"
+    }
+   },
+   {
+    "path": "photos/OCl1039_3.jpg",
+    "filename": "OCl1039_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 750.0
+    },
+    "view": 3
+   }
+  ],
+  "OmicronCas": [
+   {
+    "path": "photos/OmicronCas_1.jpg",
+    "filename": "OmicronCas_1.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/OmicronCas_2.jpg",
+     "condPath": "photos/OmicronCas_1.jpg"
+    }
+   },
+   {
+    "path": "photos/OmicronCas_2.jpg",
+    "filename": "OmicronCas_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 2
+   }
+  ],
+  "Pluto": [
+   {
+    "path": "photos/Pluto_1.jpg",
+    "filename": "Pluto_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 180.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Saturn": [
+   {
+    "path": "photos/Saturn_1.jpg",
+    "filename": "Saturn_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 50.4
+    },
+    "view": 1
+   },
+   {
+    "path": "photos/Saturn_2.jpg",
+    "filename": "Saturn_2.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true
+   }
+  ],
+  "Seginus": [
+   {
+    "path": "photos/Seginus_1.jpg",
+    "filename": "Seginus_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M101": [
+   {
+    "path": "photos/M101_1.jpg",
+    "filename": "M101_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1500,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M29": [
+   {
+    "path": "photos/M29_1.jpg",
+    "filename": "M29_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 150,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC884": [
+   {
+    "path": "photos/NGC884_1.jpg",
+    "filename": "NGC884_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 150.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M97": [
+   {
+    "path": "photos/M97_1.jpg",
+    "filename": "M97_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 160,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "gHer": [
+   {
+    "path": "photos/gHer_1.jpg",
+    "filename": "gHer_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 170,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M57": [
+   {
+    "path": "photos/M57_1.jpg",
+    "filename": "M57_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 170,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M13": [
+   {
+    "path": "photos/M13_1.jpg",
+    "filename": "M13_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1800,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M51": [
+   {
+    "path": "photos/M51_1.jpg",
+    "filename": "M51_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1800,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7000": [
+   {
+    "path": "photos/NGC7000_1.jpg",
+    "filename": "NGC7000_1.jpg",
+    "tags": [
+     "mosaic"
+    ],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 1800,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M16": [
+   {
+    "path": "photos/M16_1.jpg",
+    "filename": "M16_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 210,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M14": [
+   {
+    "path": "photos/M14_1.jpg",
+    "filename": "M14_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 210,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Venus": [
+   {
+    "path": "photos/Venus_4.jpg",
+    "filename": "Venus_4.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 180.4
+    },
+    "view": 4
+   },
+   {
+    "path": "photos/Venus_3.jpg",
+    "filename": "Venus_3.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.2
+    },
+    "view": 3,
+    "master": true
+   },
+   {
+    "path": "photos/Venus_1.jpg",
+    "filename": "Venus_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 20,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1
+   }
+  ],
+  "M102": [
+   {
+    "path": "photos/M102_1.jpg",
+    "filename": "M102_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M5": [
+   {
+    "path": "photos/M5_1.jpg",
+    "filename": "M5_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M3": [
+   {
+    "path": "photos/M3_1.jpg",
+    "filename": "M3_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC5907": [
+   {
+    "path": "photos/NGC5907_1.jpg",
+    "filename": "NGC5907_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M12": [
+   {
+    "path": "photos/M12_1.jpg",
+    "filename": "M12_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6939": [
+   {
+    "path": "photos/NGC6939_1.jpg",
+    "filename": "NGC6939_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M92": [
+   {
+    "path": "photos/M92_1.jpg",
+    "filename": "M92_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 30,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6871": [
+   {
+    "path": "photos/NGC6871_1.jpg",
+    "filename": "NGC6871_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 30,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "V379Vul": [
+   {
+    "path": "photos/V379Vul_1.jpg",
+    "filename": "V379Vul_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 860.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Neptune": [
+   {
+    "path": "photos/Neptune_1.jpg",
+    "filename": "Neptune_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "exposure_s": 10.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Vega": [
+   {
+    "path": "photos/Vega_1.jpg",
+    "filename": "Vega_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 300,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Arcturus": [
+   {
+    "path": "photos/Arcturus_1.jpg",
+    "filename": "Arcturus_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "IC1171": [
+   {
+    "path": "photos/IC1171_1.jpg",
+    "filename": "IC1171_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "IC5146": [
+   {
+    "path": "photos/IC5146_1.jpg",
+    "filename": "IC5146_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M100": [
+   {
+    "path": "photos/M100_1.jpg",
+    "filename": "M100_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M27": [
+   {
+    "path": "photos/M27_1.jpg",
+    "filename": "M27_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC5965": [
+   {
+    "path": "photos/NGC5965_1.jpg",
+    "filename": "NGC5965_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7635": [
+   {
+    "path": "photos/NGC7635_1.jpg",
+    "filename": "NGC7635_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 600,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "IC4665": [
+   {
+    "path": "photos/IC4665_1.jpg",
+    "filename": "IC4665_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "M71": [
+   {
+    "path": "photos/M71_1.jpg",
+    "filename": "M71_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6709": [
+   {
+    "path": "photos/NGC6709_1.jpg",
+    "filename": "NGC6709_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7243": [
+   {
+    "path": "photos/NGC7243_1.jpg",
+    "filename": "NGC7243_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Polaris": [
+   {
+    "path": "photos/Polaris_1.jpg",
+    "filename": "Polaris_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 60,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6888": [
+   {
+    "path": "photos/NGC6888_1.jpg",
+    "filename": "NGC6888_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC7380": [
+   {
+    "path": "photos/NGC7380_1.jpg",
+    "filename": "NGC7380_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Thuban": [
+   {
+    "path": "photos/Thuban_1.jpg",
+    "filename": "Thuban_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 900,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "NGC6826": [
+   {
+    "path": "photos/NGC6826_1.jpg",
+    "filename": "NGC6826_1.jpg",
+    "tags": [],
+    "device": "Seestar",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 90,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "Sun": [
+   {
+    "path": "photos/Sun_1.jpg",
+    "filename": "Sun_1.jpg",
+    "tags": [
+     "whitelight"
+    ],
+    "device": "143124",
+    "exif": {
+     "make": "ZWO",
+     "model": "Seestar S30 Pro",
+     "iso": 0,
+     "exposure_s": 0.00734,
+     "f_number": 5,
+     "focal_mm": 160
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "ThetaDra": [
+   {
+    "path": "photos/ThetaDra_1.jpg",
+    "filename": "ThetaDra_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 20.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "TR34": [
+   {
+    "path": "photos/TR34_2.jpg",
+    "filename": "TR34_2.jpg",
+    "tags": [],
+    "device": "conditioned",
+    "conditionedBy": "custom",
+    "isNewRender": true,
+    "exif": {
+     "exposure_s": 130.0
+    },
+    "view": 2,
+    "master": true,
+    "pair": {
+     "rawPath": "photos/TR34_1.jpg",
+     "condPath": "photos/TR34_2.jpg"
+    }
+   },
+   {
+    "path": "photos/TR34_1.jpg",
+    "filename": "TR34_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 130.0
+    },
+    "view": 1
+   }
+  ],
+  "V1331AQL": [
+   {
+    "path": "photos/V1331AQL_1.jpg",
+    "filename": "V1331AQL_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1240.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "V3879Sgr": [
+   {
+    "path": "photos/V3879Sgr_1.jpg",
+    "filename": "V3879Sgr_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ],
+  "V430SCT": [
+   {
+    "path": "photos/V430SCT_2.jpg",
+    "filename": "V430SCT_2.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 2,
+    "master": true
+   },
+   {
+    "path": "photos/V430SCT_1.jpg",
+    "filename": "V430SCT_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 60.0
+    },
+    "view": 1
+   }
+  ],
+  "V4381Sgr": [
+   {
+    "path": "photos/V4381Sgr_1.jpg",
+    "filename": "V4381Sgr_1.jpg",
+    "tags": [],
+    "exif": {
+     "exposure_s": 1190.0
+    },
+    "view": 1,
+    "master": true
+   }
+  ]
+ },
+ "unmatched": [
+  "Closeup_IC10.jpg",
+  "Closeup_IC1287.jpg",
+  "Closeup_IC166.jpg",
+  "Closeup_IC4605.jpg",
+  "Closeup_IC4665.jpg",
+  "Closeup_IC4756.jpg",
+  "Closeup_IC5146.jpg",
+  "Closeup_NGC129.jpg",
+  "Closeup_NGC185.jpg",
+  "Closeup_NGC188.jpg",
+  "Closeup_NGC4236.jpg",
+  "Closeup_NGC457.jpg",
+  "Closeup_NGC5907.jpg",
+  "Closeup_NGC5965.jpg",
+  "Closeup_NGC6229.jpg",
+  "Closeup_NGC6401.jpg",
+  "Closeup_NGC6440.jpg",
+  "Closeup_NGC6469.jpg",
+  "Closeup_NGC6503.jpg",
+  "Closeup_NGC6535.jpg",
+  "Closeup_NGC654.jpg",
+  "Closeup_NGC6543.jpg",
+  "Closeup_NGC6568.jpg",
+  "Closeup_NGC6604.jpg",
+  "Closeup_NGC6605.jpg",
+  "Closeup_NGC6625.jpg",
+  "Closeup_NGC6629.jpg",
+  "Closeup_NGC663.jpg",
+  "Closeup_NGC6633.jpg",
+  "Closeup_NGC6645.jpg",
+  "Closeup_NGC6664.jpg",
+  "Closeup_NGC6683.jpg",
+  "Closeup_NGC6704.jpg",
+  "Closeup_NGC6709.jpg",
+  "Closeup_NGC6712.jpg",
+  "Closeup_NGC6716.jpg",
+  "Closeup_NGC6738.jpg",
+  "Closeup_NGC6742.jpg",
+  "Closeup_NGC6743.jpg",
+  "Closeup_NGC6755.jpg",
+  "Closeup_NGC6760.jpg",
+  "Closeup_NGC6781.jpg",
+  "Closeup_NGC6791.jpg",
+  "Closeup_NGC6802.jpg",
+  "Closeup_NGC6811.jpg",
+  "Closeup_NGC6819.jpg",
+  "Closeup_NGC6822.jpg",
+  "Closeup_NGC6823.jpg",
+  "Closeup_NGC6826.jpg",
+  "Closeup_NGC6834.jpg",
+  "Closeup_NGC6866.jpg",
+  "Closeup_NGC6871.jpg",
+  "Closeup_NGC6888.jpg",
+  "Closeup_NGC6939.jpg",
+  "Closeup_NGC6940.jpg",
+  "Closeup_NGC6946.jpg",
+  "Closeup_NGC7023.jpg",
+  "Closeup_NGC7039.jpg",
+  "Closeup_NGC7063.jpg",
+  "Closeup_NGC7082.jpg",
+  "Closeup_NGC7142.jpg",
+  "Closeup_NGC7160.jpg",
+  "Closeup_NGC7209.jpg",
+  "Closeup_NGC7243.jpg",
+  "Closeup_NGC7261.jpg",
+  "Closeup_NGC7331.jpg",
+  "Closeup_NGC7380.jpg",
+  "Closeup_NGC7635.jpg",
+  "Closeup_NGC7686.jpg",
+  "Closeup_NGC7789.jpg",
+  "Closeup_NGC869.jpg",
+  "Closeup_NGC884.jpg",
+  "Closeup_NGC891.jpg"
+ ],
+ "total": 391
+}

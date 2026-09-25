@@ -1,0 +1,3332 @@
+{
+ "note": "Per-photo author's notes and the option row rendered beneath each image. Keyed by ORIGINAL photo path; publish.py rewrites the keys to the published barebones paths. Hand-edit freely — tools/build_photo_options.py only fills in what is missing and never overwrites an existing value. `downloads` is an explicit list so the buttons stop being guessed from capture dates; `note` is per photo, so two images of the same object can say different things.",
+ "byPath": {
+  "photos/UMa_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/UMa_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/28Aquilae_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/28Aquilae_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/68Herculis_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/68Herculis_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6992_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6992_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "standaloneWhy": "no photo shares its framing; was no before"
+  },
+  "photos/NGC281_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC281_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC281_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6940_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6940_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6940_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M52_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M52_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1805_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1805_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC1805_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6633_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6633_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6633_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/FLD0302N895_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD0302N895_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1732N311_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1732N311_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1739S032_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1739S032_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1756S181_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1756S181_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1801S270_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1801S270_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 2340
+  },
+  "photos/FLD1826S077_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1826S077_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1828S174_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1828S174_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1834S133_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1834S133_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1841S144_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1841S144_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1841S144_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1841S144_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1859N011_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1859N011_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD1913N092_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD1913N092_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/FLD2326N617_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/FLD2326N617_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/GammaCrA_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/GammaCrA_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/GammaCrA_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/GammaCrA_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/GammaCrA_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/GammaSct_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/GammaSct_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/HIP88060_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/HIP88060_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/HIP106890_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/HIP106890_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC10_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC10_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC10_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC1287_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1287_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC1287_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC1287_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1287_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1318_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1318_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC1318_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC1318_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1318_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC166_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC166_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC166_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC1805_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1805_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1848_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1848_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1848_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1848_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC1848_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC4592_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4592_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC4592_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/IC4604_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4604_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4604_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4604_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4605_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4605_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4605_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4605_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC4605_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M25_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M25_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4756_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4756_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4756_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4756_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/IC4756_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/Jupiter_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Jupiter_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/KausBorealis_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/KausBorealis_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Kornephoros_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Kornephoros_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M10_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M10_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M10_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M10_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M10_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M11_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M11_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M11_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M11_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M11_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M17_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M17_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M17_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M17_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M17_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M20_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M20_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M20_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M20_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M20_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M22_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M22_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M22_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M22_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M22_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M22_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M22_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M24_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M24_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M25_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M25_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M25_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M25_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M25_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M31_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M31_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M31_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M31_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M31_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M39_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M39_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M39_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M56_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M56_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M56_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M56_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M56_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M62_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M62_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M62_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M62_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M62_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M63_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M63_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M63_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M75_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M75_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M81_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M81_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M81_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M81_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M81_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M8_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 33950
+  },
+  "photos/M8_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/M8_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ],
+   "exposureS": 33950
+  },
+  "photos/M8_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 8980
+  },
+  "photos/M8_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M8_5.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_5.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M8_6.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M8_6.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/MilkyWay_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/MilkyWay_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 1860
+  },
+  "photos/MilkyWay_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/MilkyWay_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 300
+  },
+  "photos/MilkyWay_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/MilkyWay_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "exposureS": 70
+  },
+  "photos/MilkyWay_4.jpg": {
+   "domeBackground": true,
+   "downloads": [
+    {
+     "path": "photos/MilkyWay_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_9.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_9.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_8.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_8.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_7.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_7.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_6.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_6.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_14.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_14.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_5.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_5.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_10.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_10.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_12.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_12.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_11.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_11.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Moon_13.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Moon_13.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "master": true,
+   "masterWhy": "User, 2026-09-20: chosen by eye as the Moon's lead image. The automatic rule ranks by integration time and every lunar frame has none, so without this the card opened on whichever sorted first."
+  },
+  "photos/NGC129_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC129_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC129_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC129_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC129_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC129_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC185_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC185_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC185_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC185_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC185_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC188_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC188_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC188_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC188_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC188_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC188_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC188_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC188_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC188_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC188_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC281_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC281_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC281_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC281_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC281_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC4236_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC4236_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC4236_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC457_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC457_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC457_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC457_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC457_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6229_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6229_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6229_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6229_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6229_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6383_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6383_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6383_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6383_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6383_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6383_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6383_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6401_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6401_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6440_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6440_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6440_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6440_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6440_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6440_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6440_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6469_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6469_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M23_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M23_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M23_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M23_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6503_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6503_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6503_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6535_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6535_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6535_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6535_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6535_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6535_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6535_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6543_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6543_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6543_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6543_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6543_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC654_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC654_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC654_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC654_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC654_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6568_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6568_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6604_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6604_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6604_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6604_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6604_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6604_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6604_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6604_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6604_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6604_5.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6604_5.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6605_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6605_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6605_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6605_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6605_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6605_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6605_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6624_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6624_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6624_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6625_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6625_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6625_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6625_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6625_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6629_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6629_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6633_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6633_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6633_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6633_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6633_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC663_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC663_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC663_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC663_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC663_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6642_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6642_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6642_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6642_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6642_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6642_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6642_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6645_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6645_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6645_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6664_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6664_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6664_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6664_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6664_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6664_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6664_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6683_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6683_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6683_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6683_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6683_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M26_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M26_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6704_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6704_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6704_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6704_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6704_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6712_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6712_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6712_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6712_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6712_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6712_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6712_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6716_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6716_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6716_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6716_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6716_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6738_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6738_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6738_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6738_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6738_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6738_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6738_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6742_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6742_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6742_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6742_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6742_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6743_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6743_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6743_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6755_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6755_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6755_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6760_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6760_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6760_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6760_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6760_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6781_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6781_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6781_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6781_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6781_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6791_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6791_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6791_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6791_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6791_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6791_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6791_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6791_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6791_5.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6791_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6791_5.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6791_5.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6802_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6802_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6802_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6802_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6802_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6811_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6811_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6811_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6819_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6819_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6819_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6822_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6822_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6822_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6822_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6822_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6822_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6822_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6823_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6823_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6823_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6834_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6834_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6834_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6866_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6866_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "standaloneWhy": "no photo shares its framing; was its master ngc6866 no longer has this framing (centre 0.061 deg, rotation 157.9 deg, field 1.99x3.70 vs 1.99x3.70 deg)"
+  },
+  "photos/NGC6866_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6866_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6866_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6866_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6866_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6940_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6940_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6940_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6940_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6940_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6946_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6946_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6946_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6946_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6946_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6960_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6960_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6960_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7023_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7023_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7023_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ],
+   "exposureS": 1410,
+   "exposureWhy": "Pinned 2026-09-23. The master was re-stacked that day to 86 subs and its render REJECTED by eye (see data/render_hold.json); the published photograph is still the one from the 141-sub master, so its depth is that master's 1410 s and not the current header's. Remove this only when the shipped render and the master are the same stack again."
+  },
+  "photos/NGC7039_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7039_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7039_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7063_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7063_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7063_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M15_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M15_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7082_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7082_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7082_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/M2_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M2_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7142_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7142_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7142_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7142_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7142_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7160_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7160_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7160_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7209_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7209_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7209_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7261_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7261_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7261_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7261_4.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7261_3.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7261_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7261_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7261_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7261_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7261_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7331_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7331_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7331_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7686_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7686_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7686_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7686_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7686_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC7789_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7789_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC7789_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC869_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC869_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC869_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC869_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC869_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC891_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC891_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC891_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC891_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC891_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/NGC6539_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6539_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6539_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6539_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/NGC6539_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/OCl1039_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/OCl1039_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/OCl1039_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/OCl1039_3.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/OCl1039_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/OCl1039_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/OCl1039_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/OmicronCas_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/OmicronCas_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/OmicronCas_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/OmicronCas_2.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/OmicronCas_1.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/Pluto_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Pluto_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1318_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1318_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Saturn_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Saturn_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Seginus_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Seginus_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1287_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1287_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6960_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6960_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6992_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6992_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M101_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M101_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M81_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M81_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6743_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6743_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6755_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6755_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6811_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6811_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6811_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6811_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6819_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6819_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6823_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6823_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M29_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M29_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7063_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7063_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7160_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7160_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7160_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7160_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7209_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7209_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7789_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7789_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC884_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC884_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M97_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M97_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6645_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6645_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M57_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M57_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/gHer_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/gHer_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M13_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M13_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M51_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M51_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7000_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7000_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4592_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4592_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M16_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M16_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M14_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M14_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M31_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M31_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Venus_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Venus_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC10_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC10_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M102_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M102_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M5_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M5_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC4236_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC4236_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M3_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M3_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC5907_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC5907_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M12_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M12_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6802_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6802_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6834_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6834_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6939_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6939_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7331_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7331_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC166_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC166_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M92_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M92_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6871_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6871_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V379Vul_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V379Vul_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6503_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6503_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Neptune_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Neptune_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Vega_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Vega_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Arcturus_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Arcturus_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1171_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1171_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC5146_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC5146_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M100_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M100_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M27_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M27_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M31_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M31_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC5965_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC5965_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7635_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7635_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4665_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4665_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC4756_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC4756_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M39_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M39_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M71_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M71_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6709_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6709_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7039_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7039_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7082_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7082_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7243_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7243_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Polaris_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Polaris_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Saturn_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Saturn_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6624_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6624_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1318_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1318_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M63_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M63_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M81_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M81_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6888_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6888_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6960_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6960_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7023_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7023_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC7380_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC7380_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Thuban_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Thuban_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/IC1287_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/IC1287_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/M24_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/M24_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/NGC6826_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/NGC6826_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Sun_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Sun_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/TR34_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/TR34_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/TR34_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/TR34_1.jpg",
+     "label": "↓",
+     "title": "Download raw image"
+    },
+    {
+     "path": "photos/TR34_2.jpg",
+     "label": "↓★",
+     "title": "Download conditioned image"
+    }
+   ]
+  },
+  "photos/ThetaDra_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/ThetaDra_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V1331AQL_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V1331AQL_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V3879Sgr_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V3879Sgr_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V430SCT_2.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V430SCT_2.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V430SCT_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V430SCT_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/V4381Sgr_1.jpg": {
+   "downloads": [
+    {
+     "path": "photos/V4381Sgr_1.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  },
+  "photos/Venus_3.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Venus_3.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ],
+   "master": true
+  },
+  "photos/Venus_4.jpg": {
+   "downloads": [
+    {
+     "path": "photos/Venus_4.jpg",
+     "label": "↓ Download",
+     "title": "Download this image"
+    }
+   ]
+  }
+ }
+}

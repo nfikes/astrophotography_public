@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astrophotography — a Seestar S30 Pro album mapped onto the sky</title>
+  <meta name="description" content="Deep-sky targets photographed with a ZWO Seestar S30 Pro: raw stacks, conditioned renders, before/after sliders, and a sky dome that maps every frame onto the celestial sphere." />
+  <!-- Discoverability. The album is painted by gallery.js, so these tags and
+       the static pages under targets/ (publish.py build_seo) are what a
+       crawler and a link preview actually read. og:image is an absolute URL
+       because previews are fetched from elsewhere. -->
+  <link rel="canonical" href="https://nfikes.github.io/astrophotography_public/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Astrophotography" />
+  <meta property="og:title" content="Astrophotography — a Seestar S30 Pro album mapped onto the sky" />
+  <meta property="og:description" content="Deep-sky targets photographed with a ZWO Seestar S30 Pro: raw stacks, conditioned renders, before/after sliders, and a sky dome that maps every frame onto the celestial sphere." />
+  <meta property="og:image" content="https://nfikes.github.io/astrophotography_public/photos/M31_1.jpg" />
+  <meta property="og:url" content="https://nfikes.github.io/astrophotography_public/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Astrophotography — a Seestar S30 Pro album mapped onto the sky" />
+  <meta name="twitter:image" content="https://nfikes.github.io/astrophotography_public/photos/M31_1.jpg" />
+  <!-- Tab icon: the North America Nebula, the same image the album app and the
+       desktop launcher use. Without it the site takes the browser's generic
+       page glyph and reads as an anonymous tab among a row of them. The 32 px
+       copy is what the tab actually draws; the 192 px one is picked up by
+       browsers on high-DPI displays and by "add to home screen". -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png" />
+  <link rel="stylesheet" href="gallery.css?v=0b26bf47" />
+</head>
+<body>
+  <!-- Reusable "の" sparkle glyph. Defined once as an SVG symbol, then
+       referenced with <use href="#no-glyph"> anywhere in the page. The
+       four-pointed concave sparkle is the outer ornament; the inner
+       stroke is a stylized の (hook + descending line). Replaces the
+       possessive markers in the title — 's in English, の in Japanese. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="no-glyph" viewBox="0 0 100 100"
+            fill="currentColor" fill-rule="evenodd">
+      <!-- User-traced contour (tools/svg-tracer.html) — single closed
+           path that draws the four-point sparkle then flows into the
+           interior の loop. Filled with evenodd so self-crossings punch
+           clean holes, and no stroke — the fill boundary alone preserves
+           the razor-sharp cusped-point silhouette from the trace. -->
+      <path d="M50 97 Q46 58 5 52 Q45 46 50 6 Q55 47 97 52 Q74 53 61 70 Q71 51 80 52 Q56 43 50 20 Q45 46 18 52 Q43 57 50 79 Q53 56 54 34 Q57 38 59 40 Q57 67 50 97 Z"/>
+    </symbol>
+  </svg>
+
+  <!-- Hero: NGC 7000 as backdrop with a bilingual white title. Fades to
+       transparent as the user scrolls into the album below. Both languages
+       are always visible here — the language toggle affects the chrome
+       below, not this formal album name. -->
+  <section class="hero" id="hero" aria-hidden="true">
+    <!-- The Lagoon and the Trifid in one frame, 5 h 10 m across four
+         nights — the album's deepest capture, so it is the one that opens
+         it. Portrait like every Seestar frame, and turned a quarter turn
+         by .hero-bg so the whole field reads landscape instead of being
+         cropped to a strip of it. -->
+    <img class="hero-bg is-turned" src="photos/M8_1.jpg" alt="" />
+    <div class="hero-vignette"></div>
+    <div class="hero-title">
+      <div class="hero-title-ja">ネーサン<span class="no-glyph" aria-hidden="true"><svg><use href="#no-glyph"/></svg></span>天体写真<span class="no-glyph" aria-hidden="true"><svg><use href="#no-glyph"/></svg></span>アルバム</div>
+      <div class="hero-title-en">Nathan's Astrophotography Album</div>
+      <!-- Album version. Filled from data/version.json at runtime so the
+           number has one source of truth rather than being retyped here. -->
+      <div class="hero-version" id="hero-version"></div>
+      <!-- A note from the observer, in his own words. Written here rather
+           than in I18N because it is a message from a person and not a
+           label: it says the same thing in both languages and it is the
+           one piece of copy on this page that is not describing the
+           software. Plain white, under the title, where the eye lands
+           after the name and before the pictures. -->
+      <div class="hero-note" id="hero-note">
+        <span class="hero-note-en">I must pause due to a storage limitation
+          — however the universe never pauses, so remember to continue to
+          look up, because you don’t want to miss it.</span>
+        <span class="hero-note-ja">保存容量の都合でしばらくお休みします。
+          けれど宇宙は止まりません。見上げることを続けてください、
+          見逃してしまわないように。</span>
+      </div>
+    </div>
+  </section>
+  <!-- The same note, for anything that does not read pixels.
+       The hero above is aria-hidden: it is decorative type over a
+       photograph, and the page's real heading is the <h1> in the header.
+       An aria-hidden ancestor cannot be undone by a descendant, so the
+       one piece of the hero that is CONTENT rather than decoration is
+       repeated here where assistive technology can reach it. Off-screen
+       rather than display:none, because display:none is not read either. -->
+  <p class="hero-note-sr">I must pause due to a storage limitation —
+    however the universe never pauses, so remember to continue to look up,
+    because you don’t want to miss it.</p>
+
+  <!-- Side gutters: a twentieth of the viewport down each edge, with the
+       page background fading inwards so content dissolves into the margin
+       instead of being cut off at a hard line. Click-through. -->
+  <div class="page-edge left" aria-hidden="true"></div>
+  <div class="page-edge right" aria-hidden="true"></div>
+
+  <header class="hdr">
+    <h1 class="hdr-title" id="hdr-title">Astrophotography</h1>
+    <div class="hdr-actions">
+      <!-- Sky dome: turns the screen into a drag-to-look celestial sphere
+           with every plate-solved photo pinned where it was actually
+           taken. Sits next to the changelog as a peer affordance. -->
+      <!-- Feedback, and the votes it sits beside. Both are to the LEFT
+           of Sky, and both are hidden outright until SITE_ENDPOINT in
+           gallery.js points at a deployed Worker — a site with no backend
+           shows no controls that need one, rather than buttons that fail. -->
+      <button id="feedback-toggle" class="hdr-btn" type="button"
+              aria-label="Send feedback" aria-expanded="false"
+              aria-controls="feedback-panel"
+              title="Tell the author what you think" hidden>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <path d="M2 3.5h12v8H6.5L3.5 14v-2.5H2z" stroke="currentColor"
+                stroke-width="1.3" fill="none" stroke-linejoin="round"/>
+        </svg>
+        <span id="feedback-label">Feedback</span>
+      </button>
+      <button id="votes-toggle" class="hdr-btn" type="button"
+              aria-label="Voting data" aria-expanded="false"
+              aria-controls="votes-panel"
+              title="What visitors have voted to see reprocessed" hidden>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <path d="M3 13V8m5 5V3m5 10V6" stroke="currentColor"
+                stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span id="votes-label">Votes</span>
+      </button>
+      <button id="dome-toggle" class="hdr-btn" type="button"
+              aria-label="Sky dome" aria-expanded="false"
+              aria-controls="dome-overlay"
+              title="Sky dome — see the album mapped onto the sky">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <ellipse cx="8" cy="8" rx="2.6" ry="6" stroke="currentColor" stroke-width="1.1" fill="none"/>
+          <path d="M2.3 6h11.4M2.3 10h11.4" stroke="currentColor" stroke-width="1.1" fill="none"/>
+        </svg>
+        <span id="dome-label">Sky</span>
+      </button>
+      <button id="changelog-toggle" class="hdr-btn" type="button"
+              aria-label="Changelog" aria-expanded="false"
+              aria-controls="changelog-panel"
+              title="Changelog">
+        <!-- Simple scroll / list icon (inline SVG so no icon-font hop) -->
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor"
+                stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span id="changelog-label">Changelog</span>
+      </button>
+      <button id="lang-toggle" class="hdr-btn lang-toggle" type="button"
+              aria-label="Switch language" title="Switch language">EN</button>
+    </div>
+  </header>
+
+  <!-- Feedback. A plain textarea and a send button: no name, no address,
+       nothing to fill in, because the fewer fields there are the more
+       people write anything at all. What the visitor types is the ONLY
+       thing that leaves the page — the recipient and the subject live in
+       the Worker as constants and cannot be named from here. -->
+  <div id="feedback-panel" class="changelog-panel feedback-panel" role="dialog"
+       aria-labelledby="feedback-title" hidden>
+    <div class="feedback-head">
+      <div class="changelog-title" id="feedback-title">Send feedback</div>
+      <!-- The panel opens over the button that opened it, so it has to
+           carry its own way out. Two more exist: a click outside, and
+           Escape. -->
+      <button type="button" class="panel-close" id="feedback-close"
+              aria-label="Close feedback">✕</button>
+      <div class="feedback-sub" id="feedback-sub"></div>
+    </div>
+    <textarea id="feedback-text" class="feedback-text" rows="6"
+              maxlength="4000" spellcheck="true"
+              aria-describedby="feedback-sub"></textarea>
+    <div class="feedback-foot">
+      <span class="feedback-count" id="feedback-count"></span>
+      <button type="button" class="feedback-send" id="feedback-send"></button>
+    </div>
+    <div class="feedback-said" id="feedback-said" role="status" hidden></div>
+  </div>
+
+  <!-- Voting data: the whole wishlist, most wanted first. Read-only; the
+       vote itself is cast from the picture's own row. -->
+  <div id="votes-panel" class="changelog-panel votes-panel" role="dialog"
+       aria-labelledby="votes-title" hidden>
+    <div class="votes-head">
+      <div class="changelog-title" id="votes-title">Voting data</div>
+      <button type="button" class="panel-close" id="votes-close"
+              aria-label="Close voting data">✕</button>
+    </div>
+    <div class="votes-body" id="votes-body"></div>
+  </div>
+
+  <!-- Changelog panel: dropdown-style overlay attached under the header.
+       Populated from changelog.json as a timeline — one collapsible band
+       per major version, newest open — and stamped with the album version
+       from data/version.json. Opened by the button above. -->
+  <div id="changelog-panel" class="changelog-panel" role="dialog"
+       aria-labelledby="changelog-panel-title" hidden>
+    <div class="changelog-panel-inner">
+      <div class="changelog-panel-head">
+        <h2 id="changelog-panel-title" class="changelog-panel-title">Changelog</h2>
+        <span id="changelog-version" class="changelog-version" hidden></span>
+      </div>
+      <ol id="changelog-list" class="changelog-list"></ol>
+    </div>
+  </div>
+
+  <!-- Sky dome overlay. Full-screen while open; the album keeps its own
+       scroll position underneath. Everything drawn inside is either a
+       photo or a coordinate line — there is no simulated starfield. -->
+  <div id="dome-overlay" class="dome-overlay" role="dialog"
+       aria-label="Sky dome" hidden>
+    <canvas id="dome-canvas" class="dome-canvas"></canvas>
+    <!-- The capture region outline. DOM rather than GL because it carries
+         drag handles; sky_dome.js re-projects its corners every frame so it
+         stays pinned to the sky rather than to the screen. -->
+    <svg class="dome-cap-svg" id="dome-cap-svg" hidden aria-hidden="true"
+         preserveAspectRatio="none">
+      <polygon id="dome-cap-poly" class="dome-cap-poly" points="" />
+      <!-- Composition guide, inside the outline and under the handles.
+           Filled with <polyline> children by sky_dome.js: each guide line
+           is straight in the PHOTOGRAPH, which on the dome's own projection
+           is a curve, so it is sampled along its length rather than drawn
+           corner to corner. -->
+      <g id="dome-cap-guide" class="dome-cap-guide"></g>
+      <!-- Three handles: h1/h2 are the ends of one edge (they set the
+           rotation and the width), h3 rides the opposite edge's midpoint
+           and sets the height. -->
+      <circle id="dome-cap-h1" class="dome-cap-handle" r="0" />
+      <circle id="dome-cap-h2" class="dome-cap-handle" r="0" />
+      <circle id="dome-cap-h3" class="dome-cap-handle is-h3" r="0" />
+    </svg>
+    <!-- The frame you arrived from, outlined for a couple of seconds when
+         you come here from an image in the album. Every plate looks alike
+         on the sphere and neighbours overlap, so without this there is no
+         way to tell which one you were just looking at. Its corners are
+         re-projected every frame, like the capture outline above. -->
+    <svg class="dome-hl-svg" id="dome-hl-svg" hidden aria-hidden="true"
+         preserveAspectRatio="none">
+      <polygon id="dome-hl-poly" class="dome-hl-poly" points="" />
+    </svg>
+    <!-- Names for the reference rings. DOM rather than GL because it is
+         text; sky_dome.js re-projects each one every frame and only the
+         markers actually on screen get an element. -->
+    <div class="dome-markers" id="dome-markers" aria-hidden="true"></div>
+    <!-- Names for the object circles. DOM rather than GL because it is text,
+         and only for rings big enough on screen to be worth naming — four
+         hundred overlapping names is not an annotation, it is a smear. -->
+    <div class="dome-obj-labels" id="dome-obj-labels" aria-hidden="true"></div>
+    <div class="dome-chrome">
+      <div class="dome-top">
+        <div class="dome-stat" id="dome-stat"></div>
+        <!-- The corner stacks: close on top, the tool menu under it,
+             and the menu opens downward from there. -->
+        <div class="dome-corner">
+          <!-- N↔S alignment: which reference frame's "north" points up on
+               screen. Cycles Earth / Solar System / Milky Way. The arrow
+               glyphs say "north-south", the label names the frame. -->
+          <button type="button" class="dome-align-btn" id="dome-align-btn"
+                  aria-label="Align to Earth"
+                  title="Align the sky — Earth / Solar System / Milky Way">
+            <span class="dome-align-arrows" aria-hidden="true">N↕S</span>
+            <span class="dome-align-label" id="dome-align-label">Earth</span>
+          </button>
+          <button type="button" class="dome-close" id="dome-close"
+                  aria-label="Close sky dome" title="Close (Esc)">×</button>
+          <!-- Everything the dome can do, behind one control.
+               The row used to hold the search box, the marker toggle and the
+               capture button side by side, which is four things competing for
+               the corner before the capture panel opens under them. Collapsed
+               into a menu they expand only when asked for, and the sky keeps
+               the rest of the frame. -->
+          <div class="dome-menu" id="dome-menu">
+            <button type="button" class="dome-menu-btn" id="dome-menu-btn"
+                    aria-expanded="false" aria-controls="dome-menu-items"
+                    aria-label="Tools" title="Search, markers and capture">
+              <span class="dome-menu-bars" aria-hidden="true"></span></button>
+            <div class="dome-menu-items" id="dome-menu-items" hidden>
+              <!-- Search: type a target and the dome swings to where that
+                   photograph sits on the sky. Only photographed frames are
+                   searchable — swinging to uncaptured sky would look broken. -->
+              <div class="dome-search-wrap">
+                <input type="search" id="dome-search" class="dome-search"
+                       placeholder="Find a target…" autocomplete="off"
+                       aria-label="Find a target on the sky"
+                       aria-controls="dome-search-results" />
+                <div class="dome-search-results" id="dome-search-results"
+                     role="listbox" hidden></div>
+              </div>
+              <!-- Custom capture. Draw a rectangle on the sky, and every
+                   photograph that falls inside it is composited into one image
+                   you can take away.
+                   Snap shot and Clear hang directly under the button that turns
+                   the mode on, so nothing floats over the sky being framed. -->
+              <button type="button" class="dome-cap-toggle dome-markers-toggle is-on"
+                      id="dome-markers-toggle" aria-pressed="true"
+                      title="Show reference rings">Markers</button>
+              <!-- A ring round every solved frame. Deliberately busy — it
+                   answers "what is actually in this album?" at a glance —
+                   so it defaults off and remembers its own state. -->
+              <button type="button" class="dome-cap-toggle dome-markers-toggle"
+                      id="dome-circles-toggle" aria-pressed="false"
+                      title="Ring every solved frame">Circles</button>
+              <div class="dome-cap-wrap">
+                <button type="button" class="dome-cap-toggle" id="dome-cap-toggle"
+                        aria-pressed="false"
+                        aria-label="Custom capture"
+                        title="Custom capture — frame your own photograph"
+                        >Capture Mode</button>
+                <div class="dome-cap-panel" id="dome-cap-panel" hidden>
+                  <button type="button" class="dome-cap-btn is-primary"
+                          id="dome-cap-snap" disabled>Snap shot</button>
+                  <button type="button" class="dome-cap-btn"
+                          id="dome-cap-clear" disabled>Clear</button>
+                  <!-- Cycles the composition guide drawn inside the
+                       rectangle. Not disabled when there is no region: it
+                       is a preference about how the rectangle is drawn,
+                       not an action on one, and it stays set between
+                       captures. -->
+                  <button type="button" class="dome-cap-btn"
+                          id="dome-cap-guide-btn">Guide</button>
+                  <!-- Shows the feature being used, because it is quicker to watch
+                       someone drag the handles once than to read three sentences
+                       about which handle does what. -->
+                  <button type="button" class="dome-cap-btn dome-cap-help-btn"
+                          id="dome-cap-help-btn" aria-expanded="false"
+                          aria-controls="dome-cap-help"
+                          title="How custom capture works">?</button>
+                  <div class="dome-cap-status" id="dome-cap-status" role="status"></div>
+                </div>
+                <!-- The clip is only fetched when this is first opened; the src is
+                     set in JS rather than in the markup so nobody downloads a
+                     demonstration they did not ask for. -->
+                <div class="dome-cap-help" id="dome-cap-help" hidden>
+                  <button type="button" class="dome-cap-help-close"
+                          id="dome-cap-help-close"
+                          aria-label="Close" title="Close">×</button>
+                  <video id="dome-cap-help-video" class="dome-cap-help-video"
+                         loop muted playsinline preload="none"
+                         aria-label="Custom capture being used"></video>
+                  <p class="dome-cap-help-text">Drag the two hollow handles to set
+                    the width and the angle, the filled one to set the height. Drag
+                    the sky to look around. Guide lays thirds, the golden ratio,
+                    diagonals or a centre cross over the frame. Snap shot
+                    composites every photograph inside the rectangle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Zoom bar. Vertical and logarithmic in field of view: the range
+           runs from the whole sky down to well under a degree, and the
+           useful end would be a few pixels on a linear scale. Ticks are
+           labelled with the arc the view spans, and the triangle marks
+           where the current view sits on that scale. The top end is
+           wherever the imagery runs out, so it is drawn from the texture
+           ladder rather than written in here. -->
+      <!-- The left rail: zoom, and brightness under it. They are SIBLINGS,
+           never nested — #dome-zoom carries pointerdown and wheel handlers
+           that drive the camera, and a slider inside it would hand every
+           drag to the zoom. -->
+      <div class="dome-left-rail" id="dome-left-rail">
+        <div class="dome-zoom" id="dome-zoom">
+          <div class="dome-rail-label" aria-hidden="true">Zoom</div>
+          <div class="dome-zoom-track" id="dome-zoom-track" role="slider"
+               tabindex="0" aria-label="Zoom — field of view"
+               aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100">
+            <!-- Everything above this line is zoom past the point where the
+                 sharpest texture is 1:1 with the screen: still useful for
+                 placing yourself, but not revealing anything new. -->
+            <div class="dome-zoom-beyond" id="dome-zoom-beyond" hidden></div>
+            <div class="dome-zoom-fill" id="dome-zoom-fill"></div>
+            <div class="dome-zoom-marker" id="dome-zoom-marker">
+              <span class="dome-zoom-caret" aria-hidden="true">◀</span>
+              <span class="dome-zoom-value" id="dome-zoom-value"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Brightness, built as a twin of the zoom bar above it: same thin
+             track, same fill, same caret marker carrying the value, same ticks
+             hanging off the left. It was a styled <input type=range> first,
+             which worked and read as a control from a different program bolted
+             on underneath.
+
+             The dome draws every frame at its MEASURED brightness, so a
+             40-minute stack and a 3-minute one sit at very different levels —
+             honest, and hard on the shallow ones. This lifts the view without
+             touching the data: the figures on every card, and any capture
+             taken from the dome, are unaffected. Double-click to reset. -->
+        <div class="dome-gain" id="dome-gain">
+          <div class="dome-rail-label" aria-hidden="true">Brightness</div>
+          <div class="dome-gain-track" id="dome-gain-track" role="slider"
+               tabindex="0" aria-label="Sky dome brightness"
+               aria-orientation="vertical"
+               aria-valuemin="0" aria-valuemax="100">
+            <div class="dome-gain-fill" id="dome-gain-fill"></div>
+            <div class="dome-gain-marker" id="dome-gain-marker">
+              <span class="dome-gain-caret" aria-hidden="true">◀</span>
+              <span class="dome-gain-value" id="dome-gain-value">1.00×</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dome-bottom">
+        <div class="dome-hover" id="dome-hover"></div>
+        <div class="dome-readout" id="dome-readout"></div>
+        <div class="dome-detail" id="dome-detail"></div>
+        <div class="dome-hint" id="dome-hint">Drag to look around · scroll or drag the zoom bar · click a frame to fly to it</div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Standing notice: the conditioning pipelines for the three deep-sky
+         classes are still being worked on, so images already published will
+         change as the recipes improve. Text comes from I18N so it switches
+         with the language toggle like everything else. -->
+    <div class="notice" id="pipeline-notice" role="status"></div>
+
+    <!-- Slideshow: image + callout circles / ellipses + navigation. No
+         location, no altitude/azimuth, no capture time. -->
+    <section class="slideshow" id="slideshow">
+      <div class="slide-frame" id="slide-frame">
+        <div class="slide-stage" id="slide-stage">
+          <!-- The picture that was on screen a moment ago. It sits
+               UNDER the live image and never fades on its own, so while a
+               new photograph fades up the old one is still there behind
+               it: the two are blended for the length of the change
+               instead of the frame going dark between them. -->
+          <img id="slide-prev-img" alt="" aria-hidden="true" />
+          <img id="slide-img" alt="" />
+          <!-- Showcase cross-fade layer. Stacks exactly over #slide-img
+               (.slide-stage img is inset:0), and carries the NEXT milestone
+               at the slider's fractional opacity so dragging dissolves
+               between the real stacks instead of cutting between them. -->
+          <img id="slide-sc-blend" alt="" aria-hidden="true" hidden />
+          <div id="slide-annotations" class="slide-annotations"></div>
+        </div>
+        <!-- Pair-mode frame — hosts the before/after compare slider for
+             conditioned photos that have a raw sibling. Sits ON TOP of the
+             stage, and is itself never turned, so pointer coordinates map
+             straight to divider position; the slider turns its own inner
+             box when the source is portrait. -->
+        <div class="slide-pair-frame" id="slide-pair-frame" hidden></div>
+        <!-- Pressing a filmstrip thumbnail fills the preview with it,
+             until the × in the corner is pressed. -->
+        <div class="slide-blowup" id="slide-blowup" hidden>
+          <img id="slide-blowup-img" alt="" />
+          <button type="button" class="slide-blowup-close"
+                  id="slide-blowup-close"
+                  aria-label="Close" title="Close (Esc)">×</button>
+        </div>
+      </div>
+      <!-- Integration-showcase slider. It used to lie across the bottom of
+           the picture on a dark gradient, which meant the deepest thing the
+           album has to show was being read through a control. Under the
+           picture it steps through the same milestone stacks and covers
+           none of them. Only shown in showcase mode. -->
+      <div class="slide-sc-scrub" id="slide-sc-scrub" hidden>
+        <input type="range" id="slide-sc-range" min="0" max="0" step="0.01"
+               value="0" aria-label="Integration time" />
+        <div class="sc-scrub-ticks" id="slide-sc-ticks" aria-hidden="true"></div>
+        <div class="sc-scrub-read" id="slide-sc-read"></div>
+      </div>
+      <!-- What this photograph IS comes before what you can do with it.
+           The name and the stats used to sit UNDER the mode buttons, so
+           the first thing under the picture was a row of controls and you
+           had to read past them to find out what you were looking at.
+
+           The target arrows sit on this row too. They used to be two discs
+           floating over the picture at its left and right edges, which put
+           furniture on top of the photograph — on a wide frame that is the
+           nebula's own sky. Here they are still the leftmost and rightmost
+           things at the same height, so they are where a hand reaches for
+           them, and they cover nothing. -->
+      <!-- The image's own information, directly under the image: what this
+           is, and how deep it goes. It used to share a row with the arrows
+           and the vote button, which put three unrelated jobs on one line
+           and squeezed the name on a phone. The row below carries the
+           controls; this carries the answer to "what am I looking at". -->
+      <div class="slide-caption">
+        <div class="slide-headline-text">
+          <div class="slide-name" id="slide-name"></div>
+          <div class="slide-stats" id="slide-stats"></div>
+          <!-- The author's note, inline. It used to live behind an (n)
+               button, one of three single-letter discs that did not scale
+               with the page. The button is gone; the writing is not —
+               it belongs with the photograph's own information. -->
+          <div class="slide-note-inline" id="slide-note-inline" hidden></div>
+          <!-- Family row. Two jobs, one element, only ever one of them at
+               a time: on a family photo it names the members and each is a
+               link to that object on its own; on a member it names the
+               family its deepest frame graduated to. Hidden when the open
+               slide is neither, which is almost always. -->
+          <div class="slide-family" id="slide-family" hidden>
+            <span class="slide-family-label" id="slide-family-label"></span>
+            <span class="slide-family-links" id="slide-family-links"></span>
+          </div>
+        </div>
+      </div>
+      <!-- One row of controls, with the target arrows at its two ends: move
+           between targets, place this frame on the sky, take it away with
+           you, and vote for it to be reprocessed. Everything here acts on
+           the photograph above, so it is all at one height and reachable
+           by one hand. -->
+      <div class="slide-headline">
+        <button id="slide-prev" class="slide-nav"
+                title="Previous target (← arrow)">‹</button>
+        <div class="slide-headline-acts" id="slide-headline-acts"></div>
+        <!-- Vote for this target to be reprocessed. Hidden entirely unless
+             VOTE_ENDPOINT in gallery.js points somewhere, and hidden again
+             if that endpoint stops answering — a dead backend degrades to
+             "no button", never to a broken page. -->
+        <button id="slide-vote" class="slide-vote" hidden
+                aria-pressed="false"
+                title="Vote for image you like">
+          <span class="slide-vote-mark" aria-hidden="true">▲</span
+          ><span class="slide-vote-word" id="slide-vote-word">Vote</span
+          ><span class="slide-vote-n" id="slide-vote-n"></span>
+        </button>
+        <button id="slide-next" class="slide-nav"
+                title="Next target (→ arrow)">›</button>
+      </div>
+      <!-- One row, two halves. LEFT: the four ways to look at this target
+           — only the ones it actually has are rendered, each carrying the
+           colour its mode owns, the same colours that make up the split
+           border on the grid card. RIGHT: every photograph this target
+           holds in the open mode.
+
+           The filmstrip used to float across the top of the preview, over
+           the picture, which cost the picture its top 58 px on every
+           multi-image target. Beside the buttons it covers nothing, and
+           the two things that both answer "what else can I look at" are
+           finally next to each other. -->
+      <div class="slide-actions">
+        <div class="slide-modes" id="slide-modes" role="tablist"
+             aria-label="How to view this target"></div>
+        <div class="slide-strip" id="slide-strip" hidden
+             aria-label="Photographs of this target"></div>
+      </div>
+      <!-- Slide-caption meta row: (i) about conditioning, (n) author's
+           note, and an in-frame body list. Any of the three can be hidden
+           for a given slide (no conditioning info, no author note, no WCS
+           solve). paintSlide() decides visibility per slide. -->
+      <div class="slide-info" id="slide-info">
+        <div class="slide-info-icons" id="slide-info-icons">
+          <!-- (i) and (n) are gone: three single-letter discs that did
+               not scale with the page. (i) said the same generic thing on
+               every conditioned photo and the intro card now covers it;
+               (n) held the author's note, which moved inline under the
+               image information above, where it needs no control at all.
+
+               (s) is replaced by a labelled Close up: the same lightbox,
+               but the word says what it does, and it now offers a crop at
+               the photograph's own resolution for objects small enough
+               that the page's compression gets in the way of them. -->
+          <button type="button" class="slide-ss-btn" id="slide-ss-btn"
+                  aria-label="Close up"
+                  title="A closer look at this object" hidden>⌕ Close up</button>
+          <!-- Integration-time showcase (t). Only appears for targets past
+               the promotion bar — over an hour of total exposure. Steps
+               through the same target at increasing depth with identical
+               processing at every step. -->
+          <button type="button" class="slide-sc-btn" id="slide-sc-btn"
+                  aria-controls="slide-sc-panel" aria-expanded="false"
+                  aria-label="Integration time showcase"
+                  title="Integration time" hidden>t</button>
+          <!-- Where this photograph is on the sky. Opens the dome and flies
+               to THIS frame, not just to its target — M 31 has four
+               photographs at three pointings. Hidden when the album has no
+               plate solve to fly to, which is honest: 19 photographs have
+               none, and a button that opened the dome and then sat still
+               would read as broken. -->
+          <button type="button" class="slide-dome-btn" id="slide-dome-btn"
+                  aria-label="Show this photograph's place on the sky"
+                  title="Show this photograph's place on the sky"
+                  hidden>◎ Goto Sky Dome</button>
+          <!-- (w) Wikipedia. An <a>, not a button, so it behaves like a
+               link: middle-click, long-press, "open in new tab" and the
+               browser's own status bar all work, and rel=noopener means
+               the article cannot reach back into this page. Opens in a new
+               tab because losing the album to an encyclopedia article is
+               not what someone reading a caption asked for. -->
+          <a class="slide-wiki-btn" id="slide-wiki-btn"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Read about this object on Wikipedia"
+             title="Wikipedia" hidden>w</a>
+          <!-- Download links. Four fixed buttons, always present and always
+               labelled the same: RAW, INT, COND, B&A. setDownloadButtons()
+               enables or disables each per slide and rewires href, title and
+               filename; the two that composite the on-screen picture (INT in
+               showcase, B&A) synthesise their file on click. -->
+          <a class="slide-download-btn solo dl-raw" id="slide-download-a"
+             aria-label="Download RAW" title="Download RAW"
+             download hidden>Download RAW</a>
+          <a class="slide-download-btn solo dl-integration" id="slide-download-c"
+             aria-label="Download INT" title="Download INT"
+             download hidden>Download INT</a>
+          <a class="slide-download-btn solo dl-conditioned" id="slide-download-b"
+             aria-label="Download COND" title="Download COND"
+             download hidden>Download COND</a>
+          <a class="slide-download-btn solo dl-ba" id="slide-download-d"
+             aria-label="Download B&A" title="Download B&A"
+             download hidden>Download B&A</a>
+        </div>
+        <div class="slide-ss-panel"   id="slide-ss-panel"   hidden></div>
+        <div class="slide-sc-panel"   id="slide-sc-panel"   hidden></div>
+        <div class="slide-inframe" id="slide-inframe" hidden>
+          <span class="slide-inframe-label" id="slide-inframe-label">In frame:</span>
+          <!-- Ring every body at once. The chips each circle ONE thing, which
+               is the right tool when you already know what you are looking
+               for and no use at all when you do not — and "what am I actually
+               looking at here" is the commoner question. -->
+          <button type="button" class="slide-inframe-all" id="slide-inframe-all"
+                  aria-pressed="false">Add Circles</button>
+          <span class="slide-inframe-chips" id="slide-inframe-chips"></span>
+        </div>
+      </div>
+      <div class="slide-disclaimer" id="slide-disclaimer"></div>
+      <!-- Which photograph of this target is on screen: "#3 of 4". The
+           number is stable (data/view_index.json), so it names the same
+           picture after the next deposit. -->
+      <div class="slide-view" id="slide-view" hidden></div>
+      <!-- Within-mode stepper. Some modes hold several photographs of the
+           same target — ten of the Moon — and one card per target must not
+           make the other nine unreachable. Hidden when there is only one. -->
+      <div class="slide-frame-step" id="slide-frame-step" hidden>
+        <button type="button" id="slide-frame-prev"
+                aria-label="Previous frame of this target">‹</button>
+        <span class="slide-frame-pos" id="slide-frame-pos"></span>
+        <button type="button" id="slide-frame-next"
+                aria-label="Next frame of this target">›</button>
+      </div>
+      <div class="slide-controls">
+        <!-- Starred is per-viewer and lives in this browser only: the site is
+             static, so there is nowhere to send a shared count, and anonymous
+             writes on a public page would need moderation this album does
+             not have. -->
+        <button type="button" id="slide-star" class="slide-aux"
+                aria-pressed="false" hidden>☆</button>
+        <div class="slide-counter"><span id="slide-pos">1</span> / <span id="slide-total">1</span></div>
+        <!-- Walks whatever the grid is showing, so the filter row doubles as
+             the playlist. -->
+        <button type="button" id="slide-play" class="slide-aux"
+                aria-pressed="false">▶</button>
+      </div>
+    </section>
+
+    <!-- Your captures. Appears only once you have framed one in the sky
+         dome: each is composited from every photograph inside the region
+         you drew, and the download is the full-resolution result. Held in
+         the page, not on the server — reloading clears them. -->
+    <section class="captures" id="captures" hidden>
+      <div class="captures-head">
+        <h2 class="captures-title" id="captures-title">Your captures</h2>
+        <span class="captures-note" id="captures-note"></span>
+      </div>
+      <div class="captures-list" id="captures-list"></div>
+    </section>
+
+    <!-- Gallery: searchable grid of all photos. -->
+    <section class="gallery">
+      <div class="gallery-head">
+        <input id="search" type="search" placeholder="Search: M31, Andromeda, Nebula, Galaxy…" />
+        <span class="gallery-count" id="gallery-count"></span>
+      </div>
+      <!-- Filters. Compact and exact: a dropdown of the constellations that
+           actually have photographs, and three toggles. Everything ANDs with
+           the search box, so #gallery-count stays truthful. -->
+      <div class="gallery-filters" id="gallery-filters">
+        <select id="filter-constellation" class="filter-select"></select>
+        <button type="button" class="filter-chip" id="filter-conditioned"
+                data-filter="conditioned" aria-pressed="false"></button>
+        <button type="button" class="filter-chip" id="filter-deep"
+                data-filter="deep" aria-pressed="false"></button>
+        <button type="button" class="filter-chip" id="filter-starred"
+                data-filter="starred" aria-pressed="false"></button>
+        <button type="button" class="filter-chip" id="filter-renders"
+                data-filter="renders" aria-pressed="false"></button>
+        <button type="button" class="filter-clear" id="filter-clear" hidden></button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <span>Deep-sky data from <a href="https://github.com/mattiaverga/OpenNGC" target="_blank" rel="noopener">OpenNGC</a> (CC-BY-SA 4.0)</span>
+    <span> · <a href="targets/">Index of every target</a></span>
+  </footer>
+
+  <script src="sky_dome.js?v=6076ad39"></script>
+  <script src="gallery.js?v=b410baf5"></script>
+</body>
+</html>

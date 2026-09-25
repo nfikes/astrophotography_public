@@ -1,0 +1,4539 @@
+{
+ "epoch": "J2000.0",
+ "note": "RA in decimal hours, Dec in decimal degrees. magnitude is approximate visual. Solar-system bodies have computeAtRuntime=true; the app calculates their positions.",
+ "objects": [
+  {
+   "id": "10Dra",
+   "aliases": [
+    "10 Dra",
+    "HR 5226",
+    "HD 121130",
+    "HIP 67882"
+   ],
+   "name": "10 Draconis",
+   "catalog": "Stars",
+   "type": "Star (B9V)",
+   "ra": 13.85739,
+   "dec": 64.72333,
+   "magnitude": 4.65,
+   "constellation": "Draco"
+  },
+  {
+   "id": "22Boo",
+   "aliases": [
+    "22 Boo",
+    "HR 5350",
+    "HD 125161",
+    "HIP 69879"
+   ],
+   "name": "22 Boötis",
+   "catalog": "Stars",
+   "type": "Star (F0V)",
+   "ra": 14.28461,
+   "dec": 18.40889,
+   "magnitude": 5.39,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "28Aquilae",
+   "aliases": [
+    "28 Aquilae",
+    "28 Aql",
+    "28Aql"
+   ],
+   "name": "28 Aquilae",
+   "catalog": "Stars",
+   "type": "Star",
+   "ra": 19.35167,
+   "dec": 13.04917,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": null
+  },
+  {
+   "id": "68Herculis",
+   "aliases": [
+    "68 Herculis",
+    "68 Her",
+    "u Herculis"
+   ],
+   "name": "68 Herculis",
+   "catalog": "Stars",
+   "type": "Star (eclipsing binary)",
+   "ra": 17.26078,
+   "dec": 32.95861,
+   "constellation": "Hercules"
+  },
+  {
+   "id": "Albireo",
+   "aliases": [
+    "Beta Cyg",
+    "HIP95947"
+   ],
+   "name": "Albireo",
+   "catalog": "Stars",
+   "type": "Star (K2II+B8V, color double)",
+   "ra": 19.51202,
+   "dec": 27.95967,
+   "magnitude": 3.18,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "Aldebaran",
+   "aliases": [
+    "Alpha Tau",
+    "HIP21421"
+   ],
+   "name": "Aldebaran",
+   "catalog": "Stars",
+   "type": "Star (K5III)",
+   "ra": 4.59868,
+   "dec": 16.50931,
+   "magnitude": 0.86,
+   "constellation": "Taurus"
+  },
+  {
+   "id": "Algol",
+   "aliases": [
+    "Beta Per",
+    "HIP14576"
+   ],
+   "name": "Algol",
+   "catalog": "Stars",
+   "type": "Eclipsing binary (B8V)",
+   "ra": 3.13614,
+   "dec": 40.95565,
+   "magnitude": 2.12,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "Alioth",
+   "aliases": [
+    "Epsilon UMa",
+    "HIP62956"
+   ],
+   "name": "Alioth",
+   "catalog": "Stars",
+   "type": "Star (A0p)",
+   "ra": 12.90049,
+   "dec": 55.95983,
+   "magnitude": 1.77,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "Alkaid",
+   "aliases": [
+    "Eta UMa",
+    "HIP67301"
+   ],
+   "name": "Alkaid",
+   "catalog": "Stars",
+   "type": "Star (B3V)",
+   "ra": 13.79234,
+   "dec": 49.31328,
+   "magnitude": 1.85,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "Altair",
+   "aliases": [
+    "Alpha Aql",
+    "HIP97649"
+   ],
+   "name": "Altair",
+   "catalog": "Stars",
+   "type": "Star (A7V)",
+   "ra": 19.84639,
+   "dec": 8.86833,
+   "magnitude": 0.77,
+   "constellation": "Aquila"
+  },
+  {
+   "id": "And",
+   "aliases": [
+    "Andromeda"
+   ],
+   "name": "Andromeda",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 0.8,
+   "dec": 37.4,
+   "magnitude": null,
+   "constellation": "Andromeda",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Antares",
+   "aliases": [
+    "Alpha Sco",
+    "HIP80763"
+   ],
+   "name": "Antares",
+   "catalog": "Stars",
+   "type": "Star (M1.5 supergiant)",
+   "ra": 16.49013,
+   "dec": -26.432,
+   "magnitude": 1.06,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "Aql",
+   "aliases": [
+    "Aquila"
+   ],
+   "name": "Aquila",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 19.7,
+   "dec": 3.4,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "Aqr",
+   "aliases": [
+    "Aquarius"
+   ],
+   "name": "Aquarius",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 22.3,
+   "dec": -10.8,
+   "magnitude": null,
+   "constellation": "Aquarius",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "Arcturus",
+   "aliases": [
+    "Alpha Boo",
+    "HIP69673"
+   ],
+   "name": "Arcturus",
+   "catalog": "Stars",
+   "type": "Star (K1.5 giant)",
+   "ra": 14.26102,
+   "dec": 19.18242,
+   "magnitude": -0.05,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "Ari",
+   "aliases": [
+    "Aries"
+   ],
+   "name": "Aries",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 2.6,
+   "dec": 20.8,
+   "magnitude": null,
+   "constellation": "Aries",
+   "size_arcmin": 900
+  },
+  {
+   "id": "Aur",
+   "aliases": [
+    "Auriga"
+   ],
+   "name": "Auriga",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 6.1,
+   "dec": 41.0,
+   "magnitude": null,
+   "constellation": "Auriga",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "Betelgeuse",
+   "aliases": [
+    "Alpha Ori",
+    "HIP27989"
+   ],
+   "name": "Betelgeuse",
+   "catalog": "Stars",
+   "type": "Star (M1-M2 supergiant)",
+   "ra": 5.91953,
+   "dec": 7.40707,
+   "magnitude": 0.5,
+   "constellation": "Orion"
+  },
+  {
+   "id": "Bochum13",
+   "aliases": [
+    "Bochum 13",
+    "Bo 13"
+   ],
+   "name": "Bochum 13",
+   "catalog": "Bochum",
+   "type": "Open Cluster",
+   "ra": 17.3641,
+   "dec": -34.9868,
+   "magnitude": null,
+   "constellation": "Scorpius",
+   "size_arcmin": null
+  },
+  {
+   "id": "Boo",
+   "aliases": [
+    "Boötes",
+    "Kite"
+   ],
+   "name": "Boötes",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 14.7,
+   "dec": 31.2,
+   "magnitude": null,
+   "constellation": "Boötes",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "CMa",
+   "aliases": [
+    "Canis Major",
+    "Canis-Major",
+    "CanisMajor"
+   ],
+   "name": "Canis Major",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 6.8,
+   "dec": -22.1,
+   "magnitude": null,
+   "constellation": "Canis Major",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "CMi",
+   "aliases": [
+    "Canis Minor",
+    "Canis-Minor",
+    "CanisMinor"
+   ],
+   "name": "Canis Minor",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 7.6,
+   "dec": 6.4,
+   "magnitude": null,
+   "constellation": "Canis Minor",
+   "size_arcmin": 600
+  },
+  {
+   "id": "Cap",
+   "aliases": [
+    "Capricornus"
+   ],
+   "name": "Capricornus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 21.0,
+   "dec": -18.0,
+   "magnitude": null,
+   "constellation": "Capricornus",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "Capella",
+   "aliases": [
+    "Alpha Aur",
+    "HIP24608"
+   ],
+   "name": "Capella",
+   "catalog": "Stars",
+   "type": "Star (G3III binary)",
+   "ra": 5.27815,
+   "dec": 45.99799,
+   "magnitude": 0.08,
+   "constellation": "Auriga"
+  },
+  {
+   "id": "Cas",
+   "aliases": [
+    "Cassiopeia"
+   ],
+   "name": "Cassiopeia",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 1.3,
+   "dec": 62.2,
+   "magnitude": null,
+   "constellation": "Cassiopeia",
+   "size_arcmin": 900
+  },
+  {
+   "id": "Castor",
+   "aliases": [
+    "Alpha Gem",
+    "HIP36850"
+   ],
+   "name": "Castor",
+   "catalog": "Stars",
+   "type": "Star (A1V multiple)",
+   "ra": 7.57663,
+   "dec": 31.88833,
+   "magnitude": 1.58,
+   "constellation": "Gemini"
+  },
+  {
+   "id": "Cep",
+   "aliases": [
+    "Cepheus"
+   ],
+   "name": "Cepheus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 22.0,
+   "dec": 71.0,
+   "magnitude": null,
+   "constellation": "Cepheus",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "Ceres",
+   "aliases": [],
+   "name": "Ceres",
+   "catalog": "Solar System",
+   "type": "Dwarf Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "Cet",
+   "aliases": [
+    "Cetus"
+   ],
+   "name": "Cetus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 1.7,
+   "dec": -7.2,
+   "magnitude": null,
+   "constellation": "Cetus",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "Cnc",
+   "aliases": [
+    "Cancer"
+   ],
+   "name": "Cancer",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 8.6,
+   "dec": 19.8,
+   "magnitude": null,
+   "constellation": "Cancer",
+   "size_arcmin": 900
+  },
+  {
+   "id": "Crv",
+   "aliases": [
+    "Corvus"
+   ],
+   "name": "Corvus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 12.4,
+   "dec": -18.4,
+   "magnitude": null,
+   "constellation": "Corvus",
+   "size_arcmin": 600
+  },
+  {
+   "id": "Cyg",
+   "aliases": [
+    "Cygnus",
+    "Northern Cross"
+   ],
+   "name": "Cygnus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 20.6,
+   "dec": 42.0,
+   "magnitude": null,
+   "constellation": "Cygnus",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Deneb",
+   "aliases": [
+    "Alpha Cyg",
+    "HIP102098"
+   ],
+   "name": "Deneb",
+   "catalog": "Stars",
+   "type": "Star (A2 supergiant)",
+   "ra": 20.69053,
+   "dec": 45.28033,
+   "magnitude": 1.25,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "Dra",
+   "aliases": [
+    "Draco"
+   ],
+   "name": "Draco",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 15.1,
+   "dec": 67.0,
+   "magnitude": null,
+   "constellation": "Draco",
+   "size_arcmin": 2400
+  },
+  {
+   "id": "Dubhe",
+   "aliases": [
+    "Alpha UMa",
+    "HIP54061"
+   ],
+   "name": "Dubhe",
+   "catalog": "Stars",
+   "type": "Star (K0III)",
+   "ra": 11.06213,
+   "dec": 61.75083,
+   "magnitude": 1.79,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "FLD0302N895",
+   "aliases": [
+    "Field 03h02m +89.5°"
+   ],
+   "name": "Field 03h02m +89.5°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 3.04278,
+   "dec": 89.5042,
+   "magnitude": null,
+   "constellation": null,
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1732N311",
+   "aliases": [
+    "Field 17h32m +31.1°"
+   ],
+   "name": "Field 17h32m +31.1°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 17.540871,
+   "dec": 31.129458,
+   "magnitude": null,
+   "constellation": "Hercules",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1739S032",
+   "aliases": [
+    "Field 17h39m −3.2°"
+   ],
+   "name": "Field 17h39m −3.2°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 17.65139,
+   "dec": -3.2006,
+   "magnitude": null,
+   "constellation": null,
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1756S181",
+   "aliases": [
+    "Field 17h56m −18.1°"
+   ],
+   "name": "Field 17h56m −18.1°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 17.935799999999997,
+   "dec": -18.089,
+   "magnitude": null,
+   "constellation": null,
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1801S270",
+   "aliases": [
+    "Field 18h01m −27.0°"
+   ],
+   "name": "Field 18h01m −27.0°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.02417,
+   "dec": -27.0398,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1805S157",
+   "aliases": [
+    "Field 18h05m −15.7°"
+   ],
+   "name": "Field 18h05m −15.7°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.08418,
+   "dec": -15.6901,
+   "magnitude": null,
+   "constellation": "Serpens",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1826S077",
+   "aliases": [
+    "Field 18h26m −7.7°"
+   ],
+   "name": "Field 18h26m −7.7°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.44444,
+   "dec": -7.6808,
+   "magnitude": null,
+   "constellation": "Scutum",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1828S174",
+   "aliases": [
+    "Field 18h28m −17.4°"
+   ],
+   "name": "Field 18h28m −17.4°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.46861,
+   "dec": -17.4231,
+   "magnitude": null,
+   "constellation": null,
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1834S133",
+   "aliases": [
+    "Field 18h34m −13.3°"
+   ],
+   "name": "Field 18h34m −13.3°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.58095,
+   "dec": -13.2719,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null,
+   "why": "Named from its own plate solve on 2026-09-20. The frame was filed as \"Unknown\" while carrying a solved position, which is a photograph of a known piece of sky with no name on it. field_identity.py mints the id from the coordinates and checks first that no catalogued field is within a degree."
+  },
+  {
+   "id": "FLD1841S144",
+   "aliases": [
+    "Field 18h41m −14.4°"
+   ],
+   "name": "Field 18h41m −14.4°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.68909,
+   "dec": -14.4138,
+   "magnitude": null,
+   "constellation": "Scutum",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1859N011",
+   "aliases": [
+    "GAIA 4268620287278693120",
+    "GAIA4268620287278693120",
+    "Field 18h59m +1.1°"
+   ],
+   "name": "Field 18h59m +1.1° (Gaia 4268620287278693120)",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 18.983889,
+   "dec": 1.146111,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1913N092",
+   "aliases": [
+    "Field 19h13m +9.2°"
+   ],
+   "name": "Field 19h13m +9.2°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 19.232565,
+   "dec": 9.211294,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD1920N130",
+   "aliases": [
+    "Field 19h20m +13.0°"
+   ],
+   "name": "Field 19h20m +13.0°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 19.34931,
+   "dec": 13.0135,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": null
+  },
+  {
+   "id": "FLD2326N617",
+   "aliases": [
+    "Field 23h26m +61.7°"
+   ],
+   "name": "Field 23h26m +61.7°",
+   "catalog": "Field",
+   "type": "Sky Field",
+   "ra": 23.435,
+   "dec": 61.7467,
+   "magnitude": null,
+   "constellation": null,
+   "size_arcmin": null
+  },
+  {
+   "id": "Fomalhaut",
+   "aliases": [
+    "Alpha PsA",
+    "HIP113368"
+   ],
+   "name": "Fomalhaut",
+   "catalog": "Stars",
+   "type": "Star (A3V)",
+   "ra": 22.96085,
+   "dec": -29.62225,
+   "magnitude": 1.16,
+   "constellation": "Piscis Aust."
+  },
+  {
+   "id": "GammaCrA",
+   "aliases": [
+    "Gamma Coronae Australis",
+    "Gamma CrA",
+    "gamCrA"
+   ],
+   "name": "Gamma Coronae Australis",
+   "catalog": "Star",
+   "type": "Star",
+   "ra": 19.097173,
+   "dec": -36.02931,
+   "magnitude": null,
+   "constellation": "Corona Australis",
+   "size_arcmin": null
+  },
+  {
+   "id": "GammaSct",
+   "aliases": [
+    "Gamma Scuti",
+    "Gamma Sct",
+    "gamSct"
+   ],
+   "name": "Gamma Scuti",
+   "catalog": "Star",
+   "type": "Star",
+   "ra": 18.569722,
+   "dec": -14.85806,
+   "magnitude": null,
+   "constellation": "Scutum",
+   "size_arcmin": null
+  },
+  {
+   "id": "Gem",
+   "aliases": [
+    "Gemini"
+   ],
+   "name": "Gemini",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 7.0,
+   "dec": 22.6,
+   "magnitude": null,
+   "constellation": "Gemini",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "HD125040",
+   "aliases": [
+    "HD 125040",
+    "HIP 69788"
+   ],
+   "name": "HD 125040",
+   "catalog": "Stars",
+   "type": "Star (K0III)",
+   "ra": 14.28833,
+   "dec": 19.475,
+   "magnitude": 6.51,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "HIP106890",
+   "aliases": [
+    "HIP 106890"
+   ],
+   "name": "HIP 106890",
+   "catalog": "Stars",
+   "type": "Star",
+   "ra": 21.66844,
+   "dec": 57.47506,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "HIP88060",
+   "aliases": [
+    "HIP 88060"
+   ],
+   "name": "HIP 88060",
+   "catalog": "Stars",
+   "type": "Star",
+   "ra": 17.98167,
+   "dec": -29.51278,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "Her",
+   "aliases": [
+    "Hercules",
+    "Keystone"
+   ],
+   "name": "Hercules",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 17.4,
+   "dec": 27.5,
+   "magnitude": null,
+   "constellation": "Hercules",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "Hya",
+   "aliases": [
+    "Hydra"
+   ],
+   "name": "Hydra",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 11.6,
+   "dec": -14.5,
+   "magnitude": null,
+   "constellation": "Hydra",
+   "size_arcmin": 3600
+  },
+  {
+   "id": "IC1318",
+   "aliases": [
+    "IC1318A",
+    "IC1318B",
+    "IC1318C",
+    "Butterfly Nebula",
+    "ButterflyNebula",
+    "Sadr Region",
+    "SadrRegion",
+    "Gamma Cygni Nebula",
+    "GammaCygniNebula"
+   ],
+   "name": "Butterfly Nebula (Sadr Region)",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 20.3705,
+   "dec": 40.25,
+   "magnitude": 6.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "IC434",
+   "aliases": [],
+   "name": "Horsehead Nebula (in IC 434)",
+   "catalog": "NGC",
+   "type": "Dark Nebula",
+   "ra": 5.6839,
+   "dec": -2.45,
+   "magnitude": 6.8,
+   "constellation": "Orion"
+  },
+  {
+   "id": "IC5070",
+   "aliases": [],
+   "name": "Pelican Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 20.8417,
+   "dec": 44.35,
+   "magnitude": 8.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "IC5146",
+   "aliases": [
+    "Caldwell19",
+    "C19"
+   ],
+   "name": "Cocoon Nebula",
+   "catalog": "IC",
+   "type": "Cluster + Nebula",
+   "ra": 21.89132,
+   "dec": 47.26692,
+   "magnitude": 7.2,
+   "constellation": "Cygnus",
+   "majAxisArcmin": 10.0,
+   "minAxisArcmin": 10.0
+  },
+  {
+   "id": "Jupiter",
+   "aliases": [],
+   "name": "Jupiter",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "KausBorealis",
+   "aliases": [
+    "Kaus Borealis",
+    "KausBorealis"
+   ],
+   "name": "Kaus Borealis",
+   "catalog": "Star",
+   "type": "Star",
+   "ra": 18.434722,
+   "dec": -24.823889,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "Kornephoros",
+   "aliases": [
+    "Beta Herculis",
+    "Beta Her",
+    "betHer",
+    "b Her",
+    "Rutilicus"
+   ],
+   "name": "Kornephoros (Beta Herculis)",
+   "catalog": "Stars",
+   "type": "Star",
+   "ra": 16.5125,
+   "dec": 21.34222,
+   "magnitude": 2.78,
+   "constellation": "Hercules",
+   "size_arcmin": null
+  },
+  {
+   "id": "Leo",
+   "aliases": [
+    "Leo",
+    "Sickle"
+   ],
+   "name": "Leo",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 10.5,
+   "dec": 13.1,
+   "magnitude": null,
+   "constellation": "Leo",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "Lib",
+   "aliases": [
+    "Libra"
+   ],
+   "name": "Libra",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 15.2,
+   "dec": -15.2,
+   "magnitude": null,
+   "constellation": "Libra",
+   "size_arcmin": 900
+  },
+  {
+   "id": "Lyr",
+   "aliases": [
+    "Lyra"
+   ],
+   "name": "Lyra",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 18.8,
+   "dec": 36.7,
+   "magnitude": null,
+   "constellation": "Lyra",
+   "size_arcmin": 600
+  },
+  {
+   "id": "M1",
+   "aliases": [
+    "NGC1952"
+   ],
+   "name": "Crab Nebula",
+   "catalog": "Messier",
+   "type": "Supernova Remnant",
+   "ra": 5.5754,
+   "dec": 22.0145,
+   "magnitude": 8.4,
+   "constellation": "Taurus"
+  },
+  {
+   "id": "M10",
+   "aliases": [
+    "NGC6254"
+   ],
+   "name": "M10",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.9522,
+   "dec": -4.1006,
+   "magnitude": 6.6,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M100",
+   "aliases": [
+    "NGC4321"
+   ],
+   "name": "M100",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.3817,
+   "dec": 15.8228,
+   "magnitude": 9.3,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M101",
+   "aliases": [
+    "NGC5457"
+   ],
+   "name": "Pinwheel Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 14.0533,
+   "dec": 54.3489,
+   "magnitude": 7.9,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M102",
+   "aliases": [
+    "NGC5866"
+   ],
+   "name": "Spindle Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 15.1083,
+   "dec": 55.7633,
+   "magnitude": 9.9,
+   "constellation": "Draco"
+  },
+  {
+   "id": "M103",
+   "aliases": [
+    "NGC581"
+   ],
+   "name": "M103",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 1.5533,
+   "dec": 60.7,
+   "magnitude": 7.4,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "M104",
+   "aliases": [
+    "NGC4594"
+   ],
+   "name": "Sombrero Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.6664,
+   "dec": -11.6231,
+   "magnitude": 8.0,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M105",
+   "aliases": [
+    "NGC3379"
+   ],
+   "name": "M105",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 10.7972,
+   "dec": 12.5817,
+   "magnitude": 9.3,
+   "constellation": "Leo"
+  },
+  {
+   "id": "M106",
+   "aliases": [
+    "NGC4258"
+   ],
+   "name": "M106",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.3167,
+   "dec": 47.3036,
+   "magnitude": 8.4,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "M107",
+   "aliases": [
+    "NGC6171"
+   ],
+   "name": "M107",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.5425,
+   "dec": -13.0539,
+   "magnitude": 7.9,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M108",
+   "aliases": [
+    "NGC3556"
+   ],
+   "name": "Surfboard Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 11.1917,
+   "dec": 55.6739,
+   "magnitude": 10.0,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M109",
+   "aliases": [
+    "NGC3992"
+   ],
+   "name": "M109",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 11.9603,
+   "dec": 53.3744,
+   "magnitude": 9.8,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M11",
+   "aliases": [
+    "NGC6705"
+   ],
+   "name": "Wild Duck Cluster",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 18.8517,
+   "dec": -6.2717,
+   "magnitude": 5.8,
+   "constellation": "Scutum"
+  },
+  {
+   "id": "M110",
+   "aliases": [
+    "NGC205"
+   ],
+   "name": "M110",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 0.6731,
+   "dec": 41.6856,
+   "magnitude": 8.5,
+   "constellation": "Andromeda"
+  },
+  {
+   "id": "M12",
+   "aliases": [
+    "NGC6218"
+   ],
+   "name": "M12",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.7872,
+   "dec": -1.9483,
+   "magnitude": 6.6,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M13",
+   "aliases": [
+    "NGC6205"
+   ],
+   "name": "Hercules Globular Cluster",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.6948,
+   "dec": 36.4613,
+   "magnitude": 5.8,
+   "constellation": "Hercules"
+  },
+  {
+   "id": "M14",
+   "aliases": [
+    "NGC6402"
+   ],
+   "name": "M14",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 17.6267,
+   "dec": -3.2458,
+   "magnitude": 7.6,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M15",
+   "aliases": [
+    "NGC7078"
+   ],
+   "name": "M15",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 21.4997,
+   "dec": 12.167,
+   "magnitude": 6.2,
+   "constellation": "Pegasus"
+  },
+  {
+   "id": "M16",
+   "aliases": [
+    "NGC6611"
+   ],
+   "name": "Eagle Nebula",
+   "catalog": "Messier",
+   "type": "Open Cluster + Nebula",
+   "ra": 18.3133,
+   "dec": -13.7872,
+   "magnitude": 6.0,
+   "constellation": "Serpens"
+  },
+  {
+   "id": "M17",
+   "aliases": [
+    "NGC6618"
+   ],
+   "name": "Omega Nebula",
+   "catalog": "Messier",
+   "type": "Emission Nebula",
+   "ra": 18.3461,
+   "dec": -16.1717,
+   "magnitude": 6.0,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M18",
+   "aliases": [
+    "NGC6613"
+   ],
+   "name": "M18",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 18.3322,
+   "dec": -17.1006,
+   "magnitude": 6.9,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M19",
+   "aliases": [
+    "NGC6273"
+   ],
+   "name": "M19",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 17.0428,
+   "dec": -26.2683,
+   "magnitude": 6.8,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M2",
+   "aliases": [
+    "NGC7089"
+   ],
+   "name": "M2",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 21.5583,
+   "dec": -0.8231,
+   "magnitude": 6.5,
+   "constellation": "Aquarius"
+  },
+  {
+   "id": "M20",
+   "aliases": [
+    "NGC6514"
+   ],
+   "name": "Trifid Nebula",
+   "catalog": "Messier",
+   "type": "Emission/Reflection Nebula",
+   "ra": 18.0428,
+   "dec": -23.0306,
+   "magnitude": 6.3,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M21",
+   "aliases": [
+    "NGC6531"
+   ],
+   "name": "M21",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 18.0772,
+   "dec": -22.505,
+   "magnitude": 5.9,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M22",
+   "aliases": [
+    "NGC6656"
+   ],
+   "name": "Sagittarius Cluster",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 18.6067,
+   "dec": -23.9047,
+   "magnitude": 5.1,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M23",
+   "aliases": [
+    "NGC6494"
+   ],
+   "name": "M23",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 17.9472,
+   "dec": -19.0167,
+   "magnitude": 6.9,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M24",
+   "aliases": [
+    "IC4715"
+   ],
+   "name": "Sagittarius Star Cloud",
+   "catalog": "Messier",
+   "type": "Star Cloud",
+   "ra": 18.2817,
+   "dec": -18.4833,
+   "magnitude": 4.6,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M25",
+   "aliases": [
+    "IC4725"
+   ],
+   "name": "M25",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 18.5278,
+   "dec": -19.25,
+   "magnitude": 4.6,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M26",
+   "aliases": [
+    "NGC6694"
+   ],
+   "name": "M26",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 18.7533,
+   "dec": -9.3833,
+   "magnitude": 8.0,
+   "constellation": "Scutum"
+  },
+  {
+   "id": "M27",
+   "aliases": [
+    "NGC6853"
+   ],
+   "name": "Dumbbell Nebula",
+   "catalog": "Messier",
+   "type": "Planetary Nebula",
+   "ra": 19.9933,
+   "dec": 22.7211,
+   "magnitude": 7.5,
+   "constellation": "Vulpecula"
+  },
+  {
+   "id": "M28",
+   "aliases": [
+    "NGC6626"
+   ],
+   "name": "M28",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 18.4092,
+   "dec": -24.87,
+   "magnitude": 6.8,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M29",
+   "aliases": [
+    "NGC6913"
+   ],
+   "name": "M29",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 20.3983,
+   "dec": 38.5217,
+   "magnitude": 6.6,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "M3",
+   "aliases": [
+    "NGC5272"
+   ],
+   "name": "M3",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 13.7033,
+   "dec": 28.3772,
+   "magnitude": 6.2,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "M30",
+   "aliases": [
+    "NGC7099"
+   ],
+   "name": "M30",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 21.6731,
+   "dec": -23.1789,
+   "magnitude": 7.2,
+   "constellation": "Capricornus"
+  },
+  {
+   "id": "M31",
+   "aliases": [
+    "NGC224"
+   ],
+   "name": "Andromeda Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 0.7122,
+   "dec": 41.2692,
+   "magnitude": 3.4,
+   "constellation": "Andromeda"
+  },
+  {
+   "id": "M32",
+   "aliases": [
+    "NGC221"
+   ],
+   "name": "M32",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 0.7117,
+   "dec": 40.8653,
+   "magnitude": 8.1,
+   "constellation": "Andromeda"
+  },
+  {
+   "id": "M33",
+   "aliases": [
+    "NGC598"
+   ],
+   "name": "Triangulum Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 1.5644,
+   "dec": 30.6603,
+   "magnitude": 5.7,
+   "constellation": "Triangulum"
+  },
+  {
+   "id": "M34",
+   "aliases": [
+    "NGC1039"
+   ],
+   "name": "M34",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 2.7,
+   "dec": 42.7833,
+   "magnitude": 5.2,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "M35",
+   "aliases": [
+    "NGC2168"
+   ],
+   "name": "M35",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 6.1483,
+   "dec": 24.3333,
+   "magnitude": 5.1,
+   "constellation": "Gemini"
+  },
+  {
+   "id": "M36",
+   "aliases": [
+    "NGC1960"
+   ],
+   "name": "M36",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 5.6033,
+   "dec": 34.1333,
+   "magnitude": 6.0,
+   "constellation": "Auriga"
+  },
+  {
+   "id": "M37",
+   "aliases": [
+    "NGC2099"
+   ],
+   "name": "M37",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 5.8722,
+   "dec": 32.55,
+   "magnitude": 5.6,
+   "constellation": "Auriga"
+  },
+  {
+   "id": "M38",
+   "aliases": [
+    "NGC1912"
+   ],
+   "name": "M38",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 5.4778,
+   "dec": 35.8333,
+   "magnitude": 6.4,
+   "constellation": "Auriga"
+  },
+  {
+   "id": "M39",
+   "aliases": [
+    "NGC7092"
+   ],
+   "name": "M39",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 21.535,
+   "dec": 48.4333,
+   "magnitude": 4.6,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "M4",
+   "aliases": [
+    "NGC6121"
+   ],
+   "name": "M4",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.3933,
+   "dec": -26.5258,
+   "magnitude": 5.9,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "M40",
+   "aliases": [
+    "WNC4"
+   ],
+   "name": "Winnecke 4",
+   "catalog": "Messier",
+   "type": "Double Star",
+   "ra": 12.3717,
+   "dec": 58.0828,
+   "magnitude": 8.4,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M41",
+   "aliases": [
+    "NGC2287"
+   ],
+   "name": "M41",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 6.7833,
+   "dec": -20.7333,
+   "magnitude": 4.5,
+   "constellation": "Canis Major"
+  },
+  {
+   "id": "M42",
+   "aliases": [
+    "NGC1976"
+   ],
+   "name": "Orion Nebula",
+   "catalog": "Messier",
+   "type": "Emission/Reflection Nebula",
+   "ra": 5.5883,
+   "dec": -5.3911,
+   "magnitude": 4.0,
+   "constellation": "Orion"
+  },
+  {
+   "id": "M43",
+   "aliases": [
+    "NGC1982"
+   ],
+   "name": "De Mairan's Nebula",
+   "catalog": "Messier",
+   "type": "Emission Nebula",
+   "ra": 5.5933,
+   "dec": -5.27,
+   "magnitude": 9.0,
+   "constellation": "Orion"
+  },
+  {
+   "id": "M44",
+   "aliases": [
+    "NGC2632"
+   ],
+   "name": "Beehive Cluster",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 8.67,
+   "dec": 19.9833,
+   "magnitude": 3.7,
+   "constellation": "Cancer"
+  },
+  {
+   "id": "M45",
+   "aliases": [
+    "Pleiades"
+   ],
+   "name": "Pleiades",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 3.7833,
+   "dec": 24.1167,
+   "magnitude": 1.6,
+   "constellation": "Taurus"
+  },
+  {
+   "id": "M46",
+   "aliases": [
+    "NGC2437"
+   ],
+   "name": "M46",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 7.6967,
+   "dec": -14.8167,
+   "magnitude": 6.1,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "M47",
+   "aliases": [
+    "NGC2422"
+   ],
+   "name": "M47",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 7.61,
+   "dec": -14.5,
+   "magnitude": 4.4,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "M48",
+   "aliases": [
+    "NGC2548"
+   ],
+   "name": "M48",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 8.23,
+   "dec": -5.8,
+   "magnitude": 5.5,
+   "constellation": "Hydra"
+  },
+  {
+   "id": "M49",
+   "aliases": [
+    "NGC4472"
+   ],
+   "name": "M49",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.4967,
+   "dec": 8.0,
+   "magnitude": 8.4,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M5",
+   "aliases": [
+    "NGC5904"
+   ],
+   "name": "M5",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 15.3092,
+   "dec": 2.0811,
+   "magnitude": 5.6,
+   "constellation": "Serpens"
+  },
+  {
+   "id": "M50",
+   "aliases": [
+    "NGC2323"
+   ],
+   "name": "M50",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 7.0533,
+   "dec": -8.3333,
+   "magnitude": 5.9,
+   "constellation": "Monoceros"
+  },
+  {
+   "id": "M51",
+   "aliases": [
+    "NGC5194"
+   ],
+   "name": "Whirlpool Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 13.4978,
+   "dec": 47.1953,
+   "magnitude": 8.4,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "M52",
+   "aliases": [
+    "NGC7654"
+   ],
+   "name": "M52",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 23.4033,
+   "dec": 61.5833,
+   "magnitude": 5.0,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "M53",
+   "aliases": [
+    "NGC5024"
+   ],
+   "name": "M53",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 13.2153,
+   "dec": 18.1683,
+   "magnitude": 7.6,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M54",
+   "aliases": [
+    "NGC6715"
+   ],
+   "name": "M54",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 18.9183,
+   "dec": -30.4781,
+   "magnitude": 7.6,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M55",
+   "aliases": [
+    "NGC6809"
+   ],
+   "name": "M55",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 19.6664,
+   "dec": -30.9636,
+   "magnitude": 6.3,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M56",
+   "aliases": [
+    "NGC6779"
+   ],
+   "name": "M56",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 19.2767,
+   "dec": 30.1833,
+   "magnitude": 8.3,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "M57",
+   "aliases": [
+    "NGC6720"
+   ],
+   "name": "Ring Nebula",
+   "catalog": "Messier",
+   "type": "Planetary Nebula",
+   "ra": 18.8933,
+   "dec": 33.0297,
+   "magnitude": 8.8,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "M58",
+   "aliases": [
+    "NGC4579"
+   ],
+   "name": "M58",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.6283,
+   "dec": 11.8181,
+   "magnitude": 9.7,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M59",
+   "aliases": [
+    "NGC4621"
+   ],
+   "name": "M59",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.7,
+   "dec": 11.65,
+   "magnitude": 9.6,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M6",
+   "aliases": [
+    "NGC6405"
+   ],
+   "name": "Butterfly Cluster",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 17.6683,
+   "dec": -32.2161,
+   "magnitude": 4.2,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "M60",
+   "aliases": [
+    "NGC4649"
+   ],
+   "name": "M60",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.7283,
+   "dec": 11.5528,
+   "magnitude": 8.8,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M61",
+   "aliases": [
+    "NGC4303"
+   ],
+   "name": "M61",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.365,
+   "dec": 4.4736,
+   "magnitude": 9.7,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M62",
+   "aliases": [
+    "NGC6266"
+   ],
+   "name": "M62",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 17.0203,
+   "dec": -30.1128,
+   "magnitude": 6.5,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M63",
+   "aliases": [
+    "NGC5055"
+   ],
+   "name": "Sunflower Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 13.2636,
+   "dec": 42.0297,
+   "magnitude": 8.6,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "M64",
+   "aliases": [
+    "NGC4826"
+   ],
+   "name": "Black Eye Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.9456,
+   "dec": 21.6828,
+   "magnitude": 8.5,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M65",
+   "aliases": [
+    "NGC3623"
+   ],
+   "name": "M65",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 11.3158,
+   "dec": 13.0925,
+   "magnitude": 9.3,
+   "constellation": "Leo"
+  },
+  {
+   "id": "M66",
+   "aliases": [
+    "NGC3627"
+   ],
+   "name": "M66",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 11.3372,
+   "dec": 12.9914,
+   "magnitude": 8.9,
+   "constellation": "Leo"
+  },
+  {
+   "id": "M67",
+   "aliases": [
+    "NGC2682"
+   ],
+   "name": "M67",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 8.8567,
+   "dec": 11.8,
+   "magnitude": 6.9,
+   "constellation": "Cancer"
+  },
+  {
+   "id": "M68",
+   "aliases": [
+    "NGC4590"
+   ],
+   "name": "M68",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 12.6578,
+   "dec": -26.7444,
+   "magnitude": 7.8,
+   "constellation": "Hydra"
+  },
+  {
+   "id": "M69",
+   "aliases": [
+    "NGC6637"
+   ],
+   "name": "M69",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 18.5231,
+   "dec": -32.3481,
+   "magnitude": 7.6,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M7",
+   "aliases": [
+    "NGC6475"
+   ],
+   "name": "Ptolemy Cluster",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 17.8975,
+   "dec": -34.8158,
+   "magnitude": 3.3,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "M70",
+   "aliases": [
+    "NGC6681"
+   ],
+   "name": "M70",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 18.7211,
+   "dec": -32.2917,
+   "magnitude": 7.9,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M71",
+   "aliases": [
+    "NGC6838"
+   ],
+   "name": "M71",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 19.8961,
+   "dec": 18.7792,
+   "magnitude": 8.2,
+   "constellation": "Sagitta"
+  },
+  {
+   "id": "M72",
+   "aliases": [
+    "NGC6981"
+   ],
+   "name": "M72",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 20.8911,
+   "dec": -12.5372,
+   "magnitude": 9.3,
+   "constellation": "Aquarius"
+  },
+  {
+   "id": "M73",
+   "aliases": [
+    "NGC6994"
+   ],
+   "name": "M73",
+   "catalog": "Messier",
+   "type": "Asterism",
+   "ra": 20.9817,
+   "dec": -12.6333,
+   "magnitude": 9.0,
+   "constellation": "Aquarius"
+  },
+  {
+   "id": "M74",
+   "aliases": [
+    "NGC628"
+   ],
+   "name": "Phantom Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 1.6111,
+   "dec": 15.7833,
+   "magnitude": 9.4,
+   "constellation": "Pisces"
+  },
+  {
+   "id": "M75",
+   "aliases": [
+    "NGC6864"
+   ],
+   "name": "M75",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 20.1011,
+   "dec": -21.9222,
+   "magnitude": 8.5,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M76",
+   "aliases": [
+    "NGC650"
+   ],
+   "name": "Little Dumbbell Nebula",
+   "catalog": "Messier",
+   "type": "Planetary Nebula",
+   "ra": 1.705,
+   "dec": 51.575,
+   "magnitude": 10.1,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "M77",
+   "aliases": [
+    "NGC1068"
+   ],
+   "name": "Cetus A",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 2.7117,
+   "dec": -0.0133,
+   "magnitude": 8.9,
+   "constellation": "Cetus"
+  },
+  {
+   "id": "M78",
+   "aliases": [
+    "NGC2068"
+   ],
+   "name": "M78",
+   "catalog": "Messier",
+   "type": "Reflection Nebula",
+   "ra": 5.7783,
+   "dec": 0.05,
+   "magnitude": 8.3,
+   "constellation": "Orion"
+  },
+  {
+   "id": "M79",
+   "aliases": [
+    "NGC1904"
+   ],
+   "name": "M79",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 5.4025,
+   "dec": -24.5247,
+   "magnitude": 7.7,
+   "constellation": "Lepus"
+  },
+  {
+   "id": "M8",
+   "aliases": [
+    "NGC6523"
+   ],
+   "name": "Lagoon Nebula",
+   "catalog": "Messier",
+   "type": "Emission Nebula",
+   "ra": 18.0628,
+   "dec": -24.3867,
+   "magnitude": 6.0,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "M80",
+   "aliases": [
+    "NGC6093"
+   ],
+   "name": "M80",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 16.2839,
+   "dec": -22.9758,
+   "magnitude": 7.3,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "M81",
+   "aliases": [
+    "NGC3031"
+   ],
+   "name": "Bode's Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 9.9256,
+   "dec": 69.0653,
+   "magnitude": 6.9,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M82",
+   "aliases": [
+    "NGC3034"
+   ],
+   "name": "Cigar Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 9.9311,
+   "dec": 69.6792,
+   "magnitude": 8.4,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M83",
+   "aliases": [
+    "NGC5236"
+   ],
+   "name": "Southern Pinwheel Galaxy",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 13.6167,
+   "dec": -29.8667,
+   "magnitude": 7.5,
+   "constellation": "Hydra"
+  },
+  {
+   "id": "M84",
+   "aliases": [
+    "NGC4374"
+   ],
+   "name": "M84",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.4178,
+   "dec": 12.8869,
+   "magnitude": 9.1,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M85",
+   "aliases": [
+    "NGC4382"
+   ],
+   "name": "M85",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.4233,
+   "dec": 18.1911,
+   "magnitude": 9.1,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M86",
+   "aliases": [
+    "NGC4406"
+   ],
+   "name": "M86",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.4367,
+   "dec": 12.9461,
+   "magnitude": 8.9,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M87",
+   "aliases": [
+    "NGC4486"
+   ],
+   "name": "Virgo A",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.5136,
+   "dec": 12.3911,
+   "magnitude": 8.6,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M88",
+   "aliases": [
+    "NGC4501"
+   ],
+   "name": "M88",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.5333,
+   "dec": 14.4203,
+   "magnitude": 9.6,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M89",
+   "aliases": [
+    "NGC4552"
+   ],
+   "name": "M89",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.595,
+   "dec": 12.5561,
+   "magnitude": 9.8,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M9",
+   "aliases": [
+    "NGC6333"
+   ],
+   "name": "M9",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 17.3197,
+   "dec": -18.5161,
+   "magnitude": 7.9,
+   "constellation": "Ophiuchus"
+  },
+  {
+   "id": "M90",
+   "aliases": [
+    "NGC4569"
+   ],
+   "name": "M90",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.6133,
+   "dec": 13.1628,
+   "magnitude": 9.5,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "M91",
+   "aliases": [
+    "NGC4548"
+   ],
+   "name": "M91",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.5906,
+   "dec": 14.4961,
+   "magnitude": 10.1,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M92",
+   "aliases": [
+    "NGC6341"
+   ],
+   "name": "M92",
+   "catalog": "Messier",
+   "type": "Globular Cluster",
+   "ra": 17.2853,
+   "dec": 43.1356,
+   "magnitude": 6.4,
+   "constellation": "Hercules"
+  },
+  {
+   "id": "M93",
+   "aliases": [
+    "NGC2447"
+   ],
+   "name": "M93",
+   "catalog": "Messier",
+   "type": "Open Cluster",
+   "ra": 7.7417,
+   "dec": -23.85,
+   "magnitude": 6.0,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "M94",
+   "aliases": [
+    "NGC4736"
+   ],
+   "name": "M94",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.8483,
+   "dec": 41.1203,
+   "magnitude": 8.2,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "M95",
+   "aliases": [
+    "NGC3351"
+   ],
+   "name": "M95",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 10.7333,
+   "dec": 11.7036,
+   "magnitude": 9.7,
+   "constellation": "Leo"
+  },
+  {
+   "id": "M96",
+   "aliases": [
+    "NGC3368"
+   ],
+   "name": "M96",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 10.7794,
+   "dec": 11.82,
+   "magnitude": 9.2,
+   "constellation": "Leo"
+  },
+  {
+   "id": "M97",
+   "aliases": [
+    "NGC3587"
+   ],
+   "name": "Owl Nebula",
+   "catalog": "Messier",
+   "type": "Planetary Nebula",
+   "ra": 11.2467,
+   "dec": 55.0192,
+   "magnitude": 9.9,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "M98",
+   "aliases": [
+    "NGC4192"
+   ],
+   "name": "M98",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.23,
+   "dec": 14.9,
+   "magnitude": 10.1,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "M99",
+   "aliases": [
+    "NGC4254"
+   ],
+   "name": "Coma Pinwheel",
+   "catalog": "Messier",
+   "type": "Galaxy",
+   "ra": 12.3133,
+   "dec": 14.4161,
+   "magnitude": 9.9,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "Mars",
+   "aliases": [],
+   "name": "Mars",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "Mercury",
+   "aliases": [],
+   "name": "Mercury",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "MilkyWay",
+   "aliases": [
+    "Milky-Way",
+    "Milky Way",
+    "MW"
+   ],
+   "name": "Milky Way",
+   "catalog": "Region",
+   "type": "Galactic Region",
+   "ra": 17.75,
+   "dec": -29.0,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": 3600
+  },
+  {
+   "id": "Mirfak",
+   "aliases": [
+    "Alpha Per",
+    "HIP15863"
+   ],
+   "name": "Mirfak",
+   "catalog": "Stars",
+   "type": "Star (F5Ib supergiant)",
+   "ra": 3.4054,
+   "dec": 49.86124,
+   "magnitude": 1.79,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "Mizar",
+   "aliases": [
+    "Zeta UMa",
+    "HIP65378"
+   ],
+   "name": "Mizar",
+   "catalog": "Stars",
+   "type": "Star (A1V multiple)",
+   "ra": 13.39876,
+   "dec": 54.92536,
+   "magnitude": 2.23,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "Moon",
+   "aliases": [],
+   "name": "Moon",
+   "catalog": "Solar System",
+   "type": "Moon",
+   "computeAtRuntime": true,
+   "subgalleries": [
+    {
+     "id": "full",
+     "name": "Full Moon",
+     "description": "Brightest phase. Fully illuminated disk."
+    },
+    {
+     "id": "new",
+     "name": "New Moon",
+     "description": "Dark Moon. Earthshine and faint glow only."
+    },
+    {
+     "id": "crescent",
+     "name": "Crescent",
+     "description": "Thin sliver, waxing or waning."
+    },
+    {
+     "id": "first-quarter",
+     "name": "First Quarter",
+     "description": "Half-lit disk, waxing."
+    },
+    {
+     "id": "last-quarter",
+     "name": "Last Quarter",
+     "description": "Half-lit disk, waning."
+    },
+    {
+     "id": "gibbous",
+     "name": "Gibbous",
+     "description": "Between quarter and full, waxing or waning."
+    },
+    {
+     "id": "blood",
+     "name": "Blood Moon",
+     "description": "Total lunar eclipse — reddish from refracted sunlight."
+    },
+    {
+     "id": "super",
+     "name": "Supermoon",
+     "description": "Full Moon near perigee. ~14% larger than average."
+    },
+    {
+     "id": "blue",
+     "name": "Blue Moon",
+     "description": "Second full Moon in a calendar month (or third of four in a season)."
+    },
+    {
+     "id": "harvest",
+     "name": "Harvest / Hunter Moon",
+     "description": "Full Moon nearest autumnal equinox (Harvest) or following (Hunter)."
+    },
+    {
+     "id": "earthshine",
+     "name": "Earthshine",
+     "description": "Faint sunlight reflected off Earth, illuminating the dark side."
+    },
+    {
+     "id": "day",
+     "name": "Daytime",
+     "description": "Moon visible during the day."
+    },
+    {
+     "id": "occultation",
+     "name": "Occultation",
+     "description": "Moon passing in front of a planet or bright star."
+    }
+   ]
+  },
+  {
+   "id": "Muphrid",
+   "aliases": [
+    "Eta Boo",
+    "HR 5235",
+    "HD 121370",
+    "HIP 67927"
+   ],
+   "name": "Muphrid",
+   "catalog": "Stars",
+   "type": "Star (G0IV)",
+   "ra": 13.91143,
+   "dec": 18.39772,
+   "magnitude": 2.68,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "NGC1023",
+   "aliases": [],
+   "name": "NGC 1023",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 2.6772,
+   "dec": 39.0633,
+   "magnitude": 9.4,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "NGC1097",
+   "aliases": [
+    "Caldwell67"
+   ],
+   "name": "NGC 1097",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 2.7783,
+   "dec": -30.275,
+   "magnitude": 9.5,
+   "constellation": "Fornax"
+  },
+  {
+   "id": "NGC1232",
+   "aliases": [],
+   "name": "NGC 1232",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 3.1611,
+   "dec": -20.5797,
+   "magnitude": 9.9,
+   "constellation": "Eridanus"
+  },
+  {
+   "id": "NGC129",
+   "aliases": [],
+   "name": "NGC 129",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 0.4995,
+   "dec": 60.2112,
+   "magnitude": 6.5,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC1300",
+   "aliases": [],
+   "name": "NGC 1300",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 3.3308,
+   "dec": -19.4111,
+   "magnitude": 10.4,
+   "constellation": "Eridanus"
+  },
+  {
+   "id": "NGC1316",
+   "aliases": [
+    "Caldwell62"
+   ],
+   "name": "Fornax A",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 3.3781,
+   "dec": -37.2083,
+   "magnitude": 8.5,
+   "constellation": "Fornax"
+  },
+  {
+   "id": "NGC1333",
+   "aliases": [],
+   "name": "NGC 1333",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 3.4783,
+   "dec": 31.3667,
+   "magnitude": 5.6,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "NGC1365",
+   "aliases": [
+    "Caldwell51"
+   ],
+   "name": "Great Barred Spiral Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 3.5611,
+   "dec": -36.1403,
+   "magnitude": 9.6,
+   "constellation": "Fornax"
+  },
+  {
+   "id": "NGC1499",
+   "aliases": [
+    "Caldwell31"
+   ],
+   "name": "California Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 4.0333,
+   "dec": 36.4167,
+   "magnitude": 6.0,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "NGC1535",
+   "aliases": [],
+   "name": "Cleopatra's Eye",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 4.2272,
+   "dec": -12.7361,
+   "magnitude": 9.6,
+   "constellation": "Eridanus"
+  },
+  {
+   "id": "NGC1788",
+   "aliases": [],
+   "name": "NGC 1788",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 5.1217,
+   "dec": -3.3667,
+   "magnitude": 9.0,
+   "constellation": "Orion"
+  },
+  {
+   "id": "NGC188",
+   "aliases": [],
+   "name": "NGC 188",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 0.791,
+   "dec": 85.2696,
+   "magnitude": 8.1,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC1893",
+   "aliases": [],
+   "name": "NGC 1893 (Tadpoles)",
+   "catalog": "NGC",
+   "type": "Open Cluster + Nebula",
+   "ra": 5.3833,
+   "dec": 33.4333,
+   "magnitude": 7.5,
+   "constellation": "Auriga"
+  },
+  {
+   "id": "NGC1977",
+   "aliases": [],
+   "name": "Running Man Nebula",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 5.5917,
+   "dec": -4.85,
+   "magnitude": 7.0,
+   "constellation": "Orion"
+  },
+  {
+   "id": "NGC2024",
+   "aliases": [],
+   "name": "Flame Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 5.6822,
+   "dec": -1.8467,
+   "magnitude": 2.0,
+   "constellation": "Orion"
+  },
+  {
+   "id": "NGC2070",
+   "aliases": [
+    "Caldwell103"
+   ],
+   "name": "Tarantula Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 5.6383,
+   "dec": -69.1003,
+   "magnitude": 8.0,
+   "constellation": "Dorado"
+  },
+  {
+   "id": "NGC2080",
+   "aliases": [],
+   "name": "Ghost Head Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 5.6178,
+   "dec": -69.6486,
+   "magnitude": 11.0,
+   "constellation": "Dorado"
+  },
+  {
+   "id": "NGC2170",
+   "aliases": [],
+   "name": "Angel Nebula",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 6.1228,
+   "dec": -6.3933,
+   "magnitude": 8.0,
+   "constellation": "Monoceros"
+  },
+  {
+   "id": "NGC2174",
+   "aliases": [],
+   "name": "Monkey Head Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 6.1583,
+   "dec": 20.5,
+   "magnitude": 6.8,
+   "constellation": "Orion"
+  },
+  {
+   "id": "NGC2207",
+   "aliases": [],
+   "name": "NGC 2207 / IC 2163",
+   "catalog": "NGC",
+   "type": "Galaxy Pair",
+   "ra": 6.27,
+   "dec": -21.3756,
+   "magnitude": 11.5,
+   "constellation": "Canis Major"
+  },
+  {
+   "id": "NGC2237",
+   "aliases": [
+    "Caldwell49"
+   ],
+   "name": "Rosette Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 6.5333,
+   "dec": 5.05,
+   "magnitude": 9.0,
+   "constellation": "Monoceros"
+  },
+  {
+   "id": "NGC2244",
+   "aliases": [
+    "Caldwell50"
+   ],
+   "name": "Rosette Cluster",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 6.5367,
+   "dec": 4.9333,
+   "magnitude": 4.8,
+   "constellation": "Monoceros"
+  },
+  {
+   "id": "NGC2264",
+   "aliases": [],
+   "name": "Christmas Tree / Cone Nebula",
+   "catalog": "NGC",
+   "type": "Open Cluster + Nebula",
+   "ra": 6.6783,
+   "dec": 9.8833,
+   "magnitude": 3.9,
+   "constellation": "Monoceros"
+  },
+  {
+   "id": "NGC2359",
+   "aliases": [
+    "Caldwell59"
+   ],
+   "name": "Thor's Helmet",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 7.305,
+   "dec": -13.2167,
+   "magnitude": 11.5,
+   "constellation": "Canis Major"
+  },
+  {
+   "id": "NGC2392",
+   "aliases": [
+    "Caldwell39"
+   ],
+   "name": "Lion / Clown Face Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 7.4717,
+   "dec": 20.9117,
+   "magnitude": 9.2,
+   "constellation": "Gemini"
+  },
+  {
+   "id": "NGC2403",
+   "aliases": [
+    "Caldwell7"
+   ],
+   "name": "NGC 2403",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 7.6181,
+   "dec": 65.6028,
+   "magnitude": 8.9,
+   "constellation": "Camelopardalis"
+  },
+  {
+   "id": "NGC2438",
+   "aliases": [],
+   "name": "NGC 2438",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 7.7028,
+   "dec": -14.7383,
+   "magnitude": 10.1,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "NGC2440",
+   "aliases": [],
+   "name": "NGC 2440",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 7.7167,
+   "dec": -18.2117,
+   "magnitude": 9.4,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "NGC253",
+   "aliases": [
+    "Caldwell65"
+   ],
+   "name": "Sculptor Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 0.7925,
+   "dec": -25.2883,
+   "magnitude": 7.2,
+   "constellation": "Sculptor"
+  },
+  {
+   "id": "NGC2566",
+   "aliases": [],
+   "name": "NGC 2566",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 8.3,
+   "dec": -25.5,
+   "magnitude": 11.4,
+   "constellation": "Puppis"
+  },
+  {
+   "id": "NGC2683",
+   "aliases": [
+    "Caldwell48"
+   ],
+   "name": "UFO Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 8.8783,
+   "dec": 33.4192,
+   "magnitude": 9.8,
+   "constellation": "Lynx"
+  },
+  {
+   "id": "NGC281",
+   "aliases": [],
+   "name": "Pacman Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 0.88,
+   "dec": 56.6256,
+   "magnitude": 7.4,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC2818",
+   "aliases": [],
+   "name": "NGC 2818",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 9.2683,
+   "dec": -36.6258,
+   "magnitude": 11.6,
+   "constellation": "Pyxis"
+  },
+  {
+   "id": "NGC2841",
+   "aliases": [],
+   "name": "NGC 2841",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 9.3672,
+   "dec": 50.9764,
+   "magnitude": 9.2,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "NGC3079",
+   "aliases": [],
+   "name": "NGC 3079",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 10.0322,
+   "dec": 55.6797,
+   "magnitude": 10.9,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "NGC3115",
+   "aliases": [
+    "Caldwell53"
+   ],
+   "name": "Spindle Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 10.0875,
+   "dec": -7.7186,
+   "magnitude": 8.9,
+   "constellation": "Sextans"
+  },
+  {
+   "id": "NGC3242",
+   "aliases": [
+    "Caldwell59"
+   ],
+   "name": "Ghost of Jupiter",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 10.4133,
+   "dec": -18.6333,
+   "magnitude": 7.7,
+   "constellation": "Hydra"
+  },
+  {
+   "id": "NGC3344",
+   "aliases": [],
+   "name": "NGC 3344",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 10.7283,
+   "dec": 24.9219,
+   "magnitude": 9.8,
+   "constellation": "Leo Minor"
+  },
+  {
+   "id": "NGC3372",
+   "aliases": [
+    "Caldwell92"
+   ],
+   "name": "Carina Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 10.7383,
+   "dec": -59.8703,
+   "magnitude": 1.0,
+   "constellation": "Carina"
+  },
+  {
+   "id": "NGC3521",
+   "aliases": [],
+   "name": "NGC 3521",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 11.0972,
+   "dec": -0.0361,
+   "magnitude": 9.0,
+   "constellation": "Leo"
+  },
+  {
+   "id": "NGC3628",
+   "aliases": [],
+   "name": "Hamburger Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 11.3433,
+   "dec": 13.5894,
+   "magnitude": 10.3,
+   "constellation": "Leo"
+  },
+  {
+   "id": "NGC4038",
+   "aliases": [
+    "Caldwell60"
+   ],
+   "name": "Antennae Galaxies (NGC 4038)",
+   "catalog": "NGC",
+   "type": "Galaxy Pair",
+   "ra": 12.0294,
+   "dec": -18.8678,
+   "magnitude": 10.5,
+   "constellation": "Corvus"
+  },
+  {
+   "id": "NGC4039",
+   "aliases": [
+    "Caldwell61"
+   ],
+   "name": "Antennae Galaxies (NGC 4039)",
+   "catalog": "NGC",
+   "type": "Galaxy Pair",
+   "ra": 12.0297,
+   "dec": -18.8869,
+   "magnitude": 10.7,
+   "constellation": "Corvus"
+  },
+  {
+   "id": "NGC4214",
+   "aliases": [],
+   "name": "NGC 4214",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.2614,
+   "dec": 36.3267,
+   "magnitude": 9.7,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4216",
+   "aliases": [],
+   "name": "NGC 4216",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.2625,
+   "dec": 13.1492,
+   "magnitude": 10.0,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "NGC4244",
+   "aliases": [
+    "Caldwell26"
+   ],
+   "name": "Silver Needle Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.295,
+   "dec": 37.8081,
+   "magnitude": 10.2,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4395",
+   "aliases": [],
+   "name": "NGC 4395",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.4308,
+   "dec": 33.5469,
+   "magnitude": 10.6,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4449",
+   "aliases": [],
+   "name": "NGC 4449 (Box Galaxy)",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.4625,
+   "dec": 44.0961,
+   "magnitude": 9.6,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4490",
+   "aliases": [],
+   "name": "Cocoon Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.5133,
+   "dec": 41.6447,
+   "magnitude": 9.8,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4527",
+   "aliases": [],
+   "name": "NGC 4527",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.5683,
+   "dec": 2.6536,
+   "magnitude": 10.5,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "NGC4559",
+   "aliases": [
+    "Caldwell36"
+   ],
+   "name": "NGC 4559",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.5994,
+   "dec": 27.9606,
+   "magnitude": 10.0,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "NGC4565",
+   "aliases": [
+    "Caldwell38"
+   ],
+   "name": "Needle Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.6056,
+   "dec": 25.9872,
+   "magnitude": 9.6,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "NGC457",
+   "aliases": [
+    "Caldwell13"
+   ],
+   "name": "Owl Cluster",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 1.3267,
+   "dec": 58.35,
+   "magnitude": 6.4,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC4631",
+   "aliases": [
+    "Caldwell32"
+   ],
+   "name": "Whale Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.7008,
+   "dec": 32.5417,
+   "magnitude": 9.2,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4656",
+   "aliases": [],
+   "name": "Hockey Stick Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.7367,
+   "dec": 32.1681,
+   "magnitude": 10.5,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC4666",
+   "aliases": [],
+   "name": "Superwind Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.7517,
+   "dec": -0.4636,
+   "magnitude": 10.7,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "NGC4725",
+   "aliases": [],
+   "name": "NGC 4725",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 12.8333,
+   "dec": 25.5008,
+   "magnitude": 9.4,
+   "constellation": "Coma Berenices"
+  },
+  {
+   "id": "NGC5005",
+   "aliases": [
+    "Caldwell29"
+   ],
+   "name": "NGC 5005",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 13.1828,
+   "dec": 37.0594,
+   "magnitude": 9.8,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC5033",
+   "aliases": [],
+   "name": "NGC 5033",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 13.2733,
+   "dec": 36.5928,
+   "magnitude": 10.1,
+   "constellation": "Canes Venatici"
+  },
+  {
+   "id": "NGC5128",
+   "aliases": [
+    "Caldwell77"
+   ],
+   "name": "Centaurus A",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 13.4244,
+   "dec": -43.0192,
+   "magnitude": 6.8,
+   "constellation": "Centaurus"
+  },
+  {
+   "id": "NGC5139",
+   "aliases": [
+    "Caldwell80"
+   ],
+   "name": "Omega Centauri",
+   "catalog": "NGC",
+   "type": "Globular Cluster",
+   "ra": 13.4467,
+   "dec": -47.4769,
+   "magnitude": 3.7,
+   "constellation": "Centaurus"
+  },
+  {
+   "id": "NGC5474",
+   "aliases": [],
+   "name": "NGC 5474",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 14.0833,
+   "dec": 53.6608,
+   "magnitude": 10.8,
+   "constellation": "Ursa Major"
+  },
+  {
+   "id": "NGC5907",
+   "aliases": [],
+   "name": "Splinter Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 15.2625,
+   "dec": 56.3286,
+   "magnitude": 10.4,
+   "constellation": "Draco"
+  },
+  {
+   "id": "NGC6217",
+   "aliases": [],
+   "name": "NGC 6217",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 16.5447,
+   "dec": 78.1989,
+   "magnitude": 11.2,
+   "constellation": "Ursa Minor"
+  },
+  {
+   "id": "NGC6231",
+   "aliases": [
+    "Caldwell76"
+   ],
+   "name": "Northern Jewel Box",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 16.9,
+   "dec": -41.8,
+   "magnitude": 2.6,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "NGC6302",
+   "aliases": [
+    "Caldwell69"
+   ],
+   "name": "Bug Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 17.2289,
+   "dec": -37.1031,
+   "magnitude": 9.6,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "NGC6334",
+   "aliases": [],
+   "name": "Cat's Paw Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 17.3667,
+   "dec": -36.1167,
+   "magnitude": 10.0,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "NGC6357",
+   "aliases": [],
+   "name": "War and Peace Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 17.4,
+   "dec": -34.1167,
+   "magnitude": 10.0,
+   "constellation": "Scorpius"
+  },
+  {
+   "id": "NGC6383",
+   "aliases": [
+    "NGC 6383",
+    "NGC6383"
+   ],
+   "name": "NGC 6383",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 17.58,
+   "dec": -32.566667,
+   "magnitude": 5.5,
+   "constellation": "Scorpius",
+   "size_arcmin": 20.0
+  },
+  {
+   "id": "NGC6503",
+   "aliases": [],
+   "name": "Lost-in-Space Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 17.8242,
+   "dec": 70.1442,
+   "magnitude": 10.2,
+   "constellation": "Draco"
+  },
+  {
+   "id": "NGC6539",
+   "aliases": [
+    "NGC 6539"
+   ],
+   "name": "NGC 6539",
+   "catalog": "NGC",
+   "type": "Globular Cluster",
+   "ra": 18.10528,
+   "dec": -7.5667,
+   "magnitude": 8.9,
+   "constellation": "Serpens",
+   "size_arcmin": 7.9
+  },
+  {
+   "id": "NGC654",
+   "aliases": [],
+   "name": "NGC 654",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 1.7332,
+   "dec": 61.8827,
+   "magnitude": 6.5,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC6543",
+   "aliases": [
+    "Caldwell6"
+   ],
+   "name": "Cat's Eye Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 17.9758,
+   "dec": 66.6331,
+   "magnitude": 8.1,
+   "constellation": "Draco"
+  },
+  {
+   "id": "NGC660",
+   "aliases": [],
+   "name": "NGC 660 (Polar Ring)",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 1.7156,
+   "dec": 13.645,
+   "magnitude": 11.2,
+   "constellation": "Pisces"
+  },
+  {
+   "id": "NGC6624",
+   "aliases": [
+    "NGC 6624"
+   ],
+   "name": "NGC 6624",
+   "catalog": "NGC",
+   "type": "Globular Cluster",
+   "ra": 18.3993,
+   "dec": -30.2817,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "NGC663",
+   "aliases": [
+    "Caldwell10"
+   ],
+   "name": "Horseshoe Cluster",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 1.77,
+   "dec": 61.25,
+   "magnitude": 7.1,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC6664",
+   "aliases": [],
+   "name": "NGC 6664",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 18.6093,
+   "dec": -8.2208,
+   "magnitude": 7.8,
+   "constellation": "Scutum"
+  },
+  {
+   "id": "NGC6712",
+   "aliases": [],
+   "name": "NGC 6712",
+   "catalog": "NGC",
+   "type": "Globular Cluster",
+   "ra": 18.8847,
+   "dec": -8.7055,
+   "magnitude": 8.69,
+   "constellation": "Scutum"
+  },
+  {
+   "id": "NGC6742",
+   "aliases": [],
+   "name": "NGC 6742",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 18.9889,
+   "dec": 48.4653,
+   "magnitude": 13.4,
+   "constellation": "Draco"
+  },
+  {
+   "id": "NGC6744",
+   "aliases": [
+    "Caldwell101"
+   ],
+   "name": "NGC 6744",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 19.1647,
+   "dec": -63.8575,
+   "magnitude": 9.0,
+   "constellation": "Pavo"
+  },
+  {
+   "id": "NGC6755",
+   "aliases": [],
+   "name": "NGC 6755",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 19.1303,
+   "dec": 4.2664,
+   "magnitude": 7.5,
+   "constellation": "Aquila"
+  },
+  {
+   "id": "NGC6791",
+   "aliases": [],
+   "name": "NGC 6791",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 19.3481,
+   "dec": 37.7719,
+   "magnitude": 9.5,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "NGC6822",
+   "aliases": [
+    "Caldwell57"
+   ],
+   "name": "Barnard's Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 19.7475,
+   "dec": -14.8028,
+   "magnitude": 8.7,
+   "constellation": "Sagittarius"
+  },
+  {
+   "id": "NGC6826",
+   "aliases": [
+    "Caldwell15"
+   ],
+   "name": "Blinking Planetary",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 19.7522,
+   "dec": 50.5197,
+   "magnitude": 8.8,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6834",
+   "aliases": [],
+   "name": "NGC 6834",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 19.8702,
+   "dec": 29.4082,
+   "magnitude": 7.8,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6866",
+   "aliases": [],
+   "name": "NGC 6866",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 20.0653,
+   "dec": 44.1591,
+   "magnitude": 7.6,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6888",
+   "aliases": [
+    "Caldwell27"
+   ],
+   "name": "Crescent Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 20.2017,
+   "dec": 38.35,
+   "magnitude": 7.4,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6939",
+   "aliases": [],
+   "name": "NGC 6939",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 20.5283,
+   "dec": 60.675,
+   "magnitude": 7.8,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC6946",
+   "aliases": [
+    "Caldwell12"
+   ],
+   "name": "Fireworks Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 20.5806,
+   "dec": 60.1539,
+   "magnitude": 9.0,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC6960",
+   "aliases": [
+    "Caldwell34"
+   ],
+   "name": "Western Veil Nebula",
+   "catalog": "NGC",
+   "type": "Supernova Remnant",
+   "ra": 20.76,
+   "dec": 30.7167,
+   "magnitude": 7.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6992",
+   "aliases": [
+    "Caldwell33"
+   ],
+   "name": "Eastern Veil Nebula",
+   "catalog": "NGC",
+   "type": "Supernova Remnant",
+   "ra": 20.9356,
+   "dec": 31.7167,
+   "magnitude": 7.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC6995",
+   "aliases": [],
+   "name": "Network Nebula",
+   "catalog": "NGC",
+   "type": "Supernova Remnant",
+   "ra": 20.9333,
+   "dec": 31.2,
+   "magnitude": 7.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC7000",
+   "aliases": [
+    "Caldwell20"
+   ],
+   "name": "North America Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 20.9883,
+   "dec": 44.3328,
+   "magnitude": 4.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC7008",
+   "aliases": [],
+   "name": "Fetus Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 21.0078,
+   "dec": 54.545,
+   "magnitude": 12.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC7009",
+   "aliases": [
+    "Caldwell55"
+   ],
+   "name": "Saturn Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 21.0617,
+   "dec": -11.3636,
+   "magnitude": 8.0,
+   "constellation": "Aquarius"
+  },
+  {
+   "id": "NGC7023",
+   "aliases": [
+    "Caldwell4"
+   ],
+   "name": "Iris Nebula",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 21.015,
+   "dec": 68.1683,
+   "magnitude": 6.8,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC7027",
+   "aliases": [],
+   "name": "Magic Carpet Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 21.1183,
+   "dec": 42.2367,
+   "magnitude": 10.4,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC7063",
+   "aliases": [],
+   "name": "NGC 7063",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 21.406,
+   "dec": 36.4875,
+   "magnitude": 7.0,
+   "constellation": "Cygnus"
+  },
+  {
+   "id": "NGC7129",
+   "aliases": [],
+   "name": "NGC 7129",
+   "catalog": "NGC",
+   "type": "Reflection Nebula",
+   "ra": 21.7283,
+   "dec": 66.1167,
+   "magnitude": 11.5,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC7142",
+   "aliases": [],
+   "name": "NGC 7142",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 21.7526,
+   "dec": 65.7744,
+   "magnitude": 9.3,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC7209",
+   "aliases": [],
+   "name": "NGC 7209",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 22.0855,
+   "dec": 46.4835,
+   "magnitude": 7.7,
+   "constellation": "Lacerta"
+  },
+  {
+   "id": "NGC7217",
+   "aliases": [],
+   "name": "NGC 7217",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 22.1283,
+   "dec": 31.3597,
+   "magnitude": 10.1,
+   "constellation": "Pegasus"
+  },
+  {
+   "id": "NGC7261",
+   "aliases": [],
+   "name": "NGC 7261",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 22.3351,
+   "dec": 58.0518,
+   "magnitude": 8.4,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC7293",
+   "aliases": [
+    "Caldwell63"
+   ],
+   "name": "Helix Nebula",
+   "catalog": "NGC",
+   "type": "Planetary Nebula",
+   "ra": 22.4944,
+   "dec": -20.8372,
+   "magnitude": 7.6,
+   "constellation": "Aquarius"
+  },
+  {
+   "id": "NGC7331",
+   "aliases": [
+    "Caldwell30"
+   ],
+   "name": "Deer Lick Group",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 22.6181,
+   "dec": 34.4153,
+   "magnitude": 9.5,
+   "constellation": "Pegasus"
+  },
+  {
+   "id": "NGC7380",
+   "aliases": [],
+   "name": "Wizard Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 22.7867,
+   "dec": 58.1167,
+   "magnitude": 7.2,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC7479",
+   "aliases": [
+    "Caldwell44"
+   ],
+   "name": "Superman Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 23.0817,
+   "dec": 12.3228,
+   "magnitude": 10.9,
+   "constellation": "Pegasus"
+  },
+  {
+   "id": "NGC7635",
+   "aliases": [
+    "Caldwell11"
+   ],
+   "name": "Bubble Nebula",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 23.3433,
+   "dec": 61.2008,
+   "magnitude": 10.0,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC7789",
+   "aliases": [
+    "Caldwell41"
+   ],
+   "name": "Caroline's Rose",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 23.965,
+   "dec": 56.7167,
+   "magnitude": 6.7,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "NGC7793",
+   "aliases": [],
+   "name": "NGC 7793",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 23.9633,
+   "dec": -32.5908,
+   "magnitude": 9.1,
+   "constellation": "Sculptor"
+  },
+  {
+   "id": "NGC7822",
+   "aliases": [],
+   "name": "NGC 7822",
+   "catalog": "NGC",
+   "type": "Emission Nebula",
+   "ra": 0.0333,
+   "dec": 67.4167,
+   "magnitude": 9.0,
+   "constellation": "Cepheus"
+  },
+  {
+   "id": "NGC869",
+   "aliases": [
+    "Caldwell14a"
+   ],
+   "name": "Double Cluster (h Persei)",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 2.3367,
+   "dec": 57.1333,
+   "magnitude": 5.3,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "NGC884",
+   "aliases": [
+    "Caldwell14b"
+   ],
+   "name": "Double Cluster (chi Persei)",
+   "catalog": "NGC",
+   "type": "Open Cluster",
+   "ra": 2.3733,
+   "dec": 57.15,
+   "magnitude": 6.1,
+   "constellation": "Perseus"
+  },
+  {
+   "id": "NGC891",
+   "aliases": [
+    "Caldwell23"
+   ],
+   "name": "Silver Sliver Galaxy",
+   "catalog": "NGC",
+   "type": "Galaxy",
+   "ra": 2.3756,
+   "dec": 42.3492,
+   "magnitude": 9.9,
+   "constellation": "Andromeda"
+  },
+  {
+   "id": "Neptune",
+   "aliases": [],
+   "name": "Neptune",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "OCl1039",
+   "aliases": [
+    "OCl 1039",
+    "OCl1039"
+   ],
+   "name": "OCl 1039",
+   "catalog": "OCl",
+   "type": "Open Cluster",
+   "ra": 17.844722,
+   "dec": -28.336111,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "OmicronCas",
+   "aliases": [
+    "OmicronCassiopeiae",
+    "omiCas"
+   ],
+   "name": "Omicron Cassiopeiae",
+   "catalog": "Star",
+   "type": "Star",
+   "ra": 0.6507,
+   "dec": 48.3271,
+   "magnitude": 4.5,
+   "constellation": "Cassiopeia"
+  },
+  {
+   "id": "Ori",
+   "aliases": [
+    "Orion",
+    "Orion's Belt"
+   ],
+   "name": "Orion",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 5.6,
+   "dec": 5.9,
+   "magnitude": null,
+   "constellation": "Orion",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Peg",
+   "aliases": [
+    "Great Square",
+    "Pegasus"
+   ],
+   "name": "Pegasus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 22.7,
+   "dec": 19.5,
+   "magnitude": null,
+   "constellation": "Pegasus",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Per",
+   "aliases": [
+    "Perseus"
+   ],
+   "name": "Perseus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 3.1,
+   "dec": 45.0,
+   "magnitude": null,
+   "constellation": "Perseus",
+   "size_arcmin": 1200
+  },
+  {
+   "id": "Pluto",
+   "aliases": [],
+   "name": "Pluto",
+   "catalog": "Solar System",
+   "type": "Dwarf Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "Polaris",
+   "aliases": [
+    "Alpha UMi",
+    "HIP11767"
+   ],
+   "name": "Polaris",
+   "catalog": "Stars",
+   "type": "Star (F7Ib supergiant)",
+   "ra": 2.5303,
+   "dec": 89.26411,
+   "magnitude": 1.98,
+   "constellation": "Ursa Minor"
+  },
+  {
+   "id": "Pollux",
+   "aliases": [
+    "Beta Gem",
+    "HIP37826"
+   ],
+   "name": "Pollux",
+   "catalog": "Stars",
+   "type": "Star (K0III)",
+   "ra": 7.75526,
+   "dec": 28.0262,
+   "magnitude": 1.16,
+   "constellation": "Gemini"
+  },
+  {
+   "id": "Procyon",
+   "aliases": [
+    "Alpha CMi",
+    "HIP37279"
+   ],
+   "name": "Procyon",
+   "catalog": "Stars",
+   "type": "Star (F5IV-V)",
+   "ra": 7.65503,
+   "dec": 5.225,
+   "magnitude": 0.34,
+   "constellation": "Canis Minor"
+  },
+  {
+   "id": "Psc",
+   "aliases": [
+    "Pisces"
+   ],
+   "name": "Pisces",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 0.3,
+   "dec": 13.7,
+   "magnitude": null,
+   "constellation": "Pisces",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "Regulus",
+   "aliases": [
+    "Alpha Leo",
+    "HIP49669"
+   ],
+   "name": "Regulus",
+   "catalog": "Stars",
+   "type": "Star (B8IV-V)",
+   "ra": 10.13953,
+   "dec": 11.96719,
+   "magnitude": 1.35,
+   "constellation": "Leo"
+  },
+  {
+   "id": "Rigel",
+   "aliases": [
+    "Beta Ori",
+    "HIP24436"
+   ],
+   "name": "Rigel",
+   "catalog": "Stars",
+   "type": "Star (B8 supergiant)",
+   "ra": 5.2423,
+   "dec": -8.20163,
+   "magnitude": 0.13,
+   "constellation": "Orion"
+  },
+  {
+   "id": "Saturn",
+   "aliases": [],
+   "name": "Saturn",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "Sco",
+   "aliases": [
+    "Scorpius"
+   ],
+   "name": "Scorpius",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 16.9,
+   "dec": -27.0,
+   "magnitude": null,
+   "constellation": "Scorpius",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Seginus",
+   "aliases": [
+    "Gamma Bootis",
+    "Gamma Boo",
+    "gamBoo",
+    "Seginus"
+   ],
+   "name": "Seginus (Gamma Bootis)",
+   "catalog": "Star",
+   "type": "Star",
+   "ra": 14.636944,
+   "dec": 38.502778,
+   "magnitude": 3.03,
+   "constellation": "Bootes",
+   "size_arcmin": null
+  },
+  {
+   "id": "Sgr",
+   "aliases": [
+    "Sagittarius",
+    "Teapot"
+   ],
+   "name": "Sagittarius",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 19.1,
+   "dec": -28.5,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "Sheliak",
+   "aliases": [
+    "Beta Lyr",
+    "HIP92420"
+   ],
+   "name": "Sheliak",
+   "catalog": "Stars",
+   "type": "Eclipsing binary (B7Ve)",
+   "ra": 18.83466,
+   "dec": 33.36267,
+   "magnitude": 3.52,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "SigmaBoo",
+   "aliases": [
+    "Sigma Boo",
+    "HR 5447",
+    "HD 128167",
+    "HIP 71284"
+   ],
+   "name": "Sigma Boötis",
+   "catalog": "Stars",
+   "type": "Star (F2V)",
+   "ra": 14.58931,
+   "dec": 29.74583,
+   "magnitude": 4.46,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "Spica",
+   "aliases": [
+    "Alpha Vir",
+    "HIP65474"
+   ],
+   "name": "Spica",
+   "catalog": "Stars",
+   "type": "Star (B1III-IV)",
+   "ra": 13.41988,
+   "dec": -11.16133,
+   "magnitude": 0.97,
+   "constellation": "Virgo"
+  },
+  {
+   "id": "Sulafat",
+   "aliases": [
+    "Gamma Lyr",
+    "HIP93194"
+   ],
+   "name": "Sulafat",
+   "catalog": "Stars",
+   "type": "Star (B9III)",
+   "ra": 18.98239,
+   "dec": 32.68956,
+   "magnitude": 3.25,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "Sun",
+   "aliases": [
+    "Sol"
+   ],
+   "name": "Sun",
+   "catalog": "Solar System",
+   "type": "Star",
+   "computeAtRuntime": true,
+   "subgalleries": [
+    {
+     "id": "whitelight",
+     "name": "White light",
+     "description": "Standard solar filter view. Photosphere and sunspots."
+    },
+    {
+     "id": "sunspot",
+     "name": "Sunspot close-up",
+     "description": "Zoomed on active regions — umbra, penumbra, granulation."
+    },
+    {
+     "id": "halpha",
+     "name": "Hydrogen-alpha",
+     "description": "656 nm narrowband. Prominences, filaments, chromosphere."
+    },
+    {
+     "id": "eclipse-partial",
+     "name": "Partial eclipse",
+     "description": "Moon partially covering the Sun's disc."
+    },
+    {
+     "id": "eclipse-total",
+     "name": "Total eclipse",
+     "description": "Corona visible during totality."
+    },
+    {
+     "id": "eclipse-annular",
+     "name": "Annular eclipse",
+     "description": "Ring of fire — Moon inside the solar disc but too small to cover it."
+    },
+    {
+     "id": "transit",
+     "name": "Transit",
+     "description": "Mercury or Venus crossing the solar disc."
+    },
+    {
+     "id": "sunrise-sunset",
+     "name": "Sunrise / Sunset",
+     "description": "Horizon shot. Atmospheric reddening, green flash."
+    }
+   ]
+  },
+  {
+   "id": "TR34",
+   "aliases": [
+    "Trumpler 34",
+    "Tr 34"
+   ],
+   "name": "Trumpler 34",
+   "catalog": "Trumpler",
+   "type": "Open Cluster",
+   "ra": 18.68694,
+   "dec": -9.3833,
+   "magnitude": 8.6,
+   "constellation": "Scutum",
+   "size_arcmin": 7.0
+  },
+  {
+   "id": "Tau",
+   "aliases": [
+    "Taurus"
+   ],
+   "name": "Taurus",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 4.7,
+   "dec": 14.9,
+   "magnitude": null,
+   "constellation": "Taurus",
+   "size_arcmin": 1500
+  },
+  {
+   "id": "TauBoo",
+   "aliases": [
+    "Tau Boo",
+    "HR 5185",
+    "HD 120136",
+    "HIP 67275"
+   ],
+   "name": "Tau Boötis",
+   "catalog": "Stars",
+   "type": "Star (F6IV)",
+   "ra": 13.78814,
+   "dec": 17.45691,
+   "magnitude": 4.5,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "ThetaDra",
+   "aliases": [
+    "Theta Draconis",
+    "Theta Dra"
+   ],
+   "name": "Theta Draconis",
+   "catalog": "Stars",
+   "type": "Star",
+   "ra": 16.04234,
+   "dec": 58.43596,
+   "constellation": "Draco"
+  },
+  {
+   "id": "Thuban",
+   "aliases": [
+    "Alpha Dra",
+    "HIP68756"
+   ],
+   "name": "Thuban",
+   "catalog": "Stars",
+   "type": "Star (A0III, former pole star)",
+   "ra": 14.07315,
+   "dec": 64.37583,
+   "magnitude": 3.65,
+   "constellation": "Draco"
+  },
+  {
+   "id": "Tri",
+   "aliases": [
+    "Triangulum"
+   ],
+   "name": "Triangulum",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 2.0,
+   "dec": 31.5,
+   "magnitude": null,
+   "constellation": "Triangulum",
+   "size_arcmin": 600
+  },
+  {
+   "id": "UMa",
+   "aliases": [
+    "Big Dipper",
+    "Plough",
+    "Ursa Major",
+    "Ursa-Major",
+    "UrsaMajor"
+   ],
+   "name": "Ursa Major",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 11.0,
+   "dec": 50.7,
+   "magnitude": null,
+   "constellation": "Ursa Major",
+   "size_arcmin": 1800
+  },
+  {
+   "id": "UMi",
+   "aliases": [
+    "Little Dipper",
+    "Ursa Minor",
+    "Ursa-Minor",
+    "UrsaMinor"
+   ],
+   "name": "Ursa Minor",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 15.0,
+   "dec": 77.7,
+   "magnitude": null,
+   "constellation": "Ursa Minor",
+   "size_arcmin": 900
+  },
+  {
+   "id": "Unknown",
+   "aliases": [
+    "Unknown",
+    "不明"
+   ],
+   "name": "Unidentified field",
+   "catalog": "Field",
+   "type": "Unidentified",
+   "ra": 18.671805,
+   "dec": -13.593472,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "UpsilonBoo",
+   "aliases": [
+    "Upsilon Boo",
+    "HR 5200",
+    "HD 120477",
+    "HIP 67459"
+   ],
+   "name": "Upsilon Boötis",
+   "catalog": "Stars",
+   "type": "Star (K5III)",
+   "ra": 13.82061,
+   "dec": 15.79753,
+   "magnitude": 4.06,
+   "constellation": "Boötes"
+  },
+  {
+   "id": "Uranus",
+   "aliases": [],
+   "name": "Uranus",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "V1331AQL",
+   "aliases": [
+    "V1331 Aquilae",
+    "V1331 Aql"
+   ],
+   "name": "V1331 Aquilae",
+   "catalog": "Variable Star",
+   "type": "Star",
+   "ra": 18.730269,
+   "dec": -2.27584,
+   "magnitude": null,
+   "constellation": "Aquila",
+   "size_arcmin": null
+  },
+  {
+   "id": "V379Vul",
+   "aliases": [
+    "V379 Vulpeculae",
+    "V379Vulpeculae",
+    "V379 Vul"
+   ],
+   "name": "V379 Vulpeculae",
+   "catalog": "Variable Star",
+   "type": "Star",
+   "ra": 19.7832,
+   "dec": 28.515,
+   "magnitude": null,
+   "constellation": "Vulpecula",
+   "size_arcmin": null
+  },
+  {
+   "id": "V3879Sgr",
+   "aliases": [
+    "V3879 Sagittarii",
+    "V3879Sagittarii"
+   ],
+   "name": "V3879 Sagittarii",
+   "catalog": "Star",
+   "type": "Variable Star",
+   "ra": 18.7,
+   "dec": -20.044444,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "V430SCT",
+   "aliases": [
+    "V430 Scuti",
+    "V430 Sct"
+   ],
+   "name": "V430 Scuti",
+   "catalog": "Variable Star",
+   "type": "Star",
+   "ra": 18.50806,
+   "dec": -13.25,
+   "magnitude": 6.9,
+   "constellation": "Scutum",
+   "size_arcmin": null
+  },
+  {
+   "id": "V4381Sgr",
+   "aliases": [
+    "V4381 Sagittarii",
+    "V4381Sagittarii",
+    "V4381 Sgr"
+   ],
+   "name": "V4381 Sagittarii",
+   "catalog": "Star",
+   "type": "Variable Star",
+   "ra": 17.878889,
+   "dec": -22.090278,
+   "magnitude": null,
+   "constellation": "Sagittarius",
+   "size_arcmin": null
+  },
+  {
+   "id": "Vega",
+   "aliases": [
+    "Alpha Lyr",
+    "HIP91262"
+   ],
+   "name": "Vega",
+   "catalog": "Stars",
+   "type": "Star (A0V)",
+   "ra": 18.61565,
+   "dec": 38.78369,
+   "magnitude": 0.03,
+   "constellation": "Lyra"
+  },
+  {
+   "id": "Venus",
+   "aliases": [],
+   "name": "Venus",
+   "catalog": "Solar System",
+   "type": "Planet",
+   "computeAtRuntime": true
+  },
+  {
+   "id": "Vir",
+   "aliases": [
+    "Virgo"
+   ],
+   "name": "Virgo",
+   "catalog": "Constellation",
+   "type": "Constellation",
+   "ra": 13.4,
+   "dec": -4.2,
+   "magnitude": null,
+   "constellation": "Virgo",
+   "size_arcmin": 2400
+  },
+  {
+   "id": "gHer",
+   "aliases": [
+    "g Her",
+    "30 Her",
+    "HR 6146",
+    "HD 148783",
+    "HIP 80704",
+    "V* g Her"
+   ],
+   "name": "g Herculis",
+   "catalog": "Stars",
+   "type": "Star (M6III, semi-regular variable)",
+   "ra": 16.4773,
+   "dec": 41.8817,
+   "magnitude": 5.0,
+   "constellation": "Hercules"
+  }
+ ]
+}

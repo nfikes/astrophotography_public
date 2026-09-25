@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nfikes.github.io/astrophotography_public/sitemap.xml

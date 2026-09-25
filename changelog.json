@@ -1,0 +1,1976 @@
+{
+ "note": "Public-gallery changelog. Rendered as a timeline in the header panel, newest-first, grouped into major-version eras. Adding an entry: set `date` and `type` (publish.py reads both to decide which photos are 'new'), point `era` at the major it belongs to, and write `bullets` — one fact each, in EN and JA. HARD LIMITS, enforced by tools/deposit_check.py: at most 4 bullets per entry, and at most 30 words per English bullet. The `ja` bullets are a faithful translation of the trimmed `en`, one for one — same count, same facts, no extra sentences. Prose paragraphs are deliberately gone; a point that needs a paragraph does not belong in the changelog, it belongs in the markdowns. Eras come from data/version.json's major audit trail: the highest `major` declared here must equal MAJOR there, and deposit_check fails if it does not. Era date ranges and entry counts are computed at render time, so nothing here goes stale.",
+ "eras": [
+  {
+   "major": 7,
+   "en": {
+    "title": "The album explains itself, and can be written back to"
+   },
+   "ja": {
+    "title": "自ら説明するアルバムと、意見を送れる仕組み"
+   }
+  },
+  {
+   "major": 6,
+   "en": {
+    "title": "The album made small, and navigable"
+   },
+   "ja": {
+    "title": "軽くなったアルバムと、探しやすさ"
+   }
+  },
+  {
+   "major": 5,
+   "en": {
+    "title": "The murk rebuild, and the album re-rendered"
+   },
+   "ja": {
+    "title": "もやの解消と、アルバムの再レンダリング"
+   }
+  },
+  {
+   "major": 4,
+   "en": {
+    "title": "The gallery restructure — one card per target"
+   },
+   "ja": {
+    "title": "ギャラリーの再構成 — 対象ごとに1枚のカード"
+   }
+  },
+  {
+   "major": 3,
+   "en": {
+    "title": "The sky dome, and conditioning per target"
+   },
+   "ja": {
+    "title": "天球ドームと、対象ごとの調整"
+   }
+  },
+  {
+   "major": 2,
+   "en": {
+    "title": "The measured pipeline"
+   },
+   "ja": {
+    "title": "測定に基づくパイプライン"
+   }
+  },
+  {
+   "major": 1,
+   "en": {
+    "title": "Launch, and the first conditioned photos"
+   },
+   "ja": {
+    "title": "公開と、最初の調整済み写真"
+   }
+  }
+ ],
+ "entries": [
+  {
+   "date": "2026-09-25",
+   "type": "website",
+   "era": 7,
+   "en": {
+    "title": "The sky dome hands off without a star moving, and every target has a page a search engine can read",
+    "bullets": [
+     "Entering the sky dome from a picture, or clicking one inside it, zooms with no star shift on any of the 290 frames; brightness eases with the zoom.",
+     "Every published photograph's plate solve now describes its own pixels, so callout circles and the dome agree everywhere.",
+     "A static page per target with the photograph, its catalogue facts and a link into the album; an index, an image sitemap and robots.txt.",
+     "Links follow the target (#M31), link previews show a photograph, and the telescope is named correctly everywhere: a Seestar S30 Pro, not an S50."
+    ]
+   },
+   "ja": {
+    "title": "スカイドームの受け渡しは星一つ動かず、すべての天体に検索エンジンが読めるページを",
+    "bullets": [
+     "写真からスカイドームへ入るときも、ドーム内で写真を選ぶときも、290枚すべてで星がずれずにズームし、明るさもズームに合わせて変わります。",
+     "公開写真ごとのプレートソルブがその画像自身の画素を記述するようになり、注記の円とドームがどこでも一致します。",
+     "天体ごとに写真・カタログ情報・アルバムへのリンクを載せた静的ページと一覧、画像サイトマップ、robots.txtを追加しました。",
+     "リンクが天体に追従（#M31）し、プレビューに写真が表示されます。望遠鏡名をすべての箇所で正しくSeestar S30 Proに改めました（S50ではありません）。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-21",
+   "type": "photos",
+   "era": 7,
+   "en": {
+    "title": "42 objects conditioned for the first time",
+    "bullets": [
+     "42 objects that qualified for a conditioned render and had no way to get one now have it — globular and open clusters, galaxies, nebulae and starfields.",
+     "Light cloud is corrected rather than thrown away, so Andromeda and the Cygnus Loop kept frames that would have been dropped: 949 of them for the Loop.",
+     "Thin stacks are drizzled with a wider footprint. At the old setting nine frames left dark dashes across NGC 663, 17% below the sky around them.",
+     "The East Veil photograph from July has its own card, NGC 6992. It had been filed under the West Veil, which it does not show."
+    ]
+   },
+   "ja": {
+    "title": "42天体を初めて仕上げました",
+    "bullets": [
+     "条件を満たしながら仕上げる手段がなかった42天体を処理しました。球状星団、散開星団、銀河、星雲、星野です。",
+     "薄雲は捨てずに補正します。アンドロメダと網状星雲は、捨てるはずだったコマを残せました。網状星雲では949コマです。",
+     "浅いスタックはドリズルの足跡を広げました。従来の設定では9コマでNGC 663に周囲より17%暗い破線が入りました。",
+     "7月の東のベール星雲の写真を、独立したNGC 6992のカードへ移しました。写っていない西のベール星雲に分類されていました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-21",
+   "type": "website",
+   "era": 7,
+   "en": {
+    "title": "The best picture first, and the buttons that were missing",
+    "bullets": [
+     "An object with several photographs now leads with its clearest, not its longest. The Milky Way was opening on a poor night with a better one behind it.",
+     "Goto Sky Dome is back on the planetary nebulae, the Cat's Eye and the Ring among them, and is offered only where a photograph can really be placed.",
+     "Circles are drawn on top of the photograph instead of behind it, and are offered on the raw stack, where the plate solve was measured.",
+     "On the sky dome, frame edges blend three times as far, and a ring marking unphotographed sky retires once something is photographed there."
+    ]
+   },
+   "ja": {
+    "title": "最良の一枚を先頭に、そして消えていたボタン",
+    "bullets": [
+     "複数の写真がある天体は、露出の長さではなく最も鮮明な一枚を先頭に表示します。天の川は条件の悪い夜から開いていました。",
+     "惑星状星雲（キャッツアイ、環状、亜鈴、ふくろう）で「スカイドームへ」が復活。実際に配置できる写真にのみ表示します。",
+     "円は写真の背面ではなく手前に描かれ、プレートソルブを実測した生スタックでのみ利用できます。",
+     "スカイドームではフレーム境界のぼかし幅を約3倍に。未撮影を示す輪は、そこを撮影した時点で消えます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-20",
+   "type": "website",
+   "era": 7,
+   "en": {
+    "title": "Fits a phone, and the buttons fit a thumb",
+    "bullets": [
+     "The page no longer scrolls sideways on a phone; a panel that was meant to be closed had been sitting just off the screen.",
+     "Buttons are sized for a finger rather than a mouse, on any device that is actually touched.",
+     "The feedback and voting panels can be closed three ways: an X, a tap outside, or Escape.",
+     "A vote can be taken back, and your own votes follow the connection rather than the browser."
+    ]
+   },
+   "ja": {
+    "title": "スマートフォンに収まり、ボタンは指に合わせて",
+    "bullets": [
+     "スマートフォンで横スクロールが発生しなくなりました。閉じているはずのパネルが画面のすぐ外にありました。",
+     "タッチ操作の端末では、ボタンをマウスではなく指に合わせた大きさに。",
+     "ご意見フォームと投票パネルは、×ボタン・外側のタップ・Escキーの3通りで閉じられます。",
+     "投票の取り消しが可能に。自分の投票はブラウザではなく接続元に紐づきます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-20",
+   "type": "website",
+   "era": 7,
+   "en": {
+    "title": "Tell us what you think, and see what others chose",
+    "bullets": [
+     "A feedback box sits beside the Sky button: write a line, send it, no name or address asked for.",
+     "Voting works. It was never broken — it had simply never been switched on — and a Votes panel shows the standings.",
+     "Small objects gain a Close up: a crop at full resolution, cut around the object from the album's own photograph.",
+     "Planets get a crosshair, so Pluto is findable in a field of thousands of identical dots."
+    ]
+   },
+   "ja": {
+    "title": "ご意見をどうぞ。みんなの投票も見られます",
+    "bullets": [
+     "Skyボタンの隣にご意見フォームを追加。名前もメールアドレスも不要で、一行送るだけ。",
+     "投票機能が動作するようになりました。壊れていたのではなく、有効化されていなかっただけです。結果は投票パネルで。",
+     "小さな天体に「クローズアップ」を追加。元画像から等倍で切り出した拡大画像です。",
+     "惑星には十字マーカー。無数の点の中から冥王星を見つけられます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-20",
+   "type": "photos",
+   "era": 7,
+   "en": {
+    "title": "M 31 re-stacked, with the cloudy exposures taken out",
+    "bullets": [
+     "Fifty new exposures of the Andromeda Galaxy join, and every exposure it holds was re-judged against its clearest night.",
+     "322 of 670 were shot through cloud and are now excluded, so the stated depth falls from 122.6 minutes to 52.0.",
+     "The photograph is unchanged: measured, 4% fewer stars and the same noise. Those frames were adding sky, not light.",
+     "Depth is what the picture is actually made of, so the smaller number is the true one."
+    ]
+   },
+   "ja": {
+    "title": "M 31を再スタック、雲越しのコマを除外",
+    "bullets": [
+     "アンドロメダ銀河の新しい露出50コマを追加し、全コマを最も澄んだ夜と比較して再判定。",
+     "670コマ中322コマが雲越しと判定され除外。表示する積算時間は122.6分から52.0分に。",
+     "写真そのものは変わらない。実測で星の数は4%減、ノイズは同じ。除外分は光ではなく空の明るさだった。",
+     "積算時間は実際に写真を構成した露出の合計。小さいほうが正しい数字。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-20",
+   "type": "website",
+   "era": 7,
+   "en": {
+    "title": "A first look that explains itself",
+    "bullets": [
+     "The page now scrolls to the large viewer by itself, and a card names the four viewing modes in their own colours.",
+     "The slideshow runs by default and opens with the album's strongest photographs, measured rather than chosen.",
+     "It visits a target's other photographs too, keeps your circles on between slides, and no longer shifts the page.",
+     "Holding a picture fills the screen the right way round, follows the slideshow, and every object has a Wikipedia link."
+    ]
+   },
+   "ja": {
+    "title": "初めてでも分かる入口に",
+    "bullets": [
+     "読み込み後に自動で大きな画像ビューアまでスクロールし、4つの表示モードを色分けで説明するカードを表示。",
+     "スライドショーを既定でオンに。実測したクリアさの順に、最も見応えのある写真から始まります。",
+     "同じ天体の別カットも巡回し、「円を表示」はスライドが変わっても維持。ページが上下に動くこともなくなりました。",
+     "長押しの全画面表示は横向きのまま。スライドショーにも追従し、各天体にWikipediaリンクを追加。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "NGC 6624 and V379 Vulpeculae join, and the Cygnus Loop at seven hours",
+    "bullets": [
+     "NGC 6624, a globular cluster low in Sagittarius, and the variable star V379 Vulpeculae join the album.",
+     "IC 1287 gains a 36-minute light-pollution-filter stack, 24 times the exposure of its July photograph.",
+     "The Cygnus Loop reaches 7 h 00 m from 1,259 exposures, its deepest yet.",
+     "Bochum 13 was photographed too, but only 16 degrees up and through cloud; it waits for a clearer night."
+    ]
+   },
+   "ja": {
+    "title": "NGC 6624とV379 Vulpeculaeを追加、網状星雲は約7時間に",
+    "bullets": [
+     "いて座の低空にある球状星団NGC 6624と、変光星V379 Vulpeculaeをアルバムに追加。",
+     "IC 1287に光害カットフィルターで36分のスタックを追加。7月の写真の24倍の露出。",
+     "網状星雲は1,259枚・7時間00分に。これまでで最も深い。",
+     "Bochum 13も撮影したが、高度16度で雲越しだったため、晴れた夜を待つ。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-17",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Hold a picture to fill the screen",
+    "bullets": [
+     "Press and hold any image — a card, a thumbnail, one side of a comparison — and it opens full screen at full resolution."
+    ]
+   },
+   "ja": {
+    "title": "画像を長押しで全画面に",
+    "bullets": [
+     "カード、サムネイル、比較スライダーのどちら側でも、長押しすればフル解像度で全画面表示になる。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-17",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Cygnus Loop at 5 h 09 m, and a crescent Moon",
+    "bullets": [
+     "The Cygnus Loop reaches 5 h 09 m from 927 exposures; 19 more cloudy frames were left out.",
+     "A waxing crescent Moon, 33% lit, photographed on the 16th, joins the album.",
+     "NGC 6604 stayed at 5 h 17 m: the night's frames were shot without the light-pollution filter, which the picture cannot mix."
+    ]
+   },
+   "ja": {
+    "title": "網状星雲は5時間09分に、そして三日月",
+    "bullets": [
+     "網状星雲は927枚・5時間09分に。雲のかかった19枚はさらに除外した。",
+     "9月16日に撮影した月齢の若い三日月（輝面比33%）をアルバムに追加。",
+     "NGC 6604は5時間17分のまま。今夜は光害フィルターなしで撮影しており、この写真には混ぜられない。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Photographs are built only from the frames the sky was clear for",
+    "bullets": [
+     "Every exposure is now checked against the same patch of sky on its clearest night, and the clouded ones are left out of the stack.",
+     "A night lost to cloud can still give its good frames: NGC 6604 keeps 109 of 310, while the telescope's own stack of that night is set aside."
+    ]
+   },
+   "ja": {
+    "title": "空が晴れていたコマだけで写真を作るように",
+    "bullets": [
+     "各露出を、同じ空域が最も澄んでいた夜と比べて判定し、雲のかかったコマはスタックから除外するように。",
+     "雲に流れた夜も良いコマは活かせる。NGC 6604は310枚中109枚を採用し、その夜の望遠鏡側のスタックは見送った。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "NGC 6604 at 5 h 17 m, and a deeper Cygnus Loop",
+    "bullets": [
+     "NGC 6604 reaches 5 h 17 m: a clouded night contributed only its 109 clear frames, stacked onto the same framing.",
+     "The Cygnus Loop reaches 4 h 26 m from 798 exposures, with 19 cloudy frames dropped."
+    ]
+   },
+   "ja": {
+    "title": "NGC 6604は5時間17分に、網状星雲もさらに深く",
+    "bullets": [
+     "NGC 6604は5時間17分に。雲の夜からは晴れていた109枚だけを、同じ構図に重ねた。",
+     "網状星雲は798枚・4時間26分に。雲のかかった19枚は除外した。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-15",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Integration times show what each stack holds",
+    "bullets": [
+     "Integration times now come from each photo's own stack, not every exposure taken: the Cygnus Loop had shown 3 h 31 m for a 2 h 29 m stack.",
+     "Older entries overstated two stacks: the Eagle and Omega holds 9 h 41 m, not 10 h 01 m; the Lagoon 9 h 26 m, not 9 h 49 m.",
+     "M 10 and NGC 6946 now show their integration time; the telescope filed them under different names, so the album could not find them.",
+     "An integration showcase's last step is now labelled with what its stack holds, not every exposure available."
+    ]
+   },
+   "ja": {
+    "title": "積算時間は各スタックの実際の値に",
+    "bullets": [
+     "積算時間は、撮影した全露出ではなく各写真のスタックそのものから読むように。網状星雲は2時間29分のスタックに3時間31分と表示していた。",
+     "以前の記載は2つのスタックを多く見積もっていた。わし星雲・オメガ星雲は10時間1分ではなく9時間41分、干潟星雲は9時間49分ではなく9時間26分。",
+     "M 10とNGC 6946に積算時間を表示。望遠鏡が別の名前で保存していたため、見つけられていなかった。",
+     "積算比較の最後の段は、利用できた全露出ではなく、そのスタックに実際に入った時間を表示するように。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-15",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "NGC 6604 reaches 4 h 41 m, and the Cygnus Loop deepens",
+    "bullets": [
+     "NGC 6604 adds a third night: three telescope stacks merged, up to 4 h 41 m where they overlap, on the same framing.",
+     "The Cygnus Loop gains 65 minutes tonight: its stack now holds 3 h 34 m from 643 exposures.",
+     "The Cygnus Loop and Eagle and Omega integration showcases were rebuilt; the Eagle and Omega's deepest step now reaches 589 minutes."
+    ]
+   },
+   "ja": {
+    "title": "NGC 6604は4時間41分に、網状星雲もさらに深く",
+    "bullets": [
+     "NGC 6604に3夜目を追加。望遠鏡の3つのスタックを同じ構図のまま合わせ、重なる部分で最大4時間41分に。",
+     "網状星雲は今夜65分を追加し、スタックは643枚・合計3時間34分に。",
+     "網状星雲とわし星雲・オメガ星雲の積算比較を作り直し、わし星雲・オメガ星雲の最深段は589分に。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Honest before-and-after sliders, and a lighter sky dome",
+    "bullets": [
+     "Before-and-after sliders now always compare the same framing, checked by plate solve; six had been showing two different photographs.",
+     "The sky dome stops downloading and gives memory back when idle, hidden or closed; left zoomed in, it used to re-fetch images endlessly.",
+     "The dome animates only what is in view: frames arrive as you pan, and tapping a target ripples just its neighbours."
+    ]
+   },
+   "ja": {
+    "title": "正確なビフォー／アフター比較と、軽くなったスカイドーム",
+    "bullets": [
+     "ビフォー／アフターのスライダーは、プレートソルブで確認した同じ構図どうしだけを比較するように。6件が別々の写真を比べていた。",
+     "スカイドームは放置・非表示・終了時に読み込みを止めてメモリを解放する。拡大したまま放置すると画像を延々と再取得していた。",
+     "アニメーションは表示範囲内だけ。パンすると画像が順に現れ、天体をタップするとその周囲だけが動く。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "NGC 6604 at nearly three hours, and the Cygnus Loop deepens",
+    "bullets": [
+     "NGC 6604 combines two nights into 2 h 46 m, framed on tonight's two-hour telescope stack with the bright Eagle Nebula kept out of the frame.",
+     "The Cygnus Loop gains 72 minutes tonight, now 3 h 31 m in all."
+    ]
+   },
+   "ja": {
+    "title": "NGC 6604は約3時間に、網状星雲もさらに深く",
+    "bullets": [
+     "NGC 6604は2夜を合わせて2時間46分。今夜の2時間のスタックを基準に構図を合わせ、明るいわし星雲は画面から外した。",
+     "網状星雲は今夜72分を追加し、合計3時間31分に。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-11",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "New arrivals include photographs deepened this week",
+    "bullets": [
+     "The new-arrivals band now includes photographs deepened this week, not just first taken — so the Eagle and Omega and NGC 6604 join the Cygnus Loop.",
+     "Photographs are re-processed only when new exposures actually reach them, checked by checksum, so nothing is rebuilt without new data."
+    ]
+   },
+   "ja": {
+    "title": "今週深くなった写真も新着に",
+    "bullets": [
+     "新着の帯に、今週初めて撮った写真だけでなく今週さらに露出を重ねた写真も含めるように。わし星雲・オメガ星雲とNGC 6604が網状星雲に加わった。",
+     "新しい露出が実際に届いた写真だけを再処理するよう変更。新しいデータかどうかはチェックサムで確認する。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-10",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "Ten hours on the Eagle and the Omega",
+    "bullets": [
+     "1,831 frames over five nights — 10 h 01 m, up from 7 h 28 m, all registered onto the one frame that holds both nebulae.",
+     "The Cygnus Loop deepens to 2 h 19 m, gains a two-hour showcase step, and its before/after now compares the same pointing.",
+     "NGC 6604 is re-stacked on the framing of the telescope's own 45-minute stack, 13 minutes deep instead of 5, with the bright Eagle out of the corner.",
+     "The Eagle and Omega showcase still stops at 4 h 52 m — its ten-hour step needs more working disk than this machine has."
+    ]
+   },
+   "ja": {
+    "title": "わし星雲とオメガ星雲に10時間",
+    "bullets": [
+     "5夜・1,831枚で10時間1分。従来の7時間28分から延び、すべて両星雲が収まる構図に位置合わせ。",
+     "網状星雲は2時間19分に深まり、比較表示に2時間の段階が加わった。ビフォー／アフターも同じ構図どうしの比較に修正。",
+     "NGC 6604を望遠鏡自身の45分スタックの構図で再スタック。積算は5分から13分に。明るいわし星雲を画面の隅から外した。",
+     "わし星雲とオメガ星雲の比較表示は4時間52分で止まったまま。10時間の段階は作業領域が不足している。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-09",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Eagle and the Omega deepen; the Cygnus Loop arrives whole",
+    "bullets": [
+     "The Eagle and the Omega now carries 7 h 28 m over four nights — more than double what the previous render actually stacked.",
+     "Its showcase gains a five-hour step it could never reach before, running to 7 h 17 m.",
+     "The Cygnus Loop in one frame: the Western Veil with 52 Cygni, the Eastern Veil, and Pickering's Triangle between them.",
+     "Both are family photographs, so a search for either object finds the frame that holds it."
+    ]
+   },
+   "ja": {
+    "title": "わし星雲とオメガ星雲がさらに深く、網状星雲は全体像で登場",
+    "bullets": [
+     "わし星雲とオメガ星雲は4夜で7時間28分に。従来の画像が実際に積算していた時間の2倍以上。",
+     "露出時間の比較表示に、これまで到達できなかった5時間の段階が加わり、最深は7時間17分。",
+     "網状星雲を一枚に。52番星を含む西側、東側、そしてその間のピッカリングの三角形。",
+     "どちらもファミリー写真として登録し、含まれる天体を検索すれば見つかる。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-08",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The Eagle and the Omega, four and a half hours deep",
+    "bullets": [
+     "The integration showcase now climbs to 4 h 33 m across 833 frames. It had stopped at 3 h 1 m, having been built before the stack was deepened.",
+     "Sky noise halves across the six steps, so the climb shows what the extra exposure actually bought rather than the same stack six times.",
+     "The family photograph of the two nebulae shows the same ladder; its own copy had been left behind on the old three-hour step.",
+     "The note under Family Photos is one sentence now."
+    ]
+   },
+   "ja": {
+    "title": "わし星雲とオメガ星雲、4時間33分の深さへ",
+    "bullets": [
+     "露出時間の比較表示が833枚・4時間33分まで到達。スタックを深くする前に作られていたため、従来は3時間1分で止まっていた。",
+     "6段階で背景ノイズが半減しており、同じスタックを6回見せているのではなく、露出を重ねた効果がそのまま表れている。",
+     "2つの星雲のファミリー写真も同じ比較表示に更新。従来は3時間の古い段階のまま取り残されていた。",
+     "「ファミリー写真」の説明文を1文に短縮。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-06",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The Eagle and the Omega, in one frame",
+    "bullets": [
+     "The three-hour frame now leads NGC 6605, instead of a five-minute render that clipped the Omega.",
+     "Plate-solved, so it reaches the sky dome and names what is in it.",
+     "Declared a family, so it answers a search for either nebula."
+    ]
+   },
+   "ja": {
+    "title": "わし星雲とオメガ星雲を一枚に",
+    "bullets": [
+     "NGC 6605 の代表画像を3時間露出に変更。従来の5分の画像はオメガ星雲が切れていた。",
+     "プレートソルブ済みとなり、天球ドームに載り、写っている天体も判別できる。",
+     "ファミリーとして登録し、どちらの星雲を検索しても見つかる。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-06",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "NGC 6605 — three hours on the Eagle and the Omega",
+    "bullets": [
+     "546 subs at 20 s, three hours and two minutes in a single night.",
+     "The field carries the Eagle Nebula and the Omega Nebula at opposite ends.",
+     "Shipped as the Seestar's own stack; not yet plate-solved, so it is absent from the sky dome."
+    ]
+   },
+   "ja": {
+    "title": "NGC 6605 — わし星雲とオメガ星雲に3時間",
+    "bullets": [
+     "20秒露出を546枚、一晩で3時間2分。",
+     "画角の両端にわし星雲とオメガ星雲が収まっている。",
+     "Seestarのスタックをそのまま公開。未解析のため天球ドームには出ない。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-05",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The sky dome, unstuck",
+    "bullets": [
+     "The sky dome no longer stalls when fully zoomed in. A sharper tile ordered for a frame you have panned past is now cancelled instead of loading anyway.",
+     "Jump to the dome from a photograph and that exact frame is outlined in yellow for a moment, so you can tell which plate you were looking at.",
+     "A new Circles button annotates the sky you have photographed the way ASTAP does, and clicking a ring opens the deepest photograph of that object. Off by default.",
+     "The dome's tools bar used to close the moment you dragged the sky. It now closes when you press its button, and not before."
+    ]
+   },
+   "ja": {
+    "title": "天球の引っかかりを解消",
+    "bullets": [
+     "天球を最大まで拡大したときの引っかかりを解消しました。すでに通り過ぎたフレーム用のタイル読み込みは、途中で取り消すようになりました。",
+     "写真から天球へ移動すると、その写真のフレームが数秒だけ黄色い線で囲まれます。どの一枚を見ていたのかが分かります。",
+     "新しい「Circles」ボタンは、撮影済みの空をASTAPと同じように注記します。輪をクリックすると、その天体を最も長く露光した写真が開きます。既定はオフです。",
+     "天球のツールバーが、空をドラッグしただけで閉じてしまう問題を修正しました。閉じるのはボタンを押したときだけです。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-05",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "Three wide fields, and one star in Hercules",
+    "bullets": [
+     "Three mosaics, each about four by eight degrees: one hundred and four exposures in Hercules, one hundred and two in Aquila, one hundred and one around 28 Aquilae.",
+     "Two of those fields had no name, so they are filed by where they point — 17h32m +31.1° and 19h13m +9.2°.",
+     "Each mosaic was re-solved against fifteen sub-tiles and warped, cutting its worst position error from twenty-four arcseconds to six.",
+     "Kornephoros in Hercules, a single minute of it — three exposures. Thin, and shown exactly as the telescope delivered it."
+    ]
+   },
+   "ja": {
+    "title": "3つの広い領域と、ヘルクレス座の星ひとつ",
+    "bullets": [
+     "モザイクを3枚、それぞれおよそ4度×8度です。ヘルクレス座で104枚、わし座で102枚、28 Aquilae周辺で101枚の露光。",
+     "うち2つの領域には名前がなく、向けた位置で記録しています — 17h32m +31.1°と19h13m +9.2°。",
+     "各モザイクは15の小領域で解き直して変換し、最大の位置誤差を24秒角から6秒角に縮めました。",
+     "ヘルクレス座のKornephorosは、わずか1分・3枚の露光です。淡いままですが、望遠鏡が捉えたとおりに掲載しています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-03",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "Two wide fields in Scutum, and a deeper NGC 6802",
+    "bullets": [
+     "Two Scutum mosaics, each four by eight degrees: eighty-one exposures at 18h41m, one hundred and six at 18h26m. The telescope had no name for either field.",
+     "Both were re-solved against fifteen sub-tiles and warped onto a clean projection, so stars land within a tenth of an arcminute of where the sky puts them.",
+     "NGC 6802 was re-stacked from both its nights, forty-five exposures over ten minutes, and conditioned for the first time. A faint cluster, rendered honestly rather than deeply."
+    ]
+   },
+   "ja": {
+    "title": "たて座の広い2つの領域と、より深いNGC 6802",
+    "bullets": [
+     "たて座のモザイクを2枚、それぞれ4度×8度です。18h41mで81枚、18h26mで106枚の露光。望遠鏡はどちらの領域にも名前を持ちませんでした。",
+     "どちらも15の小領域で解き直し、ゆがみのない投影に変換しました。星の位置は、実際の空から0.1分角以内に収まっています。",
+     "NGC 6802は2晩分を合わせ、45枚・10分で積み直し、初めて調整をかけました。淡い散開星団で、深くはなく、ありのままの描写です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-02",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Coordinate lines now cross the photographs",
+    "bullets": [
+     "The graticule used to stop at the edge of every frame. It now draws over them, so a position can be read across a picture.",
+     "That removed an entire rendering pass whose only job was hiding it, which halves the work each drawn frame costs.",
+     "Saved captures are unaffected. They never draw the interface, only the sky."
+    ]
+   },
+   "ja": {
+    "title": "座標線が写真の上を通るようになりました",
+    "bullets": [
+     "これまで座標線は各写真の縁で途切れていました。今は写真の上に描かれるので、写真をまたいで位置を読み取れます。",
+     "そのために存在していた描画工程を丸ごと削除できました。1フレームあたりの描画負荷は半分になります。",
+     "保存する切り出し画像には影響しません。そちらは操作画面ではなく空だけを描いています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-02",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "A wide Milky Way, cleaned exposure by exposure",
+    "bullets": [
+     "The wide camera sees 33 by 59 degrees at once. Seventy-eight exposures; one held a satellite streak and five caught a treetop.",
+     "Cloud drifts against the stars, so the lowest value each point reached all night is the sky. Subtracting the rest took out most of it.",
+     "It sits behind everything on the sky dome: twelve minutes spread over 1900 square degrees, a backdrop for the deep frames inside it.",
+     "Two Sagittarius mosaics came in with it, NGC 6629 and a field at 17h56m."
+    ]
+   },
+   "ja": {
+    "title": "広角の天の川を、一枚ずつ整えました",
+    "bullets": [
+     "広角カメラは33度×59度を一度に写します。78枚のうち、1枚に人工衛星の光跡、5枚に木の梢が入りました。",
+     "雲は星に対して流れるので、各点が一晩で最も暗くなった値が空です。残りを引くことで、雲の大半を取り除きました。",
+     "天球ドームでは、すべての背後に置いています。1900平方度に広がる12分の露光で、その中にある深い写真の背景です。",
+     "いて座のモザイクも2つ入りました。NGC 6629と、17h56mの星野です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "A flake of the same tree was still in the mosaic",
+    "bullets": [
+     "The first repair took out the tree's lit green heart but left a thinner orange flake of the same branch lower down the frame.",
+     "The test looked for green. That flake is red-dominant, so it scored below nothing on greenness and the mask stepped around it.",
+     "The test is now warmth, which reads 47 on the green part and 22 on the orange one against roughly zero for sky.",
+     "It was spotted by eye. The tool had checked its own work using the same blind measurement, and so agreed with itself."
+    ]
+   },
+   "ja": {
+    "title": "同じ木の破片が、まだモザイクに残っていました",
+    "bullets": [
+     "最初の修復では、木の緑に光った中心部は除けましたが、画面の下方に残った同じ枝の細いオレンジ色の破片を見落としました。",
+     "判定に緑色を使っていたためです。この破片は赤が優勢で、緑の指標では値がマイナスになり、マスクが避けてしまいました。",
+     "現在は暖色度で判定しています。緑の部分は47、オレンジの部分は22、空はほぼ0という値になります。",
+     "発見したのは目視です。ツールは同じ盲点のある指標で自らの結果を検証していたため、自分自身と一致していました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "A tree in the mosaic, and the frames that replaced it",
+    "bullets": [
+     "A new mosaic of the galactic centre in Sagittarius: 117 twenty-second exposures across fourteen tiles, thirty-nine minutes covering roughly eight degrees by seven.",
+     "Five of those frames caught a tree rising into view near midnight. The same three tiles had been photographed cleanly an hour earlier, so those frames replaced them.",
+     "Nothing was painted in: the repaired patch is real sky from eleven clean exposures, matched to its surroundings and checked against the plate solve.",
+     "Also new: IC 4756 and HIP 88060, a second field for NGC 6383, and OCl 1039 deepened to 67 frames."
+    ]
+   },
+   "ja": {
+    "title": "モザイクに写った木と、それを置き換えた画像",
+    "bullets": [
+     "いて座の銀河中心を撮った新しいモザイクです。14タイルにわたる20秒露光117枚、39分で、約8度×7度を覆います。",
+     "そのうち5枚に、深夜近くに視野へ伸びてきた木が写りました。同じ3タイルは1時間前に問題なく撮れており、その画像で置き換えました。",
+     "描き足しはありません。修復した部分は、木の写っていない11枚から得た実際の星空で、周囲と階調を合わせ、位置は星図照合で確認しています。",
+     "ほかに、IC 4756とHIP 88060が新規に加わり、NGC 6383は別の領域を、OCl 1039は67枚まで深めました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Three Milky Way frames were claiming the wrong exposure",
+    "bullets": [
+     "Each Milky Way photo showed thirty-seven minutes. That was the whole folder's total, counted for every date, because the telescope reuses one folder for unrelated sky.",
+     "They are now thirty-one minutes, five minutes and seventy seconds — what each night actually gathered.",
+     "The figure matters beyond the caption: the sky dome weights overlapping photographs by it, and the album picks which image leads a card the same way.",
+     "The newest of the three also had a lit branch in one corner, in all seven frames, so it was cropped rather than repaired."
+    ]
+   },
+   "ja": {
+    "title": "天の川の3枚が、誤った露光時間を表示していました",
+    "bullets": [
+     "天の川の写真はどれも37分と表示されていました。望遠鏡が無関係な領域に同じフォルダを使い回すため、フォルダ全体の合計を各日付に当てていたのです。",
+     "現在は31分、5分、70秒です。それぞれの夜に実際に取得した時間です。",
+     "この数値は説明文だけの問題ではありません。天球ドームは重なる写真をこの値で重み付けし、アルバムもカードの代表画像を同じ基準で選びます。",
+     "3枚のうち最新の1枚は、隅に照らされた枝が写っていました。7枚すべてに写っていたため、修復ではなく切り取りました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Two renders of the Lagoon, mixed by brightness",
+    "bullets": [
+     "The Lagoon's core was flat: bright, but with so little variation across it that the structure a larger telescope shows was not readable.",
+     "One tone curve cannot fix that. Brightening the core washes out the faint outer cloud; protecting the cloud leaves the core flat.",
+     "So the picture is now made twice, once for each, and mixed per pixel by how bright that region is — soft enough that 98% of pixels are a genuine blend.",
+     "The core was judged against a 32-inch telescope's view of the same object, rather than by eye."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲を2通りに現像し、明るさで混ぜる",
+    "bullets": [
+     "干潟星雲の中心部は平坦でした。明るいものの、明暗の差が小さく、大口径の望遠鏡が写す構造を読み取れませんでした。",
+     "階調曲線1本では解決できません。中心を明るくすると外側の淡い雲が飛び、雲を守ると中心が平坦なままです。",
+     "そこで画像を2通り現像し、その領域の明るさに応じて画素ごとに混ぜています。境界は十分になだらかで、98%の画素が両者の混合です。",
+     "中心部の出来は目視ではなく、32インチ望遠鏡が捉えた同じ対象と比較して判断しました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Lagoon at nine and a half hours",
+    "bullets": [
+     "A sixth night on the Lagoon Nebula: 446 more twenty-second exposures, taking it to 1885 frames and nine hours forty-nine minutes across six sessions.",
+     "The finished picture stands on 1816 of them — nine hours twenty-six minutes — after frames with poor focus or trailing were dropped.",
+     "Its integration comparison keeps seven steps, but the deepest one grows from 427 minutes of exposure to 571 — 1831 frames rather than 1399.",
+     "Seginus joins the album, a magnitude 3 orange giant in Bootes, on one minute of exposure — three frames, shipped as the telescope delivered them."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲、9時間半に",
+    "bullets": [
+     "干潟星雲に6夜目が加わりました。20秒露光を446枚追加し、6回の撮影で計1885枚、9時間49分になりました。",
+     "完成画像は、ピントのずれや星が流れた画像を除いた1816枚、9時間26分から作られています。",
+     "露出時間の比較は7段階のままですが、最も深い段階が427分から571分に伸びました。枚数は1399枚から1831枚です。",
+     "セギヌスがアルバムに加わりました。うしかい座の3等級のオレンジ色の巨星で、露光は1分、3枚を撮影したまま掲載しています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "A picture on its side, a jumping page, a stale recipe",
+    "bullets": [
+     "Opening one of a target's other photographs from the strip showed it standing on end. It now turns a quarter turn, like every other view of the same picture.",
+     "Pressing one also yanked the page upward, because the overlay's close button takes keyboard focus and focusing something scrolls it into view. It no longer does.",
+     "The (i) button on a conditioned photograph now lists the pipeline one stage at a time, instead of a paragraph with the steps buried inside it.",
+     "It was also out of date: it described a denoise pass and a synthetic star-field step, neither of which has run since the pipeline was rebuilt in July."
+    ]
+   },
+   "ja": {
+    "title": "横倒しの1枚、跳ねる画面、古い説明",
+    "bullets": [
+     "一覧から同じ対象の別の写真を開くと縦向きで表示されていました。他の表示と同じく90度回して、横向きで表示します。",
+     "押すたびに画面が上に跳ねてもいました。重ねて表示する閉じるボタンにキーボード操作の焦点が移り、焦点は既定で画面を動かすためです。動かないようにしました。",
+     "調整済み写真の (i) ボタンが、処理の流れを1段階ずつ箇条書きで示すようになりました。従来は説明文の中に手順が埋もれていました。",
+     "内容も古くなっていました。ノイズ除去と合成星野の工程が書かれていましたが、7月のパイプライン刷新以降、どちらも実行していません。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Lagoon at seven hours",
+    "bullets": [
+     "The Lagoon Nebula gained a fifth night: 392 more twenty-second exposures, taking it to 1439 frames and seven hours twenty minutes across five sessions.",
+     "Its integration comparison gains a seven-hour step, seven in all, and the finished picture now stands on 1341 registered frames — six hours forty-eight minutes.",
+     "Two more hours show as fainter nebulosity further from the core, not a cleaner sky — the tone solver places the brighter subject higher and the noise floor follows.",
+     "The telescope pointed within a tenth of a degree of the framing this target has held since August 28, so the five nights stack without reframing it."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲、7時間に",
+    "bullets": [
+     "干潟星雲に5夜目が加わりました。20秒露光を392枚追加し、5回の撮影で計1439枚、7時間20分になりました。",
+     "露出時間の比較に7時間の段階が加わり、全部で7段階になりました。完成画像は1341枚、6時間48分の登録画像から作られています。",
+     "追加の2時間は、空がきれいになるのではなく、中心から離れた淡い星雲として現れます。階調の解法が明るい対象をより高く置き、ノイズの下限もそれに従うためです。",
+     "望遠鏡は、この対象が8月28日から保っている構図から0.1度以内を向いていました。そのため5夜を、構図を変えずに重ねられます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-30",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "A second Lagoon Nebula on the sky dome",
+    "bullets": [
+     "The dome paints from a cleaned copy of each photograph. Replacing a photograph did not replace its copy, so old pixels were drawn through a new plate solve.",
+     "The Lagoon appeared twice, fifty arcminutes apart, and the wrong one was the brighter: that frame carries the most exposure, so it wins wherever frames overlap.",
+     "Nothing caught it. The plate solve was re-run, matches its file to a fiftieth of an arcminute, and reached the dome intact. It was spotted by eye.",
+     "The cleaned copies now carry the fingerprint of the pixels they were made from, and are refused when it disagrees. Two other frames were stale the same way."
+    ]
+   },
+   "ja": {
+    "title": "天球に、干潟星雲がもう1つ現れていました",
+    "bullets": [
+     "天球は各写真の補正済みの複製を描画に使います。写真を差し替えても複製は差し替えられず、古い画素が新しい位置情報で描かれていました。",
+     "干潟星雲が50分角離れて2つ現れ、しかも誤った方が明るく見えていました。その画像は露出が最も長く、重なった領域では優先されるためです。",
+     "自動確認では検出できませんでした。位置情報は再計算され、画像と50分の1分角で一致し、天球まで正しく渡っていました。目視で見つかりました。",
+     "補正済みの複製に、元になった画素の指紋を持たせ、一致しない場合は使わないようにしました。他に2枚が同じ状態でした。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-30",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Which dot is Pluto",
+    "bullets": [
+     "An Add Circles button beside \"In frame:\" rings every catalogued body in a photograph at once, instead of one at a time through the chips.",
+     "Pluto can now be pointed at. It is a fifteenth-magnitude dot in a dense Sagittarius field, and nothing in the album could say which dot it was.",
+     "Its position is computed from orbital elements for the moment of capture. Hand-placed marks like it had been loaded by the page for months and never once drawn.",
+     "The album opens on the Lagoon and the Trifid together — five hours ten minutes, the deepest thing here — in place of the North America Nebula."
+    ]
+   },
+   "ja": {
+    "title": "どの点が冥王星か",
+    "bullets": [
+     "「画角内:」の横の「すべて丸で示す」で、写真に写っている天体をまとめて丸で示せます。従来は札を1つずつ押す必要がありました。",
+     "冥王星を指し示せるようになりました。いて座の密集した星野にある15等級の点で、どれがそれなのかアルバムには示す手段がありませんでした。",
+     "位置は撮影時刻の軌道要素から計算しています。こうした手動の印は、何か月も前から読み込まれながら、一度も描画されていませんでした。",
+     "アルバムの扉を、北アメリカ星雲から干潟星雲と三裂星雲の1枚に変えました。5時間10分、ここで最も露出の深い画像です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-30",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Nothing stands on the photograph any more",
+    "bullets": [
+     "The target arrows, the filmstrip of a target's other frames, and the integration slider have all moved out of the picture, below it or beside the view buttons.",
+     "Every photograph is now shown landscape. Seven were displayed on their side, and forty-four of forty-seven before-and-after comparisons were portrait, because only some pairs were pre-rotated.",
+     "The before/after divider could not reach the edge: its soft seam is centred on the divider, so half of it stayed inside the picture, blending both exposures.",
+     "A photograph's name and exposure moved above the view buttons, so what you are looking at is read before what you can do with it."
+    ]
+   },
+   "ja": {
+    "title": "写真の上には、もう何も乗っていません",
+    "bullets": [
+     "対象を移動する矢印、同じ対象の他の写真の一覧、露出時間のスライダーを、すべて画像の外へ移しました。画像の下、または表示切り替えボタンの横に並びます。",
+     "すべての写真を横向きで表示します。7枚が横倒しで表示され、ビフォー・アフターは47件中44件が縦向きでした。一部の組だけを事前に回転していたためです。",
+     "ビフォー・アフターの仕切りが端まで届きませんでした。境界のぼかしは仕切りを中心に置くため、その半分が画像の中に残り、2つの露光が混ざっていました。",
+     "写真の名前と露光時間を、表示切り替えボタンの上に移しました。何ができるかより先に、何を見ているかを読めます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-30",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Lagoon reaches five hours",
+    "bullets": [
+     "The Lagoon Nebula gained a fourth night: 361 more twenty-second exposures, taking it to 1048 frames and five hours ten minutes across four sessions.",
+     "Its integration comparison gains a five-hour step, replacing the old three-hour one, and every step is framed on the nights that share the finished picture's pointing.",
+     "Rho Ophiuchi's nebula was shot again, but the mount pointed a degree and a half from the earlier night's framing, so the nights share two fifths of their sky.",
+     "They cannot be stacked together, so it ships as the telescope's own 29-frame stack rather than a polished render on a field that is mostly not the nebula."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲が5時間に達しました",
+    "bullets": [
+     "干潟星雲に4夜目が加わりました。20秒露光を361枚追加し、4回の撮影で計1048枚、5時間10分になりました。",
+     "露出時間の比較に5時間の段階が加わり、従来の3時間の段階に代わります。各段階は、完成画像と同じ構図の夜で揃えています。",
+     "へびつかい座ρ星の星雲を再撮影しましたが、望遠鏡は先の夜から1.5度ずれた方向を向いていました。2夜が重なるのは5分の2ほどです。",
+     "2夜は合成できないため、星雲がほとんど写らない構図の調整画像ではなく、望遠鏡自身が重ねた29枚の画像を掲載します。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-29",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "One frame in a sky-dome capture came out blurred",
+    "bullets": [
+     "A region drawn long and thin can cross a frame with no corner of either inside the other. The capture's frame test missed that shape entirely.",
+     "Such a frame was still drawn — from the small preview texture it happened to hold, magnified fifteen times — while the sharp-texture loader never heard of it.",
+     "In Sagittarius that frame was the M 24 mosaic, the deepest there, so it won the blend and left a soft rectangle across an otherwise sharp picture.",
+     "Frames are now matched to the region by edge crossing as well as corners, and the list that is drawn is exactly the list that is loaded."
+    ]
+   },
+   "ja": {
+    "title": "天球の切り出しで、1枚だけがぼやけて描かれていました",
+    "bullets": [
+     "細長い範囲を切り出すと、範囲と画像はどちらの角も相手に入らないまま交差することがあります。従来の判定は、この形を見落としていました。",
+     "見落とされた画像も描画はされ、たまたま保持していた小さな下絵を15倍に拡大して使っていました。高解像度の読み込みは、その存在を知りませんでした。",
+     "いて座では、それが最も露出の深い M 24 のモザイクでした。合成で優勢となり、鮮明な画像の中に、ぼやけた四角形を残していました。",
+     "範囲と画像の対応を、角だけでなく辺の交差でも判定するようにしました。描画する一覧と読み込む一覧は、完全に同一になりました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-29",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The integration comparisons now show finished pictures",
+    "bullets": [
+     "The integration showcases now show conditioned pictures at every step, the same treatment the album's finished renders get, instead of bare stretched stacks.",
+     "Unconditioned, a minute and two hours looked nearly alike — the subject rose barely a fifth above the sky either way. Conditioned it rises two and a half times.",
+     "The noise balance and the denoiser stay off, or they would smooth the shallow steps hardest and hide the very difference the comparison exists to show.",
+     "The Lagoon's showcase also gains a full-depth step at 674 exposures, and is framed on the night just shot rather than the first one."
+    ]
+   },
+   "ja": {
+    "title": "露出時間の比較が、仕上げた画像になりました",
+    "bullets": [
+     "露出時間の比較の各段階が、素のスタック画像ではなく、アルバムの完成画像と同じ調整を経た画像になりました。",
+     "調整前は1分と2時間がほとんど同じに見え、対象は空より2割ほど浮き上がるだけでした。調整後は2.5倍になります。",
+     "ノイズ平準化とノイズ除去は無効のままです。有効にすると浅い段階ほど強く平滑化され、見せたい差そのものが消えてしまいます。",
+     "干潟星雲の比較には674枚の最深段階が加わり、最初の夜ではなく、今回撮影した夜の構図で揃えています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-29",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Three pictures were claiming the wrong exposure time",
+    "bullets": [
+     "A stack built from nights that used different exposure lengths had its total worked out from the first frame alone, then multiplied across every frame.",
+     "The Lagoon was under-counted by a third and Andromeda by a fifth, while NGC 6791 claimed more than twice the exposure it actually had.",
+     "That figure decides which photograph leads a card and how the sky dome weights overlapping frames, so a wrong number showed the wrong picture first.",
+     "The Lagoon's card was printing the Trifid's integration, from a hand-written entry pointing at another target's stack. Its photographs now show their own, when opened."
+    ]
+   },
+   "ja": {
+    "title": "3枚の画像が、誤った露光時間を示していました",
+    "bullets": [
+     "異なる露光時間の夜をまとめた画像で、合計を最初の1枚から読み取り、全枚数に掛けていました。",
+     "干潟星雲は3分の1、アンドロメダ銀河は5分の1ほど少なく、NGC 6791 は実際の2倍以上を主張していました。",
+     "この値は、カードの代表画像と、天球で重なる画像の重み付けを決めます。誤った値は、誤った画像を先に見せていました。",
+     "干潟星雲のカードは三裂星雲の積算時間を表示していました。別の対象を指す手書きの記録によるものです。各画像は開くと自身の値を示します。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-29",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Lagoon, four nights deep",
+    "bullets": [
+     "M 8, the Lagoon Nebula, restacked from every night it has been shot — 687 exposures across four nights, of which 626 survived registration: two hours fifty.",
+     "Framed on tonight's pointing rather than August's, which had pushed the Lagoon into a corner. The nebula now sits whole in the frame with the Trifid above it.",
+     "An integration showcase steps from one minute to two hours, then to the finished render at 626 exposures — what the photons buy, and then what processing adds.",
+     "Venus again, a thin crescent low in the evening, five days after the last one — the best of three frames taken a minute apart."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲、4夜分の深さ",
+    "bullets": [
+     "干潟星雲 M 8 を、これまで撮影した全ての夜から積み直しました。4夜・687枚のうち626枚が位置合わせを通り、2時間50分です。",
+     "8月の構図ではなく、今夜の指向で切り出しました。以前は干潟星雲が隅に押しやられていましたが、今は全体が画面に収まり、上に三裂星雲が並びます。",
+     "露出時間の比較では、1分から2時間まで進み、最後に626枚の完成版へ。光子が何をもたらし、その先で処理が何を加えるかが分かります。",
+     "金星も再び、夕方の低空に細い三日月形で。5日前に続く2回目、1分間に撮った3枚から最良の1枚を選びました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The Lagoon was being drawn twice",
+    "bullets": [
+     "A wide mosaic and the dedicated M 8 frames disagreed by nineteen arcseconds on the sky dome, so the Lagoon Nebula appeared doubled where they overlap.",
+     "One projection cannot describe a four by eight degree image stitched from ten tiles. The error grew toward the edges, and the Lagoon sits in a corner.",
+     "Both mosaics are now solved against fifteen separate reference points and warped to fit. Agreement improved from twenty-seven arcseconds to six.",
+     "Nothing reported it — every check passed and only the picture showed it. The dome also gains a brightness slider for the shallower frames."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲が二重に描かれていました",
+    "bullets": [
+     "広域モザイクと M 8 の専用画像が天球上で19秒角ずれていたため、重なる場所で干潟星雲が二重に見えていました。",
+     "10枚のタイルをつなげた4度×8度の画像は、一つの投影では表せません。誤差は周辺ほど大きくなり、干潟星雲は隅にあります。",
+     "両方のモザイクを15か所の基準点で解き直し、合わせて変形しました。一致は27秒角から6秒角に改善しました。",
+     "どの検査も気づかず、画像だけが示していました。天球には暗い画像のための明るさスライダーも加わりました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "Two wide mosaics, and a try at Pluto",
+    "bullets": [
+     "Two ten-tile mosaics, 240 exposures across forty minutes. Each covers four by eight degrees — four times a normal frame, and far too wide to condition.",
+     "The Sagittarius mosaic runs from the Lagoon and Trifid up through the star clouds — one picture holding what would otherwise take four separate frames.",
+     "The telescope labelled the Aquila field with a Gaia catalogue number, which is what it does when it cannot name a target. It is filed by coordinates.",
+     "Pluto at three minutes does not show — magnitude fourteen needs far more; a second night would reveal it by its motion. A gibbous Moon closed the night."
+    ]
+   },
+   "ja": {
+    "title": "2つの広域モザイクと、冥王星への挑戦",
+    "bullets": [
+     "10タイルのモザイクを2つ、240枚・40分。それぞれ4度×8度を覆い、通常のフレームの4倍の広さで、条件出しには広すぎます。",
+     "いて座のモザイクは干潟星雲と三裂星雲から星雲群へと続きます。通常なら4枚に分かれる範囲が、1枚に収まっています。",
+     "望遠鏡はわし座の領域にガイアのカタログ番号を付けました。対象を特定できないときの動作です。そのため座標で整理しています。",
+     "冥王星は3分では写りません。14等級にははるかに長い露出が必要で、2夜目があれば動きで見分けられます。最後は満月前の凸月でした。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Thirty-eight targets were missing from the grid",
+    "bullets": [
+     "The published catalogue was trimmed to what the album can reach. The rule read right ascension as degrees when it is stored in hours.",
+     "Everything landed a fifteenth of the way round the sky, so the test kept almost nothing and any target known only to OpenNGC lost its card.",
+     "NGC 6229, NGC 6781, IC 4604, IC 4605, NGC 6568 and 33 more are back. Photographs were always published; only the grid could not name them.",
+     "Nothing reported it. The album resolves names against the full catalogue, so every check passed on a site that was missing a quarter of itself."
+    ]
+   },
+   "ja": {
+    "title": "38の対象が一覧から欠けていました",
+    "bullets": [
+     "公開用カタログはアルバムが参照する範囲に絞り込まれます。その判定が、時単位で保存された赤経を度として読んでいました。",
+     "すべてが天球の15分の1の位置に来てしまい、判定はほぼ何も残さず、OpenNGCにしかない対象はカードを失っていました。",
+     "NGC 6229、NGC 6781、IC 4604、IC 4605、NGC 6568 ほか33対象が戻りました。写真は常に公開されており、一覧が名前を解決できなかっただけです。",
+     "どの検査も気づきませんでした。アルバム側は完全なカタログで名前を解決するため、4分の1が欠けたまま全ての検査を通過していました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The Antares cloud, and a night low in the south",
+    "bullets": [
+     "Seven targets from a Sagittarius and Ophiuchus run — 254 exposures, 42 minutes. All of it low in the south, through the thickest air we shoot.",
+     "IC 4605 sits in the Rho Ophiuchi cloud: Antares burning at the frame's edge, the globular M 4 below it, dust threaded between.",
+     "OCl 1039 was shot again; both nights stack together as 48 exposures, so the deeper picture keeps the card rather than tonight's thinner one.",
+     "M 62 is a globular at declination −30, barely clear of the horizon. Five minutes is an honest look at it, not a deep one."
+    ]
+   },
+   "ja": {
+    "title": "アンタレスの雲と、南に低い夜",
+    "bullets": [
+     "いて座とへびつかい座から7対象、254枚・42分。すべて南の低い空で、最も大気の厚い方向です。",
+     "IC 4605 はへびつかい座ρの雲の中にあります。画面の端にアンタレスが燃え、その下に球状星団 M 4、間に塵が織り込まれています。",
+     "OCl 1039 は撮り直し、2夜分を48枚としてまとめました。今夜の薄い方ではなく、より深い画像がカードに残ります。",
+     "M 62 は赤緯 −30 の球状星団で、地平線をかろうじて越える高さです。5分は深い露出ではなく、正直な一枚です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "New arrivals now means this week",
+    "bullets": [
+     "The new band holds this calendar week, Monday to Sunday, rather than the last seven days counted back from the newest photographs.",
+     "The old window slid nightly, so a photograph's badge expired on whatever weekday it was taken. A week now graduates together, on Monday."
+    ]
+   },
+   "ja": {
+    "title": "「新着」は今週という意味になりました",
+    "bullets": [
+     "新着の帯は、最新の写真から7日さかのぼる方式ではなく、月曜から日曜までの今週を表すようになりました。",
+     "以前の期間は毎晩ずれていたため、写真の新着表示は撮影した曜日次第で切れていました。今は1週間分が月曜にまとめて外れます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Cards with several photographs now show them",
+    "bullets": [
+     "A third of the targets hold more than one photograph, and the grid showed only the first. Those cards now fade between all of them.",
+     "The Moon has twelve. They cycle inside the card, so you can see the phases without opening anything.",
+     "Pointing at a card holds it still, and cards off screen do not animate. With reduced motion turned on, nothing moves at all."
+    ]
+   },
+   "ja": {
+    "title": "複数の写真を持つカードが、その全てを表示するようになりました",
+    "bullets": [
+     "対象の約3分の1は複数の写真を持っていますが、一覧では最初の1枚しか見えていませんでした。今はカード内で全てをフェードで切り替えます。",
+     "月は12枚あります。カード内で順に切り替わるので、開かなくても満ち欠けを見渡せます。",
+     "カードにポインタを合わせると停止し、画面外のカードは動きません。視差効果を減らす設定では一切動きません。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "A cloudy night, and Venus as a crescent",
+    "bullets": [
+     "Thirteen new photographs from a hazy night. NGC 6781, a planetary nebula, took 61 exposures — ten minutes — and is the only target the cloud left alone.",
+     "NGC 6229 was shot again, and both nights are stacked together — 24 exposures — rather than letting a thinner picture replace the better one.",
+     "Cloud scatters ground light back into the frame. Every thin capture is now background-extracted before it reaches the sky map, so haze no longer sits as a bright patch.",
+     "Venus, from a one-minute video: 1111 frames aligned on its crescent and averaged. The phase is real; the colour fringe below it is our own atmosphere."
+    ]
+   },
+   "ja": {
+    "title": "曇りの夜と、三日月形の金星",
+    "bullets": [
+     "かすんだ夜から13枚。惑星状星雲 NGC 6781 は61枚・10分の露出で、雲を免れた唯一の対象です。",
+     "NGC 6229 は撮り直し、2夜分をまとめてスタックしました（計24枚）。より薄い画像が良い方を置き換えないようにしています。",
+     "雲は地上の光を画面へ散乱させます。細い撮影はすべて、天球地図に載る前に背景抽出をかけ、かすみが明るい斑にならないようにしました。",
+     "金星は1分の動画から。1111フレームを三日月の形で位置合わせして平均しました。満ち欠けは本物ですが、下辺の色ずれは地球大気によるものです。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-23",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Sharper stars, and the cloud taken out of the sky map",
+    "bullets": [
+     "Zoomed into the sky map, stars looked smeared and the plates flickered. Photographs are now drawn at the full detail the camera captured, and stay drawn.",
+     "One photograph carried thin cloud the sky map could not remove, showing as an orange rectangle. Every frame is now background-extracted before it reaches the map.",
+     "Real nebulosity is untouched by that: the Trifid, the Eagle and Andromeda keep everything they had, because the tool can tell sky glow from a nebula.",
+     "Unfinished mosaics glowed along their tile edges, and sat lighter than their neighbours. Frames are now levelled against each other, and placed against a star catalogue."
+    ]
+   },
+   "ja": {
+    "title": "星はよりシャープに、空の地図からは雲を",
+    "bullets": [
+     "天球地図を拡大すると星が流れ、画像がちらついていました。現在は撮影解像度のまま描画し、表示も安定します。",
+     "ある1枚に、天球地図では除去できない薄雲が写っており、オレンジ色の四角い斑になっていました。全画像に背景抽出をかけました。",
+     "本物の星雲は損なわれません。三裂星雲、わし星雲、アンドロメダはそのままです。天体と光害を区別できるためです。",
+     "未完成のモザイクはタイルの縁が明るく光り、周囲よりも浮いて見えていました。写真同士で明るさを合わせ、星表を基準に配置しています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-23",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Three faults on the sky dome",
+    "bullets": [
+     "Grey rectangles on the dome: each frame's background was levelled using only its darkest pixels, which on a gradient sample one side and leave the other uncorrected.",
+     "Every frame is now levelled from all of its sky, per colour channel. Across the album the leftover unevenness is five times smaller, and the seams are gone.",
+     "Stars looked smeared in one place. They were being drawn twice: a nine-tile mosaic's position was 13.6 arcseconds out, and three neighbouring photographs agreed on it.",
+     "Thirty photographs are now nudged into line using the stars they share with their neighbours. Wide mosaics also gained a sharper texture, so they match the frames beside them."
+    ]
+   },
+   "ja": {
+    "title": "天球ドームの3つの不具合",
+    "bullets": [
+     "天球ドームの灰色の四角い斑。各画像の背景を最も暗い画素だけで平準化していたため、傾きがあると片側だけを見てしまい、反対側が補正されませんでした。",
+     "現在は空全体を使って、チャンネルごとに平準化します。アルバム全体で残ったムラは5分の1になり、継ぎ目は見えなくなりました。",
+     "一部で星が流れて見えていました。実際には二重に描かれていたのです。9タイルのモザイクの位置が13.6秒角ずれており、隣接3枚がそれを裏付けました。",
+     "30枚の写真を、隣の写真と共有する星を手がかりに位置合わせしました。広いモザイクには高解像度のテクスチャを追加し、周囲の画像と揃いました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-23",
+   "type": "photos",
+   "era": 6,
+   "en": {
+    "title": "The far south, and a nine-tile mosaic",
+    "bullets": [
+     "Five new subjects and a gibbous Moon — 191 exposures, thirty-two minutes of sky. One was conditioned, one is a nine-tile mosaic, three ship as the telescope stacked them.",
+     "V1331 Aquilae is the largest: 124 exposures across nine tiles, four by five degrees of Aquila. Conditioning would crop it to one tile, so the mosaic ships whole.",
+     "Gamma Coronae Australis is the furthest south this telescope has reached. Forty exposures, low in heavy skyglow: conditioning cleared the gradient, but that altitude gives few photons.",
+     "NGC 6229, a remote globular cluster in Hercules, joins at fifteen exposures. Gamma Scuti is new, and V430 Scuti gains a second night of frames."
+    ]
+   },
+   "ja": {
+    "title": "南天の低空と、9タイルのモザイク",
+    "bullets": [
+     "新しい対象5つと、上弦過ぎの月。露出191枚、32分の空です。1つは調整済み、1つは9タイルのモザイク、残る3つは望遠鏡が合成したまま掲載します。",
+     "わし座V1331が最大です。9タイルに分けて124枚、わし座の4×5度。調整すると1タイルに切り詰められてしまうため、モザイクのまま掲載します。",
+     "みなみのかんむり座γ星は、この望遠鏡が届いた最も南の空です。露出40枚、低空の強い光害の中。調整でかぶりは除けましたが、その高度では光子が足りません。",
+     "ヘルクレス座の遠い球状星団NGC 6229が15枚で加わりました。たて座γ星は新規、たて座V430には2夜目の露出が加わっています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-22",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The right nebula under the right name",
+    "bullets": [
+     "The photograph titled Lagoon Nebula had the Trifid in the middle of it. The two frames are swapped, and every other plate-solved photograph was checked the same way.",
+     "Five conditioned photographs offered a single unlabelled download and no before/after slider. A conditioned render with no raw sibling now names itself on the button.",
+     "The capture rectangle in the sky dome has a composition guide now: press Guide to cycle thirds, the golden ratio, diagonals and a centre cross.",
+     "Every photograph the album can place on the sky has a Goto Sky Dome button, which opens the dome and flies to that frame's own patch of sky."
+    ]
+   },
+   "ja": {
+    "title": "正しい名前に、正しい星雲を",
+    "bullets": [
+     "「干潟星雲」と題した写真の中央に、三裂星雲が写っていました。2枚を入れ替え、プレートソルブ済みの他の写真もすべて同じ方法で確認しました。",
+     "調整済み写真5枚で、ダウンロードボタンが1つだけ・ラベルなしとなり、ビフォーアフターの比較もできませんでした。元画像のない調整済み写真は、ボタンにその旨を表示するようにしました。",
+     "スカイドームの撮影範囲に構図ガイドを追加しました。「Guide」を押すと、三分割・黄金比・対角線・中央十字を順に切り替えられます。",
+     "位置が判明している写真には「Goto Sky Dome」ボタンを追加しました。押すとスカイドームが開き、その写真が写している空の場所まで移動します。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "The picture you came for, first",
+    "bullets": [
+     "A target now opens on its deepest photograph, and the card shows that same one. The integration time on a card often described a picture it was not showing.",
+     "Targets with several photographs lay them out as a strip across the top of the viewer. Press one to fill the frame; the × brings you back.",
+     "Two things were filed wrongly: the Butterfly Nebula sat under Stars, because its catalogue id also names the star in front of it, and the Sun sat there too.",
+     "The arrows moved onto the picture, the slideshow shuffles, and photographs cross-fade. In the sky dome, frames now fly in from across the sky over three seconds."
+    ]
+   },
+   "ja": {
+    "title": "見たい写真を、最初に",
+    "bullets": [
+     "対象を開くと、まず露出積算時間が最も長い写真が表示されます。カードのサムネイルも同じ写真です。これまでは積算時間が、写っていない写真のものであることがありました。",
+     "写真が複数ある対象は、ビューアー上部に一覧を並べます。選ぶと画面いっぱいに広がり、隅の × で元に戻ります。",
+     "分類の誤りを2件修正しました。バタフライ星雲は、そのカタログ番号が手前の恒星も指すため「恒星」に分類されていました。太陽も同様でした。",
+     "送り矢印を写真の上に移動し、スライドショーはランダム順、写真はフェードでつながります。天球ドームでは、写真が空の各所から3秒かけて飛来します。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 6,
+   "en": {
+    "title": "Find things faster, and load a lot less",
+    "bullets": [
+     "The grid is grouped into collapsing sections by what each thing is — galaxies, nebulae, clusters — with filters for constellation, conditioned renders and 30-minute exposures.",
+     "Cards say how many photographs stand behind them, and each picture now carries a stable number: #3 of 4 means the same photograph next month.",
+     "A slideshow button walks whatever the grid is showing, and a star keeps your favourites in your own browser. Nothing is sent anywhere.",
+     "The page loads far less: a full scroll of the grid was 30.8 MB and is now 1.08 MB, and the first paint went from 3.18 MB to 0.74 MB."
+    ]
+   },
+   "ja": {
+    "title": "探しやすく、読み込みは大幅に軽く",
+    "bullets": [
+     "グリッドを天体の種類ごとの折りたたみ式セクションにまとめました。銀河、星雲、星団など。星座、調整済み、30分以上の露出で絞り込めます。",
+     "カードには写真の枚数を表示し、各画像に固定の番号を付けました。「4枚中 #3」は来月も同じ写真を指します。",
+     "スライドショーのボタンは、グリッドに表示中の対象を順に再生します。星印のお気に入りはブラウザ内だけに保存され、外部には送信されません。",
+     "読み込み量を大幅に削減しました。グリッド全体のスクロールは30.8 MBから1.08 MBに、初回表示は3.18 MBから0.74 MBになりました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "Frame your own photograph of the sky",
+    "bullets": [
+     "In the sky dome, press Capture Mode. A rectangle lands in the middle of the view with three handles you can drag to reframe it.",
+     "Two set the width and the angle, the third sets the height. The sky still pans and frames can still be clicked.",
+     "Snap shot composites every photograph inside the rectangle into one image, at full sharpness however far out you were zoomed.",
+     "The result opens at the top of the main screen with a download button. Press (?) to watch it being used."
+    ]
+   },
+   "ja": {
+    "title": "自分で構図を決めて空を撮る",
+    "bullets": [
+     "天球儀で「Capture Mode」を押すと、画面中央に長方形が現れます。3つのハンドルをドラッグして構図を決められます。",
+     "2つが幅と角度を、残る1つが高さを決めます。空のパン操作も、写真のクリックもそのまま使えます。",
+     "「Snap shot」で長方形内の写真すべてを1枚に合成します。どれだけ引いた表示から撮っても解像度は最高のままです。",
+     "結果はメイン画面の上部に開き、ダウンロードボタンが付きます。使い方は (?) の動画で見られます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "Take your own photograph of the sky",
+    "bullets": [
+     "In the sky dome, press Capture and drag a rectangle across the sky. Either corner can be dragged afterwards to reframe it.",
+     "Snap shot composites every photograph inside that rectangle into one image — seams softened, uncovered margin trimmed.",
+     "The result appears on the main screen with a download button. Nine frames and three thousand pixels across is an ordinary one.",
+     "It is held in the page only, so a reload clears it. Nothing is uploaded anywhere."
+    ]
+   },
+   "ja": {
+    "title": "自分だけの空の写真を撮る",
+    "bullets": [
+     "天球儀で「Capture」を押し、空に長方形をドラッグします。あとから角をつまんで枠を調整できます。",
+     "「Snap shot」でその中の写真すべてを1枚に合成します。継ぎ目はぼかし、写っていない縁は切り落とします。",
+     "結果はメイン画面に表示され、ダウンロードボタンが付きます。9枚・横3000画素ほどはごく普通の結果です。",
+     "ページ内にのみ保持されるため、再読み込みで消えます。どこにもアップロードされません。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "The deepest frame now wins its patch of sky",
+    "bullets": [
+     "Where two photographs cover the same sky the dome blended them equally, so the Lagoon's forty-minute stack was half-hidden under a twelve-minute one. Depth now decides.",
+     "The Sagittarius Star Cloud mosaic reaches the dome whole — four by eight degrees, not the single tile that was standing in for it.",
+     "Download buttons hand over the picture actually on screen, and every one of them now says what it is giving you.",
+     "The integration showcase dissolves between milestones instead of cutting, and M 8 joins it at one, ten and thirty minutes."
+    ]
+   },
+   "ja": {
+    "title": "同じ空を写した中で、最も深い一枚が勝つ",
+    "bullets": [
+     "2枚が同じ空を覆う場合、天球儀は等分に混ぜていました。干潟星雲の40分露出が12分の一枚に半分隠れていたのです。今は露出量で決まります。",
+     "いて座星雲のモザイクが4×8度の全体像として天球儀に載りました。代役だった1タイルではありません。",
+     "ダウンロードボタンは画面に出ている画像そのものを渡すようになり、どれも何を渡すのか明記します。",
+     "露出時間の比較は切り替えではなく溶け込むようになり、M 8 も1分・10分・30分で加わりました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "photos",
+   "era": 5,
+   "en": {
+    "title": "The Lagoon, deep — and a star cloud in eight tiles",
+    "bullets": [
+     "M 8, the Lagoon Nebula: 238 exposures, just under forty minutes. The deepest single target here after Andromeda, with the Trifid sharing the frame.",
+     "M 24, the Small Sagittarius Star Cloud, shot as eight overlapping tiles — 101 exposures. Not a cluster but a window through the dust onto the Milky Way's far side.",
+     "M 17, the Swan, re-stacked from both nights it was shot: 36 exposures instead of 30.",
+     "Five more as the telescope delivered them: Trumpler 34, NGC 6539, NGC 6683, V430 Scuti and another pass at M 23."
+    ]
+   },
+   "ja": {
+    "title": "干潟星雲を深く — そして8タイルの星雲",
+    "bullets": [
+     "M 8「干潟星雲」238枚、約40分。アンドロメダに次ぐ、ここで最も深い単一天体です。同じ画面に三裂星雲も写っています。",
+     "M 24「小さないて座星雲」を8タイルの重ね撮りで、計101枚。星団ではなく、塵の切れ間から銀河系の裏側をのぞく窓です。",
+     "M 17「白鳥星雲」は撮影した2夜を合わせて再スタック、30枚から36枚になりました。",
+     "他5つは望遠鏡が出力したまま公開します。Trumpler 34、NGC 6539、NGC 6683、V430 Scuti、そして M 23 の再撮影です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "Unfinished mosaics were dimming their neighbours on the sky dome",
+    "bullets": [
+     "A mosaic is shot in tiles, so its frame has empty corners until all are taken. Around the Butterfly those gaps were painted solid black over the map.",
+     "The dome also averages overlapping frames by counting how many cover each point — and counted the empty area. Real photographs beneath were drawn at half brightness.",
+     "Both now ask whether a frame holds light there, not merely whether it covers it. Over the Sadr mosaic, 6% of the sky it spans was affected.",
+     "Plate solving also learned to use the telescope's recorded pointing and to stop shrinking sparse images. Frames never placed before, including the North America mosaic, are on the dome now."
+    ]
+   },
+   "ja": {
+    "title": "未完成のモザイクが、天球ドームで周囲の画像を暗くしていました",
+    "bullets": [
+     "モザイクはタイルごとに撮るため、全タイルが揃うまで隅が空きます。蝶々星雲の周辺では、その空白が透明ではなく黒で塗られ、地図を覆っていました。",
+     "ドームは重なった画像を「何枚が覆っているか」で平均しますが、この数に空白も含まれていました。下にある実際の写真は半分の明るさで描かれていたのです。",
+     "現在はどちらも、覆っているかではなく、その地点に光があるかを見ます。サドル領域のモザイクでは、範囲の6%が影響を受けていました。",
+     "位置決めも、望遠鏡が記録した指向を手がかりに使い、淡い画像を縮小しなくなりました。北アメリカ星雲のモザイクなど、これまで載らなかった画像がドームに載ります。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "The murky background, and why removing noise was adding it",
+    "bullets": [
+     "Every finished picture had a murky background — soft cloudy blotches across 41% to 66% of the frame.",
+     "The finishing step measured noise at one pixel and blurred it, which gathers grain into clumps rather than removing it.",
+     "Combining the exposures smeared noise between neighbouring pixels too, leaving it three times more clumped than at the sensor.",
+     "Both are fixed and all 31 conditioned pictures were rebuilt. Every one improved, and three crushed-shadow faults went with them."
+    ]
+   },
+   "ja": {
+    "title": "背景のもやつき — ノイズを消す処理が、もやを生んでいた",
+    "bullets": [
+     "仕上げ済み画像はどれも背景がもやついていました。数十ピクセル大の雲状のむらが、対象によって画面の41〜66%を占めていました。",
+     "仕上げ処理はノイズを1ピクセル単位でしか測らずぼかしていました。ぼかしてもノイズは消えず、ぼかした大きさの塊にまとまるだけです。",
+     "露出を重ね合わせる工程でも、色の補間がノイズを隣のピクセルへにじませ、センサー上の3倍に塊化させていました。",
+     "どちらも修正し、調整済み31枚すべてを作り直しました。全点で改善し、暗部が黒く潰れていた3枚の不具合も解消しました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "type": "website",
+   "era": 5,
+   "en": {
+    "title": "The wrong “before” on three before-and-after sliders",
+    "bullets": [
+     "A target shot across several nights is finished from all of them, so its slider needs a matching stack built from the same exposures.",
+     "That stack was filed by the date it was made, not the date of the picture it belongs to — and finishing usually runs after midnight.",
+     "Pairing works by explicit pair or matching date, so a file matching neither is no pair at all. The slider fell back to the telescope's own image.",
+     "Stacks are now placed by the pair they belong to. NGC 6664, NGC 6712 and NGC 6822 again compare like with like."
+    ]
+   },
+   "ja": {
+    "title": "3つの比較スライダーで「処理前」が違っていた件",
+    "bullets": [
+     "複数の夜にわたって撮影した対象は全夜から仕上げるため、スライダーには同じ露出から作った対応スタックが必要です。",
+     "そのスタックが、対応する画像の日付ではなく作成日で保存されていました。仕上げ処理は多くの場合、日付をまたいだ後に走ります。",
+     "対応付けは明示指定か日付一致のみで、どちらにも当たらないファイルは不一致ではなく対応なしです。スライダーは黙って望遠鏡の画像に戻っていました。",
+     "スタックは所属する対応関係で配置するようにしました。NGC 6664、NGC 6712、NGC 6822 は再び同じ条件で比較できます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "type": "photos",
+   "era": 5,
+   "en": {
+    "title": "Sixteen targets down the summer Milky Way",
+    "bullets": [
+     "Sixteen targets arrived from the night of 19–20 August — 261 exposures, forty-three minutes of new sky. Thirteen are new to the album.",
+     "Nearly all lie along the Sagittarius–Scutum stretch of the summer Milky Way; the ten shortest enter the album as the telescope delivered them.",
+     "Six went through the full conditioning pipeline. M 17, the Swan Nebula, is the showpiece at thirty exposures; NGC 6822 the deepest at seventy.",
+     "NGC 6664, NGC 6712 and NGC 6822 were stacked with their earlier nights rather than displaced — now 24, 21 and 70 exposures, the deepest each has been."
+    ]
+   },
+   "ja": {
+    "title": "夏の天の川に沿った16の対象",
+    "bullets": [
+     "8月19日から20日にかけての夜、16の対象が加わりました。露出261枚、新たに43分の空です。うち13はアルバム初登場です。",
+     "ほとんどが夏の天の川の射手座から盾座にかけての領域にあります。露出の短い10は、望遠鏡が出力したままの姿で収録しています。",
+     "6つは調整パイプラインを通しました。露出30枚の M 17（オメガ星雲）が目玉で、露出70枚の NGC 6822 が最も深い一枚です。",
+     "NGC 6664、NGC 6712、NGC 6822 は浅い夜に置き換えず、以前の夜と重ね合わせました。現在は露出24枚・21枚・70枚で、いずれも過去最も深い状態です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "The black edges on the before-and-after pictures",
+    "bullets": [
+     "Five pictures — IC 1848, M 20, M 31, M 81 and NGC 6791 — carried black wedges along their edges. NGC 6791 was the worst.",
+     "The slider rotates one of each pair to line them up, and rotating a rectangle inside a rectangle always leaves empty corners.",
+     "That was harmless until raw stacks became a viewing mode of their own and started being shown full-frame.",
+     "Both halves are now trimmed by the same margin, so they still line up exactly. The cost is frame area — 2.5% to 23%."
+    ]
+   },
+   "ja": {
+    "title": "ビフォー・アフター画像の黒い縁",
+    "bullets": [
+     "5枚（IC 1848、M 20、M 31、M 81、NGC 6791）の縁に黒い楔形が入っていました。最もひどかったのは NGC 6791 です。",
+     "スライダーは対の一方を回転させて位置を合わせます。長方形の中で長方形を回せば、隅には必ず空白が残ります。",
+     "生スタックが独立した表示モードになり全画面で表示されるまで、この空白は無害でした。",
+     "現在は対の両方を同じ幅だけ切り詰め、ピクセル単位の一致を保っています。代償は画面の広さで、2.5%から23%です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "Four pictures that were nearly black, and the reason",
+    "bullets": [
+     "NGC 654, NGC 6712 and NGC 891 were published as almost entirely black frames, and NGC 6946 had never been published at all.",
+     "The brightness curve is solved before noise reduction and applied after it, which assumes noise reduction changes grain but not overall brightness.",
+     "On these four it shifted the brightness threefold, so the curve's black point landed above almost the whole picture.",
+     "All four are rebuilt from the same exposures. The check that missed it divided by zero noise; it now requires a measurable background first."
+    ]
+   },
+   "ja": {
+    "title": "ほぼ真っ黒だった4枚と、その原因",
+    "bullets": [
+     "NGC 654、NGC 6712、NGC 891 はほぼ真っ黒な画像として公開されており、NGC 6946 は一度も公開できていませんでした。",
+     "明るさの曲線はノイズ低減の前に求め、後に適用します。これはノイズ低減が粒状感は変えても全体の明るさは変えない、という前提に立っています。",
+     "この4枚では明るさが3倍ずれたため、曲線の黒点が画像のほぼ全体より上に来てしまいました。",
+     "4枚とも同じ露出から作り直しました。見逃した検査はノイズがゼロの背景で除算していたため、現在は測定可能な背景があることを前提条件にしています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "The album has a tab icon now",
+    "bullets": [
+     "The site had no icon of its own, so browsers gave it the blank glyph every unidentified site gets.",
+     "It now carries the North America Nebula, the same image the album app and its desktop launcher use."
+    ]
+   },
+   "ja": {
+    "title": "アルバムにタブアイコンが付きました",
+    "bullets": [
+     "サイト固有のアイコンがなく、ブラウザは名前のないサイトに与える空白のページ記号を表示していました。",
+     "現在は北アメリカ星雲を表示します。アルバムアプリとデスクトップ用ランチャーが使っているのと同じ画像です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "Two faults on the sky dome, and what caused them",
+    "bullets": [
+     "Four frames rendered red. They were exported with a stretch that preserves colour ratios, which preserved the light-pollution cast along with them.",
+     "They are now colour-calibrated against catalogue star colours before export, like every other conditioned image in the album.",
+     "NGC 7261 was drawn at the wrong size: it had been re-exported after plate-solving, so its stored geometry described the older, wider frame.",
+     "Plate solves are now checked against the file they describe; a mismatch is named and left off the map. Coverage reads 783.4 square degrees."
+    ]
+   },
+   "ja": {
+    "title": "天球ドームの二つの不具合と、その原因",
+    "bullets": [
+     "ドーム上の4枚が赤く表示されていました。色の比率を保つ引き伸ばしで書き出したため、光害による色かぶりまで一緒に残っていたのです。",
+     "現在はアルバムの他の調整済み画像と同じく、書き出し前に恒星の色を基準として色較正しています。",
+     "NGC 7261 は誤ったサイズで描かれていました。プレートソルブ後に書き出し直したため、保存された幾何情報が以前の広いフレームを指していたのです。",
+     "プレートソルブ結果は記述対象のファイルと照合し、一致しないものは名前を報告して地図から外します。撮影範囲は783.4平方度です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "type": "photos",
+   "era": 4,
+   "en": {
+    "title": "Fourteen targets, and two of them deep",
+    "bullets": [
+     "Fourteen targets arrived from the night of 17–18 August. Ten are new to the album, including the globular clusters M 2 and M 15.",
+     "IC 1848 and NGC 891 were the night's real integrations, at 90 and 80 exposures. Both carry a raw stack beside the conditioned image.",
+     "Four targets were photographed a second time and stacked with their earlier nights: NGC 188, NGC 6791, NGC 6866 and NGC 7261, now deeper than ever.",
+     "They were re-shot because the ledger of what had already been captured had gone thirteen objects stale. It is rebuilt."
+    ]
+   },
+   "ja": {
+    "title": "14の対象、そのうち2つは深く",
+    "bullets": [
+     "8月17日から18日にかけての夜、14の対象が加わりました。うち10はアルバム初登場で、球状星団の M 2 と M 15 を含みます。",
+     "この夜の本命は IC 1848 と NGC 891 で、露出はそれぞれ90枚と80枚です。どちらも調整済み画像の隣に生スタックを収めています。",
+     "4つは初撮影ではなく再撮影で、以前の夜と重ね合わせました。NGC 188、NGC 6791、NGC 6866、NGC 7261 はいずれも過去最も深い状態です。",
+     "再撮影になったのは、撮影済みの対象を記録する台帳が13天体分古くなっていたためです。台帳は作り直しました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "Download buttons now wear the colour of what they hand you",
+    "bullets": [
+     "Every download button beneath a photo is tinted to signal which version it saves.",
+     "Gray hands you the raw stack, gold the conditioned image, and cyan the deepest stack where a target was captured at more than one integration.",
+     "The three colours are not new — they are the same ones the tiles already use for their borders and corner ribbons.",
+     "Which files are offered has not changed, only that each button now says what it will give you."
+    ]
+   },
+   "ja": {
+    "title": "ダウンロードボタンが、渡すものの色をまとうように",
+    "bullets": [
+     "写真の下にある各ダウンロードボタンが、どの版を保存するかを色で示すようになりました。",
+     "グレーは生スタック、金色は調整済み画像、シアンは最も深いスタックで、複数の積算時間で撮影した対象に現れます。",
+     "この三色は新しく作ったものではありません。タイルが枠や隅のリボンですでに使っている色と同じです。",
+     "提供するファイルの構成は変えていません。各ボタンが何を渡すのかを一目で告げるようになっただけです。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "The changelog is a timeline, and the showcase has its colour back",
+    "bullets": [
+     "This panel is the change. Updates are grouped into version eras, each opening and closing, so the whole history reads as a few lines.",
+     "Every entry is a handful of bullets instead of a paragraph, with the album version stamped at the top of the panel.",
+     "The sky dome was not opening on the published site — its shader had an undeclared loop bound and failed to compile. Fixed.",
+     "The integration showcase rendered M 31 green; it now uses one frozen colour calibration across all steps, bringing the green excess within 3%."
+    ]
+   },
+   "ja": {
+    "title": "更新履歴を時系列に、露出時間の比較に本来の色を",
+    "bullets": [
+     "この画面自体が今回の変更です。更新はバージョンの世代ごとにまとめられ、それぞれ開閉できるので、全履歴が数行に収まります。",
+     "各項目は段落ではなく数個の箇条書きになりました。アルバムのバージョンは画面上部に表示しています。",
+     "公開中のサイトで天球ドームが開きませんでした。シェーダーのループ回数の指定が未定義でコンパイルに失敗していたためで、修正済みです。",
+     "積算ショーケースで M 31 が緑がかっていました。現在は凍結した色較正を全段階に同一適用し、緑の過剰は3%以内に収まっています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "One card per target, four ways to look at it",
+    "bullets": [
+     "The grid is one card per target now. M 31 used to occupy eight tiles and the Moon ten.",
+     "Click a card and up to four buttons appear: RAW STACK, INTEGRATION SHOWCASE, CONDITIONED, and BEFORE AND AFTER. A target only offers the ones it has.",
+     "Each mode owns a colour, and the card's border is split into those colours, so a card says what it carries before you click.",
+     "The sky dome gained a search box and three reference circles: the celestial equator, the ecliptic, and the plane of the Milky Way."
+    ]
+   },
+   "ja": {
+    "title": "対象ごとに1枚のカード、見せ方は4通り",
+    "bullets": [
+     "グリッドを対象ごとに1枚のカードにまとめました。これまで M 31 は8枚、月は10枚のタイルを占めていました。",
+     "カードをクリックすると最大4つのボタンが現れます — 生スタック、積算ショーケース、調整済み、ビフォー/アフター。その対象が持つものだけが表示されます。",
+     "各モードには固有の色があり、カードの枠はその色で分割されます。クリックする前に、そのカードが何を含むか分かります。",
+     "天球ドームに検索窓と3つの基準大円 — 天の赤道、黄道、銀河面 — が加わりました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "type": "website",
+   "era": 4,
+   "en": {
+    "title": "Sky dome — deeper zoom, see-through overlaps, and a count of the stars",
+    "bullets": [
+     "Zoom now runs from 120° across down to 25 arcminutes. Every frame ships at three resolutions and a finer one loads as you close in.",
+     "Overlapping frames draw see-through — two share the overlap at half each, three at a third — decided per pixel.",
+     "373,893 distinct stars, measured rather than looked up: 418,415 point sources across 97 frames, merged by sky position.",
+     "Click a frame to fly onto it; once it fills the screen, click again to open the photo. A zoom bar marks the arc the view spans."
+    ]
+   },
+   "ja": {
+    "title": "天球ドーム — より深いズーム、重なりの透過、そして星の数",
+    "bullets": [
+     "視野は120度から25分角まで連続でズームできるようになりました。各コマは3段階の解像度で配信され、近づくほど精細なものが読み込まれます。",
+     "重なった写真は半透明で描画されます。2枚なら各2分の1、3枚なら各3分の1で、判定はピクセル単位です。",
+     "星の数は373,893個。カタログ参照ではなく実測で、97コマから検出した418,415個の点光源を天球上の位置で統合した数です。",
+     "写真をクリックするとその一枚へ寄り、画面いっぱいになった状態でもう一度クリックすると写真が開きます。左端のズームバーが視野の角度を示します。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-04",
+   "type": "photos",
+   "era": 4,
+   "en": {
+    "title": "The Fireworks Galaxy, the Cat's Eye, and a rebuild of how these images get processed",
+    "bullets": [
+     "Eleven new targets: NGC 6946, the Fireworks Galaxy, at fifteen minutes; the Cat's Eye planetary nebula; NGC 188 near the pole; and eight more clusters.",
+     "They ship as the telescope stacked them, deliberately — the galaxy, nebula and cluster recipes are being rebuilt.",
+     "Every setting in the chain was a fixed number tuned on M 31. Ask a fainter target to meet them and it comes out broken, not fainter.",
+     "The replacement anchors on M 31 and puts each target on a curve through it, scaled by what that target actually measures."
+    ]
+   },
+   "ja": {
+    "title": "花火銀河、キャッツアイ星雲、そして画像処理の作り直し",
+    "bullets": [
+     "新しい対象を11件追加しました。15分露出の NGC 6946（花火銀河）、キャッツアイ星雲、天の北極近くの散開星団 NGC 188、そのほか星団が8つです。",
+     "いずれも意図的に、望遠鏡がスタックしたそのままの状態で公開しています。銀河・星雲・星団の処理レシピを現在作り直しているためです。",
+     "処理チェーンの設定値はすべて M 31 で調整した固定値でした。より淡い対象に同じ値を求めると、暗い写真になるのではなく壊れます。",
+     "新しい方式では M 31 を基準点に固定し、他の対象は実測値に応じてその基準を通る曲線上に配置されます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-08-01",
+   "type": "photos",
+   "era": 3,
+   "en": {
+    "title": "A mosaic four times the usual width, the Butterfly Nebula, and six open clusters",
+    "bullets": [
+     "A 2×2 mosaic of the Sadr region in Cygnus — 4.4 by 7.8 degrees, four times the sky area of a normal frame, from 100 exposures.",
+     "It ships as the telescope assembled it: about a fifth of that rectangle holds no data, and is excluded from the coverage figure too.",
+     "IC 1318B, the Butterfly Nebula's eastern lobe, is the clearest before-and-after here: grey-green haze in the raw stack, hydrogen structure in the finished frame.",
+     "Six open clusters had a brown cast and an uneven background — a gradient, not underexposure — so about 80% of it came out."
+    ]
+   },
+   "ja": {
+    "title": "通常の4倍の広さのモザイク、蝶々星雲、そして6つの散開星団",
+    "bullets": [
+     "はくちょう座サドル周辺の2×2モザイク。4.4×7.8度、通常の1コマの4倍の天域を露出100枚から合成しています。",
+     "望遠鏡が組み上げたそのままの姿で公開しました。長方形の約5分の1はデータがなく、カバー率の算出からも除外しています。",
+     "IC 1318B（蝶々星雲の東側）は最も違いがはっきり出た一枚です。生スタックの緑がかった靄に対し、仕上げ後は水素の構造が見えています。",
+     "散開星団6つは茶色いかぶりとムラのある背景を抱えていました。露出不足ではなくグラデーションなので、その約80%を除去しています。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-31",
+   "type": "website",
+   "era": 3,
+   "en": {
+    "title": "Sky dome — the album mapped onto the sky it came from",
+    "bullets": [
+     "A new header button turns the screen into a celestial sphere you can drag. Every plate-solved photo is painted at its true coordinates, size and rotation.",
+     "The 73 solved frames span 618 square degrees, but they overlap — unique coverage is 535 square degrees, or 1.30% of the whole sky.",
+     "That union is computed by sampling three million points spread evenly over the sphere and testing each against every frame's plate solve.",
+     "The backdrop is a plain coordinate grid. On a page about what was actually captured, painting in stars that were not is worth refusing."
+    ]
+   },
+   "ja": {
+    "title": "天球ドーム — アルバムを、撮影した空そのものへ",
+    "bullets": [
+     "ヘッダーの新しいボタンで、画面がドラッグして見回せる天球に変わります。プレートソルブ済みの写真が、実際の座標・大きさ・回転のまま描かれます。",
+     "ソルブ済みの73コマは618平方度分の視野を持ちますが重なりがあるため、重複を除いた実面積は535平方度、全天の1.30%です。",
+     "この面積は、球面上に一様に分布させた300万点を、各写真のプレートソルブ結果で判定して求めています。",
+     "背景は座標グリッドだけです。実際に写したものを見せるページで、写していない星を描き足すことは避けました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-31",
+   "type": "photos",
+   "era": 2,
+   "en": {
+    "title": "Saturn stacked from video, the Sunflower Galaxy, and thirteen new captures",
+    "bullets": [
+     "Saturn was captured as a 50-second video and stacked frame by frame. A planet is a bright disc on an empty sensor, so no deep-sky machinery applies.",
+     "Each of the 914 frames was tracked on Saturn's own ring silhouette; the sharpest quarter was then aligned and averaged.",
+     "M 63 exposed a real flaw: the tone stage fixed the sky level and left the bright end unchecked, rendering anything fainter as black.",
+     "The curve now solves for subject as well as sky, and refuses to run when they are not separable. Also new: NGC 7331, IC 10, Neptune and eight clusters."
+    ]
+   },
+   "ja": {
+    "title": "動画からスタックした土星、ひまわり銀河、そして13件の新規撮影",
+    "bullets": [
+     "土星は50秒の動画として撮影し、1フレームずつスタックしました。惑星はほぼ何もないセンサー上の明るい円盤なので、深宇宙用の手法は使えません。",
+     "914フレームそれぞれを土星自身の環の輪郭で追尾し、鮮鋭度で上位4分の1を位置合わせして平均しました。",
+     "M 63 が実際の欠陥を明らかにしました。トーン処理が空のレベルだけを合わせ明るい側を検証していなかったため、それより淡い対象は真っ黒になっていました。",
+     "現在は空と被写体の両方についてカーブを解き、分離できない場合は処理を拒否します。ほか新規: NGC 7331、IC 10、海王星、散開星団8つ。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-30",
+   "type": "photos",
+   "era": 2,
+   "en": {
+    "title": "New galaxy pipeline, first dark-calibrated stacks, and seven new captures",
+    "bullets": [
+     "M 31 (498 subs = 110 min) and M 81 (155 × 10 s = 26 min) rebuilt on a rewritten conditioning pipeline — about thirty operations cut down to eight.",
+     "The old chain lifted every colour channel by a square root across the whole frame, which amplifies faint-end noise without limit and drove the channels apart.",
+     "The new chain smooths colour once on linear data before the stretch, denoises luminance linear, applies a single tone curve, and finishes at the noise floor.",
+     "Both were stacked against a master dark for the first time, removing about 14% of hot pixels. Also new: the Moon, NGC 884, NGC 4236, NGC 6503, Saturn."
+    ]
+   },
+   "ja": {
+    "title": "新しい銀河パイプライン、初のダーク補正スタック、そして7枚の新規撮影",
+    "bullets": [
+     "M 31（498枚 = 110分）と M 81（10秒×155枚 = 26分）を、約30工程から8工程へ書き直した調整パイプラインで再構築しました。",
+     "旧チェーンは画面全体で各色チャンネルを平方根で持ち上げており、暗部ノイズを無制限に増幅してチャンネル間のずれを生んでいました。",
+     "新チェーンはストレッチ前のリニア段階で色を一度だけ平滑化し、輝度ノイズもリニアで除去、トーンカーブは1回、仕上げはノイズフロアの画素だけに触れます。",
+     "両天体とも初めてマスターダークを用いてスタックし、ホットピクセルが約14%減りました。ほか新規: 月、NGC 884、NGC 4236、NGC 6503、土星。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-24",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "M 31 and M 81 reconditioned — deeper stacks, cleaner sky",
+    "bullets": [
+     "M 31 rebuilt from 467 subs across two nights (180 × 20 s + 287 × 10 s) — 108 minutes of integration, up from 60.",
+     "M 81 built from 145 tree-free subs — 24 minutes, after rejecting 10 obvious tree frames and 5 partial ones from the end of the session.",
+     "Both went through the full pipeline this time, including the GraXpert background extraction that was missing before — which is why M 81's sky had a light-pollution gradient.",
+     "M 81's tile now carries a raw/conditioned slider alongside its exposure-length one."
+    ]
+   },
+   "ja": {
+    "title": "M 31 と M 81 を再調整 — より深いスタックとクリーンな空",
+    "bullets": [
+     "M 31 は2日間の467枚（20秒×180 + 10秒×287）から再構築 — 積算露光時間は60分から108分に。",
+     "M 81 は木の写り込みを除いた145枚から構築 — 24分。明らかに木が入った10枚と、セッション終盤の部分的な5枚を除外しました。",
+     "今回は両方ともフルパイプラインを通しました。前回省略していた GraXpert の背景除去も含まれます。M 81 の空に光害グラデーションが残っていた原因がこれでした。",
+     "M 81 のタイルには、露光時間スライダーに加えて Raw/調整済み スライダーも付きました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-24",
+   "type": "website",
+   "era": 1,
+   "en": {
+    "title": "Fixed mirrored in-frame body circles",
+    "bullets": [
+     "The yellow circle that appears when you click a body in a photo's In-frame list was landing at the wrong sky position. It now lands on the actual body.",
+     "The cause was a missing Y-axis flip: FITS counts +Y up from the bottom-left, the browser paints +Y down from the top-left."
+    ]
+   },
+   "ja": {
+    "title": "画角内オブジェクト円環の左右反転バグを修正",
+    "bullets": [
+     "画角内オブジェクトのチップをクリックした際に表示される黄色の円環が、正しい位置に描画されていませんでした。本来の位置に描画されるようになりました。",
+     "原因はY軸反転処理の漏れです。FITS は原点が左下で Y が上向き、ブラウザは原点が左上で Y が下向きです。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-24",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "Fifteen new photos, and a compare slider for exposure length",
+    "bullets": [
+     "One big Seestar S30 Pro night: fifteen targets including NGC 7023 (Iris Nebula), NGC 6826 (Blinking Planetary), M 16 (Eagle Nebula) and M 63 (Sunflower Galaxy).",
+     "Where a target was shot at more than one exposure length, its tile opens a slider between the shorter and the longer one.",
+     "A cyan border and a ⏱ ribbon mark exposure-compare tiles, against gold for the raw/conditioned ones."
+    ]
+   },
+   "ja": {
+    "title": "新しい写真15枚と、露光時間の比較スライダー",
+    "bullets": [
+     "Seestar S30 Pro の大きな撮影ナイト。NGC 7023（アイリス星雲）、NGC 6826（瞬き星雲）、M 16（わし星雲）、M 63（ひまわり銀河）を含む15対象です。",
+     "同じ対象を複数の露光時間で撮影した場合、短時間露光と長時間露光を比較するスライダーがタイルから開きます。",
+     "シアン枠と ⏱ リボンが露光比較タイル、金色が Raw/調整済みタイルです。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-23",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "Four new targets — M 14, M 12, NGC 6960, and a Milky Way attempt",
+    "bullets": [
+     "Two globular clusters in Ophiuchus (M 14 and M 12) and the Western Veil Nebula (NGC 6960) in Cygnus, all on the Seestar S30 Pro.",
+     "M 14 was exported by the Seestar app as 'Unknown' — plate-solving pinned it about 12° south-east of M 12.",
+     "Also a wide-field phone shot toward the galactic centre. Heavy light pollution, but the album's first attempt at the Milky Way."
+    ]
+   },
+   "ja": {
+    "title": "新しく4天体 — M 14 / M 12 / NGC 6960 / 天の川",
+    "bullets": [
+     "へびつかい座の球状星団2つ（M 14 と M 12）と、はくちょう座の網状星雲西（NGC 6960）。いずれも Seestar S30 Pro で撮影しました。",
+     "M 14 は Seestar アプリからは「Unknown」として書き出されましたが、プレートソルビングの結果 M 12 の南東約12°と判明しました。",
+     "天の川銀河中心方向を狙ったスマートフォンの広角撮影も追加。光害は強いですが、アルバム初の天の川挑戦です。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-19",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "Four new Seestar targets — NGC 281, NGC 6940, NGC 6633, M 52",
+    "bullets": [
+     "NGC 281 (Pacman Nebula, 140 s), NGC 6940 (open cluster in Vulpecula, 180 s), NGC 6633 (open cluster, 90 s) and M 52 (open cluster in Cassiopeia, 60 s).",
+     "Straight from the Seestar app — no custom pipeline conditioning yet."
+    ]
+   },
+   "ja": {
+    "title": "Seestar 撮影 4 天体を追加 — NGC 281 / NGC 6940 / NGC 6633 / M 52",
+    "bullets": [
+     "NGC 281（パックマン星雲、140秒）、NGC 6940（こぎつね座の散開星団、180秒）、NGC 6633（散開星団、90秒）、M 52（カシオペア座の散開星団、60秒）。",
+     "Seestar アプリの出力そのままです。カスタムパイプラインでの調整はまだ行っていません。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-19",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "M 31 Andromeda reconditioned — full custom pipeline",
+    "bullets": [
+     "M 31's conditioned image replaced with the output of a new multi-stage pipeline: Siril + GraXpert + Cosmic Clarity AI + StarNet ×2 + black-canvas composite.",
+     "Tuned iteratively against a 13-metric scorecard that grew each round from visual feedback — a star-plateau detector, a per-tile blotchiness measure, and a radial-smoothness fit.",
+     "Softening the star self-mask removed the ring artifacts around bright stars, and the sky was pulled toward neutral black without touching star colours."
+    ]
+   },
+   "ja": {
+    "title": "アンドロメダ銀河 M 31 を新パイプラインで再調整",
+    "bullets": [
+     "新しい多段階パイプライン（Siril + GraXpert + Cosmic Clarity AI + StarNet×2 + ブラックキャンバス合成）の出力で M 31 の調整済み画像を差し替えました。",
+     "視覚的フィードバックに基づき、毎回項目が増える13項目の採点表と共に反復調整しました。星のプラトー検出、タイル内むら測定、星の放射方向スムーズネス評価を追加しています。",
+     "星のセルフマスクを緩めることで明るい星の周りの円環アーティファクトを解消し、星の色を保ったまま空を中性の黒に近づけました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-18",
+   "type": "photos",
+   "era": 1,
+   "en": {
+    "title": "Two globular clusters — M 56 and M 10 conditioned",
+    "bullets": [
+     "Both captured under smoke-degraded skies in northern California — 90 subs × 10 s each.",
+     "Their gallery tiles are outlined in gold; click either to open the before/after comparison in the slideshow."
+    ]
+   },
+   "ja": {
+    "title": "球状星団 M 56 と M 10 を調整済み",
+    "bullets": [
+     "どちらも山火事の煙で霞んだ北カリフォルニアの空で撮影 — 各10秒露光を90枚スタック。",
+     "ギャラリーの該当タイルには金色の枠が付いています。クリックするとスライドショーで処理前後を比較できます。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-17",
+   "type": "website",
+   "era": 1,
+   "en": {
+    "title": "Hand-traced sparkle-の glyph, and a refined title",
+    "bullets": [
+     "The two possessive の in the Japanese title are now a hand-traced four-point sparkle with a stylized の inside, drawn as one closed SVG path.",
+     "The Japanese title also went from 天体写真術の写真帳 to 天体写真のアルバム, which reads more naturally."
+    ]
+   },
+   "ja": {
+    "title": "手描きスパークル「の」グリフ導入、タイトル改訂",
+    "bullets": [
+     "日本語タイトル内の二つの助詞「の」を、手描きトレースの四点スパークルの中に「の」を配したグリフに置き換えました。単一の閉じた SVG パスです。",
+     "日本語タイトルも「天体写真術の写真帳」から「天体写真のアルバム」へ、より自然な言い回しに調整しました。"
+    ]
+   }
+  },
+  {
+   "date": "2026-07-17",
+   "type": "website",
+   "era": 1,
+   "en": {
+    "title": "Public gallery deployed",
+    "bullets": [
+     "Site launched at nfikes.github.io/astrophotography.",
+     "Bilingual EN / 日本語, a mobile-responsive layout, a hero splash, and privacy-safe photo publishing — EXIF stripped, filenames barebones."
+    ]
+   },
+   "ja": {
+    "title": "公開ギャラリー公開",
+    "bullets": [
+     "nfikes.github.io/astrophotography にサイトを公開しました。",
+     "日本語/英語対応、モバイル対応レイアウト、ヒーロー画像、そしてプライバシー対応の写真配信（EXIF削除、ファイル名の簡略化）。"
+    ]
+   }
+  }
+ ]
+}
